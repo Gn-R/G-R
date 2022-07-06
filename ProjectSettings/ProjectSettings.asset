@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: V0.85 Beta
+  bundleVersion: V0.9052 Beta (PC)
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -153,7 +153,8 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DefaultCompany.GR
+    Android: com.GR.GR
+    Standalone: com.G---R.G---R
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -271,7 +272,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: aae99310adedab941bf4fcc44bc4e18c, type: 3}
+      m_Icon: {fileID: 2800000, guid: abbfe4a10ff40ee4fa5ea58e3698df66, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -346,7 +347,7 @@ PlayerSettings:
       m_SubKind: 
     - m_Textures:
       - {fileID: 0}
-      - {fileID: 2800000, guid: aae99310adedab941bf4fcc44bc4e18c, type: 3}
+      - {fileID: 2800000, guid: abbfe4a10ff40ee4fa5ea58e3698df66, type: 3}
       m_Width: 432
       m_Height: 432
       m_Kind: 2
