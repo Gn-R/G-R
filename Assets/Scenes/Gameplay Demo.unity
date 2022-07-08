@@ -3428,7 +3428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1075218522}
   m_Layer: 0
-  m_Name: Tinywell 1 (1)
+  m_Name: Tinywell 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3446,10 +3446,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 9069386372801338261}
-  - {fileID: 9101663152447766876}
-  - {fileID: 4416166084624489730}
   - {fileID: 6788008095678005289}
+  - {fileID: 9101663152447766876}
   m_Father: {fileID: 39476454609662776}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4162,6 +4160,39 @@ Transform:
   - {fileID: 1027168975}
   m_Father: {fileID: 6919547523019083528}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1426994351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1426994352}
+  m_Layer: 0
+  m_Name: Body
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1426994352
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426994351}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4203854075818131859}
+  - {fileID: 8230575575717282091}
+  m_Father: {fileID: 39476454609662776}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1437082951
 GameObject:
@@ -6847,7 +6878,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1913221244}
   m_Layer: 0
-  m_Name: Tinywell 1 (2)
+  m_Name: Tinywell 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6865,10 +6896,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1994241913480623255}
-  - {fileID: 5628584341519485328}
-  - {fileID: 3369611811390055845}
   - {fileID: 355500237281898465}
+  - {fileID: 5628584341519485328}
   m_Father: {fileID: 39476454609662776}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7887,8 +7916,7 @@ Transform:
   - {fileID: 7292044714995930234}
   - {fileID: 541440464395783299}
   - {fileID: 3680937305511385048}
-  - {fileID: 4203854075818131859}
-  - {fileID: 8230575575717282091}
+  - {fileID: 1426994352}
   m_Father: {fileID: 1926463432}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -8452,9 +8480,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 99.999985, z: 99.99998}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3369611811390055845}
   m_Father: {fileID: 1913221244}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &371752530569480758
 Transform:
@@ -10050,7 +10079,7 @@ GameObject:
   - component: {fileID: 7473512392776576989}
   - component: {fileID: 7687881031294946243}
   m_Layer: 0
-  m_Name: BUTO.019
+  m_Name: c5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10919,7 +10948,7 @@ GameObject:
   - component: {fileID: 7275029828606967427}
   - component: {fileID: 8037335756479001211}
   m_Layer: 0
-  m_Name: BUTO.016
+  m_Name: c4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10994,12 +11023,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8420974741132353549}
-  m_LocalRotation: {x: -0.7071069, y: -0, z: -0, w: 0.70710677}
+  m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 99.999985, z: 99.99998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1913221244}
+  m_Father: {fileID: 5628584341519485328}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1994632049209625891
@@ -11399,7 +11428,7 @@ GameObject:
   - component: {fileID: 8080058122931784498}
   - component: {fileID: 8048784262705002237}
   m_Layer: 0
-  m_Name: buffet_equipment.044
+  m_Name: tLid5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11953,7 +11982,7 @@ GameObject:
   - component: {fileID: 5174243785251494824}
   - component: {fileID: 8205598012544336817}
   m_Layer: 0
-  m_Name: Cube.010
+  m_Name: TableF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11971,7 +12000,7 @@ GameObject:
   - component: {fileID: 4316769333895459272}
   - component: {fileID: 6832163156487808353}
   m_Layer: 0
-  m_Name: BUTO.013
+  m_Name: l3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12241,7 +12270,7 @@ GameObject:
   - component: {fileID: 1899217413777693254}
   - component: {fileID: 5953968656671130761}
   m_Layer: 0
-  m_Name: BUTO.023
+  m_Name: c6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12411,7 +12440,7 @@ GameObject:
   - component: {fileID: 6792379062100520357}
   - component: {fileID: 499550642379243586}
   m_Layer: 0
-  m_Name: BUTO.024
+  m_Name: l6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12701,13 +12730,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2157683898625600135}
-  m_LocalRotation: {x: -0.7071069, y: -0, z: -0, w: 0.70710677}
+  m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 99.999985, z: 99.99998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1913221244}
-  m_RootOrder: 2
+  m_Father: {fileID: 355500237281898465}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3404236368487370766
 MeshFilter:
@@ -13274,7 +13303,7 @@ GameObject:
   - component: {fileID: 7192105102759887896}
   - component: {fileID: 491342008695958343}
   m_Layer: 0
-  m_Name: buffet_equipment.043
+  m_Name: tWell6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13651,7 +13680,7 @@ GameObject:
   - component: {fileID: 4934812344962216127}
   - component: {fileID: 2311425688094262457}
   m_Layer: 0
-  m_Name: BUTO.015
+  m_Name: l4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13677,7 +13706,7 @@ GameObject:
   - component: {fileID: 3888350755624046861}
   - component: {fileID: 735122514550916102}
   m_Layer: 0
-  m_Name: BUTO.008
+  m_Name: c2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14053,13 +14082,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7249473907624188411}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 101, y: 100, z: 100}
+  m_LocalRotation: {x: -0.7071069, y: -0, z: -0, w: 0.70710677}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 101, y: 99.999985, z: 99.99998}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 39476454609662776}
-  m_RootOrder: 13
+  m_Father: {fileID: 1426994352}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &4208018946215658504
 MeshRenderer:
@@ -14349,13 +14378,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7656926359819312127}
-  m_LocalRotation: {x: -0.7071069, y: -0, z: -0, w: 0.70710677}
+  m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 99.999985, z: 99.99998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1075218522}
-  m_RootOrder: 2
+  m_Father: {fileID: 6788008095678005289}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4418473096403920404
 Transform:
@@ -15435,7 +15464,7 @@ GameObject:
   - component: {fileID: 7652688590749866158}
   - component: {fileID: 4200326263617390840}
   m_Layer: 0
-  m_Name: buffet_equipment.031
+  m_Name: tWell4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15750,7 +15779,7 @@ GameObject:
   - component: {fileID: 8644969976587133039}
   - component: {fileID: 2105980631074435642}
   m_Layer: 0
-  m_Name: buffet_equipment.037
+  m_Name: tWell3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15844,7 +15873,7 @@ GameObject:
   - component: {fileID: 7778892208659562009}
   - component: {fileID: 5338964477829153583}
   m_Layer: 0
-  m_Name: buffet_equipment.026
+  m_Name: tLid4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15879,7 +15908,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 99.999985, z: 99.99998}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1994241913480623255}
   m_Father: {fileID: 1913221244}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16537,7 +16567,7 @@ GameObject:
   - component: {fileID: 205688520406861625}
   - component: {fileID: 4059920142472849537}
   m_Layer: 0
-  m_Name: BUTO.020
+  m_Name: l5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17384,9 +17414,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 99.999985, z: 99.99998}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4416166084624489730}
   m_Father: {fileID: 1075218522}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6792379062100520357
 MeshFilter:
@@ -17749,7 +17780,7 @@ GameObject:
   - component: {fileID: 9175998885439348448}
   - component: {fileID: 6008174962354432983}
   m_Layer: 0
-  m_Name: BUTO.009
+  m_Name: l2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18142,7 +18173,7 @@ GameObject:
   - component: {fileID: 431068302443008044}
   - component: {fileID: 1344305916986957822}
   m_Layer: 0
-  m_Name: Cube.009
+  m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18563,7 +18594,7 @@ GameObject:
   - component: {fileID: 6272591180936239646}
   - component: {fileID: 7050652852598552492}
   m_Layer: 0
-  m_Name: buffet_equipment.036
+  m_Name: tLid3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19425,13 +19456,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2677236572817775671}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 101, y: 100, z: 100}
+  m_LocalRotation: {x: -0.7071069, y: -0, z: -0, w: 0.70710677}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 101, y: 99.999985, z: 99.99998}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 39476454609662776}
-  m_RootOrder: 14
+  m_Father: {fileID: 1426994352}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &8240284598485483101
 MeshRenderer:
@@ -19849,7 +19880,7 @@ GameObject:
   - component: {fileID: 4859420948582270682}
   - component: {fileID: 6731327732094772250}
   m_Layer: 0
-  m_Name: buffet_equipment.042
+  m_Name: tLid6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20337,7 +20368,7 @@ GameObject:
   - component: {fileID: 8889127011151541226}
   - component: {fileID: 4208018946215658504}
   m_Layer: 0
-  m_Name: buffet_equipment.045
+  m_Name: tWell5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20648,12 +20679,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5605564710168643730}
-  m_LocalRotation: {x: -0.7071069, y: -0, z: -0, w: 0.70710677}
+  m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 99.999985, z: 99.99998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1075218522}
+  m_Father: {fileID: 9101663152447766876}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &9101663152447766876
@@ -20667,7 +20698,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 99.999985, z: 99.99998}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 9069386372801338261}
   m_Father: {fileID: 1075218522}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
