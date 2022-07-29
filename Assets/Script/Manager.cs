@@ -18,6 +18,8 @@ public class Manager
 
     public List<string> combo;
 
+    // public List<string> recipe; // TODO need a way to set game recipe before scene starts
+
     public bool forward;
 
     public bool back;

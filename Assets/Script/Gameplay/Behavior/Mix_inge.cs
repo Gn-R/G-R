@@ -35,7 +35,7 @@ public class Mix_inge : MonoBehaviour
                     string temp = "";
                     foreach (string str in Manager.Instance.combo)
                     {
-                        temp += str;
+                        temp += str + " ";
                     }
                     dis_inge.text = temp;
 

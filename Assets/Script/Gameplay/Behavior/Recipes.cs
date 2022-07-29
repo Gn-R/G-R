@@ -2,61 +2,61 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/// A list a recipes the program uses.f
-/// In the future, load these from a text file and distinguish between ingredient types (base, dressing, etc.).
+// A list a recipes the program uses.f
+// In the future, load these from a text file and distinguish between ingredient types (base, dressing, etc.).
 public class Recipes
 {
     // Roots recipes
     // "Roots Bowl"
     public static List<string> rootsBowl = new List<string>(new string[] {
-        "roots rice", // Primary Base
-        "spinach", // Secondary Base
-        "roasted sweet potatoes", "roasted sweet potatoes", "red onions", "goat cheese", "dried cranberries", // Ingredients
-        "lemon tahini" //Dressing
+        "Roots Rice", // Primary Base
+        "Spinach", // Secondary Base
+        "Roasted Sweet Potatoes", "Roasted Sweet Potatoes", "Red Onions", "Goat Cheese", "Dried Cranberries", // Ingredients
+        "Lemon Tahini" //Dressing
     });
 
     // "El Jefe"
     public static List<string> elJefe = new List<string>(new string[] {
-        "brown rice", // Primary Base
-        "kale", // Secondary Base
-        "black beans", "charred corn", "red onions", "avocado", "pita chips", "feta", // Ingredients
-        "cilantro lime", //Dressing
-        "chicken" // From The Grill
+        "Brown Rice", // Primary Base
+        "Kale", // Secondary Base
+        "Black Beans", "Charred Corn", "Red Onions", "Avocado", "Pita Chips", "Feta", // Ingredients
+        "Cilantro Lime", //Dressing
+        "Khicken" // From The Grill
     });    
 
     // "Corner Cobb"
     public static List<string> cornerCobb = new List<string>(new string[] {
-        "brown rice", "kale", // etc.
-        "roasted broccoli", "red onions", "pickled jalapeños", "red cabbage", "toasted almonds",
-        "miso ginger",
-        "chicken"
+        "Brown Rice", "Kale", // etc.
+        "Roasted Broccoli", "Red Onions", "Pickled Jalapeños", "Red Cabbage", "Toasted Almonds",
+        "Miso Ginger",
+        "Chicken"
     });
 
     // Example recipes
     // "Balanced Diet"
     public static List<string> balancedDiet = new List<string>(new string[] {
-        "red",
-        "blue",
-        "red", "green", "green", "blue", "red",
-        "green",
-        "blue"
+        "Red",
+        "Blue",
+        "Red", "Green", "Green", "Blue", "Red",
+        "Green",
+        "Blue"
     });
 
     // "Planet Earth"
     public static List<string> planetEarth = new List<string>(new string[] {
-        "blue",
-        "green",
-        "blue", "blue", "green", "red",
-        "blue", "red",
-        "green"
+        "Blue",
+        "Green",
+        "Blue", "Blue", "Green", "Red",
+        "Blue", "Red",
+        "Green"
     });
 
     // "Rainbow"
     public static List<string> rainbow = new List<string>(new string[] {
-        "red",
-        "red", "green",
-        "green", "green", "blue", "blue", "blue", "red",
-        "red", "green", "blue"
+        "Red",
+        "Red", "Green",
+        "Green", "Green", "Blue", "Blue", "Blue", "Red",
+        "Red", "Green", "Blue"
     });
 
 }
