@@ -10,7 +10,6 @@ public class Mix_inge : MonoBehaviour
     public AudioSource Discard;
     float tima;
 
-    // Start is called before the first frame update
     void Start()
     {
         dis_inge = transform.GetComponent<TextMeshProUGUI>();
@@ -18,11 +17,23 @@ public class Mix_inge : MonoBehaviour
         tima = 3f;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Manager.Instance.Mixing == true || Manager.Instance.discarding == true)
+        if (Manager.Instance.Adding == true || Manager.Instance.Mixing == true || Manager.Instance.Discarding == true)
         {
+            if (Manager.Instance.Adding == true) // Update ingredients list when adding
+            {
+                string temp = "";
+                foreach (string str in Manager.Instance.combo)
+                {
+                    temp += str + " ";
+                }
+                dis_inge.text = temp;
+
+                Manager.Instance.Adding  = false;
+                return;
+            }
+            
             //bowl_anime.SetBool("shake", true);
             if (tima > 0f)
             {
@@ -30,31 +41,31 @@ public class Mix_inge : MonoBehaviour
             }
             else 
             {
-                if (Manager.Instance.Mixing == true)
+                
+                if ( Manager.Instance.Mixing == true) // Show ingredients list when matching
                 {
-                    string temp = "";
-                    foreach (string str in Manager.Instance.combo)
-                    {
-                        temp += str + " ";
-                    }
-                    dis_inge.text = temp;
+                // Not needed any more since list dynamically updates
+                //     string temp = "";
+                //     foreach (string str in Manager.Instance.combo)
+                //     {
+                //         temp += str + " ";
+                //     }
+                //     dis_inge.text = temp;
 
-                    //print_inge = true;
+                //     //print_inge = true;
 
                     Manager.Instance.Mixing = false;
                 }
 
-                if (Manager.Instance.discarding == true)
+                if (Manager.Instance.Discarding == true) // Empty ingredients list when discarding
                 {
                     Manager.Instance.Score -= 300;
-
-                    Manager.Instance.combo.Clear();
 
                     dis_inge.text = "";
 
                     Discard.Play();
 
-                    Manager.Instance.discarding = false;
+                    Manager.Instance.Discarding = false;
                 }
 
                 tima = 3f;

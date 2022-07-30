@@ -30,13 +30,13 @@ public class Anime : MonoBehaviour
     {
         if (Manager.Instance.Mixing == false)
         {
-            Manager.Instance.discarding = true;
+            Manager.Instance.Discarding = true;
         }
     }
 
     void ForwardClick()
     {
-        if (Manager.Instance.Mixing == false && Manager.Instance.discarding == false)
+        if (Manager.Instance.Mixing == false && Manager.Instance.Discarding == false)
         {
             Manager.Instance.forward = true;
         }
@@ -44,7 +44,7 @@ public class Anime : MonoBehaviour
 
     void BackClick()
     {
-        if (Manager.Instance.Mixing == false && Manager.Instance.discarding == false)
+        if (Manager.Instance.Mixing == false && Manager.Instance.Discarding == false)
         {
             Manager.Instance.back = true;
         }
@@ -67,7 +67,7 @@ public class Anime : MonoBehaviour
             bowl_anime.SetBool("shake", false);
         }
 
-        if (Manager.Instance.discarding == true)
+        if (Manager.Instance.Discarding == true)
         {
             bowl_anime.SetBool("discard", true);
         }

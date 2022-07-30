@@ -45,9 +45,10 @@ public class Add_inge : MonoBehaviour
         Mix.GetComponents<AudioSource>();
         
     }
+
     void Update()
     {
-        if (Manager.Instance.Mixing == false && Manager.Instance.discarding == false)
+        if (Manager.Instance.Mixing == false && Manager.Instance.Discarding == false)
         {
             camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -110,10 +111,15 @@ public class Add_inge : MonoBehaviour
                 }
             }
         }
+        else if (Manager.Instance.Discarding == true)
+        {
+            ClearIngredients();
+        }
     }
 
     public void AddIngredient(string inge)
     {
+        Manager.Instance.Adding = true;
         combo.Add(inge);
         // Manager.Instance.combo.Add(inge);
         if (ingeIndex < currentRecipe.Count)
@@ -139,6 +145,13 @@ public class Add_inge : MonoBehaviour
 
         ingeIndex++;
         
+    }
+
+    public void ClearIngredients()
+    {
+        Manager.Instance.combo.Clear();
+        Debug.Log(combo.Count);
+        ingeIndex = 0;
     }
 
     // TODO clear bowl method

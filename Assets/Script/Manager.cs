@@ -10,9 +10,13 @@ public class Manager
 
     public int Score;
 
+    // public Game_state State; // TODO make game state (add, mix, discard) into int/enum may be more effective
+
+    public bool Adding;
+
     public bool Mixing;
 
-    public bool discarding;
+    public bool Discarding;
 
     //public Vector3 bowlpos;
 
