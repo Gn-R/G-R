@@ -34,6 +34,7 @@ public class LerpRail : MonoBehaviour
             }
             else
             {
+                Manager.Instance.forward = false;
                 return;
             }
 
@@ -64,6 +65,7 @@ public class LerpRail : MonoBehaviour
             }
             else
             {
+                Manager.Instance.back = false;
                 return;
             }
 
@@ -100,6 +102,7 @@ public class LerpRail : MonoBehaviour
     {
         if (currPoint < 0 || currPoint >= points.Length)
         {
+            travel = null;
             yield break;
         }
 
@@ -181,6 +184,7 @@ public class LerpRail : MonoBehaviour
         else
         {
             travel = null;
+            yield break;
         }
     }
 
