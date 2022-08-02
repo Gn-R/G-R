@@ -6,8 +6,10 @@ public class LerpRail : MonoBehaviour
 {
     //Name normal points as Point 1, Point 2, etc. and in-between points as Point 1.5, Point 0.5, etc.
     public Transform[] points;
-    //Speed of all movement including rotation
-    public float speedModifier = 0.5f;
+    //Speed of movement 
+    public float moveSpeedModifier = 0.5f;
+    //Speed of camera
+    public float camSpeedModifier = 0.5f;
     //Which index the player is on
     public int currPoint = 0;
     //If the player can continue inputting operations
@@ -21,7 +23,7 @@ public class LerpRail : MonoBehaviour
     private Coroutine rotation = null;
     private Coroutine camMove = null;
     private Coroutine keyDelay = null;
-
+    private Coroutine returnCo = null;
     private void Update()
     {
         //If right arrow pressed and there's been sufficient time and can move, travel to next point
@@ -150,9 +152,9 @@ public class LerpRail : MonoBehaviour
                 canMove = true;
             }
 
-            tParam += Time.deltaTime * speedModifier;
+            tParam += Time.deltaTime * moveSpeedModifier;
             
-            transform.position = Vector3.SmoothDamp(transform.position, point.position, ref vel, speedModifier);
+            transform.position = Vector3.SmoothDamp(transform.position, point.position, ref vel, moveSpeedModifier);
 
             //FixedUpdate standardizes speed across framerates
             yield return new WaitForFixedUpdate();
@@ -194,7 +196,7 @@ public class LerpRail : MonoBehaviour
         rot = Quaternion.Euler(mainCam.transform.rotation.eulerAngles.x, rot.eulerAngles.y, mainCam.transform.rotation.eulerAngles.z);
         while (Quaternion.Angle(mainCam.transform.rotation, rot) > 0.01)
         {
-            mainCam.transform.rotation = Quaternion.Lerp(mainCam.transform.rotation, rot, Time.deltaTime * speedModifier * 5f);
+            mainCam.transform.rotation = Quaternion.Lerp(mainCam.transform.rotation, rot, Time.deltaTime * 1/camSpeedModifier * 1.5f);
 
             yield return new WaitForFixedUpdate();
         }
@@ -211,14 +213,53 @@ public class LerpRail : MonoBehaviour
         Vector3 vel = Vector3.zero;
         while (Vector3.Distance(mainCam.transform.localPosition, pos) > 0.025f)
         {
-            tParam += Time.deltaTime * speedModifier;
+            tParam += Time.deltaTime * camSpeedModifier;
 
-            mainCam.transform.localPosition = Vector3.SmoothDamp(mainCam.transform.localPosition, pos, ref vel, speedModifier);
+            mainCam.transform.localPosition = Vector3.SmoothDamp(mainCam.transform.localPosition, pos, ref vel, camSpeedModifier);
 
             yield return new WaitForFixedUpdate();
         }
 
         mainCam.transform.localPosition = pos;
         camMove = null;
+    }
+
+    public void returnToStart()
+    {
+        if (returnCo != null)
+        {
+            StopCoroutine(returnCo);
+        }
+        returnCo = StartCoroutine(Return());
+    }
+
+    private IEnumerator Return()
+    {
+
+        while (currPoint != 1)
+        {
+            if (currPoint > 1 && canMove)
+            {
+                currPoint--;
+                if (travel != null)
+                {
+                    StopCoroutine(travel);
+                }
+                travel = StartCoroutine(Travel(false));
+            }
+            else if (canMove)
+            {
+                currPoint++;
+                if (travel != null)
+                {
+                    StopCoroutine(travel);
+                }
+                travel = StartCoroutine(Travel(true));
+            }
+
+            yield return new WaitForSeconds(0.1f);
+        }
+
+        returnCo = null;
     }
 }
