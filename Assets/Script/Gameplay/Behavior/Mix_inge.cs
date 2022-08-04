@@ -10,6 +10,8 @@ public class Mix_inge : MonoBehaviour
     public AudioSource Discard;
     float tima;
 
+    public GameObject manager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,10 +37,12 @@ public class Mix_inge : MonoBehaviour
                     string temp = "";
                     foreach (string str in Manager.Instance.combo)
                     {
-                        temp += str;
+                        temp += str + " ";
                     }
                     dis_inge.text = temp;
 
+                    manager.GetComponent<DishManager>().mixBowl(false);
+                    manager.GetComponent<LerpRail>().advanceStopPoint();
                     //print_inge = true;
 
                     Manager.Instance.Mixing = false;
@@ -53,6 +57,8 @@ public class Mix_inge : MonoBehaviour
                     dis_inge.text = "";
 
                     Discard.Play();
+
+                    manager.GetComponent<DishManager>().mixBowl(true);
 
                     Manager.Instance.discarding = false;
                 }

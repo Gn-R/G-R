@@ -6,6 +6,10 @@ public class LerpRail : MonoBehaviour
 {
     //Name normal points as Point 1, Point 2, etc. and in-between points as Point 1.5, Point 0.5, etc.
     public Transform[] points;
+    //The points the player can not progress past without mixing
+    public int[] stopPoints;
+    public int currStop = 0;
+
     //Speed of movement 
     public float moveSpeedModifier = 0.5f;
     //Speed of camera
@@ -27,7 +31,7 @@ public class LerpRail : MonoBehaviour
     private void Update()
     {
         //If right arrow pressed and there's been sufficient time and can move, travel to next point
-        if (canMove && keyDelay == null && Manager.Instance.forward == true)
+        if (canMove && keyDelay == null && Manager.Instance.forward == true && currPoint != stopPoints[currStop])
         {
             //Must be within index
             if (currPoint < points.Length - 1)
@@ -88,6 +92,11 @@ public class LerpRail : MonoBehaviour
             //Manages arrow input
             Manager.Instance.back = false;
         }
+    }
+
+    public void advanceStopPoint()
+    {
+        currStop++;
     }
 
 

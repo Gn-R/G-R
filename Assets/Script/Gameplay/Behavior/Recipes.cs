@@ -6,6 +6,21 @@ using UnityEngine;
 // In the future, load these from a text file and distinguish between ingredient types (base, dressing, etc.).
 public class Recipes
 {
+    public static List<string> getRandomBowl()
+    {
+        int dice = Random.Range(0, 3); 
+        switch (dice)
+        {
+            default:
+            case 0:
+                return balancedDiet;
+            case 1:
+                return planetEarth;
+            case 2:
+                return rainbow;
+        }
+    }
+
     // Roots recipes
     // "Roots Bowl"
     public static List<string> rootsBowl = new List<string>(new string[] {

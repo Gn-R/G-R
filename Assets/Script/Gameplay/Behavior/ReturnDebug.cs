@@ -16,7 +16,6 @@ public class ReturnDebug : MonoBehaviour
 
     void TaskOnClick()
     {
-        Debug.Log("click");
         mbp.GetComponent<LerpRail>().returnToStart();
     }
 }
