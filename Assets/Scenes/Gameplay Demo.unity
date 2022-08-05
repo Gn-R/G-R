@@ -15452,6 +15452,7 @@ MonoBehaviour:
   - {fileID: 7787613296260956288, guid: 33676d8116d28b041b530d8fb317d707, type: 3}
   Add: {fileID: 3469287837819128164}
   Mix: {fileID: 3469287837819128163}
+  manager: {fileID: 1656265653}
   ingredientParent: {fileID: 1189758394}
 --- !u!54 &3469287837819128150
 Rigidbody:
