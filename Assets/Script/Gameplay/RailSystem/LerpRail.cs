@@ -10,6 +10,10 @@ public class LerpRail : MonoBehaviour
     public int[] stopPoints;
     public int currStop = 0;
 
+    //Shows the arrows are blocked when they can not advance
+    public GameObject rightBlockedUI;
+    public GameObject leftBlockedUI;
+
     //Speed of movement 
     public float moveSpeedModifier = 0.5f;
     //Speed of camera
@@ -92,11 +96,25 @@ public class LerpRail : MonoBehaviour
             //Manages arrow input
             Manager.Instance.back = false;
         }
+
+        Manager.Instance.forward = false;
+        Manager.Instance.back = false;
     }
 
     public void advanceStopPoint()
     {
-        currStop++;
+        if (currStop < stopPoints.Length - 1) {
+            currStop++;
+        }
+
+        if (stopPoints[currStop] == currPoint)
+        {
+            rightBlockedUI.SetActive(true);
+        }
+        else
+        {
+            rightBlockedUI.SetActive(false);
+        }
     }
 
 
@@ -115,6 +133,24 @@ public class LerpRail : MonoBehaviour
         {
             travel = null;
             yield break;
+        }
+
+        if (stopPoints[currStop] == currPoint)
+        {
+            rightBlockedUI.SetActive(true);
+        }
+        else
+        {
+            rightBlockedUI.SetActive(false);
+        }
+
+        if (currPoint == 0)
+        {
+            leftBlockedUI.SetActive(true);
+        } 
+        else
+        {
+            leftBlockedUI.SetActive(false);
         }
 
         Transform point = points[currPoint];
@@ -240,6 +276,7 @@ public class LerpRail : MonoBehaviour
             StopCoroutine(returnCo);
         }
         returnCo = StartCoroutine(Return());
+        currStop = 0;
     }
 
     private IEnumerator Return()

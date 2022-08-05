@@ -22,6 +22,8 @@ public class Add_inge : MonoBehaviour
     public AudioSource Add;
     public AudioSource Mix;
 
+    public GameObject manager;
+
     public Transform ingredientParent;
 
     private void Start()
@@ -100,7 +102,18 @@ public class Add_inge : MonoBehaviour
                         if(Manager.Instance.Mixing == false)
                         {
                             Instantiate(pointtype[1], pointpos[3].transform.position, Quaternion.Euler(0, 0, 45), UI.transform);
-                            Manager.Instance.Score += 100;
+                            //Manager.Instance.Score += 100;
+                            manager.GetComponent<DishManager>().mixBowl(false);
+                            manager.GetComponent<LerpRail>().advanceStopPoint();
+
+                            if (manager.GetComponent<DishManager>().checkMix(Manager.Instance.combo))
+                            {
+                                Manager.Instance.Score += 100;
+                            }
+                            else
+                            {
+                                Manager.Instance.Score -= 100;
+                            }
                         }
                         Manager.Instance.Mixing = true;
                         Mix.Play();

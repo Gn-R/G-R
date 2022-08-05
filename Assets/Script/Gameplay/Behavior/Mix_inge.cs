@@ -41,8 +41,6 @@ public class Mix_inge : MonoBehaviour
                     }
                     dis_inge.text = temp;
 
-                    manager.GetComponent<DishManager>().mixBowl(false);
-                    manager.GetComponent<LerpRail>().advanceStopPoint();
                     //print_inge = true;
 
                     Manager.Instance.Mixing = false;

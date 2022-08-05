@@ -36,5 +36,7 @@ public class ServeDebug : MonoBehaviour
         {
             Destroy(obj.gameObject);
         }
+
+        manager.GetComponent<LerpRail>().returnToStart();
     }
 }
