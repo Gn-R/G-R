@@ -12,6 +12,7 @@ public class DishManager : MonoBehaviour
 
     public GameObject Recipe_hint;
     public TextMeshProUGUI orderText;
+    public GameObject orderTimerManager;
 
     public int mixes = 0;
 
@@ -30,6 +31,7 @@ public class DishManager : MonoBehaviour
     //Randomizes a new recipe for another order
     public void getNewRecipe()
     {
+        orderTimerManager.GetComponent<OrderTimerDebug>().startOrderTimer();
         currDish = Recipes.getRandomDish();
         currRecipe = new List<string>(Recipes.getRecipe(currDish));
         mixes = 0;
