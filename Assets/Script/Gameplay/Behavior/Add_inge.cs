@@ -80,7 +80,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[0], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos[0].transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Green");
                         Add.Play();
@@ -93,7 +93,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[1], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos[1].transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red");
                         Add.Play();
@@ -105,7 +105,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[2], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos[2].transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Blue");
                         Add.Play();
@@ -435,7 +435,7 @@ public class Add_inge : MonoBehaviour
                     {
                         if (Manager.Instance.Mixing == false)
                         {
-                            Instantiate(pointtype[1], pointpos[3].transform.position, Quaternion.Euler(0, 0, 45), UI.transform);
+                            Instantiate(pointtype[1], pointpos.transform.position, Quaternion.Euler(0, 0, 45), UI.transform);
                             //Manager.Instance.Score += 100;
                             manager.GetComponent<DishManager>().mixBowl(false);
                             manager.GetComponent<LerpRail>().advanceStopPoint();
