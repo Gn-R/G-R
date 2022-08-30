@@ -70,4 +70,9 @@ public class OrderTimerDebug : MonoBehaviour
 
         runTimer = StartCoroutine(RunTimer());
     }
+
+    public float getPercentage()
+    {
+        return timer / totalTime;
+    }
 }

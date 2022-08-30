@@ -12,6 +12,7 @@ public class LerpRail : MonoBehaviour
 
     //Shows the arrows are blocked when they can not advance
     public GameObject rightBlockedUI;
+    public GameObject rightMixFirstUI;
     public GameObject leftBlockedUI;
 
     //Speed of movement 
@@ -32,6 +33,9 @@ public class LerpRail : MonoBehaviour
     private Coroutine camMove = null;
     private Coroutine keyDelay = null;
     private Coroutine returnCo = null;
+
+    public GameObject manager;
+
     private void Update()
     {
         //If right arrow pressed and there's been sufficient time and can move, travel to next point
@@ -103,12 +107,17 @@ public class LerpRail : MonoBehaviour
 
     public void advanceStopPoint()
     {
-        if (currStop < stopPoints.Length - 1) {
+        if (currStop < stopPoints.Length - 1)
+        {
             currStop++;
         }
 
-        if (stopPoints[currStop] == currPoint)
+        rightMixFirstUI.SetActive(false);
+
+        if (stopPoints[currStop] == currPoint && currPoint < points.Length)
         {
+            if (manager.GetComponent<DishManager>().mixes < 3)
+                rightMixFirstUI.SetActive(true);
             rightBlockedUI.SetActive(true);
         }
         else
@@ -135,12 +144,15 @@ public class LerpRail : MonoBehaviour
             yield break;
         }
 
-        if (stopPoints[currStop] == currPoint)
+        if (stopPoints[currStop] == currPoint && currPoint < points.Length)
         {
+            if (manager.GetComponent<DishManager>().mixes < 3) 
+                rightMixFirstUI.SetActive(true);
             rightBlockedUI.SetActive(true);
         }
         else
         {
+            rightMixFirstUI.SetActive(false);
             rightBlockedUI.SetActive(false);
         }
 

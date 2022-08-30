@@ -89,6 +89,11 @@ public class DishManager : MonoBehaviour
         }
     }
 
+    public float getTimerPercentage()
+    {
+        return orderTimerManager.GetComponent<OrderTimerDebug>().getPercentage();
+    }
+
     //Checks if the ingredients in it are valid so far and gives points (if empty, remove points)
     public bool checkMix(List<string> combo)
     {
