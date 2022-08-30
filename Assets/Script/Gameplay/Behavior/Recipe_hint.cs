@@ -12,17 +12,25 @@ public class Recipe_hint : MonoBehaviour
     private string hint_text;
     private bool show_hint;
 
+    public GameObject manager;
+
     void Start()
     {
         show_hint = false;
-        recipe = Recipes.balancedDiet; // todo get current recipe from Manager
+        setRecipe(manager.GetComponent<DishManager>().currRecipe);
+        // TODO Can't find the method to set text invisible. In the future just make text box invisible from beginning
+    }
+
+    public void setRecipe(List<string> newRecipe)
+    {
+        recipe = newRecipe;
+
         recipe_hint.text = "";
         hint_text = "";
         foreach (string str in recipe)
         {
             hint_text += str + " ";
         }
-        // TODO Can't find the method to set text invisible. In the future just make text box invisible from beginning
     }
 
     public void Toggle()

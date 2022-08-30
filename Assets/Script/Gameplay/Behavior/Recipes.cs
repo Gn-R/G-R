@@ -6,6 +6,50 @@ using UnityEngine;
 // In the future, load these from a text file and distinguish between ingredient types (base, dressing, etc.).
 public class Recipes
 {
+    public static string getRandomDish()
+    {
+        int dice = Random.Range(0, 3); 
+        switch (dice)
+        {
+            default:
+            case 0:
+                return "Balanced Diet";
+            case 1:
+                return "Planet Earth";
+            case 2:
+                return "Rainbow";
+        }
+    }
+
+    public static List<string> getRecipe(string dish)
+    {
+        List<string> recipe;
+        switch (dish)
+        {
+            default:
+            case "Roots Bowl":
+                recipe = new List<string>(rootsBowl);
+                break;
+            case "El Jefe":
+                recipe = new List<string>(elJefe);
+                break;
+            case "Corner Cobb":
+                recipe = new List<string>(cornerCobb);
+                break;
+            case "Balanced Diet":
+                recipe = new List<string>(balancedDiet);
+                break;
+            case "Planet Earth":
+                recipe = new List<string>(planetEarth);
+                break;
+            case "Rainbow":
+                recipe = new List<string>(rainbow);
+                break;
+        }
+
+        return recipe;
+    }
+
     // Roots recipes
     // "Roots Bowl"
     public static List<string> rootsBowl = new List<string>(new string[] {

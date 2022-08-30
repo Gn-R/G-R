@@ -23,6 +23,10 @@ public class Add_inge : MonoBehaviour
     public AudioSource Add;
     public AudioSource Mix;
 
+    public GameObject manager;
+
+    public Transform ingredientParent;
+
     private void Start()
     {
         bowlPos = transform.position;
@@ -75,10 +79,10 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[0], bowlPos + randomPosition, Quaternion.Euler(0, 0, 0));
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(inge[0], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
+                        Instantiate(pointtype[0], pointpos[0].transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Green ");
+                        Manager.Instance.combo.Add("Green");
                         Add.Play();
                     }
 
@@ -88,10 +92,10 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[1], bowlPos + offset, Quaternion.Euler(0, 0, 0));
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(inge[1], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
+                        Instantiate(pointtype[0], pointpos[1].transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Red");
                         Add.Play();
                     }
                 }
@@ -100,10 +104,10 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[2], bowlPos + offset, Quaternion.Euler(0, 0, 0));
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(inge[2], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
+                        Instantiate(pointtype[0], pointpos[2].transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Blue");
                         Add.Play();
                     }
                 }
@@ -431,8 +435,19 @@ public class Add_inge : MonoBehaviour
                     {
                         if (Manager.Instance.Mixing == false)
                         {
-                            Instantiate(pointtype[1], pointpos.transform.position, Quaternion.Euler(0, 0, 45), UI.transform);
-                            Manager.Instance.Score += 100;
+                            Instantiate(pointtype[1], pointpos[3].transform.position, Quaternion.Euler(0, 0, 45), UI.transform);
+                            //Manager.Instance.Score += 100;
+                            manager.GetComponent<DishManager>().mixBowl(false);
+                            manager.GetComponent<LerpRail>().advanceStopPoint();
+
+                            if (manager.GetComponent<DishManager>().checkMix(Manager.Instance.combo))
+                            {
+                                Manager.Instance.Score += 100;
+                            }
+                            else
+                            {
+                                Manager.Instance.Score -= 100;
+                            }
                         }
                         Manager.Instance.Mixing = true;
                         Mix.Play();
