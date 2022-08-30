@@ -116,7 +116,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[3], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[3], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -128,7 +128,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[4], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[4], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -140,7 +140,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[5], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[5], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -152,7 +152,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[6], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[6], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -164,7 +164,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[7], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[7], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -176,7 +176,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[8], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[8], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -188,7 +188,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[9], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[9], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -200,7 +200,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[10], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[10], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -212,7 +212,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[11], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[11], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -224,7 +224,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[12], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[12], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -236,7 +236,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[13], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[13], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -248,7 +248,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[14], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[14], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -260,7 +260,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[15], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[15], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -272,7 +272,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[16], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[16], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -284,7 +284,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[17], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[17], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -296,7 +296,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[18], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[18], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -308,7 +308,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[19], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[19], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -320,7 +320,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[20], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[20], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -332,7 +332,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[21], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[21], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -344,7 +344,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[22], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[22], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -356,7 +356,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[23], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[23], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -368,7 +368,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[24], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[24], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -380,7 +380,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[25], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[25], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -392,7 +392,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[26], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[26], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
@@ -404,7 +404,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[27], bowlPos + offset, Quaternion.Euler(0, 0, 0));
+                        Instantiate(inge[27], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
