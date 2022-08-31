@@ -24,6 +24,7 @@ public class Add_inge : MonoBehaviour
     public AudioSource Mix;
 
     public GameObject manager;
+    public GameObject rails;
 
     public Transform ingredientParent;
 
@@ -74,13 +75,14 @@ public class Add_inge : MonoBehaviour
 
             if (Physics.Raycast(camRay, out hitInfo, float.MaxValue))
             {
+                Transform railPoint = rails.GetComponent<LerpRail>().points[rails.GetComponent<LerpRail>().currPoint].GetChild(1);
                 if (hitInfo.transform.name == "Brown")
                 {
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[0], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Green");
                         Add.Play();
@@ -93,7 +95,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[1], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red");
                         Add.Play();
@@ -105,7 +107,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[2], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Blue");
                         Add.Play();
@@ -117,7 +119,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[3], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -129,7 +131,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[4], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -141,7 +143,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[5], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -153,7 +155,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[6], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -165,7 +167,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[7], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -177,7 +179,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[8], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -189,7 +191,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[9], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -201,7 +203,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[10], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -213,7 +215,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[11], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -225,7 +227,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[12], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -237,7 +239,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[13], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -249,7 +251,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[14], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -261,7 +263,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[15], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -273,7 +275,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[16], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -285,7 +287,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[17], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -297,7 +299,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[18], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -309,7 +311,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[19], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -321,7 +323,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[20], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -333,7 +335,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[21], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -345,7 +347,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[22], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -357,7 +359,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[23], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -369,7 +371,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[24], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -381,7 +383,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[25], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -393,7 +395,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[26], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -405,7 +407,7 @@ public class Add_inge : MonoBehaviour
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[27], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red ");
                         Add.Play();
@@ -435,7 +437,7 @@ public class Add_inge : MonoBehaviour
                     {
                         if (Manager.Instance.Mixing == false)
                         {
-                            Instantiate(pointtype[1], pointpos.transform.position, Quaternion.Euler(0, 0, 45), UI.transform);
+                            Instantiate(pointtype[1], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                             //Manager.Instance.Score += 100;
                             manager.GetComponent<DishManager>().mixBowl(false);
                             manager.GetComponent<LerpRail>().advanceStopPoint();
