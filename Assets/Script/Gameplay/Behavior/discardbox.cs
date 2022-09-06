@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class discardbox : MonoBehaviour
+public class DiscardBox : MonoBehaviour
 {
     private void OnTriggerExit(Collider other)
     {

@@ -21,17 +21,20 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer -= Time.deltaTime;
-        Manager.Instance.GameTime = timer;
+        if (!Manager.Instance.paused)
+        {
+            timer -= Time.deltaTime;
+            Manager.Instance.GameTime = timer;
 
-        //if (timer <= 0)
-        //{
-        //    Manager.Instance.GameTime = timer;
-        //    SceneManager.LoadScene(2);
-        //}
+            //if (timer <= 0)
+            //{
+            //    Manager.Instance.GameTime = timer;
+            //    SceneManager.LoadScene(2);
+            //}
 
-        final = Mathf.CeilToInt(Manager.Instance.GameTime);
+            final = Mathf.CeilToInt(Manager.Instance.GameTime);
 
-        Number.text = "Time: " + final;
+            Number.text = "Time: " + final;
+        }
     }
 }

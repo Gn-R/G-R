@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Mix_inge : MonoBehaviour
+public class MixIngredients : MonoBehaviour
 {
     //bool print_inge;
     TextMeshProUGUI dis_inge;
     public AudioSource Discard;
     float tima;
 
-    public GameObject manager;
+    private GameObject manager; // doesn't seem to be used
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +22,8 @@ public class Mix_inge : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if (Manager.Instance.Mixing == true || Manager.Instance.discarding == true)
+    {        
+        if (Manager.Instance.paused == false && (Manager.Instance.Mixing == true || Manager.Instance.discarding == true))
         {
             //bowl_anime.SetBool("shake", true);
             if (tima > 0f)

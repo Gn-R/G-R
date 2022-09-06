@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Add_inge : MonoBehaviour
+public class AddIngredient : MonoBehaviour
 {
 
     Ray camRay;
@@ -46,7 +46,8 @@ public class Add_inge : MonoBehaviour
     void Update()
     {
         bowlPos = transform.position;
-        if (Manager.Instance.Mixing == false && Manager.Instance.discarding == false)
+        
+        if (Manager.Instance.paused == false && Manager.Instance.Mixing == false && Manager.Instance.discarding == false)
         {
             camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -411,23 +412,6 @@ public class Add_inge : MonoBehaviour
                         Add.Play();
                     }
                 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                 else if (hitInfo.transform.name == "MainBowl")
                 {
