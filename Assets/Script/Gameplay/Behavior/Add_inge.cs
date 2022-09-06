@@ -84,7 +84,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[0], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Green");
+                        Manager.Instance.combo.Add("Brown Rice");
                         Add.Play();
                     }
 
@@ -97,7 +97,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[1], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red");
+                        Manager.Instance.combo.Add("Roots Rice");
                         Add.Play();
                     }
                 }
@@ -109,7 +109,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[2], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Blue");
+                        Manager.Instance.combo.Add("Chickpeas");
                         Add.Play();
                     }
                 }
@@ -121,7 +121,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[3], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Broccoli");
                         Add.Play();
                     }
                 }
@@ -133,7 +133,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[4], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Cannelini Beans");
                         Add.Play();
                     }
                 }
@@ -145,7 +145,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[5], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Roasted Beets");
                         Add.Play();
                     }
                 }
@@ -157,7 +157,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[6], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Sweet Potatoes");
                         Add.Play();
                     }
                 }
@@ -169,7 +169,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[7], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Black Beans");
                         Add.Play();
                     }
                 }
@@ -181,7 +181,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[8], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Bulgur");
                         Add.Play();
                     }
                 }
@@ -193,7 +193,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[9], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Charred Corn");
                         Add.Play();
                     }
                 }
@@ -205,7 +205,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[10], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Cucumbers");
                         Add.Play();
                     }
                 }
@@ -217,7 +217,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[11], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Red Onions");
                         Add.Play();
                     }
                 }
@@ -229,7 +229,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[12], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Grape Tomatoes");
                         Add.Play();
                     }
                 }
@@ -241,7 +241,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[13], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Feta");
                         Add.Play();
                     }
                 }
@@ -253,7 +253,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[14], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Shaved Parmesan");
                         Add.Play();
                     }
                 }
@@ -265,7 +265,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[15], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Avocado");
                         Add.Play();
                     }
                 }
@@ -277,7 +277,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[16], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Pita Chips");
                         Add.Play();
                     }
                 }
@@ -289,7 +289,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[17], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Cilantro Lime");
                         Add.Play();
                     }
                 }
@@ -301,7 +301,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[18], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Hard Boiled Egg");
                         Add.Play();
                     }
                 }
@@ -313,7 +313,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[19], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Cheddar");
                         Add.Play();
                     }
                 }
@@ -325,7 +325,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[20], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Lime-Pickled Onions");
                         Add.Play();
                     }
                 }
@@ -337,7 +337,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[21], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Pickled Jalapenos");
                         Add.Play();
                     }
                 }
@@ -349,7 +349,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[22], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Red Cabbage");
                         Add.Play();
                     }
                 }
@@ -361,7 +361,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[23], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Goat Cheese");
                         Add.Play();
                     }
                 }
@@ -373,7 +373,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[24], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Pineapple");
                         Add.Play();
                     }
                 }
@@ -385,7 +385,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[25], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Carrots");
                         Add.Play();
                     }
                 }
@@ -397,7 +397,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[26], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Tofu");
                         Add.Play();
                     }
                 }
@@ -409,7 +409,7 @@ public class Add_inge : MonoBehaviour
                         Instantiate(inge[27], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
+                        Manager.Instance.combo.Add("Chicken");
                         Add.Play();
                     }
                 }
