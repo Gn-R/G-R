@@ -27,7 +27,7 @@ public class Anime : MonoBehaviour
 
     void OnButtonClick()
     {
-        if (Manager.Instance.paused == false && Manager.Instance.Mixing == false)
+        if (Manager.Instance.Mixing == false)
         {
             Manager.Instance.discarding = true;
         }
@@ -35,7 +35,7 @@ public class Anime : MonoBehaviour
 
     void ForwardClick()
     {
-        if (Manager.Instance.paused == false && Manager.Instance.Mixing == false && Manager.Instance.discarding == false)
+        if (Manager.Instance.Mixing == false && Manager.Instance.discarding == false)
         {
             Manager.Instance.forward = true;
         }
@@ -43,7 +43,7 @@ public class Anime : MonoBehaviour
 
     void BackClick()
     {
-        if (Manager.Instance.paused == false && Manager.Instance.Mixing == false && Manager.Instance.discarding == false)
+        if (Manager.Instance.Mixing == false && Manager.Instance.discarding == false)
         {
             Manager.Instance.back = true;
         }

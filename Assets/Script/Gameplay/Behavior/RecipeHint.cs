@@ -34,9 +34,7 @@ public class RecipeHint : MonoBehaviour
     }
 
     public void Toggle()
-    {
-        if (Manager.Instance.paused) return;
-        
+    {        
         show_hint = !show_hint;
         if (show_hint)
         {

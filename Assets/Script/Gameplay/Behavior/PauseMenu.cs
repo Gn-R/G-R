@@ -9,8 +9,10 @@ using TMPro;
 public class PauseMenu : MonoBehaviour
 {
     private Manager manager;
-    [SerializeField] TextMeshProUGUI pauseButton;
-    [SerializeField] GameObject pauseDialog;
+    private bool muted;
+
+    [SerializeField] TextMeshProUGUI pauseText, muteText;
+    [SerializeField] GameObject pauseDialog, pausePanel, muteButton;
     
     void Start()
     {
@@ -25,17 +27,40 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    public void TogglePaused() {
+    public void TogglePaused()
+    {
         manager.paused = !manager.paused;
         if (manager.paused)
         {
-            pauseButton.text = "Unpause";
-            pauseDialog.SetActive(true);
+            pauseText.text = "Unpause";
+            ShowPauseMenu(true);
         }
         else
         {
-            pauseButton.text = "Pause";
-            pauseDialog.SetActive(false);
+            pauseText.text = "Pause";
+            ShowPauseMenu(false);
+        }
+    }
+
+    private void ShowPauseMenu(bool active)
+    {
+        pauseDialog.SetActive(active);
+        pausePanel.SetActive(active);
+        muteButton.SetActive(active);
+    }
+
+    public void ToggleMuted()
+    {
+        muted = !muted;
+        if (muted)
+        {
+            muteText.text = "Unmute";
+            AudioListener.volume = 0f;
+        }
+        else
+        {
+            muteText.text = "Mute";
+            AudioListener.volume = 1f;
         }
     }
 }

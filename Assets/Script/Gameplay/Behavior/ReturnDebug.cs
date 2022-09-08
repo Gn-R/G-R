@@ -16,8 +16,6 @@ public class ReturnDebug : MonoBehaviour
 
     void TaskOnClick()
     {
-        if (Manager.Instance.paused) return;
-        
         mbp.GetComponent<LerpRail>().returnToStart();
     }
 }

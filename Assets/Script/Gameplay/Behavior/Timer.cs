@@ -21,7 +21,7 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!Manager.Instance.paused)
+        if (!Manager.Instance.paused) // Disable timer if paused
         {
             timer -= Time.deltaTime;
             Manager.Instance.GameTime = timer;
