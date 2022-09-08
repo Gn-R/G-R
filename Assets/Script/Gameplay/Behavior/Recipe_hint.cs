@@ -29,7 +29,7 @@ public class Recipe_hint : MonoBehaviour
         hint_text = "";
         foreach (string str in recipe)
         {
-            hint_text += str + " ";
+            hint_text += str + ", ";
         }
     }
 

@@ -37,8 +37,13 @@ public class Mix_inge : MonoBehaviour
                     string temp = "";
                     foreach (string str in Manager.Instance.combo)
                     {
-                        temp += str + " ";
+                        temp += str + ", ";
                     }
+
+                    //Remove the last ", "
+                    if (temp.Length > 0)
+                        temp = temp.Substring(0, temp.Length - 2);
+
                     dis_inge.text = temp;
 
                     //print_inge = true;

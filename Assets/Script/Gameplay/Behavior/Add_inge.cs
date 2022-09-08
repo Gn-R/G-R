@@ -321,7 +321,7 @@ public class Add_inge : MonoBehaviour
                 {
                     if (Input.GetMouseButtonDown(0))
                     {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
+                        //Instantiate(Prefab, Spawnpoint.position+-, Spawnpoint.rotation, YourParent.transform)
                         Instantiate(inge[20], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
