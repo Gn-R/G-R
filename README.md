@@ -3,5 +3,5 @@
 <sup>Current Stable Version:  
 <sub>V0.98 Beta
 -
-**Our Slogan:**  
+**Our Motto:**  
 *"Technology, Hospitality and Entertainment."*
