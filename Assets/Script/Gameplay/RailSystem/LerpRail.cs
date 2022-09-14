@@ -114,6 +114,7 @@ public class LerpRail : MonoBehaviour
 
         rightMixFirstUI.SetActive(false);
 
+
         if (stopPoints.Length > 0 && stopPoints[currStop] == currPoint && currPoint < points.Length)
         {
             if (manager.GetComponent<DishManager>().mixes < 3)
@@ -148,6 +149,10 @@ public class LerpRail : MonoBehaviour
         {
             if (manager.GetComponent<DishManager>().mixes < 3) 
                 rightMixFirstUI.SetActive(true);
+            rightBlockedUI.SetActive(true);
+        }
+        else if (currPoint >= points.Length - 1)
+        {
             rightBlockedUI.SetActive(true);
         }
         else
