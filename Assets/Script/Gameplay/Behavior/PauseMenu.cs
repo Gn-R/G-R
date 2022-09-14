@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-// Plays a tutorial
-// TODO make it more interactive and "pop out" more
-// i.e. point to buttons to click
+// Pauses the game, stopping updates and blocking button presses
+// ISSUE: bowl and ingredients are still pressable while paused
 public class PauseMenu : MonoBehaviour
 {
     private Manager manager;

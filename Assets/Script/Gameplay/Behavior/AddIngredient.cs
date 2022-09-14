@@ -47,376 +47,191 @@ public class AddIngredient : MonoBehaviour
     {
         bowlPos = transform.position;
         
-        if (Manager.Instance.paused == false && Manager.Instance.Mixing == false && Manager.Instance.discarding == false)
+        if (!Manager.Instance.paused && !Manager.Instance.Mixing && !Manager.Instance.discarding)
         {
             camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
             Debug.DrawRay(camRay.origin, camRay.direction * 100, Color.red);
 
             x = Input.mousePosition.x;
-
             y = Input.mousePosition.y;
-
             z = Input.mousePosition.z;
 
             direction = new Vector3(x, y, z);
 
-            //else if (hitInfo.transform.name == "Well5" | hitInfo.transform.name == "ing3")
-            //{
-            //    if (Input.GetMouseButtonDown(0))
-            //    {
-            //        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-            //        Instantiate(inge[2], bowlPos + offset, Quaternion.Euler(0, 0, 0));
-            //        Instantiate(pointtype[0], pointpos[2].transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-            //        Manager.Instance.Score += 10;
-            //        Manager.Instance.combo.Add("Blue ");
-            //        Add.Play();
-            //    }
-
-            if (Physics.Raycast(camRay, out hitInfo, float.MaxValue))
+            if (Physics.Raycast(camRay, out hitInfo, float.MaxValue) && Input.GetMouseButtonDown(0))
             {
-                if (hitInfo.transform.name == "Brown")
+                // Debug.Log(hitInfo.transform.name);
+                
+                switch(hitInfo.transform.name)
                 {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[0], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Green");
-                        Add.Play();
-                    }
+                    // TODO use dictionary/set to look up ingredient names
+                    case "Brown":
+                        InstantiateIngredient();
+                        AddToCombo("Green", 10);
+                        break;
 
-                }
-                else if (hitInfo.transform.name == "Roots")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[1], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Chickp")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[2], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Blue");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Broccoli")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[3], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Cannellinib")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[4], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Beets")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[5], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Sweetp")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[6], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Blackb")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[7], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Bulgar")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[8], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Corn")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[9], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Cucumber")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[10], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Onion")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[11], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Tomatoes")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[12], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Feta")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[13], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Parmesan")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[14], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Avocado")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[15], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Chips")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[16], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Lime")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[17], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Egg")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[18], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Cheddar")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[19], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Pickled_o")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[20], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Jalapeno")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[21], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Red_Cab")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[22], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Goat")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[23], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Pine")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[24], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Carrots")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[25], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Tofu")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[26], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
-                else if (hitInfo.transform.name == "Chicken")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[27], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
-                        Manager.Instance.Score += 10;
-                        Manager.Instance.combo.Add("Red ");
-                        Add.Play();
-                    }
-                }
+                    case "Roots":
+                        InstantiateIngredient();
+                        AddToCombo("Red", 10);
+                        break;
 
-                else if (hitInfo.transform.name == "MainBowl")
-                {
-                    if (Input.GetMouseButtonDown(0))
-                    {
+                    case "Chickp":
+                        InstantiateIngredient();
+                        AddToCombo("Blue", 10);
+                        break;
+
+                    case "Broccoli":
+                        InstantiateIngredient();
+                        AddToCombo("Green", 10);
+                        break;
+
+                    case "Cannellinib":
+                        InstantiateIngredient();
+                        AddToCombo("Blue", 10);
+                        break;
+
+                    case "Beets":
+                        InstantiateIngredient();
+                        AddToCombo("Red", 10);
+                        break;
+                    
+                    case "Sweetp":
+                        InstantiateIngredient();
+                        AddToCombo("Red", 10);
+                        break;
+
+                    case "Blackb":
+                        InstantiateIngredient();
+                        AddToCombo("Red", 10);                        
+                        break;
+
+                    case "Corn":
+                        InstantiateIngredient();
+                        AddToCombo("Red", 10);
+                        break;
+
+                    case "Cucumber":
+                        InstantiateIngredient();
+                        AddToCombo("Green", 10);
+                        break;
+
+                    case "Onion":
+                        InstantiateIngredient();
+                        AddToCombo("Blue", 10);
+                        break;
+
+                    case "Tomatoes":
+                        InstantiateIngredient();
+                        AddToCombo("Red", 10);
+                        break;
+                    
+                    case "Feta":
+                        InstantiateIngredient();
+                        AddToCombo("Red", 10);
+                        break;
+                    
+                    case "Parmesan":
+                        InstantiateIngredient();
+                        AddToCombo("Red", 10);
+                        break;
+
+                    case "Avocado":
+                        InstantiateIngredient();
+                        AddToCombo("Green", 10);
+                        break;
+
+                    case "Chips":
+                        InstantiateIngredient();
+                        AddToCombo("Red", 10);
+                        break;
+
+                    case "Lime":
+                        InstantiateIngredient();
+                        AddToCombo("Green", 10);
+                        break;
+
+                    case "Egg":
+                        InstantiateIngredient();
+                        AddToCombo("R", 10);
+                        break;
+                    
+                    case "Cheddar":
+                        InstantiateIngredient();
+                        AddToCombo("Red", 10);
+                        break;
+
+                    case "Pickled_o":
+                        InstantiateIngredient();
+                        AddToCombo("Red", 10);
+                        break;
+
+                    case "Jalapeno":
+                        InstantiateIngredient();
+                        AddToCombo("Green", 10);
+                        break;
+
+                    case "Red_Cab":
+                        InstantiateIngredient();
+                        AddToCombo("Red", 10);
+                        break;
+
+                    case "Goat":
+                        InstantiateIngredient();
+                        AddToCombo("Red", 10);
+                        break;
+
+                    case "Pine":
+                        InstantiateIngredient();
+                        AddToCombo("Red", 10);
+                        break;
+                    
+                    case "Carrots":
+                        InstantiateIngredient();
+                        AddToCombo("Red", 10);
+                        break;
+
+                    case "Tofu":
+                        InstantiateIngredient();
+                        AddToCombo("Red", 10);
+                        break;
+
+                    case "Chicken":
+                        InstantiateIngredient();
+                        AddToCombo("Red", 10);
+                        break;
+
+                    case "B1":
+                        InstantiateIngredient();
+                        AddToCombo("Red", 10);
+                        break;
+
+                    case "B2":
+                        InstantiateIngredient();
+                        AddToCombo("Green", 10);
+                        break;
+
+                    case "B3":
+                        InstantiateIngredient();
+                        AddToCombo("Blue", 10);
+                        break;
+
+                    case "B4":
+                        InstantiateIngredient();
+                        AddToCombo("Blue", 10);
+                        break;
+
+                    case "B5":
+                        InstantiateIngredient();
+                        AddToCombo("Blue", 10);
+                        break;
+
+                    case "B6":
+                        InstantiateIngredient();
+                        AddToCombo("Blue", 10);
+                        break;
+
+                    case "MainBowl":
                         if (Manager.Instance.Mixing == false)
                         {
                             Instantiate(pointtype[1], pointpos.transform.position, Quaternion.Euler(0, 0, 45), UI.transform);
@@ -435,11 +250,28 @@ public class AddIngredient : MonoBehaviour
                         }
                         Manager.Instance.Mixing = true;
                         Mix.Play();
-                    }
+                        break;
 
+                    default:
+                        break;
                 }
+
             }
         }
+    }
+
+    private void InstantiateIngredient()
+    {
+        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
+        Instantiate(inge[0], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
+        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+    }
+
+    private void AddToCombo(string name, int points)
+    {
+        Manager.Instance.Score += points;
+        Manager.Instance.combo.Add(name);
+        Add.Play();
     }
 }
 
