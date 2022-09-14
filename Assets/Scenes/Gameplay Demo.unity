@@ -8456,7 +8456,7 @@ MonoBehaviour:
   - {fileID: 47419220}
   - {fileID: 1017458302}
   - {fileID: 1335925114}
-  stopPoints: 020000000500000007000000
+  stopPoints: 
   currStop: 0
   rightBlockedUI: {fileID: 5452994607972633250}
   rightMixFirstUI: {fileID: 5452994607360840093}
