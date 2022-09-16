@@ -255,7 +255,7 @@ public class LerpRail : MonoBehaviour
     //Rotates camera to rotation of the CamPos child
     private IEnumerator RotateCam(Quaternion rot)
     {
-        rot = Quaternion.Euler(mainCam.transform.rotation.eulerAngles.x, rot.eulerAngles.y, mainCam.transform.rotation.eulerAngles.z);
+        rot = Quaternion.Euler(rot.eulerAngles.x, rot.eulerAngles.y, rot.eulerAngles.z);
         while (Quaternion.Angle(mainCam.transform.rotation, rot) > 0.01)
         {
             mainCam.transform.rotation = Quaternion.Lerp(mainCam.transform.rotation, rot, Time.deltaTime * 1/camSpeedModifier * 1.5f);

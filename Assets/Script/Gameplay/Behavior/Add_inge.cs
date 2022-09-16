@@ -86,6 +86,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Brown Rice");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Brown Rice"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Brown Rice"));
+                        }
                     }
 
                 }
@@ -99,6 +104,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Roots Rice");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Roots Rice"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Roots Rice"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Chickp")
@@ -111,6 +121,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Chickpeas");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Chickp"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Chickp"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Broccoli")
@@ -123,6 +138,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Broccoli");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Broccoli"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Broccoli"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Cannellinib")
@@ -135,6 +155,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Cannelini Beans");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Cannelini Beans"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Cannelini Beans"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Beets")
@@ -147,6 +172,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Roasted Beets");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Roasted Beets"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Roasted Beets"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Sweetp")
@@ -159,6 +189,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Sweet Potatoes");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Sweeet Potatoes"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Sweet Potatoes"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Blackb")
@@ -171,6 +206,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Black Beans");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Black Beans"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Black Beans"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Bulgar")
@@ -183,6 +223,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Bulgur");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Bulgur"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Bulgur"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Corn")
@@ -195,6 +240,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Charred Corn");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Charred Corn"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Charred Corn"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Cucumber")
@@ -207,6 +257,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Cucumbers");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Cucumber"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Cucumber"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Onion")
@@ -219,6 +274,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red Onions");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Red Onions"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Red Onions"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Tomatoes")
@@ -231,6 +291,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Grape Tomatoes");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Grape Tomatoes"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Grape Tomatoes"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Feta")
@@ -243,6 +308,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Feta");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Feta"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Feta"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Parmesan")
@@ -255,6 +325,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Shaved Parmesan");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Parmesan"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Parmesan"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Avocado")
@@ -267,6 +342,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Avocado");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Avocado"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Avocado"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Chips")
@@ -279,6 +359,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Pita Chips");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Chips"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Chips"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Lime")
@@ -291,6 +376,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Cilantro Lime");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Cilantro Lime"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Cilantro Lime"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Egg")
@@ -303,6 +393,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Hard Boiled Egg");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Hard Boiled Egg"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Hard Boiled Egg"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Cheddar")
@@ -315,6 +410,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Cheddar");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Cheddar"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Cheddar"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Pickled_o")
@@ -327,6 +427,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Lime-Pickled Onions");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Lime-Pickled Onions"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Lime-Pickled Onions"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Jalapeno")
@@ -339,6 +444,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Pickled Jalapenos");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Pickled Jalapenos"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Pickled Jalapenos"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Red_Cab")
@@ -351,6 +461,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Red Cabbage");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Red Cabbage"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Red Cabbage"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Goat")
@@ -363,6 +478,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Goat Cheese");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Goat Cheese"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Goat Cheese"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Pine")
@@ -375,6 +495,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Pineapple");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Pineapple"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Pineapple"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Carrots")
@@ -387,6 +512,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Carrots");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Carrots"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Carrots"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Tofu")
@@ -399,6 +529,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Tofu");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Tofu"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Tofu"));
+                        }
                     }
                 }
                 else if (hitInfo.transform.name == "Chicken")
@@ -411,6 +546,11 @@ public class Add_inge : MonoBehaviour
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Chicken");
                         Add.Play();
+
+                        if (manager.GetComponent<DishManager>().requiresExtra("Chicken"))
+                        {
+                            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar("Chicken"));
+                        }
                     }
                 }
 

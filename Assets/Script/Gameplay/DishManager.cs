@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.Linq;
 using TMPro;
 
@@ -15,6 +16,13 @@ public class DishManager : MonoBehaviour
     public GameObject orderTimerManager;
 
     public int mixes = 0;
+
+    public Slider extraFoodSlider;
+
+
+    public Coroutine showItemCoroutine;
+    const int SLIDER_ANIM_SPEED = 2;
+    const float SLIDER_ANIM_SECONDS = 2;
 
     // Start is called before the first frame update
     void Awake()
@@ -68,6 +76,65 @@ public class DishManager : MonoBehaviour
         yield return new WaitForSeconds(10f);
         orderText.gameObject.SetActive(false);
     }
+
+    //Returns true if the item requires an extra amount (shows a bar)
+    public bool requiresExtra(string item)
+    {
+        int count = 0;
+        foreach (string s in currRecipe)
+        {
+            if (item.Equals(s))
+            {
+                count++;
+            }
+        }
+        Debug.Log(count);
+        if (count > 1)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    public IEnumerator setExtraBar(string item)
+    {
+        Debug.Log("yes");
+        int currCount = 0;
+        foreach (string s in Manager.Instance.combo)
+        {
+            if (item.Equals(s))
+            {
+                currCount++;
+            }
+        }
+
+        int recipeCount = 0;
+        foreach (string s in currRecipe)
+        {
+            if (item.Equals(s))
+            {
+                recipeCount++;
+            }
+        }
+
+        extraFoodSlider.gameObject.SetActive(true);
+
+        float startValue = (float)(currCount - 1) / recipeCount;
+        float endValue = (float)currCount / recipeCount;
+
+        float timeScale = 0;
+        while (timeScale < 1) {
+            timeScale += Time.deltaTime * SLIDER_ANIM_SPEED;
+            //timeScale /= SLIDER_ANIM_SECONDS;
+            //timeScale = timeScale * timeScale * (3f - 2f * timeScale);
+            extraFoodSlider.value = Mathf.Lerp(startValue, endValue, timeScale);
+            yield return new WaitForEndOfFrame();
+        }
+
+        yield return new WaitForSeconds(3);
+        extraFoodSlider.gameObject.SetActive(false);
+    }
+
 
     //Returns whether or not the dish was correct
     public bool checkDish(List<string> combo)
