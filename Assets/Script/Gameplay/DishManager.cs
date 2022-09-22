@@ -21,7 +21,7 @@ public class DishManager : MonoBehaviour
 
 
     public Coroutine showItemCoroutine;
-    const int SLIDER_ANIM_SPEED = 2;
+    const float SLIDER_ANIM_SPEED = 4;
     const float SLIDER_ANIM_SECONDS = 2;
 
     // Start is called before the first frame update
@@ -122,9 +122,12 @@ public class DishManager : MonoBehaviour
         float startValue = (float)(currCount - 1) / recipeCount;
         float endValue = (float)currCount / recipeCount;
 
+        float slider_speed = SLIDER_ANIM_SPEED;
+
         float timeScale = 0;
         while (timeScale < 1) {
-            timeScale += Time.deltaTime * SLIDER_ANIM_SPEED;
+            timeScale += Time.deltaTime * slider_speed;
+            slider_speed *= .98f;
             //timeScale /= SLIDER_ANIM_SECONDS;
             //timeScale = timeScale * timeScale * (3f - 2f * timeScale);
             extraFoodSlider.value = Mathf.Lerp(startValue, endValue, timeScale);
