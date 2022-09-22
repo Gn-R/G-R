@@ -56,7 +56,7 @@ public class MixIngredients : MonoBehaviour
 
                     Discard.Play();
 
-                    manager.GetComponent<DishManager>().mixBowl(true);
+                    // manager.GetComponent<DishManager>().mixBowl(true);
 
                     Manager.Instance.discarding = false;
                 }

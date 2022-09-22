@@ -10,6 +10,10 @@ public class DiscardBox : MonoBehaviour
         {
             
         }
+        else if (other.gameObject.name.Contains("SmallBowl"))
+        {
+
+        }
         else
         {
             Destroy(other.gameObject);
