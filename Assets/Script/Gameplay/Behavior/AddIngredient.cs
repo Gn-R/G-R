@@ -24,6 +24,8 @@ public class AddIngredient : MonoBehaviour
     public AudioSource Mix;
 
     public GameObject manager;
+    public GameObject rails;
+    private Transform railPoint; // make this global
 
     public Transform ingredientParent;
 
@@ -31,7 +33,7 @@ public class AddIngredient : MonoBehaviour
     {
         bowlPos = transform.position;
         offset = new Vector3(0, 1, 0);
-       // offsetmore = new Vector3(0, 2, 0);
+        // offsetmore = new Vector3(0, 2, 0);
         //offsetp = new Vector3(1, 0, 0);
         Manager.Instance.combo = new List<string>();
 
@@ -41,7 +43,6 @@ public class AddIngredient : MonoBehaviour
 
         Add.GetComponents<AudioSource>();
         Mix.GetComponents<AudioSource>();
-
     }
     void Update()
     {
@@ -61,180 +62,187 @@ public class AddIngredient : MonoBehaviour
 
             if (Physics.Raycast(camRay, out hitInfo, float.MaxValue) && Input.GetMouseButtonDown(0))
             {
-                // Debug.Log(hitInfo.transform.name);
+                railPoint = rails.GetComponent<LerpRail>().points[rails.GetComponent<LerpRail>().currPoint].GetChild(1);
                 
                 switch(hitInfo.transform.name)
                 {
-                    // TODO use dictionary/set to look up ingredient names
+                    // TODO use dictionary/set to look up ingredient names?
                     case "Brown":
-                        InstantiateIngredient();
-                        AddToCombo("Green", 10);
+                        InstantiateIngredient(0, true);
+                        AddToCombo("Brown Rice", 10);
                         break;
 
                     case "Roots":
-                        InstantiateIngredient();
-                        AddToCombo("Red", 10);
+                        InstantiateIngredient(1, true);
+                        AddToCombo("Roots Rice", 10);
                         break;
 
                     case "Chickp":
-                        InstantiateIngredient();
-                        AddToCombo("Blue", 10);
+                        InstantiateIngredient(2, false);
+                        AddToCombo("Chickpeas", 10);
                         break;
 
                     case "Broccoli":
-                        InstantiateIngredient();
-                        AddToCombo("Green", 10);
+                        InstantiateIngredient(3, false);
+                        AddToCombo("Broccoli", 10);
                         break;
 
                     case "Cannellinib":
-                        InstantiateIngredient();
-                        AddToCombo("Blue", 10);
+                        InstantiateIngredient(4, false);
+                        AddToCombo("Cannellini Beans", 10);
                         break;
 
                     case "Beets":
-                        InstantiateIngredient();
-                        AddToCombo("Red", 10);
+                        InstantiateIngredient(5, false);
+                        AddToCombo("Roasted Beets", 10);
                         break;
                     
                     case "Sweetp":
-                        InstantiateIngredient();
-                        AddToCombo("Red", 10);
+                        InstantiateIngredient(6, false);
+                        AddToCombo("Sweet Potatoes", 10);
                         break;
 
                     case "Blackb":
-                        InstantiateIngredient();
-                        AddToCombo("Red", 10);                        
+                        InstantiateIngredient(7, false);
+                        AddToCombo("Black Beans", 10);                        
+                        break;
+
+                    case "bulgar":
+                        InstantiateIngredient(8, false);
+                        AddToCombo("Bulgur", 10);
                         break;
 
                     case "Corn":
-                        InstantiateIngredient();
-                        AddToCombo("Red", 10);
+                        InstantiateIngredient(9, false);
+                        AddToCombo("Charred Corn", 10);
                         break;
 
                     case "Cucumber":
-                        InstantiateIngredient();
-                        AddToCombo("Green", 10);
+                        InstantiateIngredient(10, false);
+                        AddToCombo("Cucumber", 10);
                         break;
 
                     case "Onion":
-                        InstantiateIngredient();
-                        AddToCombo("Blue", 10);
+                        InstantiateIngredient(11, false);
+                        AddToCombo("Red Onions", 10);
                         break;
 
                     case "Tomatoes":
-                        InstantiateIngredient();
-                        AddToCombo("Red", 10);
+                        InstantiateIngredient(12, false);
+                        AddToCombo("Grape Tomatoes", 10);
                         break;
                     
                     case "Feta":
-                        InstantiateIngredient();
-                        AddToCombo("Red", 10);
+                        InstantiateIngredient(13 ,false);
+                        AddToCombo("Feta", 10);
                         break;
                     
                     case "Parmesan":
-                        InstantiateIngredient();
-                        AddToCombo("Red", 10);
+                        InstantiateIngredient(14, false);
+                        AddToCombo("Shaved Parmesan", 10);
                         break;
 
                     case "Avocado":
-                        InstantiateIngredient();
-                        AddToCombo("Green", 10);
+                        InstantiateIngredient(15 ,false);
+                        AddToCombo("Avocado", 10);
                         break;
 
                     case "Chips":
-                        InstantiateIngredient();
-                        AddToCombo("Red", 10);
+                        InstantiateIngredient(16, false);
+                        AddToCombo("Pita Chips", 10);
                         break;
 
                     case "Lime":
-                        InstantiateIngredient();
-                        AddToCombo("Green", 10);
+                        InstantiateIngredient(17, false);
+                        AddToCombo("Cilantro Lime", 10);
                         break;
 
                     case "Egg":
-                        InstantiateIngredient();
-                        AddToCombo("R", 10);
+                        InstantiateIngredient(18, false);
+                        AddToCombo("Hard Boiled Egg", 10);
                         break;
                     
                     case "Cheddar":
-                        InstantiateIngredient();
-                        AddToCombo("Red", 10);
+                        InstantiateIngredient(19, false);
+                        AddToCombo("Cheddar", 10);
                         break;
 
                     case "Pickled_o":
-                        InstantiateIngredient();
-                        AddToCombo("Red", 10);
+                        InstantiateIngredient(20, false);
+                        AddToCombo("Lime-Pickled Onions", 10);
                         break;
 
                     case "Jalapeno":
-                        InstantiateIngredient();
-                        AddToCombo("Green", 10);
+                        InstantiateIngredient(21, false);
+                        AddToCombo("Pickled Jalapenos", 10);
                         break;
 
                     case "Red_Cab":
-                        InstantiateIngredient();
-                        AddToCombo("Red", 10);
+                        InstantiateIngredient(22, false);
+                        AddToCombo("Red Cabbage", 10);
                         break;
 
                     case "Goat":
-                        InstantiateIngredient();
-                        AddToCombo("Red", 10);
+                        InstantiateIngredient(23, false);
+                        AddToCombo("Goat Cheese", 10);
                         break;
 
                     case "Pine":
-                        InstantiateIngredient();
-                        AddToCombo("Red", 10);
+                        InstantiateIngredient(24, false);
+                        AddToCombo("Pineapple", 10);
                         break;
                     
                     case "Carrots":
-                        InstantiateIngredient();
-                        AddToCombo("Red", 10);
+                        InstantiateIngredient(25, false);
+                        AddToCombo("Carrots", 10);
                         break;
 
                     case "Tofu":
-                        InstantiateIngredient();
-                        AddToCombo("Red", 10);
+                        InstantiateIngredient(26, false);
+                        AddToCombo("Tofu", 10);
                         break;
 
                     case "Chicken":
-                        InstantiateIngredient();
-                        AddToCombo("Red", 10);
+                        InstantiateIngredient(27, false);
+                        AddToCombo("Chicken", 10);
                         break;
 
+                    // TODO add names and indices for bottles
                     case "B1":
-                        InstantiateIngredient();
-                        AddToCombo("Red", 10);
+                        InstantiateIngredient(0, false);
+                        AddToCombo("B1", 10);
                         break;
 
                     case "B2":
-                        InstantiateIngredient();
-                        AddToCombo("Green", 10);
+                        InstantiateIngredient(0, false);
+                        AddToCombo("B2", 10);
                         break;
 
                     case "B3":
-                        InstantiateIngredient();
-                        AddToCombo("Blue", 10);
+                        InstantiateIngredient(0, false);
+                        AddToCombo("B3", 10);
                         break;
 
                     case "B4":
-                        InstantiateIngredient();
-                        AddToCombo("Blue", 10);
+                        InstantiateIngredient(0, false);
+                        AddToCombo("B4", 10);
                         break;
 
                     case "B5":
-                        InstantiateIngredient();
-                        AddToCombo("Blue", 10);
+                        InstantiateIngredient(0, false);
+                        AddToCombo("B5", 10);
                         break;
 
                     case "B6":
-                        InstantiateIngredient();
-                        AddToCombo("Blue", 10);
+                        InstantiateIngredient(0, false);
+                        AddToCombo("B6", 10);
                         break;
 
                     case "MainBowl":
                         if (Manager.Instance.Mixing == false)
                         {
-                            Instantiate(pointtype[1], pointpos.transform.position, Quaternion.Euler(0, 0, 45), UI.transform);
+                            // NEW added rail stuff to bowl
+                            Instantiate(pointtype[1], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                             //Manager.Instance.Score += 100;
                             manager.GetComponent<DishManager>().mixBowl(false);
                             manager.GetComponent<LerpRail>().advanceStopPoint();
@@ -251,28 +259,46 @@ public class AddIngredient : MonoBehaviour
                         Manager.Instance.Mixing = true;
                         Mix.Play();
                         break;
-
-                    default:
-                        break;
                 }
 
             }
         }
     }
 
-    private void InstantiateIngredient()
+    private void InstantiateIngredient(int index, bool randomize)
     {
         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-        Instantiate(inge[0], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-        Instantiate(pointtype[0], pointpos.transform.position, Quaternion.Euler(0, 0, 0), UI.transform);
+        if (randomize)
+        {
+            // NEW Added ingredient index and randomize position options
+            for (int i = 0; i < 5; i++)
+            {
+                //Used to offset ingredients to instantiate into bowl
+                Vector3 randomOffset = new Vector3(Random.Range(-0.09f, 0.1f), Random.Range(-0.2f, 0.2f), Random.Range(-0.175f, 0.05f));
+                Instantiate(inge[index], bowlPos + offset + randomOffset, Quaternion.Euler(0, 0, 0), ingredientParent);
+            }
+        }
+        else
+        {
+            // Instantiate(inge[0], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
+            Instantiate(pointtype[0], railPoint.transform.position , railPoint.transform.rotation, UI.transform);
+        }
     }
-
+    
+    // NEW added dish manager stuff to combo and updated name parameters in method calls
     private void AddToCombo(string name, int points)
     {
         Manager.Instance.Score += points;
         Manager.Instance.combo.Add(name);
         Add.Play();
+
+        
+        if (manager.GetComponent<DishManager>().requiresExtra(name))
+        {
+            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar(name));
+        }
     }
+
 }
 
 
