@@ -76,13 +76,19 @@ public class Add_inge : MonoBehaviour
             if (Physics.Raycast(camRay, out hitInfo, float.MaxValue))
             {
                 Transform railPoint = rails.GetComponent<LerpRail>().points[rails.GetComponent<LerpRail>().currPoint].GetChild(1);
+
+                Vector3 randomVector = getRandomOffset();
                 if (hitInfo.transform.name == "Brown")
                 {
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[0], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                        Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
+                        for (int i = 0; i < 5; i++)
+                        {
+                            Instantiate(inge[0], bowlPos + offset + randomVector, Quaternion.Euler(0, 0, 0), ingredientParent);
+                            randomVector = getRandomOffset();
+                        }
+                        Instantiate(pointtype[0], railPoint.transform.position , railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Brown Rice");
                         Add.Play();
@@ -99,7 +105,11 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[1], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
+                        for (int i = 0; i < 5; i++)
+                        {
+                            Instantiate(inge[1], bowlPos + offset + randomVector, Quaternion.Euler(0, 0, 0), ingredientParent);
+                            randomVector = getRandomOffset();
+                        }
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Roots Rice");
@@ -116,7 +126,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[2], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
+                        Instantiate(inge[2], bowlPos + offset + randomVector, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Chickpeas");
@@ -133,7 +143,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[3], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
+                        Instantiate(inge[3], bowlPos + offset + randomVector, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Broccoli");
@@ -150,7 +160,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[4], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
+                        Instantiate(inge[4], bowlPos + offset + randomVector, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Cannelini Beans");
@@ -167,7 +177,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[5], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
+                        Instantiate(inge[5], bowlPos + offset + randomVector, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Roasted Beets");
@@ -184,7 +194,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[6], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
+                        Instantiate(inge[6], bowlPos + offset + randomVector, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Sweet Potatoes");
@@ -201,7 +211,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[7], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
+                        Instantiate(inge[7], bowlPos + offset + randomVector, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Black Beans");
@@ -218,7 +228,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[8], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
+                        Instantiate(inge[8], bowlPos + offset + randomVector, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Bulgur");
@@ -235,7 +245,7 @@ public class Add_inge : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
-                        Instantiate(inge[9], bowlPos + offset, Quaternion.Euler(0, 0, 0), ingredientParent);
+                        Instantiate(inge[9], bowlPos + offset + randomVector, Quaternion.Euler(0, 0, 0), ingredientParent);
                         Instantiate(pointtype[0], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                         Manager.Instance.Score += 10;
                         Manager.Instance.combo.Add("Charred Corn");
@@ -599,7 +609,12 @@ public class Add_inge : MonoBehaviour
             }
         }
     }
+
+    //Used to offset ingredients to instantiate into bowl
+    private Vector3 getRandomOffset() => new Vector3(Random.Range(-0.09f, 0.1f), Random.Range(-0.2f, 0.2f), Random.Range(-0.175f, 0.05f));
 }
+
+
 
 
 //if (Manager.Instance.IsLaunched == false)
