@@ -39,7 +39,7 @@ public class DishManager : MonoBehaviour
     //Randomizes a new recipe for another order
     public void getNewRecipe()
     {
-        orderTimerManager.GetComponent<OrderTimerDebug>().startOrderTimer();
+        orderTimerManager.GetComponent<OrderTimerDebug>().StartOrderTimer();
         currDish = Recipes.getRandomDish();
         currRecipe = new List<string>(Recipes.getRecipe(currDish));
         mixes = 0;
@@ -56,7 +56,7 @@ public class DishManager : MonoBehaviour
             }
         }
 
-        Recipe_hint.GetComponent<Recipe_hint>().setRecipe(currRecipe);
+        Recipe_hint.GetComponent<RecipeHint>().setRecipe(currRecipe);
         if (!extraIngredients.Equals(""))
         {
             orderText.text = "Order: " + currDish + " with extra " + extraIngredients;

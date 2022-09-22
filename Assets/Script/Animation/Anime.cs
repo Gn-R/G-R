@@ -7,12 +7,11 @@ using UnityEngine.SceneManagement;
 public class Anime : MonoBehaviour
 {
     private Animator bowl_anime;
-    Button disbutton;
-    Button forbu;
-    Button backbu;
-    Button resetbu;
+    Button disbutton; // discard
+    Button forbu; // forward
+    Button backbu; // back
+    Button resetbu; // reset
 
-    // Start is called before the first frame update
     void Start()
     {
         bowl_anime = GetComponent<Animator>();
@@ -55,7 +54,6 @@ public class Anime : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Manager.Instance.Mixing == true)
