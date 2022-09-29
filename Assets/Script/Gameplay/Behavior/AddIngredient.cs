@@ -43,7 +43,8 @@ public class AddIngredient : MonoBehaviour
         Add.GetComponents<AudioSource>();
         Mix.GetComponents<AudioSource>();
     }
-    void Update()
+
+    private void Update()
     {
         bowlPos = transform.position;
         
@@ -208,39 +209,44 @@ public class AddIngredient : MonoBehaviour
 
                     // TODO add names and indices for bottles
                     case "B1":
-                        InstantiateIngredient(0, true, 1);
+                        AnimateBottle(hitInfo.transform.gameObject);
+                        // InstantiateIngredient(0, true, 1);
                         AddToCombo("B1", 10);
                         break;
 
                     case "B2":
-                        InstantiateIngredient(0, true, 1);
+                        AnimateBottle(hitInfo.transform.gameObject);
+                        // InstantiateIngredient(0, true, 1);
                         AddToCombo("B2", 10);
                         break;
 
                     case "B3":
-                        InstantiateIngredient(0, true, 1);
+                        AnimateBottle(hitInfo.transform.gameObject);
+                        // InstantiateIngredient(0, true, 1);
                         AddToCombo("B3", 10);
                         break;
 
                     case "B4":
-                        InstantiateIngredient(0, true, 1);
+                        AnimateBottle(hitInfo.transform.gameObject);
+                        // InstantiateIngredient(0, true, 1);
                         AddToCombo("B4", 10);
                         break;
 
                     case "B5":
+                        AnimateBottle(hitInfo.transform.gameObject);
                         InstantiateIngredient(0, true, 1);
                         AddToCombo("B5", 10);
                         break;
 
                     case "B6":
-                        InstantiateIngredient(0, true, 1);
+                        AnimateBottle(hitInfo.transform.gameObject);
+                        // InstantiateIngredient(0, true, 1);
                         AddToCombo("B6", 10);
                         break;
 
                     case "MainBowl":
                         if (Manager.Instance.Mixing == false)
                         {
-                            // NEW added rail stuff to bowl
                             Instantiate(pointtype[1], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                             //Manager.Instance.Score += 100;
                             manager.GetComponent<DishManager>().mixBowl(false);
@@ -269,7 +275,6 @@ public class AddIngredient : MonoBehaviour
         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
         if (randomize)
         {
-            // NEW Added ingredient index and randomize position options
             for (int i = 0; i < count; i++)
             {
                 //Used to offset ingredients to instantiate into bowl
@@ -283,19 +288,23 @@ public class AddIngredient : MonoBehaviour
             Instantiate(pointtype[0], railPoint.transform.position , railPoint.transform.rotation, UI.transform);
         }
     }
-    
-    // NEW added dish manager stuff to combo and updated name parameters in method calls
+
     private void AddToCombo(string name, int points)
     {
         Manager.Instance.Score += points;
         Manager.Instance.combo.Add(name);
         Add.Play();
-
         
         if (manager.GetComponent<DishManager>().requiresExtra(name))
         {
             StartCoroutine(manager.GetComponent<DishManager>().setExtraBar(name));
         }
+    }
+
+    private void AnimateBottle(GameObject obj)
+    {
+        BottleAnime anim = obj.GetComponent<BottleAnime>();
+        anim.OnBottleClick();
     }
 
 }
