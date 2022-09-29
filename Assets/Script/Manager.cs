@@ -8,11 +8,13 @@ public class Manager
 
     public float GameTime;
 
-    public int Score;
+    public int Score = 0;
 
-    public bool Mixing;
+    public bool paused = true; // pause the game if tutorial is playing
 
-    public bool discarding;
+    public bool Mixing = false;
+
+    public bool discarding = false;
 
     //public Vector3 bowlpos;
 
