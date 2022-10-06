@@ -279,8 +279,7 @@ public class AddIngredient : MonoBehaviour
             {
                 //Used to offset ingredients to instantiate into bowl
                 Vector3 randomOffset = new Vector3(Random.Range(-0.09f, 0.1f), Random.Range(-0.2f, 0.2f), Random.Range(-0.175f, 0.05f));
-                GameObject obj = Instantiate(inge[index], bowlPos + offset + randomOffset, Quaternion.Euler(0, 0, 0), ingredientParent);
-                obj.transform.localScale = new Vector3(1, 1, 1);
+                Instantiate(inge[index], bowlPos + offset + randomOffset, Quaternion.Euler(0, 0, 0), ingredientParent);
             }
         }
         else

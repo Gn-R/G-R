@@ -10,8 +10,6 @@ public class MixIngredients : MonoBehaviour
     public AudioSource Discard;
     float tima;
 
-    private GameObject manager; // doesn't seem to be used
-
     // Start is called before the first frame update
     void Start()
     {

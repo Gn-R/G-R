@@ -59,6 +59,6 @@ public class BowlAnime : MonoBehaviour
     {
         // Update animator states
         bowl_anime.SetBool("shake", Manager.Instance.Mixing);
-        bowl_anime.SetBool("discard", Manager.Instance.discarding);
+        //bowl_anime.SetBool("discard", Manager.Instance.discarding);
     }
 }
