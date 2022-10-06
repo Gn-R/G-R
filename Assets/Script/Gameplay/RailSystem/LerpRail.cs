@@ -39,7 +39,7 @@ public class LerpRail : MonoBehaviour
     private void Update()
     {
         //If right arrow pressed and there's been sufficient time and can move, travel to next point
-        if (canMove && keyDelay == null && Manager.Instance.forward == true && currPoint != stopPoints[currStop])
+        if (canMove && keyDelay == null && Manager.Instance.forward == true && (stopPoints.Length <= 0 || currPoint != stopPoints[currStop]))
         {
             //Must be within index
             if (currPoint < points.Length - 1)
@@ -114,7 +114,8 @@ public class LerpRail : MonoBehaviour
 
         rightMixFirstUI.SetActive(false);
 
-        if (stopPoints[currStop] == currPoint && currPoint < points.Length)
+
+        if (stopPoints.Length > 0 && stopPoints[currStop] == currPoint && currPoint < points.Length)
         {
             if (manager.GetComponent<DishManager>().mixes < 3)
                 rightMixFirstUI.SetActive(true);
@@ -144,10 +145,14 @@ public class LerpRail : MonoBehaviour
             yield break;
         }
 
-        if (stopPoints[currStop] == currPoint && currPoint < points.Length)
+        if (stopPoints.Length > 0 && stopPoints[currStop] == currPoint && currPoint < points.Length)
         {
             if (manager.GetComponent<DishManager>().mixes < 3) 
                 rightMixFirstUI.SetActive(true);
+            rightBlockedUI.SetActive(true);
+        }
+        else if (currPoint >= points.Length - 1)
+        {
             rightBlockedUI.SetActive(true);
         }
         else
@@ -250,7 +255,7 @@ public class LerpRail : MonoBehaviour
     //Rotates camera to rotation of the CamPos child
     private IEnumerator RotateCam(Quaternion rot)
     {
-        rot = Quaternion.Euler(mainCam.transform.rotation.eulerAngles.x, rot.eulerAngles.y, mainCam.transform.rotation.eulerAngles.z);
+        rot = Quaternion.Euler(rot.eulerAngles.x, rot.eulerAngles.y, rot.eulerAngles.z);
         while (Quaternion.Angle(mainCam.transform.rotation, rot) > 0.01)
         {
             mainCam.transform.rotation = Quaternion.Lerp(mainCam.transform.rotation, rot, Time.deltaTime * 1/camSpeedModifier * 1.5f);

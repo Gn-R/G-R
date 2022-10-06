@@ -42,17 +42,17 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 0, y: 674, z: 0, w: 827}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -150,18 +150,56 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
-    outline: []
-    physicsShape: []
+    sprites:
+    - serializedVersion: 2
+      name: blankButton Mine_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 668
+        width: 1958
+        height: 586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d8667f401048a4c9f166e3854a89bd
+      internalID: -39464724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -975, y: -68}
+      - {x: -805, y: 191}
+      - {x: 776, y: 191}
+      - {x: 973, y: -69}
+    - - {x: -820, y: -350}
+      - {x: -980, y: -69}
+      - {x: 972, y: -73}
+      - {x: 807, y: -336}
+    physicsShape:
+    - - {x: -971, y: -72}
+      - {x: -787, y: 195}
+      - {x: 794, y: 190}
+      - {x: 995, y: -81}
+    - - {x: -796, y: -346}
+      - {x: -971, y: -73}
+      - {x: 999, y: -73}
+      - {x: 798, y: -350}
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      blankButton Mine_0: -39464724
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

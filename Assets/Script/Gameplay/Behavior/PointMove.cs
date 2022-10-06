@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Point_move: MonoBehaviour
+public class PointMove: MonoBehaviour
 {
     TextMeshProUGUI textMesh;
     float timer;

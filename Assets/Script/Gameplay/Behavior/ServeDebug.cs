@@ -19,7 +19,7 @@ public class ServeDebug : MonoBehaviour
     {
         foreach (string str in Manager.Instance.combo)
         {
-            Debug.Log(str);
+            // Debug.Log(str);
         }
         if (manager.GetComponent<DishManager>().checkDish(Manager.Instance.combo))
         {

@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 
 // A button that displays a recipe hint text box for the user
-public class Recipe_hint : MonoBehaviour
+public class RecipeHint : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI button_text;
     [SerializeField] TextMeshProUGUI recipe_hint;
@@ -29,12 +29,12 @@ public class Recipe_hint : MonoBehaviour
         hint_text = "";
         foreach (string str in recipe)
         {
-            hint_text += str + " ";
+            hint_text += str + ", ";
         }
     }
 
     public void Toggle()
-    {
+    {        
         show_hint = !show_hint;
         if (show_hint)
         {

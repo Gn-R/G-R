@@ -16,19 +16,7 @@ public class OrderTimerDebug : MonoBehaviour
 
     private float interval = 0.05f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    public void startOrderTimer()
+    public void StartOrderTimer()
     {
         timer = totalTime;
         
@@ -41,30 +29,34 @@ public class OrderTimerDebug : MonoBehaviour
 
     private IEnumerator RunTimer()
     {
-        if (timer > 0)
-        {
-            timer -= interval;
-
-            float percentage = timer / totalTime;
-
-            slider.value = percentage;
-
-            if (percentage > 0.5f)
+        if (!Manager.Instance.paused) {
+        
+            if (timer > 0)
             {
-                //Done to convert the percentage to the proper RGB value so the color changes properly
-                percentage = (percentage - 0.5f) * 2;
-                sliderFill.color = new Color(1 - percentage, 1, 0);
-            }
-            else
-            {
-                percentage *= 2;
-                sliderFill.color = new Color(1, percentage, 0);
-            }
-        }
+                timer -= interval;
 
-        if (timer <= 0)
-        {
-            Manager.Instance.Score -= 1;
+                float percentage = timer / totalTime;
+
+                slider.value = percentage;
+
+                if (percentage > 0.5f)
+                {
+                    //Done to convert the percentage to the proper RGB value so the color changes properly
+                    percentage = (percentage - 0.5f) * 2;
+                    sliderFill.color = new Color(1 - percentage, 1, 0);
+                }
+                else
+                {
+                    percentage *= 2;
+                    sliderFill.color = new Color(1, percentage, 0);
+                }
+            }
+
+            if (timer <= 0)
+            {
+                Manager.Instance.Score -= 1;
+            }
+            
         }
         yield return new WaitForSeconds(interval);
 

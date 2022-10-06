@@ -1,7 +1,7 @@
 *Welcome to the G & R main!!!*
 -
 <sup>Current Stable Version:  
-<sub>V0.935 Beta
+<sub>V0.98 Beta
 -
-**Experimental Slogan of Sorts:**  
+**Our Motto:**  
 *"Technology, Hospitality and Entertainment."*
