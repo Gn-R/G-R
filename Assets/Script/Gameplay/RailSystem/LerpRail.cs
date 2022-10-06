@@ -325,4 +325,9 @@ public class LerpRail : MonoBehaviour
 
         returnCo = null;
     }
+
+    public Transform GetCurrentPoint()
+    {
+        return points[currPoint];
+    }
 }
