@@ -16,6 +16,7 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         manager = Manager.Instance;
+        manager.paused = true;
     }
 
     void Update()

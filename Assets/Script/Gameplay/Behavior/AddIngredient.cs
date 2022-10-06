@@ -107,7 +107,7 @@ public class AddIngredient : MonoBehaviour
                         AddToCombo("Black Beans", 10);                        
                         break;
 
-                    case "bulgar":
+                    case "Bulgar":
                         InstantiateIngredient(8, true, 1);
                         AddToCombo("Bulgur", 10);
                         break;
