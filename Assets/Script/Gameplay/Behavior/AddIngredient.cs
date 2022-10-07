@@ -66,7 +66,6 @@ public class AddIngredient : MonoBehaviour
                 
                 switch(hitInfo.transform.name)
                 {
-                    // Define all the raycastable ingredients
                     // TODO use dictionary/set to look up ingredient names?
                     case "Brown":
                         InstantiateIngredient(0, true, 5);
@@ -206,21 +205,6 @@ public class AddIngredient : MonoBehaviour
                     case "Chicken":
                         InstantiateIngredient(27, true, 1);
                         AddToCombo("Chicken", 10);
-                        break;
-
-                    case "Kale":
-                        InstantiateIngredient(28, true, 1);
-                        AddToCombo("Chicken", 10);
-                        break;
-
-                    case "Springmix":
-                        InstantiateIngredient(29, true, 1);
-                        AddToCombo("Spring Mix", 10);
-                        break;
-
-                    case "Spinach":
-                        InstantiateIngredient(30, true, 1);
-                        AddToCombo("Spinach", 10);
                         break;
 
                     // TODO add names and indices for bottles
