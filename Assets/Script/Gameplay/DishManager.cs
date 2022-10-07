@@ -57,11 +57,9 @@ public class DishManager : MonoBehaviour
         }
 
         Recipe_hint.GetComponent<RecipeHint>().setRecipe(currRecipe);
-        orderText.text = "Order: " + currDish;
         if (!extraIngredients.Equals(""))
         {
-            // orderText.text = String.Format("Order: {0} with extra {1}", currDish, extraIngredients);
-            orderText.text += " with extra " + extraIngredients;
+            orderText.text = "Order: " + currDish + " with extra " + extraIngredients;
         }
         else
         {
@@ -90,11 +88,17 @@ public class DishManager : MonoBehaviour
                 count++;
             }
         }
-        return count > 1;
+        Debug.Log(count);
+        if (count > 1)
+        {
+            return true;
+        }
+        return false;
     }
 
     public IEnumerator setExtraBar(string item)
     {
+        Debug.Log("yes");
         int currCount = 0;
         foreach (string s in Manager.Instance.combo)
         {
