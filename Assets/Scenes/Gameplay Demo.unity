@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.2850269, g: 0.3713935, b: 0.49601045, a: 1}
+  m_IndirectSpecularColor: {r: 0.28502658, g: 0.37139314, b: 0.49600917, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4137,7 +4137,7 @@ GameObject:
   - component: {fileID: 205075173}
   - component: {fileID: 205075172}
   m_Layer: 0
-  m_Name: Kale (6)
+  m_Name: Kale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4157,7 +4157,7 @@ Transform:
   m_Children:
   - {fileID: 834394777}
   m_Father: {fileID: 935874912}
-  m_RootOrder: 8
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &205075172
 MeshCollider:
@@ -8396,7 +8396,7 @@ GameObject:
   - component: {fileID: 524384184}
   - component: {fileID: 524384183}
   m_Layer: 0
-  m_Name: Kale
+  m_Name: Springmix
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8416,7 +8416,7 @@ Transform:
   m_Children:
   - {fileID: 1087046325}
   m_Father: {fileID: 935874912}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &524384183
 MeshCollider:
@@ -14646,7 +14646,7 @@ GameObject:
   m_Component:
   - component: {fileID: 875125720}
   m_Layer: 0
-  m_Name: Outter
+  m_Name: Outer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15448,14 +15448,14 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 797849785}
-  - {fileID: 524384182}
-  - {fileID: 1273397943}
-  - {fileID: 1511045281}
   - {fileID: 1741667355}
-  - {fileID: 2127383097}
-  - {fileID: 1401557355}
-  - {fileID: 2044847561}
   - {fileID: 205075171}
+  - {fileID: 524384182}
+  - {fileID: 1511045281}
+  - {fileID: 2044847561}
+  - {fileID: 1401557355}
+  - {fileID: 1273397943}
+  - {fileID: 2127383097}
   - {fileID: 80722310}
   - {fileID: 1266215633}
   - {fileID: 540254605}
@@ -19831,7 +19831,7 @@ GameObject:
   - component: {fileID: 1273397945}
   - component: {fileID: 1273397944}
   m_Layer: 0
-  m_Name: Kale
+  m_Name: Spinach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19851,7 +19851,7 @@ Transform:
   m_Children:
   - {fileID: 1364446187}
   m_Father: {fileID: 935874912}
-  m_RootOrder: 2
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1273397944
 MeshCollider:
@@ -22162,7 +22162,7 @@ GameObject:
   - component: {fileID: 1401557357}
   - component: {fileID: 1401557356}
   m_Layer: 0
-  m_Name: Kale (4)
+  m_Name: Spinach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24074,7 +24074,7 @@ GameObject:
   - component: {fileID: 1511045283}
   - component: {fileID: 1511045282}
   m_Layer: 0
-  m_Name: Kale (1)
+  m_Name: Springmix
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24094,7 +24094,7 @@ Transform:
   m_Children:
   - {fileID: 1318631362}
   m_Father: {fileID: 935874912}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1511045282
 MeshCollider:
@@ -27438,7 +27438,7 @@ GameObject:
   - component: {fileID: 1741667357}
   - component: {fileID: 1741667356}
   m_Layer: 0
-  m_Name: Kale (2)
+  m_Name: Kale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27458,7 +27458,7 @@ Transform:
   m_Children:
   - {fileID: 1691213993}
   m_Father: {fileID: 935874912}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1741667356
 MeshCollider:
@@ -32039,7 +32039,7 @@ GameObject:
   - component: {fileID: 2044847563}
   - component: {fileID: 2044847562}
   m_Layer: 0
-  m_Name: Kale (5)
+  m_Name: Springmix
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32059,7 +32059,7 @@ Transform:
   m_Children:
   - {fileID: 1800160}
   m_Father: {fileID: 935874912}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &2044847562
 MeshCollider:
@@ -33139,7 +33139,7 @@ GameObject:
   - component: {fileID: 2127383099}
   - component: {fileID: 2127383098}
   m_Layer: 0
-  m_Name: Kale (3)
+  m_Name: Spinach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33159,7 +33159,7 @@ Transform:
   m_Children:
   - {fileID: 150221132}
   m_Father: {fileID: 935874912}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &2127383098
 MeshCollider:
@@ -37944,7 +37944,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 6035908957868747743}
   m_Direction: 0
   m_Value: 1
-  m_Size: 0.9999999
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
