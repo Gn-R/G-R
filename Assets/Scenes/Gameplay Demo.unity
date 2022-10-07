@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.28502658, g: 0.37139314, b: 0.49600917, a: 1}
+  m_IndirectSpecularColor: {r: 0.2850269, g: 0.3713935, b: 0.49601045, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7844,9 +7844,13 @@ GameObject:
   - component: {fileID: 472761676}
   - component: {fileID: 472761675}
   - component: {fileID: 472761674}
+  - component: {fileID: 472761683}
+  - component: {fileID: 472761682}
+  - component: {fileID: 472761681}
+  - component: {fileID: 472761680}
   m_Layer: 2
   m_Name: BowlColliders
-  m_TagString: Untagged
+  m_TagString: Bowl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7877,8 +7881,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.025, y: 0.22, z: 0.25}
-  m_Center: {x: -0.11, y: 0.1, z: 0}
+  m_Size: {x: 0.05, y: 0.22, z: 0.25}
+  m_Center: {x: -0.12, y: 0.1, z: 0}
 --- !u!65 &472761675
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7890,8 +7894,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.025, y: 0.22, z: 0.25}
-  m_Center: {x: 0.11, y: 0.1, z: 0}
+  m_Size: {x: 0.05, y: 0.22, z: 0.25}
+  m_Center: {x: 0.12, y: 0.1, z: 0}
 --- !u!65 &472761676
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7903,8 +7907,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 0.22, z: 0.025}
-  m_Center: {x: 0, y: 0.1, z: 0.11}
+  m_Size: {x: 0.25, y: 0.22, z: 0.05}
+  m_Center: {x: 0, y: 0.1, z: 0.12}
 --- !u!65 &472761677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7916,8 +7920,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 0.22, z: 0.025}
-  m_Center: {x: 0, y: 0.1, z: -0.11}
+  m_Size: {x: 0.25, y: 0.22, z: 0.05}
+  m_Center: {x: 0, y: 0.1, z: -0.12}
 --- !u!65 &472761678
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7929,8 +7933,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 0.025, z: 0.25}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.25, y: 0.05, z: 0.25}
+  m_Center: {x: 0, y: -0.01, z: 0}
 --- !u!54 &472761679
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7947,6 +7951,58 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!65 &472761680
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472761672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05, y: 0.25, z: 0.05}
+  m_Center: {x: -0.1, y: 0.1, z: -0.1}
+--- !u!65 &472761681
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472761672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05, y: 0.25, z: 0.05}
+  m_Center: {x: 0.1, y: 0.1, z: 0.1}
+--- !u!65 &472761682
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472761672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05, y: 0.25, z: 0.05}
+  m_Center: {x: 0.1, y: 0.1, z: -0.1}
+--- !u!65 &472761683
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472761672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05, y: 0.25, z: 0.05}
+  m_Center: {x: -0.1, y: 0.1, z: 0.1}
 --- !u!1 &479993621
 GameObject:
   m_ObjectHideFlags: 0
@@ -8765,7 +8821,7 @@ GameObject:
   - component: {fileID: 531512841}
   m_Layer: 2
   m_Name: SmallBowl
-  m_TagString: Untagged
+  m_TagString: Bowl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8915,11 +8971,11 @@ GameObject:
   - component: {fileID: 532356768}
   m_Layer: 2
   m_Name: BowlColliders
-  m_TagString: Untagged
+  m_TagString: Bowl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &532356767
 Transform:
   m_ObjectHideFlags: 0
@@ -8944,7 +9000,7 @@ BoxCollider:
   m_GameObject: {fileID: 532356766}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.05, y: 0.3, z: 0.25}
   m_Center: {x: -0.11, y: 0.14, z: 0}
@@ -8957,7 +9013,7 @@ BoxCollider:
   m_GameObject: {fileID: 532356766}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.05, y: 0.3, z: 0.25}
   m_Center: {x: 0.11, y: 0.14, z: 0}
@@ -8970,7 +9026,7 @@ BoxCollider:
   m_GameObject: {fileID: 532356766}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.25, y: 0.3, z: 0.05}
   m_Center: {x: 0, y: 0.14, z: 0.11}
@@ -8983,7 +9039,7 @@ BoxCollider:
   m_GameObject: {fileID: 532356766}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.25, y: 0.3, z: 0.05}
   m_Center: {x: 0, y: 0.14, z: -0.11}
@@ -8996,7 +9052,7 @@ BoxCollider:
   m_GameObject: {fileID: 532356766}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.25, y: 0.05, z: 0.25}
   m_Center: {x: 0, y: 0, z: 0}
@@ -13677,7 +13733,7 @@ GameObject:
   - component: {fileID: 828385896}
   m_Layer: 0
   m_Name: MainBowlPos
-  m_TagString: Untagged
+  m_TagString: Bowl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25843,7 +25899,7 @@ GameObject:
   - component: {fileID: 1597223984}
   m_Layer: 0
   m_Name: SmallBowlPos
-  m_TagString: Untagged
+  m_TagString: Bowl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34646,7 +34702,7 @@ GameObject:
   - component: {fileID: 3469287837819128163}
   m_Layer: 0
   m_Name: MainBowl
-  m_TagString: Untagged
+  m_TagString: Bowl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38218,7 +38274,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 6035908957868747743}
   m_Direction: 0
   m_Value: 1
-  m_Size: 0.9999998
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
