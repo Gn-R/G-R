@@ -44,14 +44,6 @@ public class Recipes
         return rootsBowl.GetIngredients(); // default in case bad name entered
     }
 
-    // Store All Recipes
-
-    private static readonly Recipe[] allRecipes = {
-        rootsBowl, elJefe, cornerCobb, mayweather, pestoCaesar,
-        tamari, madBowl, theApollo, theSouthern, theBalboa,
-        // balancedDiet, planetEarth, rainbow
-    };
-
     // Roots Recipes
 
     private static readonly Recipe rootsBowl = new Recipe(
@@ -141,6 +133,13 @@ public class Recipes
         "Chicken" //From the Grill
     );
 
+    // Store All Recipes
+
+    private static readonly Recipe[] allRecipes = {
+        rootsBowl, elJefe, cornerCobb, mayweather, pestoCaesar,
+        tamari, madBowl, theApollo, theSouthern, theBalboa
+        // balancedDiet, planetEarth, rainbow
+    };
 
     // Example/Debug Recipes
 
