@@ -6,9 +6,13 @@ public class DiscardBox : MonoBehaviour
 {
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Bowl"))
+        if (other.gameObject.name.Contains("MainBowl"))
         {
             
+        }
+        else if (other.gameObject.name.Contains("SmallBowl"))
+        {
+
         }
         else
         {

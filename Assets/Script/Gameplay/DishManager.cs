@@ -24,11 +24,8 @@ public class DishManager : MonoBehaviour
     const float SLIDER_ANIM_SPEED = 4;
     const float SLIDER_ANIM_SECONDS = 2;
 
-    //0 = El Jefe Freeplay, 1 = El Jefe Pro, 2 = Random Freeplay, 3 = Random Pro
-    public static int gameMode = 2;
-
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         getNewRecipe();
     }
@@ -42,47 +39,20 @@ public class DishManager : MonoBehaviour
     //Randomizes a new recipe for another order
     public void getNewRecipe()
     {
-        Debug.Log(gameMode);
-        //Sets timer for freeplay (more time)
-        if (gameMode % 2 == 0)
-        {
-            orderTimerManager.GetComponent<OrderTimerDebug>().StartOrderTimer(60);
-
-        }
-        //Sets timer for pro (less time)
-        else
-        {
-            orderTimerManager.GetComponent<OrderTimerDebug>().StartOrderTimer(15);
-        }
-
-        //Sets dish only as El Jefe
-        if (gameMode <= 1)
-        {
-            currDish = "El Jefe";
-        }
-        //Sets random dishes
-        else
-        {
-            currDish = Recipes.getRandomDish();
-        }
-
+        orderTimerManager.GetComponent<OrderTimerDebug>().StartOrderTimer();
+        currDish = Recipes.getRandomDish();
         currRecipe = new List<string>(Recipes.getRecipe(currDish));
         mixes = 0;
         int count = currRecipe.Count;
         string extraIngredients = "";
-
-
-        //Add randomization 
-        if (gameMode > 1)
+        //Add randomization
+        for (int i = 0; i < count; i++)
         {
-            for (int i = 0; i < count; i++)
+            int dice = Random.Range(-5, 3);
+            for (int y = 0; y < dice; y++)
             {
-                int dice = Random.Range(-5, 3);
-                for (int y = 0; y < dice; y++)
-                {
-                    currRecipe.Add(currRecipe[i]);
-                    extraIngredients += currRecipe[i] + " ";
-                }
+                currRecipe.Add(currRecipe[i]);
+                extraIngredients += currRecipe[i] + " ";
             }
         }
 
