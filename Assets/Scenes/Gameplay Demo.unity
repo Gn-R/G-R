@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.28502658, g: 0.37139314, b: 0.49600917, a: 1}
+  m_IndirectSpecularColor: {r: 0.2850269, g: 0.3713935, b: 0.49601045, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12035,7 +12035,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &664219887
 GameObject:
@@ -31247,7 +31247,7 @@ Transform:
   - {fileID: 1926463432}
   - {fileID: 143827315}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1877751367
 GameObject:
@@ -32444,7 +32444,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1942837855
 GameObject:
@@ -33671,7 +33671,7 @@ Transform:
   - {fileID: 1044733110}
   - {fileID: 143949821}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2044847560
 GameObject:
@@ -35420,7 +35420,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45, y: 130, z: 90}
 --- !u!114 &2138677394
 MonoBehaviour:
@@ -35984,7 +35984,7 @@ Transform:
   m_Children:
   - {fileID: 623194934980581698}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &545085537445960176
 Transform:
@@ -40137,6 +40137,7 @@ GameObject:
   - component: {fileID: 5927717093026153307}
   - component: {fileID: 8477898771295188883}
   - component: {fileID: 8477898771295188882}
+  - component: {fileID: 8484145176043996588}
   m_Layer: 0
   m_Name: Rice
   m_TagString: Untagged
@@ -40671,7 +40672,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6035908957866358375}
   m_HandleRect: {fileID: 6035908957866358374}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -41450,25 +41451,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6035908957868747740}
   m_HandleRect: {fileID: 6035908957868747743}
   m_Direction: 0
-<<<<<<< HEAD
-  m_Value: 0
-  m_Size: 0.99999994
-=======
   m_Value: 1
-<<<<<<< HEAD
-<<<<<<< Updated upstream
   m_Size: 0.9999999
-=======
-<<<<<<< HEAD
-  m_Size: 0.9999999
->>>>>>> parent of bccad6c (Add raycast to shelf items and rename kale)
-=======
-  m_Size: 0.9999998
->>>>>>> d1d00a91f6eecf0081cdd8619892d3e9cb92fad2
->>>>>>> Stashed changes
-=======
-  m_Size: 1
->>>>>>> parent of e5ec69e (Revert "Add raycast to shelf items and rename kale")
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -42283,67 +42267,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5750721080028736921}
   m_Mesh: {fileID: 4711208715938537054, guid: 328678202a1226c46b452a5ea297c86a, type: 3}
-<<<<<<< HEAD
 --- !u!33 &8477898771295188881
-=======
---- !u!136 &8300292952509287100
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5752393389698047908}
-  m_Material: {fileID: 13400000, guid: ff0b211af855641e2bd5d469136fd02b, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.001
-  m_Height: 0.007
-  m_Direction: 0
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &8300292952509287101
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5752393389698047908}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0.1
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!33 &8484145176043996588
->>>>>>> d1d00a91f6eecf0081cdd8619892d3e9cb92fad2
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5279211871863988878}
-  m_Mesh: {fileID: 4711208715938537054, guid: 84afb5051f29d3d428f21315bf0014ee, type: 3}
-<<<<<<< HEAD
+  m_Mesh: {fileID: 0}
 --- !u!54 &8477898771295188882
-=======
---- !u!136 &8484145176043996590
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5285455954640179379}
-  m_Material: {fileID: 13400000, guid: ff0b211af855641e2bd5d469136fd02b, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.001
-  m_Height: 0.007
-  m_Direction: 0
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &8484145176043996591
->>>>>>> d1d00a91f6eecf0081cdd8619892d3e9cb92fad2
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42352,12 +42284,12 @@ Rigidbody:
   m_GameObject: {fileID: 5279211871863988878}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.1
+  m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!136 &8477898771295188883
 CapsuleCollider:
@@ -42373,6 +42305,14 @@ CapsuleCollider:
   m_Height: 0.007
   m_Direction: 0
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &8484145176043996588
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5279211871863988878}
+  m_Mesh: {fileID: 4711208715938537054, guid: 84afb5051f29d3d428f21315bf0014ee, type: 3}
 --- !u!4 &8633691020104314748
 Transform:
   m_ObjectHideFlags: 0
