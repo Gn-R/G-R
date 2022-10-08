@@ -74,7 +74,7 @@ public class DiscardScript : MonoBehaviour
         //-90 for Y = right side rotation
         else
         {
-            finalPos = new Vector3(transform.position.x + 0.75f, transform.position.y, transform.position.z);
+            finalPos = new Vector3(transform.position.x + .75f, transform.position.y, transform.position.z);
         }
 
         Debug.Log("start");
