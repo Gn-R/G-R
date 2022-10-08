@@ -16,8 +16,9 @@ public class OrderTimerDebug : MonoBehaviour
 
     private float interval = 0.05f;
 
-    public void StartOrderTimer()
+    public void StartOrderTimer(int recipeTime)
     {
+        totalTime = recipeTime;
         timer = totalTime;
         
         if (runTimer != null)

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - clone
+  - Bowl
   layers:
   - Default
   - TransparentFX
