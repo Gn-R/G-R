@@ -23,8 +23,6 @@ public class DiscardScript : MonoBehaviour
         fwdBtn.onClick.AddListener(ForwardClick);
         backBtn = GameObject.Find("Back").GetComponent<Button>();
         backBtn.onClick.AddListener(BackClick);
-        resetBtn = GameObject.Find("Reset").GetComponent<Button>();
-        resetBtn.onClick.AddListener(ResetClick);
     }
 
     void DiscardClick()
@@ -54,11 +52,6 @@ public class DiscardScript : MonoBehaviour
         {
             Manager.Instance.back = true;
         }
-    }
-
-    void ResetClick()
-    {
-        SceneManager.LoadScene(1);
     }
 
     private IEnumerator DiscardAnim()

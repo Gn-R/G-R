@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 // Pauses the game, stopping updates and blocking button presses
@@ -10,8 +11,9 @@ public class PauseMenu : MonoBehaviour
     private Manager manager;
     private bool muted;
 
-    [SerializeField] TextMeshProUGUI pauseText, muteText;
-    [SerializeField] GameObject pauseDialog, pausePanel, muteButton;
+    public Sprite pauseImage, resumeImage;
+    [SerializeField] Image pauseButton, muteButton;
+    [SerializeField] GameObject pausePanel;
     
     void Start()
     {
@@ -32,21 +34,20 @@ public class PauseMenu : MonoBehaviour
         manager.paused = !manager.paused;
         if (manager.paused)
         {
-            pauseText.text = "Unpause";
+            pauseButton.sprite = resumeImage;
             ShowPauseMenu(true);
         }
         else
         {
-            pauseText.text = "Pause";
+            pauseButton.sprite = pauseImage;
             ShowPauseMenu(false);
         }
     }
 
     private void ShowPauseMenu(bool active)
     {
-        pauseDialog.SetActive(active);
         pausePanel.SetActive(active);
-        muteButton.SetActive(active);
+        muteButton.gameObject.SetActive(active);
     }
 
     public void ToggleMuted()
@@ -54,12 +55,12 @@ public class PauseMenu : MonoBehaviour
         muted = !muted;
         if (muted)
         {
-            muteText.text = "Unmute";
+            muteButton.color = new Color(0.5f, 0.5f, 0.5f);
             AudioListener.volume = 0f;
         }
         else
         {
-            muteText.text = "Mute";
+            muteButton.color = new Color(1, 1, 1);
             AudioListener.volume = 1f;
         }
     }

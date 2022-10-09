@@ -1,22 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 // A button that displays a recipe hint text box for the user
 public class RecipeHint : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI button_text;
-    [SerializeField] TextMeshProUGUI recipe_hint;
+    [SerializeField] Image hintButton;
+    [SerializeField] GameObject hintTextImage;
+    [SerializeField] TextMeshProUGUI hintTextField;
+
     private List<string> recipe;
-    private string hint_text;
-    private bool show_hint;
+    private bool showingRecipe;
 
     public GameObject manager;
 
     void Start()
     {
-        show_hint = false;
+        showingRecipe = false;
         setRecipe(manager.GetComponent<DishManager>().currRecipe);
         // TODO Can't find the method to set text invisible. In the future just make text box invisible from beginning
     }
@@ -24,27 +26,26 @@ public class RecipeHint : MonoBehaviour
     public void setRecipe(List<string> newRecipe)
     {
         recipe = newRecipe;
-
-        recipe_hint.text = "";
-        hint_text = "";
+        
+        string hintText = "";
         foreach (string str in recipe)
         {
-            hint_text += str + ", ";
+            hintText += str + ", ";
         }
+        hintTextField.text = hintText;
     }
 
     public void Toggle()
     {        
-        show_hint = !show_hint;
-        if (show_hint)
+        showingRecipe = !showingRecipe;
+        if (showingRecipe)
         {
-            button_text.text = "Hide Recipe";
-            recipe_hint.text = hint_text;
+            hintButton.color = new Color(0.5f, 0.5f, 0.5f);
         }
         else
         {
-            button_text.text = "Show Recipe";
-            recipe_hint.text = "";
+            hintButton.color = new Color(1, 1, 1);
         }
+        hintTextImage.SetActive(showingRecipe);
     }
 }

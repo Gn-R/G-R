@@ -22,8 +22,6 @@ public class BowlAnime : MonoBehaviour
         fwdBtn.onClick.AddListener(ForwardClick);
         backBtn = GameObject.Find("Back").GetComponent<Button>();
         backBtn.onClick.AddListener(BackClick);
-        resetBtn = GameObject.Find("Reset").GetComponent<Button>();
-        resetBtn.onClick.AddListener(ResetClick);
     }
 
     void DiscardClick()
@@ -48,11 +46,6 @@ public class BowlAnime : MonoBehaviour
         {
             Manager.Instance.back = true;
         }
-    }
-
-    void ResetClick()
-    {
-        SceneManager.LoadScene(1);
     }
 
     void Update()

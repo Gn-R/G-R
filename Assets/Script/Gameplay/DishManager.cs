@@ -27,16 +27,9 @@ public class DishManager : MonoBehaviour
     //0 = El Jefe Freeplay, 1 = El Jefe Pro, 2 = Random Freeplay, 3 = Random Pro
     public static int gameMode = 2;
 
-    // Start is called before the first frame update
     void Start()
     {
         getNewRecipe();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     //Randomizes a new recipe for another order
