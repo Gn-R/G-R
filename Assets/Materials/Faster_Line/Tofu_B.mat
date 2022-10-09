@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LimeOUT
+  m_Name: Tofu_B
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -35,9 +35,9 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: bd2f5f982944e484b92d37bfa9495934, type: 3}
-        m_Scale: {x: 0.18, y: 0.29}
-        m_Offset: {x: 0.51, y: 0.32}
+        m_Texture: {fileID: 2800000, guid: e59dc6581e25ba94990d847433f8440f, type: 3}
+        m_Scale: {x: 0.2, y: 0.2}
+        m_Offset: {x: 0.5, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -59,9 +59,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: bd2f5f982944e484b92d37bfa9495934, type: 3}
-        m_Scale: {x: 0.18, y: 0.29}
-        m_Offset: {x: 0.51, y: 0.32}
+        m_Texture: {fileID: 2800000, guid: e59dc6581e25ba94990d847433f8440f, type: 3}
+        m_Scale: {x: 0.2, y: 0.2}
+        m_Offset: {x: 0.5, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
