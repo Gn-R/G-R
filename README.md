@@ -4,4 +4,4 @@
 <sub>V0.98 Beta
 -
 **Our Motto:**  
-*"Technology, Hospitality and Entertainment."*
+*"Technology, Hospitality, and Entertainment."*
