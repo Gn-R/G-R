@@ -5,12 +5,12 @@ using UnityEngine.UI;
 using TMPro;
 
 // Pauses the game, stopping updates and blocking button presses
-// ISSUE: bowl and ingredients are still pressable while paused
 public class PauseMenu : MonoBehaviour
 {
     private Manager manager;
     private bool muted;
 
+    // TODO move mute button to main UI
     public Sprite pauseImage, resumeImage;
     [SerializeField] Image pauseButton, muteButton;
     [SerializeField] GameObject pausePanel;
@@ -47,7 +47,6 @@ public class PauseMenu : MonoBehaviour
     private void ShowPauseMenu(bool active)
     {
         pausePanel.SetActive(active);
-        muteButton.gameObject.SetActive(active);
     }
 
     public void ToggleMuted()

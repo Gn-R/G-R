@@ -20,7 +20,7 @@ public class RecipeHint : MonoBehaviour
     {
         showingRecipe = false;
         setRecipe(manager.GetComponent<DishManager>().currRecipe);
-        // TODO Can't find the method to set text invisible. In the future just make text box invisible from beginning
+        hintTextImage.SetActive(false);
     }
 
     public void setRecipe(List<string> newRecipe)

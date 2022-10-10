@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// WORK IN PROGRESS
+// TODO track ingredients added?
 public class SwitchBowls : MonoBehaviour
 {
     public GameObject bigBowl;

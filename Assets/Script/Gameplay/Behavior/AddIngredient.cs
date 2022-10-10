@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-// TODO move to MBP object and fix bowlPos
-// TODO track ingredients
+// TODO move this script to MBP object and fix prefab position and size
 public class AddIngredient : MonoBehaviour
 {
 
     public GameObject pointpos;
     public Canvas UI;
+    public Button mixButton;
     public GameObject[] inge;
     public GameObject[] pointtype;
 
@@ -29,13 +30,10 @@ public class AddIngredient : MonoBehaviour
 
     private void Start()
     {
-        offset = new Vector3(0, 1, 0);
-        // offsetmore = new Vector3(0, 2, 0);
-        // offsetp = new Vector3(1, 0, 0);
         Manager.Instance.combo = new List<string>();
+        mixButton.onClick.AddListener(MixBowl);
 
-        // var randomPosition = Vector3(Random.Range(minPosition.x, maxPosition.x), Random.Range(minPosition.y, maxPosition.y), Random.Range(minPosition.z, maxPosition.z) );
-
+        offset = new Vector3(0, 1, 0);
         randomPosition = new Vector3(0, 1, 0);
 
         Add.GetComponents<AudioSource>();
@@ -43,7 +41,7 @@ public class AddIngredient : MonoBehaviour
     }
 
     private void Update()
-    {
+    {      
         Vector3 bowlPos = transform.position;
         
         if (!Manager.Instance.paused && !Manager.Instance.Mixing && !Manager.Instance.discarding)
@@ -251,26 +249,9 @@ public class AddIngredient : MonoBehaviour
                         // InstantiateIngredient(0, bowlPos, true, 1);
                         AddToCombo("B6", 10);
                         break;
-
+                    
                     case "MainBowl":
-                        if (Manager.Instance.Mixing == false)
-                        {
-                            Instantiate(pointtype[1], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
-                            //Manager.Instance.Score += 100;
-                            manager.GetComponent<DishManager>().mixBowl(false);
-                            manager.GetComponent<LerpRail>().advanceStopPoint();
-
-                            if (manager.GetComponent<DishManager>().checkMix(Manager.Instance.combo))
-                            {
-                                Manager.Instance.Score += 100;
-                            }
-                            else
-                            {
-                                Manager.Instance.Score -= 100;
-                            }
-                        }
-                        Manager.Instance.Mixing = true;
-                        Mix.Play();
+                        MixBowl();
                         break;
                 }
 
@@ -315,10 +296,30 @@ public class AddIngredient : MonoBehaviour
         anim.OnBottleClick();
     }
 
-}
+    // TODO Mix button doesn't work because "railPoint" is null
+    private void MixBowl() // TODO should move to BowlAnime probably
+    {
+        if (!Manager.Instance.Mixing)
+        {
+            Instantiate(pointtype[1], railPoint.position, railPoint.rotation, UI.transform);
+            manager.GetComponent<DishManager>().mixBowl(false);
+            manager.GetComponent<LerpRail>().advanceStopPoint();
+
+            if (manager.GetComponent<DishManager>().checkMix(Manager.Instance.combo))
+            {
+                Manager.Instance.Score += 100;
+            }
+            else
+            {
+                Manager.Instance.Score -= 100;
+            }
+        }
+        Manager.Instance.Mixing = true;
+        Mix.Play();
+    }
 
 
-//if (Manager.Instance.IsLaunched == false)
+//if (!Manager.Instance.IsLaunched)
 //{
 //    //screenray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -345,3 +346,5 @@ public class AddIngredient : MonoBehaviour
 
 //    //Debug.DrawRay(shiporigin, directions * 100, Color.yellow);
 //    Manager.Instance.ShipPos = ShipOrigin;
+
+}

@@ -11,7 +11,7 @@ public class DishManager : MonoBehaviour
     public string currDish = "";
     public List<string> currRecipe = new List<string>();
 
-    public GameObject Recipe_hint;
+    public RecipeHint recipeHint;
     public TextMeshProUGUI orderText;
     public GameObject orderTimerManager;
 
@@ -79,7 +79,7 @@ public class DishManager : MonoBehaviour
             }
         }
 
-        Recipe_hint.GetComponent<RecipeHint>().setRecipe(currRecipe);
+        recipeHint.setRecipe(currRecipe);
         orderText.text = "Order: " + currDish;
         if (!extraIngredients.Equals(""))
         {

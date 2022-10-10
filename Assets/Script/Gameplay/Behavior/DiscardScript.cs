@@ -19,9 +19,9 @@ public class DiscardScript : MonoBehaviour
     {
         discBtn = GameObject.Find("Discard").GetComponent<Button>();
         discBtn.onClick.AddListener(DiscardClick);
-        fwdBtn = GameObject.Find("Forward").GetComponent<Button>();
+        fwdBtn = GameObject.Find("Move Forward").GetComponent<Button>();
         fwdBtn.onClick.AddListener(ForwardClick);
-        backBtn = GameObject.Find("Back").GetComponent<Button>();
+        backBtn = GameObject.Find("Move Back").GetComponent<Button>();
         backBtn.onClick.AddListener(BackClick);
     }
 
