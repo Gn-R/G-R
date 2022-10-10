@@ -196,6 +196,12 @@ public class DishManager : MonoBehaviour
         return combo.Count > 0 && ScrambledEquals(combo, currRecipe, false);
     }
 
+    //Checks if ingredient is in dish
+    public bool checkIng(string ing)
+    {
+        return currRecipe.Contains(ing);
+    }
+
     //Matches lists without order
     //If complete match, must have same set of items. If not, fullList must contain all partialList items
     public static bool ScrambledEquals<T>(IEnumerable<T> partialList, IEnumerable<T> fullList, bool completeMatch)

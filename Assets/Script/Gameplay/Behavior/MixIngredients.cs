@@ -10,6 +10,8 @@ public class MixIngredients : MonoBehaviour
     public AudioSource Discard;
     float tima;
 
+    public GameObject manager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,11 +49,20 @@ public class MixIngredients : MonoBehaviour
                     //print_inge = true;
 
                     Manager.Instance.Mixing = false;
+
+                    if (manager.GetComponent<DishManager>().checkMix(Manager.Instance.combo))
+                    {
+                        Manager.Instance.Score += 200;
+                    }
+                    else
+                    {
+                        Manager.Instance.Score -= 200;
+                    }
                 }
 
                 if (Manager.Instance.discarding == true)
                 {
-                    Manager.Instance.Score -= 300;
+                    Manager.Instance.Score = 0;
 
                     Manager.Instance.combo.Clear();
 

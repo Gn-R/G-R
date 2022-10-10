@@ -40,6 +40,15 @@ public class RecipeHint : MonoBehaviour
         {
             button_text.text = "Hide Recipe";
             recipe_hint.text = hint_text;
+
+            if (DishManager.gameMode % 2 == 0)
+            {
+                Manager.Instance.Score -= 50;
+            }
+            else
+            {
+                Manager.Instance.Score -= 300;
+            }
         }
         else
         {

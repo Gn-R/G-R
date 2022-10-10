@@ -28,6 +28,8 @@ public class AddIngredient : MonoBehaviour
 
     public Transform ingredientParent;
 
+
+
     private void Start()
     {
         bowlPos = transform.position;
@@ -70,194 +72,194 @@ public class AddIngredient : MonoBehaviour
                     // TODO use dictionary/set to look up ingredient names?
                     case "Brown":
                         InstantiateIngredient(0, true, 5);
-                        AddToCombo("Brown Rice", 10);
+                        AddToCombo("Brown Rice", 75);
                         break;
 
                     case "Roots":
                         InstantiateIngredient(1, true, 5);
-                        AddToCombo("Roots Rice", 10);
+                        AddToCombo("Roots Rice", 75);
                         break;
 
                     case "Chickp":
                         InstantiateIngredient(2, true, 1);
-                        AddToCombo("Chickpeas", 10);
+                        AddToCombo("Chickpeas", 100);
                         break;
 
                     case "Broccoli":
                         InstantiateIngredient(3, true, 1);
-                        AddToCombo("Broccoli", 10);
+                        AddToCombo("Broccoli", 100);
                         break;
 
                     case "Cannellinib":
                         InstantiateIngredient(4, true, 1);
-                        AddToCombo("Cannellini Beans", 10);
+                        AddToCombo("Cannellini Beans", 100);
                         break;
 
                     case "Beets":
                         InstantiateIngredient(5, true, 1);
-                        AddToCombo("Roasted Beets", 10);
+                        AddToCombo("Roasted Beets", 100);
                         break;
                     
                     case "Sweetp":
                         InstantiateIngredient(6, true, 1);
-                        AddToCombo("Sweet Potatoes", 10);
+                        AddToCombo("Sweet Potatoes", 100);
                         break;
 
                     case "Blackb":
                         InstantiateIngredient(7, true, 1);
-                        AddToCombo("Black Beans", 10);                        
+                        AddToCombo("Black Beans", 100);                        
                         break;
 
                     case "Bulgar":
                         InstantiateIngredient(8, true, 1);
-                        AddToCombo("Bulgur", 10);
+                        AddToCombo("Bulgur", 100);
                         break;
 
                     case "Corn":
                         InstantiateIngredient(9, true, 1);
-                        AddToCombo("Charred Corn", 10);
+                        AddToCombo("Charred Corn", 100);
                         break;
 
                     case "Cucumber":
                         InstantiateIngredient(10, true, 1);
-                        AddToCombo("Cucumber", 10);
+                        AddToCombo("Cucumber", 100);
                         break;
 
                     case "Onion":
                         InstantiateIngredient(11, true, 1);
-                        AddToCombo("Red Onions", 10);
+                        AddToCombo("Red Onions", 100);
                         break;
 
                     case "Tomatoes":
                         InstantiateIngredient(12, true, 1);
-                        AddToCombo("Grape Tomatoes", 10);
+                        AddToCombo("Grape Tomatoes", 100);
                         break;
                     
                     case "Feta":
                         InstantiateIngredient(13, true, 1);
-                        AddToCombo("Feta", 10);
+                        AddToCombo("Feta", 100);
                         break;
                     
                     case "Parmesan":
                         InstantiateIngredient(14, true, 1);
-                        AddToCombo("Shaved Parmesan", 10);
+                        AddToCombo("Shaved Parmesan", 100);
                         break;
 
                     case "Avocado":
                         InstantiateIngredient(15, true, 1);
-                        AddToCombo("Avocado", 10);
+                        AddToCombo("Avocado", 100);
                         break;
 
                     case "Chips":
                         InstantiateIngredient(16, true, 1);
-                        AddToCombo("Pita Chips", 10);
+                        AddToCombo("Pita Chips", 100);
                         break;
 
                     case "Lime":
                         InstantiateIngredient(17, true, 1);
-                        AddToCombo("Cilantro Lime", 10);
+                        AddToCombo("Cilantro Lime", 100);
                         break;
 
                     case "Egg":
                         InstantiateIngredient(18, true, 1);
-                        AddToCombo("Hard Boiled Egg", 10);
+                        AddToCombo("Hard Boiled Egg", 100);
                         break;
                     
                     case "Cheddar":
                         InstantiateIngredient(19, true, 1);
-                        AddToCombo("Cheddar", 10);
+                        AddToCombo("Cheddar", 100);
                         break;
 
                     case "Pickled_o":
                         InstantiateIngredient(20, true, 1);
-                        AddToCombo("Lime-Pickled Onions", 10);
+                        AddToCombo("Lime-Pickled Onions", 100);
                         break;
 
                     case "Jalapeno":
                         InstantiateIngredient(21, true, 1);
-                        AddToCombo("Pickled Jalapenos", 10);
+                        AddToCombo("Pickled Jalapenos", 100);
                         break;
 
                     case "Red_Cab":
                         InstantiateIngredient(22, true, 1);
-                        AddToCombo("Red Cabbage", 10);
+                        AddToCombo("Red Cabbage", 100);
                         break;
 
                     case "Goat":
                         InstantiateIngredient(23, true, 1);
-                        AddToCombo("Goat Cheese", 10);
+                        AddToCombo("Goat Cheese", 100);
                         break;
 
                     case "Pine":
                         InstantiateIngredient(24, true, 1);
-                        AddToCombo("Pineapple", 10);
+                        AddToCombo("Pineapple", 100);
                         break;
                     
                     case "Carrots":
                         InstantiateIngredient(25, true, 1);
-                        AddToCombo("Carrots", 10);
+                        AddToCombo("Carrots", 100);
                         break;
 
                     case "Tofu":
                         InstantiateIngredient(26, true, 1);
-                        AddToCombo("Tofu", 10);
+                        AddToCombo("Tofu", 100);
                         break;
 
                     case "Chicken":
                         InstantiateIngredient(27, true, 1);
-                        AddToCombo("Chicken", 10);
+                        AddToCombo("Chicken", 200);
                         break;
 
                     case "Kale":
                         InstantiateIngredient(28, true, 1);
-                        AddToCombo("Chicken", 10);
+                        AddToCombo("Kale", 75);
                         break;
 
                     case "Springmix":
                         InstantiateIngredient(29, true, 1);
-                        AddToCombo("Spring Mix", 10);
+                        AddToCombo("Spring Mix", 75);
                         break;
 
                     case "Spinach":
                         InstantiateIngredient(30, true, 1);
-                        AddToCombo("Spinach", 10);
+                        AddToCombo("Spinach", 75);
                         break;
 
                     // TODO add names and indices for bottles
                     case "B1":
                         AnimateBottle(hitInfo.transform.gameObject);
                         // InstantiateIngredient(0, true, 1);
-                        AddToCombo("B1", 10);
+                        AddToCombo("B1", 125);
                         break;
 
                     case "B2":
                         AnimateBottle(hitInfo.transform.gameObject);
                         // InstantiateIngredient(0, true, 1);
-                        AddToCombo("B2", 10);
+                        AddToCombo("B2", 125);
                         break;
 
                     case "B3":
                         AnimateBottle(hitInfo.transform.gameObject);
                         // InstantiateIngredient(0, true, 1);
-                        AddToCombo("B3", 10);
+                        AddToCombo("B3", 125);
                         break;
 
                     case "B4":
                         AnimateBottle(hitInfo.transform.gameObject);
                         // InstantiateIngredient(0, true, 1);
-                        AddToCombo("B4", 10);
+                        AddToCombo("B4", 125);
                         break;
 
                     case "B5":
                         AnimateBottle(hitInfo.transform.gameObject);
                         InstantiateIngredient(0, true, 1);
-                        AddToCombo("B5", 10);
+                        AddToCombo("B5", 125);
                         break;
 
                     case "B6":
                         AnimateBottle(hitInfo.transform.gameObject);
                         // InstantiateIngredient(0, true, 1);
-                        AddToCombo("B6", 10);
+                        AddToCombo("B6", 125);
                         break;
 
                     case "MainBowl":
@@ -307,8 +309,15 @@ public class AddIngredient : MonoBehaviour
 
     private void AddToCombo(string name, int points)
     {
-        Manager.Instance.Score += points;
         Manager.Instance.combo.Add(name);
+        if (manager.GetComponent<DishManager>().checkMix(Manager.Instance.combo))
+        {
+            Manager.Instance.Score += points;
+        }
+        else
+        {
+            Manager.Instance.Score -= 50;
+        }
         Add.Play();
         
         if (manager.GetComponent<DishManager>().requiresExtra(name))

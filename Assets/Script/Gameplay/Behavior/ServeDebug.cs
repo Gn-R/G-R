@@ -23,11 +23,11 @@ public class ServeDebug : MonoBehaviour
         }
         if (manager.GetComponent<DishManager>().checkDish(Manager.Instance.combo))
         {
-            Manager.Instance.Score += (int) (1000 * manager.GetComponent<DishManager>().getTimerPercentage());
+            Manager.Instance.totalScore += (int) (Manager.Instance.Score * Manager.Instance.ScoreMult);
         }
         else
         {
-            Manager.Instance.Score -= 1000;
+            Manager.Instance.Score = 0;
         }
 
         manager.GetComponent<DishManager>().getNewRecipe();
