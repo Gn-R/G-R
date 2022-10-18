@@ -9,7 +9,6 @@ public class ServeDebug : MonoBehaviour
     public Button button;
     public GameObject ingredients;
 
-    // Start is called before the first frame update
     void Start()
     {
         button.onClick.AddListener(TaskOnClick);
@@ -17,10 +16,10 @@ public class ServeDebug : MonoBehaviour
 
     void TaskOnClick()
     {
-        foreach (string str in Manager.Instance.combo)
-        {
+        // foreach (string str in Manager.Instance.combo)
+        // {
             // Debug.Log(str);
-        }
+        // }
         if (manager.GetComponent<DishManager>().checkDish(Manager.Instance.combo))
         {
             Manager.Instance.Score += (int) (1000 * manager.GetComponent<DishManager>().getTimerPercentage());

@@ -7,22 +7,23 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public TextMeshProUGUI Number;
-    public float timer = 10f;
-    public int final;
+    [SerializeField] float timeLimit;
+    private float timer;
+    [SerializeField] RectTransform timerBar, timerFill;
+    private Vector3 startPos;
+    private float width, positionDx;
 
-    // Start is called before the first frame update
     void Start()
     {
-        Number = GameObject.Find("Timer").GetComponent<TextMeshProUGUI>();
-        Number.text = "Time: " + Manager.Instance.GameTime;
+        timer = timeLimit;
+        startPos = timerFill.localPosition;
+        width = timerFill.rect.width;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (!Manager.Instance.paused) // Disable timer if paused
-        {
+        {            
             timer -= Time.deltaTime;
             Manager.Instance.GameTime = timer;
 
@@ -32,9 +33,17 @@ public class Timer : MonoBehaviour
             //    SceneManager.LoadScene(2);
             //}
 
-            final = Mathf.CeilToInt(Manager.Instance.GameTime);
+            if (timer >= 0) {
+                // shrink the timer bar
+                int timeInt = Mathf.CeilToInt(Manager.Instance.GameTime);
+                float percentTimeLeft = timeInt / timeLimit;
+                timerFill.localScale = new Vector3(percentTimeLeft, 1, 1);
 
-            Number.text = "Time: " + final;
+                // keep bar anchored left
+                float dx = (1f - percentTimeLeft) * width / 2f;
+                Debug.Log(dx);
+                timerFill.localPosition = startPos + dx * Vector3.left;
+            }
         }
     }
 }

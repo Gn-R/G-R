@@ -11,14 +11,15 @@ public class PauseMenu : MonoBehaviour
     private bool muted;
 
     // TODO move mute button to main UI
-    public Sprite pauseImage, resumeImage;
-    [SerializeField] Image pauseButton, muteButton;
+    [SerializeField] GameObject resumeButton, pauseButton; // change button (images) depend on play/pause
+    [SerializeField] Image muteButton;
     [SerializeField] GameObject pausePanel;
     
     void Start()
     {
         manager = Manager.Instance;
         manager.paused = true;
+        pausePanel.SetActive(true);
     }
 
     void Update()
@@ -32,21 +33,10 @@ public class PauseMenu : MonoBehaviour
     public void TogglePaused()
     {
         manager.paused = !manager.paused;
-        if (manager.paused)
-        {
-            pauseButton.sprite = resumeImage;
-            ShowPauseMenu(true);
-        }
-        else
-        {
-            pauseButton.sprite = pauseImage;
-            ShowPauseMenu(false);
-        }
-    }
 
-    private void ShowPauseMenu(bool active)
-    {
-        pausePanel.SetActive(active);
+        pauseButton.SetActive(!manager.paused); // hide pause button when paused
+        resumeButton.SetActive(manager.paused); // show resume button when paused
+        pausePanel.SetActive(manager.paused); // show pause panel when paused
     }
 
     public void ToggleMuted()
