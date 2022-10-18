@@ -28,7 +28,7 @@ public class LerpRail : MonoBehaviour
     public Camera mainCam;
 
     //Used to stop and start operations
-    private Coroutine travel = null;
+    public Coroutine travel = null;
     private Coroutine rotation = null;
     private Coroutine camMove = null;
     private Coroutine keyDelay = null;
@@ -39,7 +39,7 @@ public class LerpRail : MonoBehaviour
     private void Update()
     {
         //If right arrow pressed and there's been sufficient time and can move, travel to next point
-        if (canMove && keyDelay == null && Manager.Instance.forward == true && (stopPoints.Length <= 0 || currPoint != stopPoints[currStop]))
+        if (canMove && keyDelay == null && Manager.Instance.forward == true && !Manager.Instance.discarding && (stopPoints.Length <= 0 || currPoint != stopPoints[currStop]))
         {
             //Must be within index
             if (currPoint < points.Length - 1)
@@ -70,7 +70,7 @@ public class LerpRail : MonoBehaviour
             Manager.Instance.forward = false;
         }
         //Same as above but for going left
-        else if (canMove && keyDelay == null && Manager.Instance.back == true)
+        else if (canMove && keyDelay == null && Manager.Instance.back == true && !Manager.Instance.discarding)
         {
             //Must be within index
             if (currPoint > 0)
@@ -103,6 +103,11 @@ public class LerpRail : MonoBehaviour
 
         Manager.Instance.forward = false;
         Manager.Instance.back = false;
+    }
+
+    public bool isAtEnd()
+    {
+        return currPoint >= points.Length - 1;
     }
 
     public void advanceStopPoint()

@@ -9,6 +9,9 @@ public class ServeDebug : MonoBehaviour
     public Button button;
     public GameObject ingredients;
 
+    public GameObject notAtEndMessage;
+    private Coroutine endMessage;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +20,16 @@ public class ServeDebug : MonoBehaviour
 
     void TaskOnClick()
     {
+        if (!manager.GetComponent<LerpRail>().isAtEnd())
+        {
+            if (endMessage != null)
+            {
+                StopCoroutine(endMessage);
+            }
+            endMessage = StartCoroutine(ShowNotAtEndMessage());
+            return;
+        }
+
         foreach (string str in Manager.Instance.combo)
         {
             // Debug.Log(str);
@@ -38,5 +51,12 @@ public class ServeDebug : MonoBehaviour
         }
 
         manager.GetComponent<LerpRail>().returnToStart();
+    }
+
+    private IEnumerator ShowNotAtEndMessage()
+    {
+        notAtEndMessage.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        notAtEndMessage.SetActive(false);
     }
 }

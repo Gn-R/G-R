@@ -72,7 +72,6 @@ public class MixIngredients : MonoBehaviour
 
                     // manager.GetComponent<DishManager>().mixBowl(true);
 
-                    Manager.Instance.discarding = false;
                 }
 
                 tima = 3f;

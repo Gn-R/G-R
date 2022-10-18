@@ -9,7 +9,7 @@ public class OrderTimerDebug : MonoBehaviour
     public Image sliderFill;
     public GameObject manager;
 
-    private float totalTime = 10f;
+    public float totalTime = 10f;
     public float timer = 0f;
 
     private Coroutine runTimer = null;
@@ -23,7 +23,7 @@ public class OrderTimerDebug : MonoBehaviour
         
         if (runTimer != null)
         {
-            StopCoroutine(RunTimer());
+            StopCoroutine(runTimer);
         }
         runTimer = StartCoroutine(RunTimer());
     }
