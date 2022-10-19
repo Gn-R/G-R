@@ -12,6 +12,7 @@ public class BowlAnime : MonoBehaviour
     Button fwdBtn;
     Button backBtn;
     Button resetBtn;
+    public AudioSource Wood;
 
     void Start()
     {
@@ -22,12 +23,14 @@ public class BowlAnime : MonoBehaviour
         fwdBtn.onClick.AddListener(ForwardClick);
         backBtn = GameObject.Find("Back").GetComponent<Button>();
         backBtn.onClick.AddListener(BackClick);
-        resetBtn = GameObject.Find("Reset").GetComponent<Button>();
-        resetBtn.onClick.AddListener(ResetClick);
+        //resetBtn = GameObject.Find("Reset").GetComponent<Button>();
+        //resetBtn.onClick.AddListener(ResetClick);
+        Wood.GetComponents<AudioSource>();
     }
 
     void DiscardClick()
     {
+        Wood.Play();
         if (!Manager.Instance.Mixing)
         {
             Manager.Instance.discarding = true;
@@ -36,6 +39,7 @@ public class BowlAnime : MonoBehaviour
 
     void ForwardClick()
     {
+        Wood.Play();
         if (!Manager.Instance.Mixing && !Manager.Instance.discarding)
         {
             Manager.Instance.forward = true;
@@ -44,6 +48,7 @@ public class BowlAnime : MonoBehaviour
 
     void BackClick()
     {
+        Wood.Play();
         if (!Manager.Instance.Mixing && !Manager.Instance.discarding)
         {
             Manager.Instance.back = true;
