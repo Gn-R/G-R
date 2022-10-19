@@ -34,6 +34,7 @@ public class ServeDebug : MonoBehaviour
         {
             // Debug.Log(str);
         }
+        Manager.Instance.totalScore += (int)(Manager.Instance.Score * Manager.Instance.ScoreMult);
         if (manager.GetComponent<DishManager>().checkDish(Manager.Instance.combo))
         {
             Manager.Instance.totalScore += (int) (Manager.Instance.Score * Manager.Instance.ScoreMult);

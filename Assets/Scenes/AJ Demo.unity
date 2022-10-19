@@ -31549,7 +31549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Number: {fileID: 0}
-  timer: 120
+  timer: 10
   final: 0
 --- !u!114 &1768207502
 MonoBehaviour:

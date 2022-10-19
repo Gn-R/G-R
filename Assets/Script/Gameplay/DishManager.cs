@@ -30,6 +30,7 @@ public class DishManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Manager.Instance.totalScore = 0;
         getNewRecipe();
     }
 
