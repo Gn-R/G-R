@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Lifts the bottle and squirts some sauce into the bowl
+// WORK IN PROGRESS
 public class BottleAnime : MonoBehaviour
 {
     private Animator animator;

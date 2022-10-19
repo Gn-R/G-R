@@ -1,21 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 // Pauses the game, stopping updates and blocking button presses
-// ISSUE: bowl and ingredients are still pressable while paused
 public class PauseMenu : MonoBehaviour
 {
     private Manager manager;
     private bool muted;
 
-    [SerializeField] TextMeshProUGUI pauseText, muteText;
-    [SerializeField] GameObject pauseDialog, pausePanel, muteButton;
+    // TODO move mute button to main UI
+    [SerializeField] GameObject resumeButton, pauseButton; // change button (images) depend on play/pause
+    [SerializeField] Image muteButton;
+    [SerializeField] GameObject pausePanel;
     
     void Start()
     {
         manager = Manager.Instance;
+        manager.paused = true;
+        pausePanel.SetActive(true);
     }
 
     void Update()
@@ -29,23 +33,10 @@ public class PauseMenu : MonoBehaviour
     public void TogglePaused()
     {
         manager.paused = !manager.paused;
-        if (manager.paused)
-        {
-            pauseText.text = "Unpause";
-            ShowPauseMenu(true);
-        }
-        else
-        {
-            pauseText.text = "Pause";
-            ShowPauseMenu(false);
-        }
-    }
 
-    private void ShowPauseMenu(bool active)
-    {
-        pauseDialog.SetActive(active);
-        pausePanel.SetActive(active);
-        muteButton.SetActive(active);
+        pauseButton.SetActive(!manager.paused); // hide pause button when paused
+        resumeButton.SetActive(manager.paused); // show resume button when paused
+        pausePanel.SetActive(manager.paused); // show pause panel when paused
     }
 
     public void ToggleMuted()
@@ -53,12 +44,12 @@ public class PauseMenu : MonoBehaviour
         muted = !muted;
         if (muted)
         {
-            muteText.text = "Unmute";
+            muteButton.color = new Color(0.5f, 0.5f, 0.5f);
             AudioListener.volume = 0f;
         }
         else
         {
-            muteText.text = "Mute";
+            muteButton.color = new Color(1, 1, 1);
             AudioListener.volume = 1f;
         }
     }

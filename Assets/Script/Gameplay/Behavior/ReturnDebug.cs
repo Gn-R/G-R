@@ -8,7 +8,6 @@ public class ReturnDebug : MonoBehaviour
     public GameObject mbp;
     public Button button;
 
-    // Start is called before the first frame update
     void Start()
     {
         button.onClick.AddListener(TaskOnClick);

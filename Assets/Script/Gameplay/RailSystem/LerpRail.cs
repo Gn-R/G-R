@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LerpRail : MonoBehaviour
 {
@@ -10,10 +11,10 @@ public class LerpRail : MonoBehaviour
     public int[] stopPoints;
     public int currStop = 0;
 
-    //Shows the arrows are blocked when they can not advance
-    public GameObject rightBlockedUI;
+    //Gray out the buttons if they are blocked
+    public GameObject leftButton;
+    public GameObject rightButton;
     public GameObject rightMixFirstUI;
-    public GameObject leftBlockedUI;
 
     //Speed of movement 
     public float moveSpeedModifier = 0.5f;
@@ -39,7 +40,7 @@ public class LerpRail : MonoBehaviour
     private void Update()
     {
         //If right arrow pressed and there's been sufficient time and can move, travel to next point
-        if (canMove && keyDelay == null && Manager.Instance.forward == true && (stopPoints.Length <= 0 || currPoint != stopPoints[currStop]))
+        if (canMove && keyDelay == null && Manager.Instance.forward && (stopPoints.Length <= 0 || currPoint != stopPoints[currStop]))
         {
             //Must be within index
             if (currPoint < points.Length - 1)
@@ -70,7 +71,7 @@ public class LerpRail : MonoBehaviour
             Manager.Instance.forward = false;
         }
         //Same as above but for going left
-        else if (canMove && keyDelay == null && Manager.Instance.back == true)
+        else if (canMove && keyDelay == null && Manager.Instance.back)
         {
             //Must be within index
             if (currPoint > 0)
@@ -111,7 +112,6 @@ public class LerpRail : MonoBehaviour
         {
             currStop++;
         }
-
         rightMixFirstUI.SetActive(false);
 
 
@@ -119,11 +119,11 @@ public class LerpRail : MonoBehaviour
         {
             if (manager.GetComponent<DishManager>().mixes < 3)
                 rightMixFirstUI.SetActive(true);
-            rightBlockedUI.SetActive(true);
+            SetButtonBlocked(rightButton, true);
         }
         else
         {
-            rightBlockedUI.SetActive(false);
+            SetButtonBlocked(rightButton, false);
         }
     }
 
@@ -149,25 +149,25 @@ public class LerpRail : MonoBehaviour
         {
             if (manager.GetComponent<DishManager>().mixes < 3) 
                 rightMixFirstUI.SetActive(true);
-            rightBlockedUI.SetActive(true);
+            SetButtonBlocked(rightButton, true);
         }
         else if (currPoint >= points.Length - 1)
         {
-            rightBlockedUI.SetActive(true);
+            SetButtonBlocked(rightButton, true);
         }
         else
         {
             rightMixFirstUI.SetActive(false);
-            rightBlockedUI.SetActive(false);
+            SetButtonBlocked(rightButton, false);
         }
 
-        if (currPoint == 0)
+        if (currPoint <= 0)
         {
-            leftBlockedUI.SetActive(true);
+            SetButtonBlocked(leftButton, true);
         } 
         else
         {
-            leftBlockedUI.SetActive(false);
+            SetButtonBlocked(leftButton, false);
         }
 
         Transform point = points[currPoint];
@@ -324,5 +324,23 @@ public class LerpRail : MonoBehaviour
         }
 
         returnCo = null;
+    }
+
+    public Transform GetCurrentPoint()
+    {
+        return points[currPoint];
+    }
+
+    private void SetButtonBlocked(GameObject button, bool blocked)
+    {
+        Image image = button.GetComponent<Image>();
+        if (blocked)
+        {
+            image.color = new Color(0.5f, 0.5f, 0.5f);
+        }
+        else
+        {
+            image.color = new Color(1f, 1f, 1f);
+        }
     }
 }

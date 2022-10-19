@@ -11,7 +11,7 @@ public class DishManager : MonoBehaviour
     public string currDish = "";
     public List<string> currRecipe = new List<string>();
 
-    public GameObject Recipe_hint;
+    public ShowRecipe showRecipe;
     public TextMeshProUGUI orderText;
     public GameObject orderTimerManager;
 
@@ -24,49 +24,70 @@ public class DishManager : MonoBehaviour
     const float SLIDER_ANIM_SPEED = 4;
     const float SLIDER_ANIM_SECONDS = 2;
 
-    // Start is called before the first frame update
-    void Awake()
-    {
-        getNewRecipe();
-    }
+    //0 = El Jefe Freeplay, 1 = El Jefe Pro, 2 = Random Freeplay, 3 = Random Pro
+    public static int gameMode = 2;
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        
+        GetNewRecipe();
     }
 
     //Randomizes a new recipe for another order
-    public void getNewRecipe()
+    public void GetNewRecipe()
     {
-        orderTimerManager.GetComponent<OrderTimerDebug>().StartOrderTimer();
-        currDish = Recipes.getRandomDish();
-        currRecipe = new List<string>(Recipes.getRecipe(currDish));
+        Debug.Log(gameMode);
+        //Sets timer for freeplay (more time)
+        if (gameMode % 2 == 0)
+        {
+            orderTimerManager.GetComponent<OrderTimerDebug>().StartOrderTimer(60);
+
+        }
+        //Sets timer for pro (less time)
+        else
+        {
+            orderTimerManager.GetComponent<OrderTimerDebug>().StartOrderTimer(15);
+        }
+
+        //Sets dish only as El Jefe
+        if (gameMode <= 1)
+        {
+            currDish = "El Jefe";
+        }
+        //Sets random dishes
+        else
+        {
+            currDish = Recipes.GetRandomDish();
+        }
+
+        currRecipe = new List<string>(Recipes.GetRecipe(currDish));
         mixes = 0;
         int count = currRecipe.Count;
         string extraIngredients = "";
-        //Add randomization
-        for (int i = 0; i < count; i++)
+
+
+        //Add randomization 
+        if (gameMode > 1)
         {
-            int dice = Random.Range(-5, 3);
-            for (int y = 0; y < dice; y++)
+            for (int i = 0; i < count; i++)
             {
-                currRecipe.Add(currRecipe[i]);
-                extraIngredients += currRecipe[i] + " ";
+                int dice = Random.Range(-5, 3);
+                for (int y = 0; y < dice; y++)
+                {
+                    currRecipe.Add(currRecipe[i]);
+                    extraIngredients += currRecipe[i] + " ";
+                }
             }
         }
 
-        Recipe_hint.GetComponent<RecipeHint>().setRecipe(currRecipe);
-        if (!extraIngredients.Equals(""))
-        {
-            orderText.text = "Order: " + currDish + " with extra " + extraIngredients;
-        }
-        else
-        {
-            orderText.text = "Order: " + currDish;
-        }
+        showRecipe.SetRecipe(currRecipe);
+        // BUG: Getting null recipes
+        // orderText.text = "Order: " + currDish;
+        // if (!extraIngredients.Equals(""))
+        // {
+        //     orderText.text += " with extra " + extraIngredients;
+        // }
 
-        StartCoroutine(ShowText());
+        // StartCoroutine(ShowText());
 
     }
 
@@ -88,17 +109,11 @@ public class DishManager : MonoBehaviour
                 count++;
             }
         }
-        Debug.Log(count);
-        if (count > 1)
-        {
-            return true;
-        }
-        return false;
+        return count > 1;
     }
 
     public IEnumerator setExtraBar(string item)
     {
-        Debug.Log("yes");
         int currCount = 0;
         foreach (string s in Manager.Instance.combo)
         {
