@@ -19,7 +19,7 @@ public class SwitchBowls : MonoBehaviour
     private Button switchBtn;
     private bool switching;
     private int bowlMode;
-    private float animPercent;
+    // private float animPercent;
     
     void Start()
     {
@@ -27,7 +27,7 @@ public class SwitchBowls : MonoBehaviour
         switchBtn.onClick.AddListener(Switch);
         switching = false;
         bowlMode = 0;
-        animPercent = 0.0f;
+        // animPercent = 0.0f;
 
         // bigBowlAnim = bigBowl.GetComponent<Animator>();
         // smallBowlAnim = smallBowl.GetComponent<Animator>();

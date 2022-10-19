@@ -25,13 +25,13 @@ public class Recipes
         }
     }
     
-    public static string getRandomDish()
+    public static string GetRandomDish()
     {
         int rand = Random.Range(0, allRecipes.Length); 
         return allRecipes[rand].name;
     }
 
-    public static List<string> getRecipe(string dish)
+    public static List<string> GetRecipe(string dish)
     {
         // Search for a recipe
         foreach (Recipe r in allRecipes)

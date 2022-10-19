@@ -11,7 +11,7 @@ public class DishManager : MonoBehaviour
     public string currDish = "";
     public List<string> currRecipe = new List<string>();
 
-    public RecipeHint recipeHint;
+    public ShowRecipe showRecipe;
     public TextMeshProUGUI orderText;
     public GameObject orderTimerManager;
 
@@ -29,11 +29,11 @@ public class DishManager : MonoBehaviour
 
     void Start()
     {
-        getNewRecipe();
+        GetNewRecipe();
     }
 
     //Randomizes a new recipe for another order
-    public void getNewRecipe()
+    public void GetNewRecipe()
     {
         Debug.Log(gameMode);
         //Sets timer for freeplay (more time)
@@ -56,10 +56,10 @@ public class DishManager : MonoBehaviour
         //Sets random dishes
         else
         {
-            currDish = Recipes.getRandomDish();
+            currDish = Recipes.GetRandomDish();
         }
 
-        currRecipe = new List<string>(Recipes.getRecipe(currDish));
+        currRecipe = new List<string>(Recipes.GetRecipe(currDish));
         mixes = 0;
         int count = currRecipe.Count;
         string extraIngredients = "";
@@ -79,19 +79,15 @@ public class DishManager : MonoBehaviour
             }
         }
 
-        recipeHint.setRecipe(currRecipe);
-        orderText.text = "Order: " + currDish;
-        if (!extraIngredients.Equals(""))
-        {
-            // orderText.text = String.Format("Order: {0} with extra {1}", currDish, extraIngredients);
-            orderText.text += " with extra " + extraIngredients;
-        }
-        else
-        {
-            orderText.text = "Order: " + currDish;
-        }
+        showRecipe.SetRecipe(currRecipe);
+        // BUG: Getting null recipes
+        // orderText.text = "Order: " + currDish;
+        // if (!extraIngredients.Equals(""))
+        // {
+        //     orderText.text += " with extra " + extraIngredients;
+        // }
 
-        StartCoroutine(ShowText());
+        // StartCoroutine(ShowText());
 
     }
 

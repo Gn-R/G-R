@@ -41,7 +41,6 @@ public class Timer : MonoBehaviour
 
                 // keep bar anchored left
                 float dx = (1f - percentTimeLeft) * width / 2f;
-                Debug.Log(dx);
                 timerFill.localPosition = startPos + dx * Vector3.left;
             }
         }
