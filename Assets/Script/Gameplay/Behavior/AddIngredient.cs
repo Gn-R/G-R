@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class AddIngredient : MonoBehaviour
 {
@@ -266,19 +267,23 @@ public class AddIngredient : MonoBehaviour
                     case "MainBowl":
                         if (Manager.Instance.Mixing == false)
                         {
-                            Instantiate(pointtype[1], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
                             //Manager.Instance.Score += 100;
                             manager.GetComponent<DishManager>().mixBowl(false);
                             manager.GetComponent<LerpRail>().advanceStopPoint();
 
-                            if (manager.GetComponent<DishManager>().checkMix(Manager.Instance.combo))
-                            {
-                                Manager.Instance.Score += 100;
-                            }
-                            else
-                            {
-                                Manager.Instance.Score -= 100;
-                            }
+                            Manager.Instance.Score += 100;
+                            Instantiate(pointtype[1], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
+                            //if (manager.GetComponent<DishManager>().checkMix(Manager.Instance.combo))
+                            //{
+                            //    Manager.Instance.Score += 100;
+                            //    Instantiate(pointtype[1], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
+                            //}
+                            //else
+                            //{
+                            //    Manager.Instance.Score -= 100;
+                            //    Instantiate(pointtype[3], railPoint.transform.position, railPoint.transform.rotation, UI.transform);
+
+                            //}
                         }
                         Manager.Instance.Mixing = true;
                         Mix.Play();
@@ -298,22 +303,35 @@ public class AddIngredient : MonoBehaviour
             Vector3 randomOffset = new Vector3(Random.Range(-0.09f, 0.1f), Random.Range(-0.2f, 0.2f), Random.Range(-0.175f, 0.05f));
             Instantiate(inge[index], bowlPos + offset + randomOffset, Quaternion.Euler(0, 0, 0), ingredientParent);
 
-            GameObject point = Instantiate(pointtype[0], transform.position, railPoint.transform.rotation, UI.transform);
-            //point.GetComponent<Text>().text = "+" + points;
+
         }
     }
 
     private void AddToCombo(string name, int points)
     {
         Manager.Instance.combo.Add(name);
-        if (manager.GetComponent<DishManager>().checkMix(Manager.Instance.combo))
+        if (manager.GetComponent<DishManager>().checkIng(name))
         {
             Manager.Instance.Score += points;
         }
         else
         {
             Manager.Instance.Score -= 50;
+            points = -50;
         }
+
+        if (points > 0)
+        {
+            GameObject point = Instantiate(pointtype[0], transform.position, railPoint.transform.rotation, UI.transform);
+            point.GetComponent<TextMeshProUGUI>().text = "+" + points;
+        }
+        else
+        {
+            GameObject point = Instantiate(pointtype[2], transform.position, railPoint.transform.rotation, UI.transform);
+            point.GetComponent<TextMeshProUGUI>().text = "" + points;
+        }
+
+
         Add.Play();
         
         if (manager.GetComponent<DishManager>().requiresExtra(name))

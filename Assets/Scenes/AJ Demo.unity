@@ -31609,6 +31609,7 @@ MonoBehaviour:
   slider: {fileID: 4426852273137548332}
   sliderFill: {fileID: 4426852273905807326}
   manager: {fileID: 1656265653}
+  totalTime: 10
   timer: 0
 --- !u!114 &1768207506
 MonoBehaviour:
@@ -39951,6 +39952,8 @@ MonoBehaviour:
   pointtype:
   - {fileID: 2826104800254471663, guid: 69f59156de6fb3b4c94861ca4bfb5f3b, type: 3}
   - {fileID: 7787613296260956288, guid: 33676d8116d28b041b530d8fb317d707, type: 3}
+  - {fileID: 2826104800254471663, guid: c8bf93ce614eb0942934080aee55af8f, type: 3}
+  - {fileID: 7787613296260956288, guid: 15e5877ccf6230b45a2d0518ecf3c050, type: 3}
   Add: {fileID: 3469287837819128164}
   Mix: {fileID: 3469287837819128163}
   manager: {fileID: 1656265653}
