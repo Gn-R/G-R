@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ServeDebug : MonoBehaviour
 {
@@ -43,6 +44,8 @@ public class ServeDebug : MonoBehaviour
         {
             Manager.Instance.Score = 0;
         }
+
+        SceneManager.LoadScene("End Screen");
 
         manager.GetComponent<DishManager>().GetNewRecipe();
 

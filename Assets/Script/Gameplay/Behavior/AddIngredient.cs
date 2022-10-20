@@ -204,16 +204,46 @@ public class AddIngredient : MonoBehaviour
                     case "Kale":
                         InstantiateIngredient(28, 1);
                         AddToCombo("Kale", 75);
+                        if (manager.GetComponent<DishManager>().checkIng("Kale"))
+                        {
+                            GameObject point = Instantiate(pointtype[0], transform.position + new Vector3(0.75f, 0.4f, -2f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
+                            point.GetComponent<TextMeshProUGUI>().text = "+75";
+                        }
+                        else
+                        {
+                            GameObject point = Instantiate(pointtype[2], transform.position + new Vector3(0.75f, 0.4f, -2f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
+                            point.GetComponent<TextMeshProUGUI>().text = "-50";
+                        }
                         break;
 
                     case "Springmix":
                         InstantiateIngredient(29, 1);
                         AddToCombo("Spring Mix", 75);
+                        if (manager.GetComponent<DishManager>().checkIng("Springmix"))
+                        {
+                            GameObject point = Instantiate(pointtype[0], transform.position + new Vector3(0.15f, 0.4f, -2f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
+                            point.GetComponent<TextMeshProUGUI>().text = "+75";
+                        }
+                        else
+                        {
+                            GameObject point = Instantiate(pointtype[2], transform.position + new Vector3(0.15f, 0.4f, -2f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
+                            point.GetComponent<TextMeshProUGUI>().text = "-50";
+                        }
                         break;
 
                     case "Spinach":
                         InstantiateIngredient(30, 1);
                         AddToCombo("Spinach", 75);
+                        if (manager.GetComponent<DishManager>().checkIng("Spinach"))
+                        {
+                            GameObject point = Instantiate(pointtype[0], transform.position + new Vector3(-0.6f, 0.4f, -2f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
+                            point.GetComponent<TextMeshProUGUI>().text = "+75";
+                        }
+                        else
+                        {
+                            GameObject point = Instantiate(pointtype[2], transform.position + new Vector3(-0.6f, 0.4f, -2f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
+                            point.GetComponent<TextMeshProUGUI>().text = "-50";
+                        }
                         break;
 
                     // TODO add names and indices for bottles
