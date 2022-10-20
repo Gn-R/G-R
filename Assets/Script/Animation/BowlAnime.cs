@@ -25,7 +25,7 @@ public class BowlAnime : MonoBehaviour
         backBtn.onClick.AddListener(BackClick);
         //resetBtn = GameObject.Find("Reset").GetComponent<Button>();
         //resetBtn.onClick.AddListener(ResetClick);
-        Wood.GetComponents<AudioSource>();
+        Wood = Wood.GetComponent<AudioSource>();
     }
 
     void DiscardClick()
