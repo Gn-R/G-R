@@ -62,77 +62,77 @@ public class AddIngredient : MonoBehaviour
                     // Define all the raycastable ingredients
                     // TODO use dictionary/set to look up ingredient names?
                     case "Brown":
-                        InstantiateIngredient(0, 5);
+                        InstantiateIngredient(0, 50);
                         AddToCombo("Brown Rice", 75);
                         break;
 
                     case "Roots":
-                        InstantiateIngredient(1, 5);
+                        InstantiateIngredient(1, 50);
                         AddToCombo("Roots Rice", 75);
                         break;
 
                     case "Chickp":
-                        InstantiateIngredient(2, 1);
+                        InstantiateIngredient(2, 20);
                         AddToCombo("Chickpeas", 100);
                         break;
 
                     case "Broccoli":
-                        InstantiateIngredient(3, 1);
+                        InstantiateIngredient(3, 20);
                         AddToCombo("Broccoli", 100);
                         break;
 
                     case "Cannellinib":
-                        InstantiateIngredient(4, 1);
+                        InstantiateIngredient(4, 20);
                         AddToCombo("Cannellini Beans", 100);
                         break;
 
                     case "Beets":
-                        InstantiateIngredient(5, 1);
+                        InstantiateIngredient(5, 20);
                         AddToCombo("Roasted Beets", 100);
                         break;
                     
                     case "Sweetp":
-                        InstantiateIngredient(6, 1);
+                        InstantiateIngredient(6, 20);
                         AddToCombo("Sweet Potatoes", 100);
                         break;
 
                     case "Blackb":
-                        InstantiateIngredient(7, 1);
+                        InstantiateIngredient(7, 20);
                         AddToCombo("Black Beans", 100);                        
                         break;
 
                     case "Bulgar":
-                        InstantiateIngredient(8, 1);
+                        InstantiateIngredient(8, 20);
                         AddToCombo("Bulgur", 100);
                         break;
 
                     case "Corn":
-                        InstantiateIngredient(9, 1);
+                        InstantiateIngredient(9, 20);
                         AddToCombo("Charred Corn", 100);
                         break;
 
                     case "Cucumber":
-                        InstantiateIngredient(10, 1);
+                        InstantiateIngredient(10, 20);
                         AddToCombo("Cucumber", 100);
                         break;
 
                     case "Onion":
-                        InstantiateIngredient(11, 1);
+                        InstantiateIngredient(11, 20);
                         AddToCombo("Red Onions", 100);
                         break;
 
                     case "Tomatoes":
-                        InstantiateIngredient(12, 1);
+                        InstantiateIngredient(12, 20);
                         AddToCombo("Grape Tomatoes", 100);
                         break;
                     
                     case "Feta":
-                        InstantiateIngredient(13, 1);
+                        InstantiateIngredient(13, 20);
                         AddToCombo("Feta", 100);
                         break;
                     
                     case "Parmesan":
-                        InstantiateIngredient(14, 1);
+                        InstantiateIngredient(14, 20);
                         AddToCombo("Shaved Parmesan", 100);
                         break;
 
@@ -142,12 +142,12 @@ public class AddIngredient : MonoBehaviour
                         break;
 
                     case "Chips":
-                        InstantiateIngredient(16, 1);
+                        InstantiateIngredient(16, 20);
                         AddToCombo("Pita Chips", 100);
                         break;
 
                     case "Lime":
-                        InstantiateIngredient(17, 1);
+                        InstantiateIngredient(17, 20);
                         AddToCombo("Cilantro Lime", 100);
                         break;
 
@@ -157,52 +157,57 @@ public class AddIngredient : MonoBehaviour
                         break;
                     
                     case "Cheddar":
-                        InstantiateIngredient(19, 1);
+                        InstantiateIngredient(19, 20);
                         AddToCombo("Cheddar", 100);
                         break;
 
                     case "Pickled_o":
-                        InstantiateIngredient(20, 1);
+                        InstantiateIngredient(20, 20);
                         AddToCombo("Lime-Pickled Onions", 100);
                         break;
 
                     case "Jalapeno":
-                        InstantiateIngredient(21, 1);
+                        InstantiateIngredient(21, 20);
                         AddToCombo("Pickled Jalapenos", 100);
                         break;
 
                     case "Red_Cab":
-                        InstantiateIngredient(22, 1);
+                        InstantiateIngredient(22, 20);
                         AddToCombo("Red Cabbage", 100);
                         break;
 
                     case "Goat":
-                        InstantiateIngredient(23, 1);
+                        InstantiateIngredient(23, 20);
                         AddToCombo("Goat Cheese", 100);
                         break;
 
                     case "Pine":
-                        InstantiateIngredient(24, 1);
+                        InstantiateIngredient(24, 20);
                         AddToCombo("Pineapple", 100);
                         break;
                     
                     case "Carrots":
-                        InstantiateIngredient(25, 1);
+                        InstantiateIngredient(25, 20);
                         AddToCombo("Carrots", 100);
                         break;
 
                     case "Tofu":
-                        InstantiateIngredient(26, 1);
+                        InstantiateIngredient(26, 20);
                         AddToCombo("Tofu", 100);
                         break;
 
+                    case "Tofu_BBQ":
+                        InstantiateIngredient(27, 20);
+                        AddToCombo("BBQTofu", 100);
+                        break;
+
                     case "Chicken":
-                        InstantiateIngredient(27, 1);
+                        InstantiateIngredient(28, 20);
                         AddToCombo("Chicken", 200);
                         break;
 
                     case "Kale":
-                        InstantiateIngredient(28, 1);
+                        InstantiateIngredient(29, 20);
                         AddToCombo("Kale", 75);
                         if (manager.GetComponent<DishManager>().checkIng("Kale"))
                         {
@@ -217,7 +222,7 @@ public class AddIngredient : MonoBehaviour
                         break;
 
                     case "Springmix":
-                        InstantiateIngredient(29, 1);
+                        InstantiateIngredient(30, 20);
                         AddToCombo("Spring Mix", 75);
                         if (manager.GetComponent<DishManager>().checkIng("Springmix"))
                         {
@@ -232,7 +237,7 @@ public class AddIngredient : MonoBehaviour
                         break;
 
                     case "Spinach":
-                        InstantiateIngredient(30, 1);
+                        InstantiateIngredient(31, 20);
                         AddToCombo("Spinach", 75);
                         if (manager.GetComponent<DishManager>().checkIng("Spinach"))
                         {
