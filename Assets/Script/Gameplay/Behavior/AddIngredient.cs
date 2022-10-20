@@ -269,8 +269,7 @@ public class AddIngredient : MonoBehaviour
         {
             //Used to offset ingredients to instantiate into bowl
             Vector3 randomOffset = new Vector3(Random.Range(-0.09f, 0.1f), Random.Range(-0.2f, 0.2f), Random.Range(-0.175f, 0.05f));
-            Instantiate(inge[index], bowlPos + offset + randomOffset, Quaternion.Euler(0, 0, 0), ingredientParent);
-
+            Instantiate(inge[index], transform.position + offset + randomOffset, Quaternion.Euler(0, 0, 0), ingredientParent);
         }
     }
 
@@ -318,9 +317,9 @@ public class AddIngredient : MonoBehaviour
     {
         if (!Manager.Instance.Mixing)
         {
-            //railPoint = manager.GetComponent<LerpRail>().points[manager.GetComponent<LerpRail>().currPoint].GetChild(1);
+            railPoint = manager.GetComponent<LerpRail>().points[manager.GetComponent<LerpRail>().currPoint].GetChild(1);
 
-            //Instantiate(pointtype[1], railPoint.position, railPoint.rotation, UI.transform);
+            Instantiate(pointtype[1], railPoint.position, railPoint.rotation, UI.transform);
             manager.GetComponent<DishManager>().mixBowl(false);
             manager.GetComponent<LerpRail>().advanceStopPoint();
             Manager.Instance.Score += 100;

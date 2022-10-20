@@ -30,7 +30,7 @@ public class DishManager : MonoBehaviour
     void Start()
     {
         Manager.Instance.totalScore = 0;
-        getNewRecipe();
+        GetNewRecipe();
     }
 
     // Update is called once per frame
