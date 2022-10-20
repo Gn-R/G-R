@@ -9,7 +9,7 @@ public class OrderTimerDebug : MonoBehaviour
     public Image sliderFill;
     public GameObject manager;
 
-    private float totalTime = 10f;
+    public float totalTime = 10f;
     public float timer = 0f;
 
     private Coroutine runTimer = null;
@@ -23,7 +23,7 @@ public class OrderTimerDebug : MonoBehaviour
         
         if (runTimer != null)
         {
-            StopCoroutine(RunTimer());
+            StopCoroutine(runTimer);
         }
         runTimer = StartCoroutine(RunTimer());
     }
@@ -34,6 +34,7 @@ public class OrderTimerDebug : MonoBehaviour
         
             if (timer > 0)
             {
+
                 timer -= interval;
 
                 float percentage = timer / totalTime;
@@ -51,11 +52,15 @@ public class OrderTimerDebug : MonoBehaviour
                     percentage *= 2;
                     sliderFill.color = new Color(1, percentage, 0);
                 }
+
+                Manager.Instance.ScoreMult = 1 + (0.1f * timer);
             }
 
             if (timer <= 0)
             {
+                Manager.Instance.ScoreMult = 1;
                 Manager.Instance.Score -= 1;
+                yield return new WaitForSeconds(interval);
             }
             
         }

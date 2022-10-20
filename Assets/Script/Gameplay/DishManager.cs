@@ -29,7 +29,15 @@ public class DishManager : MonoBehaviour
 
     void Start()
     {
-        GetNewRecipe();
+        Manager.Instance.totalScore = 0;
+        getNewRecipe();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+
     }
 
     //Randomizes a new recipe for another order
@@ -183,6 +191,12 @@ public class DishManager : MonoBehaviour
     public bool checkMix(List<string> combo)
     {
         return combo.Count > 0 && ScrambledEquals(combo, currRecipe, false);
+    }
+
+    //Checks if ingredient is in dish
+    public bool checkIng(string ing)
+    {
+        return currRecipe.Contains(ing);
     }
 
     //Matches lists without order

@@ -9,6 +9,9 @@ public class Manager
     public float GameTime;
 
     public int Score = 0;
+    public float ScoreMult = 1f;
+
+    public int totalScore = 0;
 
     public bool paused = true; // pause the game if tutorial is playing
 

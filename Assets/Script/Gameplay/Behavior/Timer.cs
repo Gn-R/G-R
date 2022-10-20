@@ -27,11 +27,11 @@ public class Timer : MonoBehaviour
             timer -= Time.deltaTime;
             Manager.Instance.GameTime = timer;
 
-            //if (timer <= 0)
-            //{
-            //    Manager.Instance.GameTime = timer;
-            //    SceneManager.LoadScene(2);
-            //}
+            if (timer < 0)
+            {
+                Manager.Instance.GameTime = timer;
+                SceneManager.LoadScene("End Screen");
+            }
 
             if (timer >= 0) {
                 // shrink the timer bar

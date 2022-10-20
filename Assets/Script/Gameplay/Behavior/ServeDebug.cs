@@ -9,6 +9,10 @@ public class ServeDebug : MonoBehaviour
     public Button button;
     public GameObject ingredients;
 
+    public GameObject notAtEndMessage;
+    private Coroutine endMessage;
+
+    // Start is called before the first frame update
     void Start()
     {
         button.onClick.AddListener(TaskOnClick);
@@ -16,13 +20,28 @@ public class ServeDebug : MonoBehaviour
 
     void TaskOnClick()
     {
+        if (!manager.GetComponent<LerpRail>().isAtEnd())
+        {
+            if (endMessage != null)
+            {
+                StopCoroutine(endMessage);
+            }
+            endMessage = StartCoroutine(ShowNotAtEndMessage());
+            return;
+        }
+
+        foreach (string str in Manager.Instance.combo)
+        {
+            // Debug.Log(str);
+        }
+
         if (manager.GetComponent<DishManager>().checkDish(Manager.Instance.combo))
         {
-            Manager.Instance.Score += (int) (1000 * manager.GetComponent<DishManager>().getTimerPercentage());
+            Manager.Instance.totalScore += (int) (Manager.Instance.Score * Manager.Instance.ScoreMult);
         }
         else
         {
-            Manager.Instance.Score -= 1000;
+            Manager.Instance.Score = 0;
         }
 
         manager.GetComponent<DishManager>().GetNewRecipe();
@@ -33,5 +52,12 @@ public class ServeDebug : MonoBehaviour
         }
 
         manager.GetComponent<LerpRail>().returnToStart();
+    }
+
+    private IEnumerator ShowNotAtEndMessage()
+    {
+        notAtEndMessage.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        notAtEndMessage.SetActive(false);
     }
 }

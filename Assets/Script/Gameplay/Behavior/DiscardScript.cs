@@ -27,9 +27,8 @@ public class DiscardScript : MonoBehaviour
 
     void DiscardClick()
     {
-        if (!Manager.Instance.Mixing)
+        if (!Manager.Instance.Mixing && discardCoroutine == null && manager.GetComponent<LerpRail>().travel == null)
         {
-            Manager.Instance.discarding = true;
             if (discardCoroutine != null)
             {
                 StopCoroutine(discardCoroutine);
@@ -89,6 +88,8 @@ public class DiscardScript : MonoBehaviour
         transform.position = originalPos;
 
         discardCoroutine = null;
+
+        Manager.Instance.discarding = false;
     }
 }
 

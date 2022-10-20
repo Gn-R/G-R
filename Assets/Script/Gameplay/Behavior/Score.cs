@@ -13,11 +13,13 @@ public class Score : MonoBehaviour
     {
         manager = Manager.Instance;
         manager.Score = 0;
-        scoreText.text = "0";
+		
+        Manager.Instance.Score = 0;
+        scoreText.text = "Score: " + Manager.Instance.Score + "\nTotal Score: " + Manager.Instance.totalScore;
     }
 
     void Update()
     {
-        scoreText.text = manager.Score.ToString();
+        scoreText.text = "Score: " + Manager.Instance.Score + "\nTotal Score: " + Manager.Instance.totalScore;
     }
 }
