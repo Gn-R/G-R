@@ -306,15 +306,7 @@ public class AddIngredient : MonoBehaviour
             //Instantiate(pointtype[1], railPoint.position, railPoint.rotation, UI.transform);
             manager.GetComponent<DishManager>().mixBowl(false);
             manager.GetComponent<LerpRail>().advanceStopPoint();
-
-            if (manager.GetComponent<DishManager>().checkMix(Manager.Instance.combo))
-            {
-                Manager.Instance.Score += 100;
-            }
-            else
-            {
-                Manager.Instance.Score -= 100;
-            }
+            Manager.Instance.Score += 100;
         }
         Manager.Instance.Mixing = true;
         Mix.Play();

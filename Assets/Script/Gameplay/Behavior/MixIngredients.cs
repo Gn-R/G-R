@@ -6,14 +6,14 @@ using TMPro;
 public class MixIngredients : MonoBehaviour
 {
     //bool print_inge;
-    TextMeshProUGUI dis_inge;
+    //TextMeshProUGUI dis_inge;
     public AudioSource Discard;
     float tima;
 
     // Start is called before the first frame update
     void Start()
     {
-        dis_inge = transform.GetComponent<TextMeshProUGUI>();
+        //dis_inge = transform.GetComponent<TextMeshProUGUI>();
         Discard.GetComponent<AudioSource>();
         tima = 3f;
     }
@@ -26,23 +26,24 @@ public class MixIngredients : MonoBehaviour
             //bowl_anime.SetBool("shake", true);
             if (tima > 0f)
             {
+                Debug.Log(tima);
                 tima -= Time.deltaTime;
             }
             else 
             {
                 if (Manager.Instance.Mixing == true)
                 {
-                    string temp = "";
-                    foreach (string str in Manager.Instance.combo)
-                    {
-                        temp += str + ", ";
-                    }
+                    //string temp = "";
+                    //foreach (string str in Manager.Instance.combo)
+                    //{
+                    //    temp += str + ", ";
+                    //}
 
                     //Remove the last ", "
-                    if (temp.Length > 0)
-                        temp = temp.Substring(0, temp.Length - 2);
+                    //if (temp.Length > 0)
+                    //    temp = temp.Substring(0, temp.Length - 2);
 
-                    dis_inge.text = temp;
+                    //dis_inge.text = temp;
 
                     //print_inge = true;
 
@@ -55,7 +56,7 @@ public class MixIngredients : MonoBehaviour
 
                     Manager.Instance.combo.Clear();
 
-                    dis_inge.text = "";
+                    //dis_inge.text = "";
 
                     Discard.Play();
 
