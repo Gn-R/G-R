@@ -9853,6 +9853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4310227b313cf1c4d8f68a8adb79369a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Wood: {fileID: 0}
 --- !u!95 &531512842
 Animator:
   serializedVersion: 4
@@ -31620,9 +31621,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f0f24066da07427e89ddafaac6638d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resumeButton: {fileID: 0}
-  pauseButton: {fileID: 0}
-  muteButton: {fileID: 875198460}
+  resumeButton: {fileID: 1829676899}
+  pauseButton: {fileID: 1829676899}
+  muteButton: {fileID: 875198463}
   pausePanel: {fileID: 1518531363}
 --- !u!1 &1773388573
 GameObject:
@@ -40014,6 +40015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4310227b313cf1c4d8f68a8adb79369a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Wood: {fileID: 0}
 --- !u!82 &3469287837819128163
 AudioSource:
   m_ObjectHideFlags: 0

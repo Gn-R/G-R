@@ -301,7 +301,9 @@ public class AddIngredient : MonoBehaviour
     {
         if (!Manager.Instance.Mixing)
         {
-            Instantiate(pointtype[1], railPoint.position, railPoint.rotation, UI.transform);
+            //railPoint = manager.GetComponent<LerpRail>().points[manager.GetComponent<LerpRail>().currPoint].GetChild(1);
+
+            //Instantiate(pointtype[1], railPoint.position, railPoint.rotation, UI.transform);
             manager.GetComponent<DishManager>().mixBowl(false);
             manager.GetComponent<LerpRail>().advanceStopPoint();
 
