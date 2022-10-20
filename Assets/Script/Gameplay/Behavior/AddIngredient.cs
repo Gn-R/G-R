@@ -206,12 +206,12 @@ public class AddIngredient : MonoBehaviour
                         AddToCombo("Kale", 75);
                         if (manager.GetComponent<DishManager>().checkIng("Kale"))
                         {
-                            GameObject point = Instantiate(pointtype[0], transform.position + new Vector3(0.75f, 0.4f, -2f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
+                            GameObject point = Instantiate(pointtype[0], transform.position + new Vector3(0.75f, 0f, -2.5f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
                             point.GetComponent<TextMeshProUGUI>().text = "+75";
                         }
                         else
                         {
-                            GameObject point = Instantiate(pointtype[2], transform.position + new Vector3(0.75f, 0.4f, -2f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
+                            GameObject point = Instantiate(pointtype[2], transform.position + new Vector3(0.75f, 0f, -2.5f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
                             point.GetComponent<TextMeshProUGUI>().text = "-50";
                         }
                         break;
@@ -221,12 +221,12 @@ public class AddIngredient : MonoBehaviour
                         AddToCombo("Spring Mix", 75);
                         if (manager.GetComponent<DishManager>().checkIng("Springmix"))
                         {
-                            GameObject point = Instantiate(pointtype[0], transform.position + new Vector3(0.15f, 0.4f, -2f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
+                            GameObject point = Instantiate(pointtype[0], transform.position + new Vector3(0.15f, 0f, -2.5f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
                             point.GetComponent<TextMeshProUGUI>().text = "+75";
                         }
                         else
                         {
-                            GameObject point = Instantiate(pointtype[2], transform.position + new Vector3(0.15f, 0.4f, -2f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
+                            GameObject point = Instantiate(pointtype[2], transform.position + new Vector3(0.15f, 0f, -2.5f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
                             point.GetComponent<TextMeshProUGUI>().text = "-50";
                         }
                         break;
@@ -236,12 +236,12 @@ public class AddIngredient : MonoBehaviour
                         AddToCombo("Spinach", 75);
                         if (manager.GetComponent<DishManager>().checkIng("Spinach"))
                         {
-                            GameObject point = Instantiate(pointtype[0], transform.position + new Vector3(-0.6f, 0.4f, -2f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
+                            GameObject point = Instantiate(pointtype[0], transform.position + new Vector3(-0.6f, 0f, -2.5f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
                             point.GetComponent<TextMeshProUGUI>().text = "+75";
                         }
                         else
                         {
-                            GameObject point = Instantiate(pointtype[2], transform.position + new Vector3(-0.6f, 0.4f, -2f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
+                            GameObject point = Instantiate(pointtype[2], transform.position + new Vector3(-0.6f, 0f, -2.5f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
                             point.GetComponent<TextMeshProUGUI>().text = "-50";
                         }
                         break;

@@ -140,7 +140,7 @@ public class DishManager : MonoBehaviour
             }
         }
 
-        extraFoodSlider.gameObject.SetActive(true);
+        //extraFoodSlider.gameObject.SetActive(true);
 
         float startValue = (float)(currCount - 1) / recipeCount;
         float endValue = (float)currCount / recipeCount;
