@@ -6,6 +6,7 @@ TagManager:
   tags:
   - clone
   - Bowl
+  - Ingredients
   layers:
   - Default
   - TransparentFX

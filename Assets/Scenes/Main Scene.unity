@@ -8462,7 +8462,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 0.2, z: 0.25}
+  m_Size: {x: 0.25, y: 0.275, z: 0.25}
   m_Center: {x: 0, y: -0.1, z: 0}
 --- !u!54 &472761679
 Rigidbody:
@@ -9348,6 +9348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Wood: {fileID: 531512843}
+  bowl: {fileID: 919132147753000012}
 --- !u!95 &531512842
 Animator:
   serializedVersion: 4
@@ -13555,6 +13556,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 543450651754350326}
+  - {fileID: 1625360657}
   m_Father: {fileID: 1656265654}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26381,6 +26383,37 @@ Transform:
   m_Father: {fileID: 983280329}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1625360656
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1625360657}
+  m_Layer: 0
+  m_Name: MixIngParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1625360657
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625360656}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.2, y: 2.2, z: 2.2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 828385895}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1638359085
 GameObject:
   m_ObjectHideFlags: 0
@@ -27930,7 +27963,7 @@ GameObject:
   - component: {fileID: 1727757144}
   m_Layer: 0
   m_Name: Rice
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35819,7 +35852,7 @@ GameObject:
   - component: {fileID: 2790548011681340373}
   m_Layer: 0
   m_Name: Avaa
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35839,7 +35872,7 @@ GameObject:
   - component: {fileID: 1213896170646297326}
   m_Layer: 0
   m_Name: Cab
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36696,7 +36729,7 @@ GameObject:
   - component: {fileID: 2216820283849254052}
   m_Layer: 0
   m_Name: gRice
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36847,7 +36880,7 @@ MonoBehaviour:
   Add: {fileID: 3469287837819128164}
   Mix: {fileID: 3469287837819128163}
   manager: {fileID: 1656265653}
-  ingredientParent: {fileID: 0}
+  ingredientParent: {fileID: 1625360657}
 --- !u!54 &3469287837819128150
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36911,6 +36944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Wood: {fileID: 3469287837819128165}
+  bowl: {fileID: 919132147753000012}
 --- !u!82 &3469287837819128163
 AudioSource:
   m_ObjectHideFlags: 0
@@ -38030,7 +38064,7 @@ GameObject:
   - component: {fileID: 6274601173295791392}
   m_Layer: 0
   m_Name: Chick_S
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38050,7 +38084,7 @@ GameObject:
   - component: {fileID: 6163868505582247791}
   m_Layer: 0
   m_Name: Short
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38070,7 +38104,7 @@ GameObject:
   - component: {fileID: 6056004051745663761}
   m_Layer: 0
   m_Name: Spin
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39424,7 +39458,7 @@ GameObject:
   - component: {fileID: 5931364397350295891}
   m_Layer: 0
   m_Name: kale_S2
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39944,7 +39978,7 @@ GameObject:
   - component: {fileID: 6761671962917655259}
   m_Layer: 0
   m_Name: Chip
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39964,7 +39998,7 @@ GameObject:
   - component: {fileID: 6761671962692854100}
   m_Layer: 0
   m_Name: Corn
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39984,7 +40018,7 @@ GameObject:
   - component: {fileID: 6761671963725946237}
   m_Layer: 0
   m_Name: Oni
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40004,7 +40038,7 @@ GameObject:
   - component: {fileID: 6761671963236453799}
   m_Layer: 0
   m_Name: Bean
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40024,7 +40058,7 @@ GameObject:
   - component: {fileID: 6761671963292509146}
   m_Layer: 0
   m_Name: egg
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40044,7 +40078,7 @@ GameObject:
   - component: {fileID: 6761671962052430451}
   m_Layer: 0
   m_Name: Broccoli_Works
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40064,7 +40098,7 @@ GameObject:
   - component: {fileID: 6761671962018628338}
   m_Layer: 0
   m_Name: Pine
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40084,7 +40118,7 @@ GameObject:
   - component: {fileID: 6761671961813448872}
   m_Layer: 0
   m_Name: Carrot
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40104,7 +40138,7 @@ GameObject:
   - component: {fileID: 6761671962559803802}
   m_Layer: 0
   m_Name: Perma
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40124,7 +40158,7 @@ GameObject:
   - component: {fileID: 6761671962448144878}
   m_Layer: 0
   m_Name: Lime
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40144,7 +40178,7 @@ GameObject:
   - component: {fileID: 6761671962179647665}
   m_Layer: 0
   m_Name: Tofu_BBQ
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40164,7 +40198,7 @@ GameObject:
   - component: {fileID: 6761671962177781570}
   m_Layer: 0
   m_Name: Bro_ha
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40207,7 +40241,7 @@ GameObject:
   - component: {fileID: 2879317783107856254}
   m_Layer: 0
   m_Name: Tofu
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40227,7 +40261,7 @@ GameObject:
   - component: {fileID: 6558889068777026079}
   m_Layer: 0
   m_Name: Grape
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40498,7 +40532,7 @@ GameObject:
   - component: {fileID: 7919891306348950472}
   m_Layer: 0
   m_Name: Swee_D
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40633,7 +40667,7 @@ GameObject:
   - component: {fileID: 7919891306437338108}
   m_Layer: 0
   m_Name: Holi
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40666,7 +40700,7 @@ GameObject:
   - component: {fileID: 7919891306481080493}
   m_Layer: 0
   m_Name: Feta
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40973,7 +41007,7 @@ GameObject:
   - component: {fileID: 7919891306620350129}
   m_Layer: 0
   m_Name: Beets_D
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41173,7 +41207,7 @@ GameObject:
   - component: {fileID: 7919891306944957319}
   m_Layer: 0
   m_Name: Bean_B
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41291,7 +41325,7 @@ GameObject:
   - component: {fileID: 7919891307134361685}
   m_Layer: 0
   m_Name: Chicken
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41571,7 +41605,7 @@ GameObject:
   - component: {fileID: 7919891307185226952}
   m_Layer: 0
   m_Name: Mixx1
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41772,7 +41806,7 @@ GameObject:
   - component: {fileID: 7919891307302484213}
   m_Layer: 0
   m_Name: Goat
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41884,7 +41918,7 @@ GameObject:
   - component: {fileID: 7919891307376137579}
   m_Layer: 0
   m_Name: Cucum_R
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41948,7 +41982,7 @@ GameObject:
   - component: {fileID: 7919891307442830134}
   m_Layer: 0
   m_Name: Cucum_D
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42108,7 +42142,7 @@ GameObject:
   - component: {fileID: 7919891307630658488}
   m_Layer: 0
   m_Name: Beets_R
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42241,7 +42275,7 @@ GameObject:
   - component: {fileID: 7919891307706410344}
   m_Layer: 0
   m_Name: Rice_B
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42360,7 +42394,7 @@ GameObject:
   - component: {fileID: 7919891307782600436}
   m_Layer: 0
   m_Name: Mixx2
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42393,7 +42427,7 @@ GameObject:
   - component: {fileID: 7919891307807248493}
   m_Layer: 0
   m_Name: Chedder
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42837,7 +42871,7 @@ GameObject:
   - component: {fileID: 7919891308326943059}
   m_Layer: 0
   m_Name: Swee_R
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42974,7 +43008,7 @@ GameObject:
   - component: {fileID: 6050403436577643493}
   m_Layer: 0
   m_Name: Bulgar_S
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43181,7 +43215,7 @@ GameObject:
   - component: {fileID: 5412012944918411567}
   m_Layer: 0
   m_Name: kale_S1
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
