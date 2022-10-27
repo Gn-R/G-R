@@ -649,7 +649,7 @@ namespace CW.Common
 				}
 
 				var desc          = new RenderTextureDescriptor(width, height, RenderTextureFormat.ARGB32, 0);
-				var renderTexture = CwRenderTextureManager.GetTemporary(desc, "CwHelper GetReadableCopy");
+				var renderTexture = RenderTexture.GetTemporary(desc);
 
 				newTexture = new Texture2D(width, height, format, mipMaps, false);
 
@@ -659,7 +659,7 @@ namespace CW.Common
 					newTexture.ReadPixels(new Rect(0, 0, width, height), 0, 0);
 				EndActive();
 
-				CwRenderTextureManager.ReleaseTemporary(renderTexture);
+				RenderTexture.ReleaseTemporary(renderTexture);
 
 				newTexture.Apply();
 			}
