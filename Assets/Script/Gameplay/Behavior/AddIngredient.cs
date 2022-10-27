@@ -29,7 +29,9 @@ public class AddIngredient : MonoBehaviour
 
     public Transform ingredientParent;
 
-
+    public GameObject flowEmitter;
+    public GameObject pourEmitter;
+    private Coroutine pourCoroutine;
 
     private void Start()
     {
@@ -253,39 +255,45 @@ public class AddIngredient : MonoBehaviour
 
                     // TODO add names and indices for bottles
                     case "B1":
-                        AnimateBottle(hitInfo.transform.gameObject);
+                        //AnimateBottle(hitInfo.transform.gameObject);
                         // InstantiateIngredient(0, 1);
                         AddToCombo("B1", 125);
+                        PourLiquid(new Color(1, 0, 0));
                         break;
 
                     case "B2":
-                        AnimateBottle(hitInfo.transform.gameObject);
+                        //AnimateBottle(hitInfo.transform.gameObject);
                         // InstantiateIngredient(0, 1);
                         AddToCombo("B2", 125);
+                        PourLiquid(new Color(0, 1, 0));
                         break;
 
                     case "B3":
-                        AnimateBottle(hitInfo.transform.gameObject);
+                        //AnimateBottle(hitInfo.transform.gameObject);
                         // InstantiateIngredient(0, 1);
                         AddToCombo("B3", 125);
+                        PourLiquid(new Color(0, 0, 1));
                         break;
 
                     case "B4":
-                        AnimateBottle(hitInfo.transform.gameObject);
+                        //AnimateBottle(hitInfo.transform.gameObject);
                         // InstantiateIngredient(0, 1);
                         AddToCombo("B4", 125);
+                        PourLiquid(new Color(1, 1, 1));
                         break;
 
                     case "B5":
-                        AnimateBottle(hitInfo.transform.gameObject);
+                        //AnimateBottle(hitInfo.transform.gameObject);
                         InstantiateIngredient(0, 1);
                         AddToCombo("B5", 125);
+                        PourLiquid(new Color(.75f, .5f, 0));
                         break;
 
                     case "B6":
-                        AnimateBottle(hitInfo.transform.gameObject);
+                        //AnimateBottle(hitInfo.transform.gameObject);
                         // InstantiateIngredient(0, 1);
                         AddToCombo("B6", 125);
+                        PourLiquid(new Color(.5f, .3f, 0));
                         break;
                     
                     case "MainBowl":
@@ -307,6 +315,30 @@ public class AddIngredient : MonoBehaviour
             Instantiate(inge[index], transform.position + offset + randomOffset, Quaternion.Euler(0, 0, 0), ingredientParent);
         }
     }
+
+    private void PourLiquid(Color color)
+    {
+        if (pourCoroutine != null)
+        {
+            StopCoroutine(pourCoroutine);
+        }
+        pourCoroutine = StartCoroutine(PourCoroutine(color));
+    }
+
+    private IEnumerator PourCoroutine(Color color)
+    {
+        pourEmitter.GetComponent<FLOW.FlowEmitter>().Fluid.Color = color;
+        flowEmitter.GetComponent<FLOW.FlowEmitter>().Fluid.Color = color;
+        flowEmitter.GetComponent<FLOW.FlowEmitter>().enabled = true;
+        pourEmitter.GetComponent<FLOW.FlowEmitter>().enabled = true;
+
+        yield return new WaitForSeconds(3f);
+        flowEmitter.GetComponent<FLOW.FlowEmitter>().enabled = false;
+        pourEmitter.GetComponent<FLOW.FlowEmitter>().enabled = false;
+
+        pourCoroutine = null;
+    }
+
 
     private void AddToCombo(string name, int points)
     {
