@@ -6,67 +6,50 @@ using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour
 {
-	[SerializeField] Button swapPhoto;
-	[SerializeField] Image photo;
-
 	// Game modes
-	[SerializeField] Button playLast, showGameModes;
-	private bool selectMode;
+	[SerializeField] Button showGameModes;
 	[SerializeField] GameObject gameModesPanel;
+	private bool selectMode;
 	[SerializeField] Button elJefeFreeplay, elJefePro, randomFreeplay, randomPro;
 
 	void Start()
 	{
-		swapPhoto.onClick.AddListener(SwapOnClick);
-		playLast.onClick.AddListener(PlayOnClick);
-
 		gameModesPanel.SetActive(false);
 		selectMode = false;
-		showGameModes.onClick.AddListener(ToggleGameModes);
+		showGameModes.onClick.AddListener(ToggleGameModePanel);
 
-		elJefeFreeplay.onClick.AddListener(ElJefeFreeplayOnClick);
-		elJefePro.onClick.AddListener(ElJefeProOnClick);
-		randomFreeplay.onClick.AddListener(RandomFreeplayOnClick);
-		randomPro.onClick.AddListener(RandomProOnClick);
+		elJefeFreeplay.onClick.AddListener(PlayElJefeFreeplay);
+		elJefePro.onClick.AddListener(PlayElJefePro);
+		randomFreeplay.onClick.AddListener(PlayRandomFreeplay);
+		randomPro.onClick.AddListener(PlayRandomPro);
 	}
-
-	void ToggleGameModes()
+	void ToggleGameModePanel()
 	{
 		selectMode = !selectMode;
 		gameModesPanel.SetActive(selectMode);
 	}
 
-	void PlayOnClick()
-    {
-		SceneManager.LoadScene("Main Scene");
-	}
-
-	void ElJefeFreeplayOnClick()
+	void PlayElJefeFreeplay()
     {
 		DishManager.gameMode = 0;
 		SceneManager.LoadScene("Main Scene");
 	}
 
-	void ElJefeProOnClick()
+	void PlayElJefePro()
 	{
 		DishManager.gameMode = 1;
 		SceneManager.LoadScene("Main Scene");
 	}
 
-	void RandomFreeplayOnClick()
+	void PlayRandomFreeplay()
 	{
 		DishManager.gameMode = 2;
 		SceneManager.LoadScene("Main Scene");
 	}
 
-	void RandomProOnClick()
+	void PlayRandomPro()
 	{
 		DishManager.gameMode = 3;
 		SceneManager.LoadScene("Main Scene");
-	}
-
-	void SwapOnClick()
-	{
-		photo.enabled = !photo.enabled;
 	}
 }
