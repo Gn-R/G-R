@@ -495,15 +495,15 @@ namespace CW.Common
 			{
 				for (var i = 0; i < CwInput.GetTouchCount(); i++)
 				{
-					int id; Vector2 position; float pressure; bool set;
+					int id; Vector2 position; float pressure; bool up;
 
-					CwInput.GetTouch(i, out id, out position, out pressure, out set);
+					CwInput.GetTouch(i, out id, out position, out pressure, out up);
 
-					AddFinger(id, position, pressure, set);
+					AddFinger(id, position, pressure, up);
 				}
 			}
 			// If there are no real touches, simulate some from the mouse?
-			else if (CwInput.GetMouseExists() == true)
+			else
 			{
 				var mouseSet = false;
 				var mouseUp  = false;
@@ -514,11 +514,11 @@ namespace CW.Common
 					mouseUp  |= CwInput.GetMouseWentUp(i);
 				}
 
-				AddFinger(HOVER_FINGER_INDEX, CwInput.GetMousePosition(), 0.0f, true);
+				AddFinger(HOVER_FINGER_INDEX, CwInput.GetMousePosition(), 0.0f, false);
 
 				if (mouseSet == true || mouseUp == true)
 				{
-					AddFinger(MOUSE_FINGER_INDEX, CwInput.GetMousePosition(), 1.0f, mouseSet);
+					AddFinger(MOUSE_FINGER_INDEX, CwInput.GetMousePosition(), 1.0f, mouseUp);
 				}
 			}
 
@@ -544,7 +544,7 @@ namespace CW.Common
 			return null;
 		}
 
-		private void AddFinger(int index, Vector2 screenPosition, float pressure, bool set)
+		private void AddFinger(int index, Vector2 screenPosition, float pressure, bool up)
 		{
 			var finger = FindFinger(index);
 
@@ -576,7 +576,7 @@ namespace CW.Common
 
 			finger.Pressure       = pressure;
 			finger.ScreenPosition = screenPosition;
-			finger.Up             = set == false;
+			finger.Up             = up;
 		}
 
 		private static Vector2 Hermite(Vector2 a, Vector2 b, Vector2 c, Vector2 d, float t)
