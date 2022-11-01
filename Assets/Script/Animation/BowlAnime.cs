@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+using CW.Common;
 
 // Shakes the bowl and mixes ingredients
 public class BowlAnime : MonoBehaviour
@@ -27,6 +27,32 @@ public class BowlAnime : MonoBehaviour
         //resetBtn.onClick.AddListener(ResetClick);
     }
 
+    //private void OnEnable()
+    //{
+    //    Lean.Touch.LeanTouch.OnFingerSwipe += Swipe;
+    //}
+
+    //private void OnDisable()
+    //{
+    //    Lean.Touch.LeanTouch.OnFingerSwipe -= Swipe;
+    //}
+
+
+
+    //puvoid Swipe(Lean.Touch.LeanFinger finger)
+    //{
+    //    //finger.
+    //    //if (finger.RequiredAngle == 90)
+    //    //{
+    //    //    Debug.Log("E");
+    //    //}
+    //    //else if (finger.RequiredAngle == 270)
+    //    //{
+    //    //    Debug.Log("W");
+    //    //}
+    //}
+
+
     void DiscardClick()
     {
         Wood.Play();
@@ -39,6 +65,11 @@ public class BowlAnime : MonoBehaviour
     void ForwardClick()
     {
         Wood.Play();
+        Forward();
+    }
+
+    public void Forward()
+    {
         if (!Manager.Instance.Mixing && !Manager.Instance.discarding)
         {
             Manager.Instance.forward = true;
@@ -48,6 +79,11 @@ public class BowlAnime : MonoBehaviour
     void BackClick()
     {
         Wood.Play();
+        Backward();
+    }
+
+    public void Backward()
+    {
         if (!Manager.Instance.Mixing && !Manager.Instance.discarding)
         {
             Manager.Instance.back = true;

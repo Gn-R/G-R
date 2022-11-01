@@ -295,10 +295,6 @@ public class AddIngredient : MonoBehaviour
                         AddToCombo("B6", 125);
                         PourLiquid(new Color(.5f, .3f, 0));
                         break;
-                    
-                    case "MainBowl":
-                        MixBowl();
-                        break;
                 }
 
             }
