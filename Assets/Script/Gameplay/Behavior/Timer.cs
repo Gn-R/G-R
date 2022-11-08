@@ -30,7 +30,7 @@ public class Timer : MonoBehaviour
             if (timer < 0)
             {
                 Manager.Instance.GameTime = timer;
-                SceneManager.LoadScene("End Screen");
+                SceneManager.LoadScene("Final Scene");
             }
 
             if (timer >= 0) {

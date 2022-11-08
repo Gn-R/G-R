@@ -44,7 +44,7 @@ public class ServeDebug : MonoBehaviour
             Manager.Instance.Score = 0;
         }
 
-        SceneManager.LoadScene("End Screen");
+        SceneManager.LoadScene("Final Scene");
 
         manager.GetComponent<DishManager>().GetNewRecipe();
 
