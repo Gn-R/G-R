@@ -13072,7 +13072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2b29544581cbff48a74923442363fb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredAngle: 270
+  requiredAngle: 90
   requiredArc: 90
   onFinger:
     m_PersistentCalls:
@@ -13133,7 +13133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2b29544581cbff48a74923442363fb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredAngle: 90
+  requiredAngle: 270
   requiredArc: 90
   onFinger:
     m_PersistentCalls:

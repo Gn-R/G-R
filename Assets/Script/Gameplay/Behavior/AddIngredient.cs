@@ -284,7 +284,7 @@ public class AddIngredient : MonoBehaviour
 
                     case "B5":
                         //AnimateBottle(hitInfo.transform.gameObject);
-                        InstantiateIngredient(0, 1);
+                        //InstantiateIngredient(0, 1);
                         AddToCombo("B5", 125);
                         PourLiquid(new Color(.75f, .5f, 0));
                         break;
@@ -328,7 +328,7 @@ public class AddIngredient : MonoBehaviour
         flowEmitter.GetComponent<FLOW.FlowEmitter>().enabled = true;
         pourEmitter.GetComponent<FLOW.FlowEmitter>().enabled = true;
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         flowEmitter.GetComponent<FLOW.FlowEmitter>().enabled = false;
         pourEmitter.GetComponent<FLOW.FlowEmitter>().enabled = false;
 
