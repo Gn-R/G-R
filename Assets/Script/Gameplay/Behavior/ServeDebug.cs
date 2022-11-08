@@ -13,7 +13,6 @@ public class ServeDebug : MonoBehaviour
     public GameObject notAtEndMessage;
     private Coroutine endMessage;
 
-    // Start is called before the first frame update
     void Start()
     {
         button.onClick.AddListener(TaskOnClick);
@@ -31,17 +30,17 @@ public class ServeDebug : MonoBehaviour
             return;
         }
 
-        foreach (string str in Manager.Instance.combo)
-        {
-            // Debug.Log(str);
-        }
+        // foreach (string str in Manager.Instance.combo)
+        // {
+        //     Debug.Log(str);
+        // }
 
         if (manager.GetComponent<DishManager>().checkDish(Manager.Instance.combo))
         {
             Manager.Instance.totalScore += (int) (Manager.Instance.Score * Manager.Instance.ScoreMult);
         }
         else
-        {
+        {;
             Manager.Instance.Score = 0;
         }
 
