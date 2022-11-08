@@ -14,6 +14,8 @@ public class BowlAnime : MonoBehaviour
     Button resetBtn;
     public AudioSource Wood;
 
+    public GameObject bowl;
+
     void Start()
     {
         bowl_anime = GetComponent<Animator>();
@@ -59,6 +61,7 @@ public class BowlAnime : MonoBehaviour
         if (!Manager.Instance.Mixing)
         {
             Manager.Instance.discarding = true;
+            bowl.GetComponent<AddIngredient>().detachIng();
         }
     }
 
@@ -73,6 +76,7 @@ public class BowlAnime : MonoBehaviour
         if (!Manager.Instance.Mixing && !Manager.Instance.discarding)
         {
             Manager.Instance.forward = true;
+            bowl.GetComponent<AddIngredient>().attachIngToBowl();
         }
     }
 
@@ -87,6 +91,7 @@ public class BowlAnime : MonoBehaviour
         if (!Manager.Instance.Mixing && !Manager.Instance.discarding)
         {
             Manager.Instance.back = true;
+            bowl.GetComponent<AddIngredient>().attachIngToBowl();
         }
     }
 

@@ -308,7 +308,8 @@ public class AddIngredient : MonoBehaviour
         {
             //Used to offset ingredients to instantiate into bowl
             Vector3 randomOffset = new Vector3(Random.Range(-0.09f, 0.1f), Random.Range(-0.2f, 0.2f), Random.Range(-0.175f, 0.05f));
-            Instantiate(inge[index], transform.position + offset + randomOffset, Quaternion.Euler(0, 0, 0), ingredientParent);
+            GameObject ing = Instantiate(inge[index], transform.position + offset + randomOffset, Quaternion.Euler(0, 0, 0), transform);
+            ing.transform.localScale = Vector3.Scale(ing.transform.localScale, new Vector3(.45f, .45f, .45f));
         }
     }
 
@@ -387,8 +388,43 @@ public class AddIngredient : MonoBehaviour
             manager.GetComponent<LerpRail>().advanceStopPoint();
             Manager.Instance.Score += 100;
         }
+        detachIng();
         Manager.Instance.Mixing = true;
         Mix.Play();
+    }
+
+    public void attachIngToBowl()
+    {
+        List<Transform> children = new List<Transform>();
+        foreach (Transform child in ingredientParent)
+        {
+            if (child.CompareTag("Ingredients"))
+            {
+                children.Add(child);
+            }
+        }
+
+        foreach (Transform child in children)
+        {
+            child.SetParent(transform);
+        }
+    }
+
+    public void detachIng()
+    {
+        List<Transform> children = new List<Transform>();
+        foreach (Transform child in transform)
+        {
+            if (child.CompareTag("Ingredients"))
+            {
+                children.Add(child);
+            }
+        }
+
+        foreach (Transform child in children)
+        {
+            child.SetParent(ingredientParent);
+        }
     }
 
 
