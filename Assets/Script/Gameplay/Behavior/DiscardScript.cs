@@ -12,6 +12,7 @@ public class DiscardScript : MonoBehaviour
     Button resetBtn;
 
     public GameObject manager;
+    public GameObject drainer;
 
     private Coroutine discardCoroutine;
 
@@ -55,6 +56,7 @@ public class DiscardScript : MonoBehaviour
 
     private IEnumerator DiscardAnim()
     {
+
         Vector3 rot = manager.GetComponent<LerpRail>().GetCurrentPoint().GetChild(1).rotation.eulerAngles;
         Vector3 finalPos;
         Vector3 originalPos = transform.position;
@@ -77,6 +79,9 @@ public class DiscardScript : MonoBehaviour
             Debug.Log(transform.position);
         }
 
+        drainer.GetComponent<FLOW.FlowModifier>().enabled = true;
+
+
         transform.position = finalPos;
 
         for (int i = 0; i < 100; i++)
@@ -84,6 +89,8 @@ public class DiscardScript : MonoBehaviour
             transform.position = Vector3.Lerp(finalPos, originalPos, i / 100.0f);
             yield return new WaitForSeconds(0.01f);
         }
+
+        drainer.GetComponent<FLOW.FlowModifier>().enabled = false;
 
         transform.position = originalPos;
 

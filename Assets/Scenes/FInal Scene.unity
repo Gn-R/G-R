@@ -14110,6 +14110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 1656265653}
+  drainer: {fileID: 1948321901}
 --- !u!1 &834394776
 GameObject:
   m_ObjectHideFlags: 0
@@ -27176,6 +27177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 1656265653}
+  drainer: {fileID: 1948321901}
 --- !u!1 &1610785164
 GameObject:
   m_ObjectHideFlags: 0
@@ -32793,6 +32795,47 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6375075437820120329, guid: 7bad738ef102f094fb39df330b10f18e, type: 3}
   m_PrefabInstance: {fileID: 1948321897}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1948321901 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4866812017486466937, guid: 7bad738ef102f094fb39df330b10f18e, type: 3}
+  m_PrefabInstance: {fileID: 1948321897}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1948321902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948321901}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a556ce706306b8b4ea7993149a7e99a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: {x: 100, y: 0, z: 100}
+  shape: {fileID: 0}
+  shapeChannel: 3
+  center: 1
+  apply: 2
+  mode: 20
+  heightMin: 0
+  heightMax: 1
+  fluid: {fileID: 0}
+  angle: 0
+  directions: {fileID: 0}
+  color: {r: 1, g: 1, b: 1, a: 1}
+  colorChannels: {x: 1, y: 1, z: 1, w: 1}
+  strength: 100
+  onApplied:
+    m_PersistentCalls:
+      m_Calls: []
+  monitorFluidDepth: 0
+  onFluidDepthDelta:
+    m_PersistentCalls:
+      m_Calls: []
+  onFluidVolumeDelta:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1963957644
 GameObject:
   m_ObjectHideFlags: 0
