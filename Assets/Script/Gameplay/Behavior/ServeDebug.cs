@@ -41,7 +41,7 @@ public class ServeDebug : MonoBehaviour
         }
         else
         {;
-            Manager.Instance.Score = 0;
+            Manager.Instance.totalScore = Manager.Instance.Score;
         }
 
         SceneManager.LoadScene("Final Scene");

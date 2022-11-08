@@ -10,7 +10,7 @@ public class EndScreen : MonoBehaviour
     
     void Start()
     {
-        scoreText.text = "Final Score: " + Manager.Instance.totalScore;
+        scoreText.text = "" + Manager.Instance.totalScore;
         menuButton.onClick.AddListener(ToMainMenu);
     }
 
