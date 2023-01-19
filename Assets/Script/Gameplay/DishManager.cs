@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using System.Linq;
 using TMPro;
 
-
 public class DishManager : MonoBehaviour
 {
     public string currDish = "";
@@ -24,7 +23,7 @@ public class DishManager : MonoBehaviour
     const float SLIDER_ANIM_SPEED = 4;
     const float SLIDER_ANIM_SECONDS = 2;
 
-    //0 = El Jefe Freeplay, 1 = El Jefe Pro, 2 = Random Freeplay, 3 = Random Pro
+    //0 = El Jefe Freeplay, 1 = El Jefe Pro, 2 = Random Freeplay, 3 = Random Pro, 4 = Specific Recipe
     public static int gameMode = 2;
 
     void Start()
@@ -62,19 +61,19 @@ public class DishManager : MonoBehaviour
             currDish = "El Jefe";
         }
         //Sets random dishes
-        else
+        else if (gameMode != 4)
         {
             currDish = Recipes.GetRandomDish();
         }
 
-        currRecipe = new List<string>(Recipes.GetRecipe(currDish));
+        currRecipe = new List<string>(Recipes.GetRecipe(currDish).GetIngredients());
         mixes = 0;
         int count = currRecipe.Count;
         string extraIngredients = "";
 
 
         //Add randomization 
-        if (gameMode > 1)
+        if (gameMode > 1 && gameMode != 4)
         {
             for (int i = 0; i < count; i++)
             {

@@ -2,28 +2,48 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Internal class to store a list of ingredients
+public class Recipe
+{
+    public readonly string name; // name of dish
+    public readonly List<string> ingredients; // ingredients list
+    private int currentLevel = 1;
+    private int progress = 0;
+
+    public Recipe(string name, params string[] ingredients)
+    {
+        this.name = name;
+        this.ingredients = new List<string>(ingredients);
+    }
+
+    // Copy of ingredients
+    public List<string> GetIngredients()
+    {
+        return new List<string>(ingredients);
+    }
+
+    public int GetCurrentLevel()
+    {
+        return currentLevel;
+    }
+
+    public void IncreaseLevel()
+    {
+        currentLevel++;
+        progress = 0;
+    }
+
+    public int GetProgress()
+    {
+        return progress;
+    }
+}
+
 // A list a recipes the program uses.f
 // In the future, load these from a text file and distinguish between ingredient types (base, dressing, etc.).
 public class Recipes
 {
-    // Internal class to store a list of ingredients
-    private class Recipe
-    {
-        public readonly string name; // name of dish
-        public readonly List<string> ingredients; // ingredients list
 
-        public Recipe(string name, params string[] ingredients)
-        {
-            this.name = name;
-            this.ingredients = new List<string>(ingredients);
-        }
-
-        // Copy of ingredients
-        public List<string> GetIngredients()
-        {
-            return new List<string>(ingredients);
-        }
-    }
     
     public static string GetRandomDish()
     {
@@ -31,17 +51,17 @@ public class Recipes
         return allRecipes[rand].name;
     }
 
-    public static List<string> GetRecipe(string dish)
+    public static Recipe GetRecipe(string dish)
     {
         // Search for a recipe
         foreach (Recipe r in allRecipes)
         {
             if (r.name.Equals(dish))
             {
-                return r.GetIngredients();
+                return r;
             }
         }
-        return rootsBowl.GetIngredients(); // default in case bad name entered
+        return rootsBowl; // default in case bad name entered
     }
 
     // Roots Recipes
