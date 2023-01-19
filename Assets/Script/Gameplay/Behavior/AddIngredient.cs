@@ -8,7 +8,7 @@ using TMPro;
 public class AddIngredient : MonoBehaviour
 {
 
-    public GameObject pointpos;
+    public GameObject[] pointpos;
     public Canvas UI;
     public Button mixButton;
     public GameObject[] inge;
