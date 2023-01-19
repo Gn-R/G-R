@@ -7,6 +7,7 @@ TagManager:
   - clone
   - Bowl
   - Ingredients
+  - UI
   layers:
   - Default
   - TransparentFX
