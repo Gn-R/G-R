@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+// TODO repurpose into money earned
 public class Score : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;

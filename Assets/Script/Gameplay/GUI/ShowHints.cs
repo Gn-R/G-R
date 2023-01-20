@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// Shows hints when the "Hint" button is pressed
 public class ShowHints : MonoBehaviour
 {
     [SerializeField] Button hintButton;

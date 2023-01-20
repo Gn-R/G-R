@@ -7,41 +7,40 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] float timeLimit;
-    private float timer;
+    [SerializeField] float maxTime;
+    private float timeLeft;
     [SerializeField] RectTransform timerBar, timerFill;
     private Vector3 startPos;
-    private float width, positionDx;
+    private float height;
 
     void Start()
     {
-        timer = timeLimit;
+        timeLeft = maxTime;
         startPos = timerFill.localPosition;
-        width = timerFill.rect.width;
+        height = timerFill.rect.height;
     }
 
     void Update()
     {
-        if (!Manager.Instance.paused) // Disable timer if paused
+        if (!Manager.Instance.paused) // Advanced timer when unpaused
         {            
-            timer -= Time.deltaTime;
-            Manager.Instance.GameTime = timer;
+            timeLeft -= Time.deltaTime;
+            Manager.Instance.GameTime = timeLeft;
 
-            if (timer < 0)
+            if (timeLeft < 0)
             {
-                Manager.Instance.GameTime = timer;
+                Manager.Instance.GameTime = timeLeft;
                 SceneManager.LoadScene("Final Scene");
             }
-
-            if (timer >= 0) {
-                // shrink the timer bar
+            else {
+                // shrink the timer bar vertically
                 int timeInt = Mathf.CeilToInt(Manager.Instance.GameTime);
-                float percentTimeLeft = timeInt / timeLimit;
-                timerFill.localScale = new Vector3(percentTimeLeft, 1, 1);
+                float percentTimeLeft = timeInt / maxTime;
+                timerFill.localScale = new Vector3(1, percentTimeLeft, 1);
 
-                // keep bar anchored left
-                float dx = (1f - percentTimeLeft) * width / 2f;
-                timerFill.localPosition = startPos + dx * Vector3.left;
+                // keep bar anchored down
+                float dy = (1f - percentTimeLeft) * height / 2f;
+                timerFill.localPosition = startPos + dy * Vector3.down;
             }
         }
     }

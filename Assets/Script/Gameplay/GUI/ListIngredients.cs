@@ -4,62 +4,43 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+// Lists the ingredients of the current dish
 public class ListIngredients : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI baseText, toppingsText, dressingText, grillText;
     
     void Start()
     {
+        ClearText();
+        // For testing only
+        string recipe = "roots bowl"; // TODO ingredients from current dish
+        ShowRecipeIngredients(recipe);
+    }
+
+    public void ClearText() {
         baseText.text = "";
         toppingsText.text = "";
         dressingText.text = "";
         grillText.text = "";
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space)) // For testing only
-        {
-            SetBase("Food");
-            SetToppings(new List<string>() {"Food", "Flavor", "Extra Food"});
-            SetDressing("Sauce");
-            SetGrill("Food");
-        }
-    }
-
-    public void SetBase(string baseStr) // can't use "base" as identifier
-    {
-        baseText.text = string.Format("• {0}", baseStr);
-    }
-
-    public void SetBases(List<string> bases)
+    private void SetTextField(TextMeshProUGUI textField, params string[] lines)
     {
         string listText = "";
-        foreach (string baseStr in bases)
+        foreach (string ln in lines)
         {
-            listText += string.Format("• {0}\n", baseStr);
+            listText += string.Format("• {0}\n", ln);
         }
-        baseText.text = listText;
+        textField.text = listText;
     }
 
-    public void SetToppings(List<string> toppings)
+    public void ShowRecipeIngredients(string recipeName)
     {
-        string listText = "";
-        foreach (string topping in toppings)
-        {
-            listText += string.Format("• {0}\n", topping);
-        }
-        toppingsText.text = listText;
-    }
-
-    public void SetDressing(string dressing)
-    {
-        dressingText.text = string.Format("• {0}", dressing);
-    }
-
-    public void SetGrill(string grill)
-    {
-        grillText.text = string.Format("• {0}", grill);
+        Recipe recipe = Recipes.GetRecipe(recipeName);
+        SetTextField(baseText, recipe.bases);
+        SetTextField(toppingsText, recipe.toppings);
+        SetTextField(dressingText, recipe.dressing);
+        SetTextField(grillText, recipe.grill);
     }
 
 }

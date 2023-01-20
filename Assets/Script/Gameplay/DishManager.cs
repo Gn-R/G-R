@@ -11,14 +11,12 @@ public class DishManager : MonoBehaviour
     public string currDish = "";
     public List<string> currRecipe = new List<string>();
 
-    public ShowRecipe showRecipe;
     public TextMeshProUGUI orderText;
     public GameObject orderTimerManager;
 
     public int mixes = 0;
 
     public Slider extraFoodSlider;
-
 
     public Coroutine showItemCoroutine;
     const float SLIDER_ANIM_SPEED = 4;
@@ -68,7 +66,7 @@ public class DishManager : MonoBehaviour
             currDish = Recipes.GetRandomDish();
         }
 
-        currRecipe = new List<string>(Recipes.GetRecipe(currDish));
+        currRecipe = new List<string>(Recipes.GetRecipe(currDish).GetIngredients());
         mixes = 0;
         int count = currRecipe.Count;
         string extraIngredients = "";
@@ -88,7 +86,6 @@ public class DishManager : MonoBehaviour
             }
         }
 
-        showRecipe.SetRecipe(currRecipe);
         // BUG: Getting null recipes
         // orderText.text = "Order: " + currDish;
         // if (!extraIngredients.Equals(""))

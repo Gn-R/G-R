@@ -4,18 +4,16 @@ using UnityEngine;
 using UnityEngine.UI;
 
 // Changes the image in the top right corner based on the dish
-// To be called by the main menu scene
 public class DishLabel : MonoBehaviour
 {
     [SerializeField] Image dishLabel;
     [SerializeField] List<Sprite> sprites;
 
-    void Update()
+    void Start()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) // For testing only
-        {
-            SetLabel("roots b");
-        }
+        // For testing only
+        string recipe = "roots bowl";
+        SetLabel(recipe); // TODO use current recipe
     }
 
     // Set label image based on the index in the array
