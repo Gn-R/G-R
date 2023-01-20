@@ -44,6 +44,7 @@ public class DishManager : MonoBehaviour
     public void GetNewRecipe()
     {
         Debug.Log(gameMode);
+        // TODO null reference exception for OrderTimerDebug
         //Sets timer for freeplay (more time)
         if (gameMode % 2 == 0)
         {

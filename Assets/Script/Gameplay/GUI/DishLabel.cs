@@ -7,12 +7,12 @@ using UnityEngine.UI;
 // To be called by the main menu scene
 public class DishLabel : MonoBehaviour
 {
+    [SerializeField] Image dishLabel;
     [SerializeField] List<Sprite> sprites;
 
-    [SerializeField] Image dishLabel;
-
-    void Update() {
-        if (Input.GetKeyDown(KeyCode.Space))
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space)) // For testing only
         {
             SetLabel("roots b");
         }
