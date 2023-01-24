@@ -17,8 +17,11 @@ public class ShowHints : MonoBehaviour
     }
 
     public void ShowHint() {
+        // Deplete remaining hints
         if (hintsLeft <= 0) return;
         hintsLeft--;
         hintBoxes[hintsLeft].SetActive(false);
+        
+        // Do something based on difficulty
     }
 }

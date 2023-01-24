@@ -7,7 +7,7 @@ using TMPro;
 // Lists the ingredients of the current dish
 public class ListIngredients : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI baseText, toppingsText, dressingText, grillText;
+    [SerializeField] TextMeshProUGUI baseText, toppingsText, dressingText, proteinText;
     
     void Start()
     {
@@ -21,7 +21,7 @@ public class ListIngredients : MonoBehaviour
         baseText.text = "";
         toppingsText.text = "";
         dressingText.text = "";
-        grillText.text = "";
+        proteinText.text = "";
     }
 
     private void SetTextField(TextMeshProUGUI textField, params string[] lines)
@@ -40,7 +40,7 @@ public class ListIngredients : MonoBehaviour
         SetTextField(baseText, recipe.bases);
         SetTextField(toppingsText, recipe.toppings);
         SetTextField(dressingText, recipe.dressing);
-        SetTextField(grillText, recipe.grill);
+        SetTextField(proteinText, recipe.grill);
     }
 
 }

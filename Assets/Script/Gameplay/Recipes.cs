@@ -32,12 +32,12 @@ public class Recipes
         new string[] {} // From the Grill (protein)
     );
 
-    private static readonly Recipe rootsBowl = new Recipe(
-        "Roots Bowl",
-        new string[] {"Roots Rice", "Spinach"},
-        new string[] {"Roasted Sweet Potatoes", "Roasted Sweet Potatoes", "Red Onions", "Goat Cheese", "Dried Cranberries"},
-        new string[] {"Lemon Tahini"},
-        new string[] {}
+    private static readonly Recipe cornerCobb = new Recipe(
+        "Corner Cobb",
+        new string[] {"Arcadian Mix", "Roots Rice", "Kale"},
+        new string[] {"Roasted Broccoli", "Red Onions", "Pickled Jalapeños", "Red Cabbage", "Toasted Almonds"},
+        new string[] {"Miso Ginger"},
+        new string[] {"Chicken"}
     );
 
     private static readonly Recipe elJefe = new Recipe(
@@ -45,14 +45,6 @@ public class Recipes
         new string[] {"Brown Rice", "Kale"},
         new string[] {"Black Beans", "Charred Corn", "Red Onions", "Avocado", "Pita Chips", "Feta"},
         new string[] {"Cilantro Lime"},
-        new string[] {"Chicken"}
-    );
-
-    private static readonly Recipe cornerCobb = new Recipe(
-        "Corner Cobb",
-        new string[] {"Arcadian Mix", "Roots Rice", "Kale"},
-        new string[] {"Roasted Broccoli", "Red Onions", "Pickled Jalapeños", "Red Cabbage", "Toasted Almonds"},
-        new string[] {"Miso Ginger"},
         new string[] {"Chicken"}
     );
 
@@ -72,20 +64,20 @@ public class Recipes
         new string[] {"Chicken"}
     );
 
+    private static readonly Recipe rootsBowl = new Recipe(
+        "Roots Bowl",
+        new string[] {"Roots Rice", "Spinach"},
+        new string[] {"Roasted Sweet Potatoes", "Roasted Sweet Potatoes", "Red Onions", "Goat Cheese", "Dried Cranberries"},
+        new string[] {"Lemon Tahini"},
+        new string[] {}
+    );
+
     private static readonly Recipe tamari = new Recipe(
         "Tamari",
         new string[] {"Brown Rice", "Kale"},
         new string[] {"Roasted Broccoli", "Red Onion", "Carrots", "Pickled Jalapenos", "Red Cabbage", "Toasted Almonds"},
         new string[] {"Miso Ginger"},
         new string[] {"Red Chili Miso Tofu"}
-    );
-
-    private static readonly Recipe madBowl = new Recipe(
-        "Mad Bowl",
-        new string[] {"Brown Rice", "Spinach"},
-        new string[] {"Cannellini Beans", "Roasted Broccoli", "Cucumbers", "Grape Tomatoes", "Red Onions", "Shaved Parmesan"},
-        new string[] {"Pesto Vinaigrette", "Basil Balsamic"},
-        new string[] {"Mushrooms"}
     );
 
     private static readonly Recipe theApollo = new Recipe(
@@ -96,14 +88,6 @@ public class Recipes
         new string[] {"Chicken"}
     );
 
-    private static readonly Recipe theSouthern = new Recipe(
-        "The Southern",
-        new string[] {"Roots Rice", "Kale"},
-        new string[] {"Chickpeas", "Roasted Broccoli", "Charred Corn", "Lime-Pickled Onions", "Cheddar"},
-        new string[] {"Lemon Tahini"},
-        new string[] {"BBQ Tofu"}
-    );
-
     private static readonly Recipe theBalboa = new Recipe(
         "The Balboa",
         new string[] {"Brown Rice"},
@@ -112,11 +96,27 @@ public class Recipes
         new string[] {"Chicken"}
     );
 
+    private static readonly Recipe theLola = new Recipe(
+        "The Lola", // is this supposed to be the Mad Bowl?
+        new string[] {"Brown Rice", "Spinach"},
+        new string[] {"Cannellini Beans", "Roasted Broccoli", "Cucumbers", "Grape Tomatoes", "Red Onions", "Shaved Parmesan"},
+        new string[] {"Pesto Vinaigrette", "Basil Balsamic"},
+        new string[] {"Mushrooms"}
+    );
+
+    private static readonly Recipe theSouthern = new Recipe(
+        "The Southern",
+        new string[] {"Roots Rice", "Kale"},
+        new string[] {"Chickpeas", "Roasted Broccoli", "Charred Corn", "Lime-Pickled Onions", "Cheddar"},
+        new string[] {"Lemon Tahini"},
+        new string[] {"BBQ Tofu"}
+    );
+
     // Store All Recipes
 
     private static readonly Recipe[] allRecipes = {
-        rootsBowl, elJefe, cornerCobb, mayweather, pestoCaesar,
-        tamari, madBowl, theApollo, theSouthern, theBalboa
+        cornerCobb, elJefe, mayweather, pestoCaesar, rootsBowl,
+        tamari, theApollo, theBalboa, theLola, theSouthern
     };
 
 }

@@ -8,7 +8,7 @@ using TMPro;
 
 public class DishManager : MonoBehaviour
 {
-    public string currDish = "";
+    public string currDish = ""; // make this static
     public List<string> currRecipe = new List<string>();
 
     public TextMeshProUGUI orderText;
@@ -22,20 +22,20 @@ public class DishManager : MonoBehaviour
     const float SLIDER_ANIM_SPEED = 4;
     const float SLIDER_ANIM_SECONDS = 2;
 
-    //0 = El Jefe Freeplay, 1 = El Jefe Pro, 2 = Random Freeplay, 3 = Random Pro
-    public static int gameMode = 2;
+    // Difficulty (0-2)
+    public static int gameMode = 0;
 
     void Start()
     {
         Manager.Instance.totalScore = 0;
-        GetNewRecipe();
+        SetRecipe("Roots Bowl");
+        // GetNewRecipe();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetRecipe(string recipe)
     {
-        
-
+        currDish = recipe;
+        currRecipe = Recipes.GetRecipe(currDish).GetIngredients();
     }
 
     //Randomizes a new recipe for another order
@@ -43,7 +43,7 @@ public class DishManager : MonoBehaviour
     {
         Debug.Log(gameMode);
         // TODO null reference exception for OrderTimerDebug
-        //Sets timer for freeplay (more time)
+        // Sets timer for freeplay (more time)
         if (gameMode % 2 == 0)
         {
             orderTimerManager.GetComponent<OrderTimerDebug>().StartOrderTimer(60);
@@ -66,11 +66,10 @@ public class DishManager : MonoBehaviour
             currDish = Recipes.GetRandomDish();
         }
 
-        currRecipe = new List<string>(Recipes.GetRecipe(currDish).GetIngredients());
+        // TODO Dish will be set by starting scene
         mixes = 0;
         int count = currRecipe.Count;
         string extraIngredients = "";
-
 
         //Add randomization 
         if (gameMode > 1)

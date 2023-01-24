@@ -14356,8 +14356,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -20050,8 +20050,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -27443,8 +27443,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -30244,7 +30244,7 @@ MonoBehaviour:
   baseText: {fileID: 1964552794}
   toppingsText: {fileID: 1211809113}
   dressingText: {fileID: 1596156706}
-  grillText: {fileID: 845517194}
+  proteinText: {fileID: 845517194}
 --- !u!114 &1768207511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33648,8 +33648,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -38612,11 +38612,9 @@ MonoBehaviour:
   - {fileID: 6420902521774457834}
   - {fileID: 7919891307185226947}
   - {fileID: 5695861560846568133}
-  pointtype:
-  - {fileID: 2826104800254471663, guid: 69f59156de6fb3b4c94861ca4bfb5f3b, type: 3}
-  - {fileID: 7787613296260956288, guid: 33676d8116d28b041b530d8fb317d707, type: 3}
-  - {fileID: 2826104800254471663, guid: c8bf93ce614eb0942934080aee55af8f, type: 3}
-  - {fileID: 7787613296260956288, guid: 15e5877ccf6230b45a2d0518ecf3c050, type: 3}
+  redText: {fileID: 7787613296260956288, guid: f8c38404036bf4b889a3887a05fee73d, type: 3}
+  greenText: {fileID: 2826104800254471663, guid: cd674db4f3c454e8798fddb6f98dfdf1, type: 3}
+  orangeText: {fileID: 7787613296260956288, guid: ec72c1601cd4c43eda2540571e918c66, type: 3}
   Add: {fileID: 3469287837819128164}
   Mix: {fileID: 3469287837819128163}
   manager: {fileID: 1656265653}
