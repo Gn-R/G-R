@@ -8,7 +8,7 @@ public class Recipe
     public readonly string name; // name of dish
     public readonly List<string> ingredients; // ingredients list
     private int currentLevel = 1;
-    private int progress = 0;
+    private bool completed = false;
 
     public Recipe(string name, params string[] ingredients)
     {
@@ -30,12 +30,12 @@ public class Recipe
     public void IncreaseLevel()
     {
         currentLevel++;
-        progress = 0;
+        completed = false;
     }
 
-    public int GetProgress()
+    public bool GetCompletion()
     {
-        return progress;
+        return completed;
     }
 }
 

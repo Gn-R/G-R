@@ -7,8 +7,8 @@ using TMPro;
 
 public class DishManager : MonoBehaviour
 {
-    public string currDish = "";
-    public List<string> currRecipe = new List<string>();
+    public static string currDish = "";
+    public static List<string> currRecipe = new List<string>();
 
     public ShowRecipe showRecipe;
     public TextMeshProUGUI orderText;

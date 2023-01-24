@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+
 
 public class LearnRecipeUI : MonoBehaviour
 {
     [SerializeField] GameObject learnSceneManager;
     [SerializeField] Button selectRecipe;
-    [SerializeField] Slider[] levelSliders;
-    [SerializeField] Text recipeNameText;
+    [SerializeField] ProgressBar[] levelSliders;
+    [SerializeField] TextMeshProUGUI recipeNameText;
 
     public string recipeName = "";
     private Recipe recipe;
@@ -21,19 +23,14 @@ public class LearnRecipeUI : MonoBehaviour
         selectRecipe.onClick.AddListener(chooseRecipe);
 
         for (int i = 0; i < recipe.GetCurrentLevel(); i++) {
-            levelSliders[i].value = 100;
+            levelSliders[i].setCompletion(true);
         }
-        levelSliders[recipe.GetCurrentLevel() - 1].value = recipe.GetProgress();
+        levelSliders[recipe.GetCurrentLevel() - 1].setCompletion(recipe.GetCompletion());
     }
 
     void chooseRecipe()
     {
         learnSceneManager.GetComponent<LearnManager>().setRecipe(recipe);
         //TODO: Set Button Look to show selection
-    }
-
-    public int returnProgress()
-    {
-        return recipe.GetProgress();
     }
 }
