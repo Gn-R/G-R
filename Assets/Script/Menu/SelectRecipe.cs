@@ -5,19 +5,20 @@ using UnityEngine.UI;
 using TMPro;
 
 
-public class LearnRecipeUI : MonoBehaviour
+public class SelectRecipe : MonoBehaviour
 {
     [SerializeField] GameObject learnSceneManager;
-    [SerializeField] Button selectRecipe;
+    [SerializeField] Button selectButton;
     [SerializeField] ProgressBar[] levelSliders;
     [SerializeField] string recipeName = "";
+    
     private Recipe recipe;
 
     // Start is called before the first frame update
     void Start()
     {
         recipe = Recipes.GetRecipe(recipeName);
-        selectRecipe.onClick.AddListener(chooseRecipe);
+        selectButton.onClick.AddListener(chooseRecipe);
 
         for (int i = 0; i < recipe.GetCurrentLevel(); i++) {
             levelSliders[i].setCompletion(true);

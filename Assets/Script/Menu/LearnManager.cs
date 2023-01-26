@@ -8,7 +8,7 @@ using TMPro;
 public class LearnManager : MonoBehaviour
 {
     [SerializeField] Button continueRecipe;
-    [SerializeField] TextMeshProUGUI progress, currentRecipe;
+    [SerializeField] TextMeshProUGUI progress, currentRecipe, cashEarned;
     [SerializeField] ProgressBar progressBar;
 
     private static Recipe currRecipe;
@@ -17,6 +17,7 @@ public class LearnManager : MonoBehaviour
     {
         continueRecipe.onClick.AddListener(AdvanceToPlay);
         continueRecipe.enabled = false;
+        SetCashEarned(0);
     }
 
     void AdvanceToPlay()
@@ -37,5 +38,10 @@ public class LearnManager : MonoBehaviour
         progress.text = "Level: " + recipe.GetCurrentLevel();
         progressBar.setCompletion(recipe.GetCompletion());
         currentRecipe.text = recipe.name;
+    }
+
+    public void SetCashEarned(int cash)
+    {
+        cashEarned.text = "$" + cash;
     }
 }
