@@ -16,16 +16,23 @@ public class LearnManager : MonoBehaviour
     void Start()
     {
         continueRecipe.onClick.AddListener(AdvanceToPlay);
+        continueRecipe.enabled = false;
     }
 
     void AdvanceToPlay()
     {
+        if (currentRecipe == null) return;
         DishManager.currDish = currRecipe.name;
         SceneManager.LoadScene("Main Scene");
     }
 
-    public void setRecipe(Recipe recipe)
+    public void SetRecipe(Recipe recipe)
     {
+        if (!continueRecipe.enabled)
+        {
+            continueRecipe.enabled = true;
+        }
+        
         currRecipe = recipe;
         progress.text = "Level: " + recipe.GetCurrentLevel();
         progressBar.setCompletion(recipe.GetCompletion());

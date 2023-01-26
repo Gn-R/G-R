@@ -10,15 +10,12 @@ public class LearnRecipeUI : MonoBehaviour
     [SerializeField] GameObject learnSceneManager;
     [SerializeField] Button selectRecipe;
     [SerializeField] ProgressBar[] levelSliders;
-    [SerializeField] TextMeshProUGUI recipeNameText;
-
-    public string recipeName = "";
+    [SerializeField] string recipeName = "";
     private Recipe recipe;
 
     // Start is called before the first frame update
     void Start()
     {
-        recipeNameText.text = recipeName;
         recipe = Recipes.GetRecipe(recipeName);
         selectRecipe.onClick.AddListener(chooseRecipe);
 
@@ -30,7 +27,7 @@ public class LearnRecipeUI : MonoBehaviour
 
     void chooseRecipe()
     {
-        learnSceneManager.GetComponent<LearnManager>().setRecipe(recipe);
+        learnSceneManager.GetComponent<LearnManager>().SetRecipe(recipe);
         //TODO: Set Button Look to show selection
     }
 }
