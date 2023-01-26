@@ -9,8 +9,8 @@ public class BowlAnime : MonoBehaviour
 {
     private Animator bowl_anime;
     Button discBtn;
-    Button fwdBtn;
-    Button backBtn;
+    Button rightBtn;
+    Button leftBtn;
     Button resetBtn;
     public AudioSource Wood;
 
@@ -19,14 +19,12 @@ public class BowlAnime : MonoBehaviour
     void Start()
     {
         bowl_anime = GetComponent<Animator>();
-        discBtn = GameObject.Find("Discard").GetComponent<Button>();
+        discBtn = GameObject.Find("Discard Button").GetComponent<Button>();
         discBtn.onClick.AddListener(DiscardClick);
-        fwdBtn = GameObject.Find("Move Forward").GetComponent<Button>();
-        fwdBtn.onClick.AddListener(ForwardClick);
-        backBtn = GameObject.Find("Move Back").GetComponent<Button>();
-        backBtn.onClick.AddListener(BackClick);
-        //resetBtn = GameObject.Find("Reset").GetComponent<Button>();
-        //resetBtn.onClick.AddListener(ResetClick);
+        rightBtn = GameObject.Find("Right Button").GetComponent<Button>();
+        rightBtn.onClick.AddListener(ForwardClick);
+        leftBtn = GameObject.Find("Left Button").GetComponent<Button>();
+        leftBtn.onClick.AddListener(BackClick);
     }
 
     //private void OnEnable()
@@ -39,9 +37,7 @@ public class BowlAnime : MonoBehaviour
     //    Lean.Touch.LeanTouch.OnFingerSwipe -= Swipe;
     //}
 
-
-
-    //puvoid Swipe(Lean.Touch.LeanFinger finger)
+    //public void Swipe(Lean.Touch.LeanFinger finger)
     //{
     //    //finger.
     //    //if (finger.RequiredAngle == 90)
@@ -53,7 +49,6 @@ public class BowlAnime : MonoBehaviour
     //    //    Debug.Log("W");
     //    //}
     //}
-
 
     void DiscardClick()
     {

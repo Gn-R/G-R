@@ -12,7 +12,7 @@ public class AddIngredient : MonoBehaviour
     public Canvas UI;
     public Button mixButton;
     public GameObject[] inge;
-    public GameObject[] pointtype;
+    public GameObject redText, greenText, orangeText;
 
     public AudioSource Add;
     public AudioSource Mix;
@@ -59,240 +59,212 @@ public class AddIngredient : MonoBehaviour
             {
                 railPoint = manager.GetComponent<LerpRail>().points[manager.GetComponent<LerpRail>().currPoint].GetChild(1);
                 
-                switch(hitInfo.transform.name)
+                string ingredient = hitInfo.transform.name;
+                switch(ingredient)
                 {
-                    // Define all the raycastable ingredients
+                    // Define all the raycastable ingredient
                     // TODO use dictionary/set to look up ingredient names?
+                    // TODO rename ingredient prefabs/wells
                     case "Brown":
                         InstantiateIngredient(0, 50);
-                        AddToCombo("Brown Rice", 75);
+                        AddToCombo("Brown Rice");
                         break;
 
                     case "Roots":
                         InstantiateIngredient(1, 50);
-                        AddToCombo("Roots Rice", 75);
+                        AddToCombo("Roots Rice");
                         break;
 
                     case "Chickp":
                         InstantiateIngredient(2, 20);
-                        AddToCombo("Chickpeas", 100);
+                        AddToCombo("Chickpeas");
                         break;
 
                     case "Broccoli":
                         InstantiateIngredient(3, 20);
-                        AddToCombo("Broccoli", 100);
+                        AddToCombo("Broccoli");
                         break;
 
                     case "Cannellinib":
                         InstantiateIngredient(4, 20);
-                        AddToCombo("Cannellini Beans", 100);
+                        AddToCombo("Cannellini Beans");
                         break;
 
                     case "Beets":
                         InstantiateIngredient(5, 20);
-                        AddToCombo("Roasted Beets", 100);
+                        AddToCombo("Roasted Beets");
                         break;
                     
                     case "Sweetp":
                         InstantiateIngredient(6, 20);
-                        AddToCombo("Sweet Potatoes", 100);
+                        AddToCombo("Sweet Potatoes");
                         break;
 
                     case "Blackb":
                         InstantiateIngredient(7, 20);
-                        AddToCombo("Black Beans", 100);                        
+                        AddToCombo("Black Beans");                        
                         break;
 
                     case "Bulgar":
                         InstantiateIngredient(8, 20);
-                        AddToCombo("Bulgur", 100);
+                        AddToCombo("Bulgur");
                         break;
 
                     case "Corn":
                         InstantiateIngredient(9, 20);
-                        AddToCombo("Charred Corn", 100);
+                        AddToCombo("Charred Corn");
                         break;
 
                     case "Cucumber":
                         InstantiateIngredient(10, 20);
-                        AddToCombo("Cucumber", 100);
+                        AddToCombo("Cucumber");
                         break;
 
                     case "Onion":
                         InstantiateIngredient(11, 20);
-                        AddToCombo("Red Onions", 100);
+                        AddToCombo("Red Onions");
                         break;
 
                     case "Tomatoes":
                         InstantiateIngredient(12, 20);
-                        AddToCombo("Grape Tomatoes", 100);
+                        AddToCombo("Grape Tomatoes");
                         break;
                     
                     case "Feta":
                         InstantiateIngredient(13, 20);
-                        AddToCombo("Feta", 100);
+                        AddToCombo("Feta");
                         break;
                     
                     case "Parmesan":
                         InstantiateIngredient(14, 20);
-                        AddToCombo("Shaved Parmesan", 100);
+                        AddToCombo("Shaved Parmesan");
                         break;
 
                     case "Avocado":
                         InstantiateIngredient(15, 1);
-                        AddToCombo("Avocado", 100);
+                        AddToCombo("Avocado");
                         break;
 
                     case "Chips":
                         InstantiateIngredient(16, 20);
-                        AddToCombo("Pita Chips", 100);
+                        AddToCombo("Pita Chips");
                         break;
 
                     case "Lime":
                         InstantiateIngredient(17, 20);
-                        AddToCombo("Cilantro Lime", 100);
+                        AddToCombo("Cilantro Lime");
                         break;
 
                     case "Egg":
                         InstantiateIngredient(18, 1);
-                        AddToCombo("Hard Boiled Egg", 100);
+                        AddToCombo("Hard Boiled Egg");
                         break;
                     
                     case "Cheddar":
                         InstantiateIngredient(19, 20);
-                        AddToCombo("Cheddar", 100);
+                        AddToCombo("Cheddar");
                         break;
 
                     case "Pickled_o":
                         InstantiateIngredient(20, 20);
-                        AddToCombo("Lime-Pickled Onions", 100);
+                        AddToCombo("Lime-Pickled Onions");
                         break;
 
                     case "Jalapeno":
                         InstantiateIngredient(21, 20);
-                        AddToCombo("Pickled Jalapenos", 100);
+                        AddToCombo("Pickled Jalapenos");
                         break;
 
                     case "Red_Cab":
                         InstantiateIngredient(22, 20);
-                        AddToCombo("Red Cabbage", 100);
+                        AddToCombo("Red Cabbage");
                         break;
 
                     case "Goat":
                         InstantiateIngredient(23, 20);
-                        AddToCombo("Goat Cheese", 100);
+                        AddToCombo("Goat Cheese");
                         break;
 
                     case "Pine":
                         InstantiateIngredient(24, 20);
-                        AddToCombo("Pineapple", 100);
+                        AddToCombo("Pineapple");
                         break;
                     
                     case "Carrots":
                         InstantiateIngredient(25, 20);
-                        AddToCombo("Carrots", 100);
+                        AddToCombo("Carrots");
                         break;
 
                     case "Tofu":
                         InstantiateIngredient(26, 20);
-                        AddToCombo("Tofu", 100);
+                        AddToCombo("Tofu");
                         break;
 
                     case "Tofu_BBQ":
                         InstantiateIngredient(27, 20);
-                        AddToCombo("BBQTofu", 100);
+                        AddToCombo("BBQ Tofu");
                         break;
 
                     case "Chicken":
                         InstantiateIngredient(28, 20);
-                        AddToCombo("Chicken", 200);
+                        AddToCombo("Chicken");
                         break;
 
                     case "Kale":
                         InstantiateIngredient(29, 20);
-                        AddToCombo("Kale", 75);
-                        if (manager.GetComponent<DishManager>().checkIng("Kale"))
-                        {
-                            GameObject point = Instantiate(pointtype[0], transform.position + new Vector3(0.75f, 0f, -2.5f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
-                            point.GetComponent<TextMeshProUGUI>().text = "+75";
-                        }
-                        else
-                        {
-                            GameObject point = Instantiate(pointtype[2], transform.position + new Vector3(0.75f, 0f, -2.5f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
-                            point.GetComponent<TextMeshProUGUI>().text = "-50";
-                        }
+                        AddToCombo("Kale", new Vector3(0.75f, 0f, -2.5f));
                         break;
 
                     case "Springmix":
                         InstantiateIngredient(30, 20);
-                        AddToCombo("Spring Mix", 75);
-                        if (manager.GetComponent<DishManager>().checkIng("Springmix"))
-                        {
-                            GameObject point = Instantiate(pointtype[0], transform.position + new Vector3(0.15f, 0f, -2.5f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
-                            point.GetComponent<TextMeshProUGUI>().text = "+75";
-                        }
-                        else
-                        {
-                            GameObject point = Instantiate(pointtype[2], transform.position + new Vector3(0.15f, 0f, -2.5f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
-                            point.GetComponent<TextMeshProUGUI>().text = "-50";
-                        }
+                        AddToCombo("Spring Mix", new Vector3(0.15f, 0f, -2.5f));
                         break;
 
                     case "Spinach":
                         InstantiateIngredient(31, 20);
-                        AddToCombo("Spinach", 75);
-                        if (manager.GetComponent<DishManager>().checkIng("Spinach"))
-                        {
-                            GameObject point = Instantiate(pointtype[0], transform.position + new Vector3(-0.6f, 0f, -2.5f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
-                            point.GetComponent<TextMeshProUGUI>().text = "+75";
-                        }
-                        else
-                        {
-                            GameObject point = Instantiate(pointtype[2], transform.position + new Vector3(-0.6f, 0f, -2.5f), railPoint.transform.rotation * Quaternion.Euler(0, 180, 0), UI.transform);
-                            point.GetComponent<TextMeshProUGUI>().text = "-50";
-                        }
+                        AddToCombo("Spinach", new Vector3(-0.6f, 0f, -2.5f));
                         break;
 
                     // TODO add names and indices for bottles
                     case "B1":
                         //AnimateBottle(hitInfo.transform.gameObject);
                         // InstantiateIngredient(0, 1);
-                        AddToCombo("B1", 125);
+                        AddToCombo("B1");
                         PourLiquid(new Color(1, 0, 0));
                         break;
 
                     case "B2":
                         //AnimateBottle(hitInfo.transform.gameObject);
                         // InstantiateIngredient(0, 1);
-                        AddToCombo("B2", 125);
+                        AddToCombo("B2");
                         PourLiquid(new Color(0, 1, 0));
                         break;
 
                     case "B3":
                         //AnimateBottle(hitInfo.transform.gameObject);
                         // InstantiateIngredient(0, 1);
-                        AddToCombo("B3", 125);
+                        AddToCombo("B3");
                         PourLiquid(new Color(0, 0, 1));
                         break;
 
                     case "B4":
                         //AnimateBottle(hitInfo.transform.gameObject);
                         // InstantiateIngredient(0, 1);
-                        AddToCombo("B4", 125);
+                        AddToCombo("B4");
                         PourLiquid(new Color(1, 1, 1));
                         break;
 
                     case "B5":
                         //AnimateBottle(hitInfo.transform.gameObject);
                         //InstantiateIngredient(0, 1);
-                        AddToCombo("B5", 125);
+                        AddToCombo("B5");
                         PourLiquid(new Color(.75f, .5f, 0));
                         break;
 
                     case "B6":
                         //AnimateBottle(hitInfo.transform.gameObject);
                         // InstantiateIngredient(0, 1);
-                        AddToCombo("B6", 125);
+                        AddToCombo("B6");
                         PourLiquid(new Color(.5f, .3f, 0));
                         break;
                 }
@@ -306,11 +278,17 @@ public class AddIngredient : MonoBehaviour
         //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
         for (int i = 0; i < count; i++)
         {
-            //Used to offset ingredients to instantiate into bowl
+            //Used to offset ingredient to instantiate into bowl
             Vector3 randomOffset = new Vector3(Random.Range(-0.09f, 0.1f), Random.Range(-0.2f, 0.2f), Random.Range(-0.175f, 0.05f));
             GameObject ing = Instantiate(inge[index], transform.position + offset + randomOffset, Quaternion.Euler(0, 0, 0), transform);
             ing.transform.localScale = Vector3.Scale(ing.transform.localScale, new Vector3(.45f, .45f, .45f));
         }
+    }
+
+    private void InstantiateText(GameObject textType, string message, Vector3 offset)
+    {
+        GameObject textObject = Instantiate(textType, transform.position + offset, railPoint.transform.rotation, UI.transform);
+        textObject.GetComponent<TextMeshProUGUI>().text = message;
     }
 
     private void PourLiquid(Color color)
@@ -336,37 +314,29 @@ public class AddIngredient : MonoBehaviour
         pourCoroutine = null;
     }
 
-
-    private void AddToCombo(string name, int points)
+    // Add an ingredient to the user's bowl
+    private void AddToCombo(string ingredient)
     {
-        Manager.Instance.combo.Add(name);
-        if (manager.GetComponent<DishManager>().checkIng(name))
+        AddToCombo(ingredient, new Vector3(0f, 0f, 0f));
+    }
+
+    private void AddToCombo(string ingredient, Vector3 offset)
+    {
+        Manager.Instance.combo.Add(ingredient);
+        if (manager.GetComponent<DishManager>().checkIng(ingredient))
         {
-            Manager.Instance.Score += points;
+            InstantiateText(greenText, ingredient, offset);
         }
         else
         {
-            Manager.Instance.Score -= 50;
-            points = -50;
+            InstantiateText(redText, ingredient, offset);
         }
-
-        if (points > 0)
-        {
-            GameObject point = Instantiate(pointtype[0], transform.position, railPoint.transform.rotation, UI.transform);
-            point.GetComponent<TextMeshProUGUI>().text = "+" + points;
-        }
-        else
-        {
-            GameObject point = Instantiate(pointtype[2], transform.position, railPoint.transform.rotation, UI.transform);
-            point.GetComponent<TextMeshProUGUI>().text = "" + points;
-        }
-
 
         Add.Play();
         
-        if (manager.GetComponent<DishManager>().requiresExtra(name))
+        if (manager.GetComponent<DishManager>().requiresExtra(ingredient))
         {
-            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar(name));
+            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar(ingredient));
         }
     }
 
@@ -383,10 +353,10 @@ public class AddIngredient : MonoBehaviour
         {
             railPoint = manager.GetComponent<LerpRail>().points[manager.GetComponent<LerpRail>().currPoint].GetChild(1);
 
-            Instantiate(pointtype[1], railPoint.position, railPoint.rotation, UI.transform);
+            InstantiateText(orangeText, "Mixed!", new Vector3(0f, 0f, 0f));
             manager.GetComponent<DishManager>().mixBowl(false);
             manager.GetComponent<LerpRail>().advanceStopPoint();
-            Manager.Instance.Score += 100;
+            // Manager.Instance.Score += 100;
         }
         detachIng();
         Manager.Instance.Mixing = true;

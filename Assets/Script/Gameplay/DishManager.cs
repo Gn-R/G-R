@@ -8,10 +8,9 @@ using TMPro;
 
 public class DishManager : MonoBehaviour
 {
-    public string currDish = "";
+    public string currDish = ""; // make this static
     public List<string> currRecipe = new List<string>();
 
-    public ShowRecipe showRecipe;
     public TextMeshProUGUI orderText;
     public GameObject orderTimerManager;
 
@@ -19,32 +18,32 @@ public class DishManager : MonoBehaviour
 
     public Slider extraFoodSlider;
 
-
     public Coroutine showItemCoroutine;
     const float SLIDER_ANIM_SPEED = 4;
     const float SLIDER_ANIM_SECONDS = 2;
 
-    //0 = El Jefe Freeplay, 1 = El Jefe Pro, 2 = Random Freeplay, 3 = Random Pro
-    public static int gameMode = 2;
+    // Difficulty (0-2)
+    public static int gameMode = 0;
 
     void Start()
     {
         Manager.Instance.totalScore = 0;
-        GetNewRecipe();
+        SetRecipe("Roots Bowl");
+        // GetNewRecipe();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetRecipe(string recipe)
     {
-        
-
+        currDish = recipe;
+        currRecipe = Recipes.GetRecipe(currDish).GetIngredients();
     }
 
     //Randomizes a new recipe for another order
     public void GetNewRecipe()
     {
         Debug.Log(gameMode);
-        //Sets timer for freeplay (more time)
+        // TODO null reference exception for OrderTimerDebug
+        // Sets timer for freeplay (more time)
         if (gameMode % 2 == 0)
         {
             orderTimerManager.GetComponent<OrderTimerDebug>().StartOrderTimer(60);
@@ -67,11 +66,10 @@ public class DishManager : MonoBehaviour
             currDish = Recipes.GetRandomDish();
         }
 
-        currRecipe = new List<string>(Recipes.GetRecipe(currDish));
+        // TODO Dish will be set by starting scene
         mixes = 0;
         int count = currRecipe.Count;
         string extraIngredients = "";
-
 
         //Add randomization 
         if (gameMode > 1)
@@ -87,7 +85,6 @@ public class DishManager : MonoBehaviour
             }
         }
 
-        showRecipe.SetRecipe(currRecipe);
         // BUG: Getting null recipes
         // orderText.text = "Order: " + currDish;
         // if (!extraIngredients.Equals(""))

@@ -14,6 +14,8 @@ public class Manager
 
     public int totalScore;
 
+    public int GameMode;
+
     public bool paused = true; // pause the game if tutorial is playing
 
     public bool Mixing = false;
