@@ -43,4 +43,31 @@ public class ListIngredients : MonoBehaviour
         SetTextField(proteinText, recipe.grill);
     }
 
+    public void UpdateIngredientsAdded()
+    {
+        foreach (string ingredient in Manager.Instance.combo)
+        {
+            TextMeshProUGUI textField = null;
+
+            switch(ingredient)
+            {
+                case string a when baseText.text.Contains(a):
+                    textField = baseText;
+                    break;
+                case string b when toppingsText.text.Contains(b):
+                    textField = toppingsText;
+                    break;
+                case string c when dressingText.text.Contains(c):
+                    textField = dressingText;
+                    break;
+                case string d when proteinText.text.Contains(d):
+                    textField = proteinText;
+                    break;
+            }
+
+            if (textField != null && !textField.text.Contains(string.Format("<color=green>{0}</color>", ingredient)))
+                textField.text = textField.text.Replace(ingredient, string.Format("<color=green>{0}</color>", ingredient));
+        }
+    }
+
 }

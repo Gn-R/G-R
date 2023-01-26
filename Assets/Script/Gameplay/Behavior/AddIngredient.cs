@@ -7,6 +7,7 @@ using TMPro;
 // TODO move this script to MBP object and fix prefab position and size
 public class AddIngredient : MonoBehaviour
 {
+    [SerializeField] GameObject listIngredients;
 
     public GameObject[] pointpos;
     public Canvas UI;
@@ -32,6 +33,7 @@ public class AddIngredient : MonoBehaviour
     public GameObject flowEmitter;
     public GameObject pourEmitter;
     private Coroutine pourCoroutine;
+
 
     private void Start()
     {
@@ -229,42 +231,42 @@ public class AddIngredient : MonoBehaviour
                     case "B1":
                         //AnimateBottle(hitInfo.transform.gameObject);
                         // InstantiateIngredient(0, 1);
-                        AddToCombo("B1");
+                        AddToCombo("Dressing");
                         PourLiquid(new Color(1, 0, 0));
                         break;
 
                     case "B2":
                         //AnimateBottle(hitInfo.transform.gameObject);
                         // InstantiateIngredient(0, 1);
-                        AddToCombo("B2");
+                        AddToCombo("Dressing");
                         PourLiquid(new Color(0, 1, 0));
                         break;
 
                     case "B3":
                         //AnimateBottle(hitInfo.transform.gameObject);
                         // InstantiateIngredient(0, 1);
-                        AddToCombo("B3");
+                        AddToCombo("Dressing");
                         PourLiquid(new Color(0, 0, 1));
                         break;
 
                     case "B4":
                         //AnimateBottle(hitInfo.transform.gameObject);
                         // InstantiateIngredient(0, 1);
-                        AddToCombo("B4");
+                        AddToCombo("Dressing");
                         PourLiquid(new Color(1, 1, 1));
                         break;
 
                     case "B5":
                         //AnimateBottle(hitInfo.transform.gameObject);
                         //InstantiateIngredient(0, 1);
-                        AddToCombo("B5");
+                        AddToCombo("Dressing");
                         PourLiquid(new Color(.75f, .5f, 0));
                         break;
 
                     case "B6":
                         //AnimateBottle(hitInfo.transform.gameObject);
                         // InstantiateIngredient(0, 1);
-                        AddToCombo("B6");
+                        AddToCombo("Dressing");
                         PourLiquid(new Color(.5f, .3f, 0));
                         break;
                 }
@@ -322,7 +324,28 @@ public class AddIngredient : MonoBehaviour
 
     private void AddToCombo(string ingredient, Vector3 offset)
     {
+        //Separate check for dressing to add the correct one
+        if (ingredient.Equals("Dressing"))
+        {
+            string[] dressings = Recipes.GetRecipe(manager.GetComponent<DishManager>().currDish).dressing;
+            foreach (string dressing in dressings)
+            {
+                if (!Manager.Instance.combo.Contains(dressing))
+                {
+                    ingredient = dressing;
+                    break;
+                }
+            }
+
+            if (ingredient.Equals("Dressing"))
+            {
+                return;
+            }
+        }
+        
+        
         Manager.Instance.combo.Add(ingredient);
+        listIngredients.GetComponent<ListIngredients>().UpdateIngredientsAdded();
         if (manager.GetComponent<DishManager>().checkIng(ingredient))
         {
             InstantiateText(greenText, ingredient, offset);
