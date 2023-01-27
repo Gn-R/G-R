@@ -21,9 +21,9 @@ public class SelectRecipe : MonoBehaviour
         selectButton.onClick.AddListener(chooseRecipe);
 
         for (int i = 0; i < recipe.GetCurrentLevel(); i++) {
-            levelSliders[i].setCompletion(true);
+            levelSliders[i].SetCompletion(true);
         }
-        levelSliders[recipe.GetCurrentLevel() - 1].setCompletion(recipe.GetCompletion());
+        levelSliders[recipe.GetCurrentLevel() - 1].SetCompletion(recipe.GetCompletion());
     }
 
     void chooseRecipe()

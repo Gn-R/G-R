@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+// The start menu manager
 public class StartMenu : MonoBehaviour
 {
 	// Game modes

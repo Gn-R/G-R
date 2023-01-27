@@ -8,15 +8,9 @@ public class ProgressBar : MonoBehaviour
     [SerializeField] Texture isCompleted, notCompleted;
     [SerializeField] RawImage image;
 
-    public void setCompletion(bool completed)
+    public void SetCompletion(bool completed)
     {
-        if (completed)
-        {
-            image.texture = isCompleted;
-        }
-        else
-        {
-            image.texture = notCompleted;
-        }
+        if (completed) image.texture = isCompleted;
+        else image.texture = notCompleted;
     }
 }

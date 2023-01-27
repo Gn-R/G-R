@@ -5,43 +5,49 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
+// The learn screen menu manager
 public class LearnManager : MonoBehaviour
 {
-    [SerializeField] Button continueRecipe;
-    [SerializeField] TextMeshProUGUI progress, currentRecipe, cashEarned;
+    [SerializeField] Button continueButton;
+    [SerializeField] TextMeshProUGUI progress, recipeText, cashEarned;
     [SerializeField] ProgressBar progressBar;
+    [SerializeField] Slider progressSlider;
 
     private static Recipe currRecipe;
 
     void Start()
     {
-        continueRecipe.onClick.AddListener(AdvanceToPlay);
-        continueRecipe.enabled = false;
-        SetCashEarned(0);
+        continueButton.onClick.AddListener(AdvanceToPlay);
+        continueButton.enabled = false;
+        SetCashEarned(0); // Get this value from manager
+        SetSliderProgress(0f); // Get this value from manager
     }
 
     void AdvanceToPlay()
     {
-        if (currentRecipe == null) return;
+        if (recipeText == null) return;
         DishManager.currDish = currRecipe.name;
         SceneManager.LoadScene("Main Scene");
     }
 
     public void SetRecipe(Recipe recipe)
     {
-        if (!continueRecipe.enabled)
-        {
-            continueRecipe.enabled = true;
-        }
+        if (!continueButton.enabled) continueButton.enabled = true;
         
         currRecipe = recipe;
+        recipeText.text = recipe.name;
+
         progress.text = "Level: " + recipe.GetCurrentLevel();
-        progressBar.setCompletion(recipe.GetCompletion());
-        currentRecipe.text = recipe.name;
+        progressBar.SetCompletion(recipe.GetCompletion());
     }
 
     public void SetCashEarned(int cash)
     {
         cashEarned.text = "$" + cash;
+    }
+
+    public void SetSliderProgress(float percent)
+    {
+        progressSlider.value = percent;
     }
 }
