@@ -12,8 +12,8 @@ public class ListIngredients : MonoBehaviour
     void Start()
     {
         ClearText();
-        // For testing only
-        string recipe = "roots bowl"; // TODO ingredients from current dish
+        string recipe = DishManager.currDish;
+        Debug.Log("curr dish is " + recipe);
         ShowRecipeIngredients(recipe);
     }
 

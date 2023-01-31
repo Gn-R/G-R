@@ -7,7 +7,7 @@ using TMPro;
 
 public class DishManager : MonoBehaviour
 {
-    public string currDish = ""; // make this static?
+    public static string currDish = "";
     public List<string> currRecipe = new List<string>();
 
     public TextMeshProUGUI orderText;
@@ -27,7 +27,7 @@ public class DishManager : MonoBehaviour
     void Start()
     {
         Manager.Instance.totalScore = 0;
-        SetRecipe("Roots Bowl");
+        if (currDish.Equals("")) SetRecipe("Roots Bowl");
         // GetNewRecipe();
     }
 

@@ -20,7 +20,7 @@ public class LearnManager : MonoBehaviour
         continueButton.onClick.AddListener(AdvanceToPlay);
         continueButton.enabled = false;
         SetCashEarned(0); // Get this value from manager
-        SetSliderProgress(0f); // Get this value from manager
+        SetSliderProgress(0.0f); // Get this value from manager
     }
 
     void AdvanceToPlay()

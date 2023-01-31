@@ -11,8 +11,8 @@ public class DishLabel : MonoBehaviour
 
     void Start()
     {
-        // For testing only
-        string recipe = "roots bowl";
+        string recipe = DishManager.currDish;
+        Debug.Log("curr dish is " + recipe);
         SetLabel(recipe); // TODO use current recipe
     }
 

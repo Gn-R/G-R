@@ -6,6 +6,8 @@ public class Recipe
 {
     public readonly string name; // name of dish
     public readonly string[] bases, toppings, dressing, grill; // ingredients list + category
+    private int currentLevel = 1;
+    private bool completed = false;
 
     public Recipe(string name, string[] bases, string[] toppings, string[] dressing, string[] grill)
     {
@@ -25,5 +27,21 @@ public class Recipe
         foreach(string d in dressing) ingredients.Add(d);
         foreach(string g in grill) ingredients.Add(g);
         return ingredients;
+    }
+
+    public int GetCurrentLevel()
+    {
+        return currentLevel;
+    }
+
+    public void IncreaseLevel()
+    {
+        currentLevel++;
+        completed = false;
+    }
+
+    public bool GetCompletion()
+    {
+        return completed;
     }
 }

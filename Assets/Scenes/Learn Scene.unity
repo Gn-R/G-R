@@ -659,7 +659,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: c979f5fc035904c16a1a1f91b8fc9d93, type: 3}
+  m_Texture: {fileID: 2800000, guid: dd86b3d5643ab42019b417efcdff3677, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -3220,7 +3220,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c979f5fc035904c16a1a1f91b8fc9d93, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dd86b3d5643ab42019b417efcdff3677, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3297,7 +3297,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: c979f5fc035904c16a1a1f91b8fc9d93, type: 3}
+  m_Texture: {fileID: 2800000, guid: dd86b3d5643ab42019b417efcdff3677, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -4416,7 +4416,7 @@ MonoBehaviour:
   - {fileID: 515054387}
   - {fileID: 1295037026}
   - {fileID: 54759065}
-  recipeName: Mad Bowl
+  recipeName: The Lola
 --- !u!1 &1583200879
 GameObject:
   m_ObjectHideFlags: 0

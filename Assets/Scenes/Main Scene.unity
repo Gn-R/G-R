@@ -16564,6 +16564,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeanTouch
       objectReference: {fileID: 0}
+    - target: {fileID: 8076753303617655405, guid: 398f14c44ab58a94e85ffe224fa141ee, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 398f14c44ab58a94e85ffe224fa141ee, type: 3}
 --- !u!1 &990314298
@@ -26518,7 +26522,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: baef75657869c40ed9d09635e2f322e8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bcf0c2bc5d6494c7faa4888e56ef58cc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -28110,7 +28114,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac949270fd3a12544b40589ded756d12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currDish: 
   currRecipe: []
   orderText: {fileID: 0}
   orderTimerManager: {fileID: 1768207499}
