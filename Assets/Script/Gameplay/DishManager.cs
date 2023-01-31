@@ -8,21 +8,18 @@ using TMPro;
 public class DishManager : MonoBehaviour
 {
     public static string currDish = "";
-    public List<string> currRecipe = new List<string>();
+    public static int gameMode = 0; // Difficulty (0-2)
+
+    public List<string> currIngredients = new List<string>();
+    public int mixes = 0;
 
     public TextMeshProUGUI orderText;
     public GameObject orderTimerManager;
-
-    public int mixes = 0;
-
     public Slider extraFoodSlider;
 
     public Coroutine showItemCoroutine;
     const float SLIDER_ANIM_SPEED = 4;
     const float SLIDER_ANIM_SECONDS = 2;
-
-    // Difficulty (0-2)
-    public static int gameMode = 0;
 
     void Start()
     {
@@ -34,7 +31,7 @@ public class DishManager : MonoBehaviour
     public void SetRecipe(string recipe)
     {
         currDish = recipe;
-        currRecipe = Recipes.GetRecipe(currDish).GetIngredients();
+        currIngredients = Recipes.GetRecipe(currDish).GetIngredients();
     }
 
     //Randomizes a new recipe for another order
@@ -67,7 +64,7 @@ public class DishManager : MonoBehaviour
 
         // TODO Dish will be set by starting scene
         mixes = 0;
-        int count = currRecipe.Count;
+        int count = currIngredients.Count;
         string extraIngredients = "";
 
         //Add randomization 
@@ -78,8 +75,8 @@ public class DishManager : MonoBehaviour
                 int dice = Random.Range(-5, 3);
                 for (int y = 0; y < dice; y++)
                 {
-                    currRecipe.Add(currRecipe[i]);
-                    extraIngredients += currRecipe[i] + " ";
+                    currIngredients.Add(currIngredients[i]);
+                    extraIngredients += currIngredients[i] + " ";
                 }
             }
         }
@@ -106,7 +103,7 @@ public class DishManager : MonoBehaviour
     public bool requiresExtra(string item)
     {
         int count = 0;
-        foreach (string s in currRecipe)
+        foreach (string s in currIngredients)
         {
             if (item.Equals(s))
             {
@@ -128,7 +125,7 @@ public class DishManager : MonoBehaviour
         }
 
         int recipeCount = 0;
-        foreach (string s in currRecipe)
+        foreach (string s in currIngredients)
         {
             if (item.Equals(s))
             {
@@ -162,7 +159,7 @@ public class DishManager : MonoBehaviour
     public bool checkDish(List<string> combo)
     {
         //Order does not matter
-        return ScrambledEquals(currRecipe, combo, true) && mixes == 3;
+        return ScrambledEquals(currIngredients, combo, true) && mixes == 3;
     }
 
     //If not reset, increase by 1. Otherwise, set mixes to 0.
@@ -186,13 +183,13 @@ public class DishManager : MonoBehaviour
     //Checks if the ingredients in it are valid so far and gives points (if empty, remove points)
     public bool checkMix(List<string> combo)
     {
-        return combo.Count > 0 && ScrambledEquals(combo, currRecipe, false);
+        return combo.Count > 0 && ScrambledEquals(combo, currIngredients, false);
     }
 
     //Checks if ingredient is in dish
     public bool checkIng(string ing)
     {
-        return currRecipe.Contains(ing);
+        return currIngredients.Contains(ing);
     }
 
     //Matches lists without order

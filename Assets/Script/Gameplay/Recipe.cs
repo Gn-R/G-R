@@ -18,7 +18,7 @@ public class Recipe
         this.grill = grill;
     }
 
-    // Copy of ingredients
+    // Combine all ingredients into one list
     public List<string> GetIngredients()
     {
         List<string> ingredients = new List<string>();
@@ -36,8 +36,10 @@ public class Recipe
 
     public void IncreaseLevel()
     {
-        currentLevel++;
-        completed = false;
+        if (currentLevel < 3) {
+            currentLevel++;
+            completed = false;
+        }
     }
 
     public bool GetCompletion()

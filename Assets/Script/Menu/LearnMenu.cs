@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 
 // The learn screen menu manager
-public class LearnManager : MonoBehaviour
+public class LearnMenu : MonoBehaviour
 {
     [SerializeField] Button continueButton;
     [SerializeField] TextMeshProUGUI progress, recipeText, cashEarned;

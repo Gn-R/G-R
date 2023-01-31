@@ -699,20 +699,20 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177089139}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 6.55}
+  m_LocalScale: {x: 0.7963543, y: 0.7963543, z: 0.7963543}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1032829562}
   - {fileID: 285623378}
   - {fileID: 1689936267}
   - {fileID: 1128941128}
-  m_Father: {fileID: 994080211}
-  m_RootOrder: 9
+  m_Father: {fileID: 1057177547}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 23, y: 519}
+  m_AnchoredPosition: {x: 21.945251, y: 435.8078}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &177089141
@@ -727,7 +727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24424bcceb9ec75419ff97629428b08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  learnSceneManager: {fileID: 994080207}
+  learnMenu: {fileID: 994080207}
   selectButton: {fileID: 1032829563}
   levelSliders:
   - {fileID: 285623379}
@@ -759,20 +759,20 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199087495}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 6.55}
+  m_LocalScale: {x: 0.7963543, y: 0.7963543, z: 0.7963543}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1141929266}
   - {fileID: 1990504347}
   - {fileID: 1947294500}
   - {fileID: 1873008828}
-  m_Father: {fileID: 994080211}
-  m_RootOrder: 7
+  m_Father: {fileID: 1057177547}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -755, y: 518.9999}
+  m_AnchoredPosition: {x: -597.6183, y: 435.80768}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &199087497
@@ -787,7 +787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24424bcceb9ec75419ff97629428b08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  learnSceneManager: {fileID: 994080207}
+  learnMenu: {fileID: 994080207}
   selectButton: {fileID: 1141929267}
   levelSliders:
   - {fileID: 1990504350}
@@ -1132,20 +1132,20 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288381531}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 6.55}
+  m_LocalScale: {x: 0.7963543, y: 0.7963543, z: 0.7963543}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 300254864}
   - {fileID: 130097172}
   - {fileID: 1422558196}
   - {fileID: 260094311}
-  m_Father: {fileID: 994080211}
-  m_RootOrder: 13
+  m_Father: {fileID: 1057177547}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -748.8, y: 36.37}
+  m_AnchoredPosition: {x: -592.6809, y: 51.46332}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &288381533
@@ -1160,7 +1160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24424bcceb9ec75419ff97629428b08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  learnSceneManager: {fileID: 994080207}
+  learnMenu: {fileID: 994080207}
   selectButton: {fileID: 300254865}
   levelSliders:
   - {fileID: 130097173}
@@ -2212,7 +2212,7 @@ RectTransform:
   m_Children:
   - {fileID: 363174370}
   m_Father: {fileID: 994080211}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2879,20 +2879,11 @@ RectTransform:
   - {fileID: 1607652396}
   - {fileID: 1004104851}
   - {fileID: 1046723532}
-  - {fileID: 699324614}
   - {fileID: 1077971605}
+  - {fileID: 699324614}
   - {fileID: 157474376}
   - {fileID: 378835846}
-  - {fileID: 199087496}
-  - {fileID: 1190998183}
-  - {fileID: 177089140}
-  - {fileID: 2005486224}
-  - {fileID: 1809258883}
-  - {fileID: 1560741082}
-  - {fileID: 288381532}
-  - {fileID: 1825445602}
-  - {fileID: 1522405581}
-  - {fileID: 1311086022}
+  - {fileID: 1057177547}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3238,6 +3229,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046723531}
   m_CullTransparentMesh: 1
+--- !u!1 &1057177546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1057177547}
+  m_Layer: 0
+  m_Name: Recipes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1057177547
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057177546}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.55713, y: -28.253645, z: -8.224983}
+  m_LocalScale: {x: 1.2557226, y: 1.2557226, z: 1.2557226}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 199087496}
+  - {fileID: 1190998183}
+  - {fileID: 177089140}
+  - {fileID: 2005486224}
+  - {fileID: 1809258883}
+  - {fileID: 1560741082}
+  - {fileID: 288381532}
+  - {fileID: 1825445602}
+  - {fileID: 1522405581}
+  - {fileID: 1311086022}
+  m_Father: {fileID: 994080211}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1077971604
 GameObject:
   m_ObjectHideFlags: 0
@@ -3250,7 +3282,7 @@ GameObject:
   - component: {fileID: 1077971607}
   - component: {fileID: 1077971606}
   m_Layer: 5
-  m_Name: Total Progress
+  m_Name: Progress Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3270,7 +3302,7 @@ RectTransform:
   m_Children:
   - {fileID: 618135500}
   m_Father: {fileID: 994080211}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3547,20 +3579,20 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190998182}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 6.55}
+  m_LocalScale: {x: 0.7963543, y: 0.7963543, z: 0.7963543}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 50008872}
   - {fileID: 1658719531}
   - {fileID: 948935104}
   - {fileID: 964928210}
-  m_Father: {fileID: 994080211}
-  m_RootOrder: 8
+  m_Father: {fileID: 1057177547}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -341, y: 519}
+  m_AnchoredPosition: {x: -267.9277, y: 435.8078}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1190998184
@@ -3575,7 +3607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24424bcceb9ec75419ff97629428b08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  learnSceneManager: {fileID: 994080207}
+  learnMenu: {fileID: 994080207}
   selectButton: {fileID: 50008873}
   levelSliders:
   - {fileID: 1658719532}
@@ -3785,20 +3817,20 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311086021}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 6.55}
+  m_LocalScale: {x: 0.7963543, y: 0.7963543, z: 0.7963543}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 382287543}
   - {fileID: 1406989139}
   - {fileID: 899527976}
   - {fileID: 1235190373}
-  m_Father: {fileID: 994080211}
-  m_RootOrder: 16
+  m_Father: {fileID: 1057177547}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 414.4, y: 36.37}
+  m_AnchoredPosition: {x: 333.63828, y: 51.46332}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1311086023
@@ -3813,7 +3845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24424bcceb9ec75419ff97629428b08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  learnSceneManager: {fileID: 994080207}
+  learnMenu: {fileID: 994080207}
   selectButton: {fileID: 382287544}
   levelSliders:
   - {fileID: 1406989140}
@@ -4233,20 +4265,20 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1522405580}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 6.55}
+  m_LocalScale: {x: 0.7963543, y: 0.7963543, z: 0.7963543}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 595015329}
   - {fileID: 113748877}
   - {fileID: 1495536273}
   - {fileID: 2052569393}
-  m_Father: {fileID: 994080211}
-  m_RootOrder: 15
+  m_Father: {fileID: 1057177547}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 38.44, y: 36.37}
+  m_AnchoredPosition: {x: 34.240963, y: 51.46332}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1522405582
@@ -4261,7 +4293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24424bcceb9ec75419ff97629428b08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  learnSceneManager: {fileID: 994080207}
+  learnMenu: {fileID: 994080207}
   selectButton: {fileID: 595015330}
   levelSliders:
   - {fileID: 113748878}
@@ -4382,20 +4414,20 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1560741081}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 6.55}
+  m_LocalScale: {x: 0.7963543, y: 0.7963543, z: 0.7963543}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 359405479}
   - {fileID: 515054386}
   - {fileID: 1295037025}
   - {fileID: 54759064}
-  m_Father: {fileID: 994080211}
-  m_RootOrder: 12
+  m_Father: {fileID: 1057177547}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39.7, y: 263}
+  m_AnchoredPosition: {x: 35.244312, y: 231.94104}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1560741083
@@ -4410,7 +4442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24424bcceb9ec75419ff97629428b08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  learnSceneManager: {fileID: 994080207}
+  learnMenu: {fileID: 994080207}
   selectButton: {fileID: 359405480}
   levelSliders:
   - {fileID: 515054387}
@@ -5462,20 +5494,20 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809258882}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 6.55}
+  m_LocalScale: {x: 0.7963543, y: 0.7963543, z: 0.7963543}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1694897913}
   - {fileID: 68879537}
   - {fileID: 1908403207}
   - {fileID: 1542186716}
-  m_Father: {fileID: 994080211}
-  m_RootOrder: 11
+  m_Father: {fileID: 1057177547}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -344, y: 263}
+  m_AnchoredPosition: {x: -270.31674, y: 231.94104}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1809258884
@@ -5490,7 +5522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24424bcceb9ec75419ff97629428b08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  learnSceneManager: {fileID: 994080207}
+  learnMenu: {fileID: 994080207}
   selectButton: {fileID: 1694897914}
   levelSliders:
   - {fileID: 68879538}
@@ -5522,20 +5554,20 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825445601}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 6.55}
+  m_LocalScale: {x: 0.7963543, y: 0.7963543, z: 0.7963543}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1380987145}
   - {fileID: 1796278162}
   - {fileID: 1900674351}
   - {fileID: 1637764061}
-  m_Father: {fileID: 994080211}
-  m_RootOrder: 14
+  m_Father: {fileID: 1057177547}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -347.9, y: 36.37}
+  m_AnchoredPosition: {x: -273.42252, y: 51.46332}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1825445603
@@ -5550,7 +5582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24424bcceb9ec75419ff97629428b08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  learnSceneManager: {fileID: 994080207}
+  learnMenu: {fileID: 994080207}
   selectButton: {fileID: 1380987146}
   levelSliders:
   - {fileID: 1796278163}
@@ -6048,8 +6080,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6066,8 +6098,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6306,20 +6338,20 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005486223}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 6.55}
+  m_LocalScale: {x: 0.7963543, y: 0.7963543, z: 0.7963543}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 893911085}
   - {fileID: 2094597597}
   - {fileID: 691894230}
   - {fileID: 934653645}
-  m_Father: {fileID: 994080211}
-  m_RootOrder: 10
+  m_Father: {fileID: 1057177547}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -749, y: 267}
+  m_AnchoredPosition: {x: -592.8402, y: 235.12646}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2005486225
@@ -6334,7 +6366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24424bcceb9ec75419ff97629428b08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  learnSceneManager: {fileID: 994080207}
+  learnMenu: {fileID: 994080207}
   selectButton: {fileID: 893911086}
   levelSliders:
   - {fileID: 2094597598}

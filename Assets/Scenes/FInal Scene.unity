@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.2850269, g: 0.3713935, b: 0.49601045, a: 1}
+  m_IndirectSpecularColor: {r: 0.28502658, g: 0.37139314, b: 0.49600917, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7162,7 +7162,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c979f5fc035904c16a1a1f91b8fc9d93, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dd86b3d5643ab42019b417efcdff3677, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7205,7 +7205,7 @@ GameObject:
   - component: {fileID: 5235954034781336240}
   - component: {fileID: 5235954034781336241}
   m_Layer: 0
-  m_Name: Score Image
+  m_Name: Score Field
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7407,7 +7407,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4d60870fa99884a278321281559f1c2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f781b3670b48f4cfa82d1803fd9bebe0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

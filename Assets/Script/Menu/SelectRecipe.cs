@@ -4,17 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-
 public class SelectRecipe : MonoBehaviour
 {
-    [SerializeField] GameObject learnSceneManager;
+    [SerializeField] GameObject learnMenu;
     [SerializeField] Button selectButton;
     [SerializeField] ProgressBar[] levelSliders;
     [SerializeField] string recipeName = "";
     
     private Recipe recipe;
 
-    // Start is called before the first frame update
     void Start()
     {
         recipe = Recipes.GetRecipe(recipeName);
@@ -28,7 +26,7 @@ public class SelectRecipe : MonoBehaviour
 
     void chooseRecipe()
     {
-        learnSceneManager.GetComponent<LearnManager>().SetRecipe(recipe);
+        learnMenu.GetComponent<LearnMenu>().SetRecipe(recipe);
         //TODO: Set Button Look to show selection
     }
 }
