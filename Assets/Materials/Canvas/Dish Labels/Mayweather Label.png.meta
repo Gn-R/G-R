@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Materials/Canvas/Dish Labels/Mayweather Label.png.meta
 guid: d058855a3ebba4ba7b94a3f2a74d85b6
+========
+guid: baef75657869c40ed9d09635e2f322e8
+>>>>>>>> v1.3.2_AJ:Assets/Materials/Canvas/Dish Labels/El Jefe Label.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

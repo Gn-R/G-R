@@ -4,13 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+// The start menu manager
 public class StartMenu : MonoBehaviour
 {
 	// Game modes
 	[SerializeField] Button showGameModes;
 	[SerializeField] GameObject gameModesPanel;
 	private bool selectMode;
-	[SerializeField] Button elJefeFreeplay, elJefePro, randomFreeplay, randomPro;
+	[SerializeField] Button elJefeFreeplay, elJefePro, randomFreeplay, randomPro, learn;
 
 	void Start()
 	{
@@ -22,6 +23,7 @@ public class StartMenu : MonoBehaviour
 		elJefePro.onClick.AddListener(PlayElJefePro);
 		randomFreeplay.onClick.AddListener(PlayRandomFreeplay);
 		randomPro.onClick.AddListener(PlayRandomPro);
+		learn.onClick.AddListener(PlayLearnMode);
 	}
 	void ToggleGameModePanel()
 	{
@@ -52,4 +54,10 @@ public class StartMenu : MonoBehaviour
 		DishManager.gameMode = 3;
 		SceneManager.LoadScene("Main Scene");
 	}
+
+	void PlayLearnMode()
+    {
+		DishManager.gameMode = 4;
+		SceneManager.LoadScene("Learn Scene");
+    }
 }

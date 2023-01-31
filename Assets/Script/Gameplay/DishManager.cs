@@ -5,10 +5,9 @@ using UnityEngine.UI;
 using System.Linq;
 using TMPro;
 
-
 public class DishManager : MonoBehaviour
 {
-    public string currDish = ""; // make this static
+    public string currDish = ""; // make this static?
     public List<string> currRecipe = new List<string>();
 
     public TextMeshProUGUI orderText;
@@ -61,7 +60,7 @@ public class DishManager : MonoBehaviour
             currDish = "El Jefe";
         }
         //Sets random dishes
-        else
+        else if (gameMode != 4)
         {
             currDish = Recipes.GetRandomDish();
         }
@@ -72,7 +71,7 @@ public class DishManager : MonoBehaviour
         string extraIngredients = "";
 
         //Add randomization 
-        if (gameMode > 1)
+        if (gameMode > 1 && gameMode != 4)
         {
             for (int i = 0; i < count; i++)
             {

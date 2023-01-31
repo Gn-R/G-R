@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Materials/Canvas/Dish Labels/El Jefe Label.png.meta
-guid: baef75657869c40ed9d09635e2f322e8
-========
-guid: fecf0d0bc11af49978f20b71f47cb099
->>>>>>>> v1.3.2_AJ:Assets/Materials/Canvas/Dish Labels/Pesto Caesar Label.png.meta
+guid: 13088989e6634544096bee90f0061a0d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -37,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 2
     mipBias: 0
     wrapU: 0

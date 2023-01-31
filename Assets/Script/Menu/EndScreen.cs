@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
+// The end screen menu manager
 public class EndScreen : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI scoreText;
