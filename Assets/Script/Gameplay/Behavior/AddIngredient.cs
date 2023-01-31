@@ -8,6 +8,7 @@ using TMPro;
 public class AddIngredient : MonoBehaviour
 {
     [SerializeField] GameObject listIngredients;
+    [SerializeField] GameObject textPrefab;
 
     public GameObject[] pointpos;
     public Canvas UI;
@@ -34,6 +35,7 @@ public class AddIngredient : MonoBehaviour
     public GameObject pourEmitter;
     private Coroutine pourCoroutine;
 
+    private Coroutine hintCoroutine;
 
     private void Start()
     {
@@ -315,9 +317,43 @@ public class AddIngredient : MonoBehaviour
 
         pourCoroutine = null;
     }
+    public void ShowHint(float sec)
+    {
+        if (hintCoroutine != null)
+        {
+            StopCoroutine(hintCoroutine);
+        }
+        hintCoroutine = StartCoroutine(HintCoroutine(sec));
+    }
 
-    // Add an ingredient to the user's bowl
-    private void AddToCombo(string ingredient)
+    private IEnumerator HintCoroutine(float sec)
+    {
+        List<GameObject> hintTexts = new List<GameObject>();
+        foreach (GameObject clone in pointpos)
+        {
+            GameObject hintText = Instantiate(textPrefab, clone.transform, false);
+            hintText.transform.localPosition = new Vector3(.05f, .182f, -0.04f);
+            if (GameObject.Find("Main Camera").transform.rotation.eulerAngles.y > 0)
+            {
+                hintText.transform.localPosition = new Vector3(.05f, .182f, 0.07f);
+                hintText.transform.rotation = Quaternion.Euler(90, 0, 90);
+            }
+            else
+            {
+                hintText.transform.localPosition = new Vector3(.05f, .182f, -0.08f);
+            }
+            hintText.GetComponent<TextMeshPro>().text = clone.name;
+            hintTexts.Add(hintText);
+        }
+        yield return new WaitForSeconds(sec);
+        foreach (GameObject text in hintTexts)
+        {
+            Destroy(text);
+        }
+    }
+
+        // Add an ingredient to the user's bowl
+        private void AddToCombo(string ingredient)
     {
         AddToCombo(ingredient, new Vector3(0f, 0f, 0f));
     }

@@ -30224,6 +30224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6c14b5f7dbc425fbede1cd5501cf20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  addIngredients: {fileID: 919132147753000012}
   hintButton: {fileID: 1091066539}
   hintBoxes:
   - {fileID: 1462240628}
@@ -38582,6 +38583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   listIngredients: {fileID: 1768207499}
+  textPrefab: {fileID: 3733785866547233806, guid: ac371a9504ff1f24f957a397458c81e8, type: 3}
   pointpos:
   - {fileID: 9128230277360588184}
   - {fileID: 9128230277491552686}
