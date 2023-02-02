@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -101,7 +102,7 @@ public class AddIngredient : MonoBehaviour
                     
                     case "Sweetp":
                         InstantiateIngredient(6, 20);
-                        AddToCombo("Sweet Potatoes");
+                        AddToCombo("Roasted Sweet Potatoes");
                         break;
 
                     case "Blackb":
@@ -283,7 +284,7 @@ public class AddIngredient : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             //Used to offset ingredient to instantiate into bowl
-            Vector3 randomOffset = new Vector3(Random.Range(-0.09f, 0.1f), Random.Range(-0.2f, 0.2f), Random.Range(-0.175f, 0.05f));
+            Vector3 randomOffset = new Vector3(UnityEngine.Random.Range(-0.09f, 0.1f), UnityEngine.Random.Range(-0.2f, 0.2f), UnityEngine.Random.Range(-0.175f, 0.05f));
             GameObject ing = Instantiate(inge[index], transform.position + offset + randomOffset, Quaternion.Euler(0, 0, 0), transform);
             ing.transform.localScale = Vector3.Scale(ing.transform.localScale, new Vector3(.45f, .45f, .45f));
         }
@@ -291,8 +292,23 @@ public class AddIngredient : MonoBehaviour
 
     private void InstantiateText(GameObject textType, string message, Vector3 offset)
     {
-        GameObject textObject = Instantiate(textType, transform.position + offset, railPoint.transform.rotation, UI.transform);
-        textObject.GetComponent<TextMeshProUGUI>().text = message;
+        GameObject parentPos = Array.Find(pointpos, element => element.name.Equals(message));
+        GameObject textObject;
+        if (parentPos == null)
+        {
+            textObject = Instantiate(textType, transform);
+        } 
+        else
+        {
+            textObject = Instantiate(textType, parentPos.transform);
+        }
+
+        if (GameObject.Find("Main Camera").transform.rotation.eulerAngles.y > 0)
+        {
+            textObject.transform.rotation = Quaternion.Euler(0, -90, 0);
+        }
+        //textObject.transform.position += offset;
+        textObject.GetComponent<TextMeshPro>().text = message;
     }
 
     private void PourLiquid(Color color)
@@ -352,8 +368,8 @@ public class AddIngredient : MonoBehaviour
         }
     }
 
-        // Add an ingredient to the user's bowl
-        private void AddToCombo(string ingredient)
+    // Add an ingredient to the user's bowl
+    private void AddToCombo(string ingredient)
     {
         AddToCombo(ingredient, new Vector3(0f, 0f, 0f));
     }
