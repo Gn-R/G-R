@@ -6,7 +6,7 @@ using TMPro;
 
 public class SelectRecipe : MonoBehaviour
 {
-    [SerializeField] GameObject learnMenu;
+    [SerializeField] GameObject selectMenu;
     [SerializeField] Button selectButton;
     [SerializeField] ProgressBar[] levelSliders;
     [SerializeField] string recipeName = "";
@@ -16,17 +16,17 @@ public class SelectRecipe : MonoBehaviour
     void Start()
     {
         recipe = Recipes.GetRecipe(recipeName);
-        selectButton.onClick.AddListener(chooseRecipe);
+        selectButton.onClick.AddListener(ChooseRecipe);
 
         for (int i = 0; i < recipe.GetCurrentLevel(); i++) {
             levelSliders[i].SetCompletion(true);
         }
-        levelSliders[recipe.GetCurrentLevel() - 1].SetCompletion(recipe.GetCompletion());
+        levelSliders[recipe.GetCurrentLevel() - 1].SetCompletion(recipe.GetCompletion()); // make previous bars red
     }
 
-    void chooseRecipe()
+    void ChooseRecipe()
     {
-        learnMenu.GetComponent<LearnMenu>().SetRecipe(recipe);
+        selectMenu.GetComponent<SelectMenu>().SetRecipe(recipe);
         //TODO: Set Button Look to show selection
     }
 }

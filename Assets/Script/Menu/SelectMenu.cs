@@ -5,13 +5,13 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-// The learn screen menu manager
-public class LearnMenu : MonoBehaviour
+// The dish select scene menu manager
+public class SelectMenu : MonoBehaviour
 {
     [SerializeField] Button continueButton;
     [SerializeField] TextMeshProUGUI progress, recipeText, cashEarned;
     [SerializeField] ProgressBar progressBar;
-    [SerializeField] Slider progressSlider;
+    [SerializeField] ProgressSlider progressSlider;
 
     private static Recipe currRecipe;
 
@@ -48,6 +48,6 @@ public class LearnMenu : MonoBehaviour
 
     public void SetSliderProgress(float percent)
     {
-        progressSlider.value = percent;
+        progressSlider.SetProgress(percent);
     }
 }

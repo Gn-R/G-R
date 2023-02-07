@@ -4,8 +4,12 @@ using System.Collections.Generic;
 // Stores a list of ingredients
 public class Recipe
 {
+    // Ingredients
     public readonly string name; // name of dish
     public readonly string[] bases, toppings, dressing, grill; // ingredients list + category
+
+    // Levels
+    private static int maxLevel = 3;
     private int currentLevel = 1;
     private bool completed = false;
 
@@ -36,10 +40,16 @@ public class Recipe
 
     public void IncreaseLevel()
     {
-        if (currentLevel < 3) {
+        if (currentLevel < 3)
+        {
             currentLevel++;
             completed = false;
         }
+    }
+
+    public float GetProgress()
+    {
+        return (float) currentLevel / maxLevel;
     }
 
     public bool GetCompletion()
