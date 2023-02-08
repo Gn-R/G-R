@@ -36,6 +36,7 @@ public class LerpRail : MonoBehaviour
     private Coroutine returnCo = null;
 
     public GameObject manager;
+    public GameObject prompts;
 
     private void Update()
     {
@@ -144,6 +145,8 @@ public class LerpRail : MonoBehaviour
     //If the current point ends with ".5" automatically travel to the next point
     private IEnumerator Travel(bool moveRight)
     {
+        prompts.GetComponent<TutorialPrompts>().onPointUpdate(currStop);
+
         if (currPoint < 0 || currPoint >= points.Length)
         {
             travel = null;
