@@ -5,14 +5,26 @@ using UnityEngine;
 public class TutorialPrompts : MonoBehaviour
 {
     private GameObject rail;
-    private List<List<GameObject>> stopPrompts;
-    private List<GameObject> currPrompts;
+    [SerializeField] GameObject[] stopPrompts;
     private GameObject currPrompt;
-    private int currStop;
+    private int currStop = 0;
+    private List<GameObject> promptList;
+    private Dictionary<int, List<GameObject>> dict;
     // Start is called before the first frame update
     void Start()
     {
-        stopPrompts = new List<List<GameObject>>(rail.GetComponent<LerpRail>().points.Length);
+        dict = new Dictionary<int, List<GameObject>>();
+        foreach (GameObject prompt in stopPrompts)
+        {
+            int point = prompt.GetComponent<Tutorial>().stopPoint;
+            if (!dict.ContainsKey(point))
+            {
+                dict.Add(point, new List<GameObject>());
+            }
+            dict[point].Add(prompt);
+        }
+
+        onPointUpdate(1);
     }
 
     // Update is called once per frame
@@ -29,23 +41,28 @@ public class TutorialPrompts : MonoBehaviour
             currPrompt.SetActive(false);
         }
 
-        currPrompts = stopPrompts[currStop];
-        if (currPrompts.Count <= 0)
+        if (!dict.ContainsKey(newStop))
+        {
+            currPrompt = null;
+            return;
+        }
+        promptList = dict[newStop];
+        if (promptList.Count <= 0)
         {
             return;
         }
 
-        GameObject prompt = currPrompts[0];
-        prompt.SetActive(true);
+        currPrompt = promptList[0];
+        currPrompt.SetActive(true);
     }
 
     public void addedIngredient(string ingredient)
     {
-        if (!currPrompt.name.Contains(ingredient.ToLower())) {
+        if (!currPrompt.name.ToLower().Contains(ingredient.ToLower())) {
             return;
         }
 
-        currPrompts.RemoveAt(0);
+        promptList.RemoveAt(0);
         currPrompt.SetActive(false);
         currPrompt = null;
 

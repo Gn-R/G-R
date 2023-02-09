@@ -67,7 +67,7 @@ public class Recipes
     private static readonly Recipe rootsBowl = new Recipe(
         "Roots Bowl",
         new string[] {"Roots Rice", "Spinach"},
-        new string[] {"Roasted Sweet Potatoes", "Roasted Sweet Potatoes", "Red Onions", "Goat Cheese", "Dried Cranberries"},
+        new string[] {"Roasted Sweet Potatoes", "Roasted Sweet Potatoes", "Red Onions", "Pita Chips", "Goat Cheese"},
         new string[] {"Lemon Tahini"},
         new string[] {}
     );

@@ -13,7 +13,6 @@ public class AddIngredient : MonoBehaviour
 
     public GameObject[] pointpos;
     public GameObject prompts;
-    public GameObject pointpos;
     public Canvas UI;
     public Button mixButton;
     public GameObject[] inge;
@@ -409,18 +408,18 @@ public class AddIngredient : MonoBehaviour
             InstantiateText(redText, ingredient, offset);
         }
 
-        if (points > 0)
-        {
-            GameObject point = Instantiate(pointtype[0], transform.position, railPoint.transform.rotation, UI.transform);
-            point.GetComponent<TextMeshProUGUI>().text = "+" + points;
-        }
-        else
-        {
-            GameObject point = Instantiate(pointtype[2], transform.position, railPoint.transform.rotation, UI.transform);
-            point.GetComponent<TextMeshProUGUI>().text = "" + points;
-        }
+        //if (points > 0)
+        //{
+        //    GameObject point = Instantiate(pointtype[0], transform.position, railPoint.transform.rotation, UI.transform);
+        //    point.GetComponent<TextMeshProUGUI>().text = "+" + points;
+        //}
+        //else
+        //{
+        //    GameObject point = Instantiate(pointtype[2], transform.position, railPoint.transform.rotation, UI.transform);
+        //    point.GetComponent<TextMeshProUGUI>().text = "" + points;
+        //}
 
-        prompts.GetComponent<TutorialPrompts>().addedIngredient(name);
+        prompts.GetComponent<TutorialPrompts>().addedIngredient(ingredient);
         
 
         Add.Play();
