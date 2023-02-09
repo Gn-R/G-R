@@ -18797,7 +18797,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1131365554
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28114,10 +28114,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac949270fd3a12544b40589ded756d12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currRecipe: []
+  currIngredients: []
+  mixes: 0
   orderText: {fileID: 0}
   orderTimerManager: {fileID: 1768207499}
-  mixes: 0
   extraFoodSlider: {fileID: 1273671842851122315}
 --- !u!114 &1656265658
 MonoBehaviour:

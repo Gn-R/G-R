@@ -25,7 +25,6 @@ public class DishManager : MonoBehaviour
     {
         Manager.Instance.totalScore = 0;
         if (currDish.Equals("")) SetRecipe("Roots Bowl");
-        // GetNewRecipe();
     }
 
     public void SetRecipe(string recipe)

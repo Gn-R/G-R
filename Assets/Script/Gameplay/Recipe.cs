@@ -49,7 +49,8 @@ public class Recipe
 
     public float GetProgress()
     {
-        return (float) currentLevel / maxLevel;
+        int completedLevels = completed ? currentLevel : currentLevel - 1;
+        return (float) completedLevels / maxLevel;
     }
 
     public bool GetCompletion()

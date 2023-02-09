@@ -2191,7 +2191,6 @@ GameObject:
   - component: {fileID: 699324617}
   - component: {fileID: 699324616}
   - component: {fileID: 699324615}
-  - component: {fileID: 699324618}
   m_Layer: 5
   m_Name: Progress Bar
   m_TagString: Untagged
@@ -2270,19 +2269,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699324613}
   m_CullTransparentMesh: 1
---- !u!114 &699324618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 699324613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db67de4c3806b48ea92e770c0d97bb2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 363174371}
 --- !u!1 &743833397
 GameObject:
   m_ObjectHideFlags: 0
@@ -2923,7 +2909,7 @@ MonoBehaviour:
   recipeText: {fileID: 1752196368}
   cashEarned: {fileID: 199194757}
   progressBar: {fileID: 699324615}
-  progressSlider: {fileID: 699324618}
+  progressSlider: {fileID: 363174371}
 --- !u!1 &1004104850
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,6 +22,23 @@ public class Recipes
         return blankRecipe; // empty recipe if bad name entered
     }
 
+    public static float GetRecipeProgress(string dish)
+    {
+        Recipe recipe = GetRecipe(dish);
+        return recipe.GetProgress();
+    }
+
+    public static float GetTotalProgress()
+    {
+        int numRecipes = allRecipes.Length;
+        float avgProgress = 0f;
+        foreach (Recipe r in allRecipes)
+        {
+            avgProgress += r.GetProgress();
+        }
+        return avgProgress / numRecipes;
+    }
+
     // Roots Recipes
 
     private static readonly Recipe blankRecipe = new Recipe(
