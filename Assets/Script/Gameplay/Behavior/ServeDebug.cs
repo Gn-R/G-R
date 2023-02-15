@@ -15,7 +15,14 @@ public class ServeDebug : MonoBehaviour
 
     void Start()
     {
-        button.onClick.AddListener(TaskOnClick);
+        // button.onClick.AddListener(TaskOnClick);
+        button.onClick.AddListener(ToEndScene);
+    }
+
+    void ToEndScene()
+    {
+        // TODO complete recipe
+        SceneManager.LoadScene("End Scene");
     }
 
     void TaskOnClick()

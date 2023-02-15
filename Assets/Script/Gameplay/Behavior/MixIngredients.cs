@@ -28,7 +28,6 @@ public class MixIngredients : MonoBehaviour
             //bowl_anime.SetBool("shake", true);
             if (tima > 0f)
             {
-                Debug.Log(tima);
                 tima -= Time.deltaTime;
             }
             else 

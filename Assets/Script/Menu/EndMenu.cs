@@ -5,9 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-// The ready scene menu manager
-// TODO make this the pause menu to Main Scene
-public class ReadyMenu : MonoBehaviour
+// The end scene menu manager
+public class EndMenu : MonoBehaviour
 {
     [SerializeField] Button menuButton, continueButton;
     [SerializeField] TextMeshProUGUI cashEarned, continueText;
@@ -17,7 +16,7 @@ public class ReadyMenu : MonoBehaviour
     void Start()
     {
         menuButton.onClick.AddListener(BackToMenu);
-        continueButton.onClick.AddListener(AdvanceToPlay);
+        continueButton.onClick.AddListener(ContinueNextLevel);
         SetCashEarned(0); // Get this value from manager
 
         string dish = DishManager.currDish;
@@ -26,10 +25,10 @@ public class ReadyMenu : MonoBehaviour
 
     void BackToMenu()
     {
-        SceneManager.LoadScene("Select Menu");
+        SceneManager.LoadScene("Start Menu");
     }
 
-    void AdvanceToPlay()
+    void ContinueNextLevel()
     {
         SceneManager.LoadScene("Main Scene");
     }

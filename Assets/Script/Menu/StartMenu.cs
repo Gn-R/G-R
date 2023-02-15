@@ -3,61 +3,53 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
-// The start menu manager
+// The dish select scene menu manager
 public class StartMenu : MonoBehaviour
 {
-	// Game modes
-	[SerializeField] Button showGameModes;
-	[SerializeField] GameObject gameModesPanel;
-	private bool selectMode;
-	[SerializeField] Button elJefeFreeplay, elJefePro, randomFreeplay, randomPro, learn;
+    [SerializeField] Button continueButton;
+    [SerializeField] TextMeshProUGUI progress, recipeText, cashEarned;
+    [SerializeField] ProgressBar progressBar;
+    [SerializeField] Slider progressSlider;
 
-	void Start()
-	{
-		gameModesPanel.SetActive(false);
-		selectMode = false;
-		showGameModes.onClick.AddListener(ToggleGameModePanel);
+    private static Recipe currRecipe;
 
-		elJefeFreeplay.onClick.AddListener(PlayElJefeFreeplay);
-		elJefePro.onClick.AddListener(PlayElJefePro);
-		randomFreeplay.onClick.AddListener(PlayRandomFreeplay);
-		randomPro.onClick.AddListener(PlayRandomPro);
-		learn.onClick.AddListener(PlayLearnMode);
-	}
-	void ToggleGameModePanel()
-	{
-		selectMode = !selectMode;
-		gameModesPanel.SetActive(selectMode);
-	}
-
-	void PlayElJefeFreeplay()
+    void Start()
     {
-		DishManager.gameMode = 0;
-		SceneManager.LoadScene("Main Scene");
-	}
+        continueButton.onClick.AddListener(ToMainScene);
+        continueButton.enabled = DishManager.currDish.Equals(""); // don't move forward until recipe is set
+        // TODO check if set after scene transition
+        // TODO get these values from manager
+        SetCashEarned(0); 
+        SetSliderProgress(0.0f);
+    }
 
-	void PlayElJefePro()
-	{
-		DishManager.gameMode = 1;
-		SceneManager.LoadScene("Main Scene");
-	}
-
-	void PlayRandomFreeplay()
-	{
-		DishManager.gameMode = 2;
-		SceneManager.LoadScene("Main Scene");
-	}
-
-	void PlayRandomPro()
-	{
-		DishManager.gameMode = 3;
-		SceneManager.LoadScene("Main Scene");
-	}
-
-	void PlayLearnMode()
+    void ToMainScene()
     {
-		DishManager.gameMode = 4;
-		SceneManager.LoadScene("Learn Scene");
+        if (currRecipe == null) return; // ignore if no recipe set
+        DishManager.currDish = currRecipe.name;
+        SceneManager.LoadScene("Main Scene");
+    }
+
+    public void SetRecipe(Recipe recipe)
+    {
+        continueButton.enabled = true;
+        
+        currRecipe = recipe;
+        recipeText.text = recipe.name;
+
+        progress.text = "Level: " + recipe.GetCurrentLevel();
+        progressBar.SetCompletion(recipe.GetCompletion());
+    }
+
+    public void SetCashEarned(int cash)
+    {
+        cashEarned.text = "$" + cash;
+    }
+
+    public void SetSliderProgress(float percent)
+    {
+        progressSlider.value = percent;
     }
 }

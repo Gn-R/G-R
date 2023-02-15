@@ -6,7 +6,7 @@ using TMPro;
 
 public class SelectRecipe : MonoBehaviour
 {
-    [SerializeField] GameObject selectMenu;
+    [SerializeField] StartMenu startMenu;
     [SerializeField] Button selectButton;
     [SerializeField] ProgressBar[] levelSliders;
     [SerializeField] string recipeName = "";
@@ -26,7 +26,7 @@ public class SelectRecipe : MonoBehaviour
 
     void ChooseRecipe()
     {
-        selectMenu.GetComponent<SelectMenu>().SetRecipe(recipe);
+        startMenu.SetRecipe(recipe);
         //TODO: Set Button Look to show selection
     }
 }
