@@ -21,8 +21,9 @@ public class ServeDebug : MonoBehaviour
 
     void ToEndScene()
     {
-        // TODO complete recipe
         SceneManager.LoadScene("End Scene");
+        string currDish = DishManager.currDish;
+        Recipes.GetRecipe(currDish).IncreaseLevel();
     }
 
     void TaskOnClick()
@@ -53,7 +54,7 @@ public class ServeDebug : MonoBehaviour
 
         SceneManager.LoadScene("Final Scene");
 
-        manager.GetComponent<DishManager>().GetNewRecipe();
+        // manager.GetComponent<DishManager>().GetNewRecipe();
 
         foreach (Transform obj in ingredients.transform)
         {

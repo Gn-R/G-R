@@ -18,10 +18,10 @@ public class SelectRecipe : MonoBehaviour
         recipe = Recipes.GetRecipe(recipeName);
         selectButton.onClick.AddListener(ChooseRecipe);
 
-        for (int i = 0; i < recipe.GetCurrentLevel(); i++) {
+        for (int i = 0; i < recipe.GetLevelsCompleted(); i++)
+        {
             levelSliders[i].SetCompletion(true);
         }
-        levelSliders[recipe.GetCurrentLevel() - 1].SetCompletion(recipe.GetCompletion()); // make previous bars red
     }
 
     void ChooseRecipe()

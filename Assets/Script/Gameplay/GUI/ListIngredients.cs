@@ -12,9 +12,7 @@ public class ListIngredients : MonoBehaviour
     void Start()
     {
         ClearText();
-        string recipe = DishManager.currDish;
-        Debug.Log("curr dish is " + recipe);
-        ShowRecipeIngredients(recipe);
+        ShowRecipeIngredients(DishManager.currDish);
     }
 
     public void ClearText() {

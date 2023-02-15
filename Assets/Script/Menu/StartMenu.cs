@@ -9,7 +9,7 @@ using TMPro;
 public class StartMenu : MonoBehaviour
 {
     [SerializeField] Button continueButton;
-    [SerializeField] TextMeshProUGUI progress, recipeText, cashEarned;
+    [SerializeField] TextMeshProUGUI nextLevel, recipeText, cashEarned;
     [SerializeField] ProgressBar progressBar;
     [SerializeField] Slider progressSlider;
 
@@ -22,7 +22,7 @@ public class StartMenu : MonoBehaviour
         // TODO check if set after scene transition
         // TODO get these values from manager
         SetCashEarned(0); 
-        SetSliderProgress(0.0f);
+        SetSliderProgress(Recipes.GetTotalProgress());
     }
 
     void ToMainScene()
@@ -39,7 +39,7 @@ public class StartMenu : MonoBehaviour
         currRecipe = recipe;
         recipeText.text = recipe.name;
 
-        progress.text = "Level: " + recipe.GetCurrentLevel();
+        nextLevel.text = "Next Level: " + recipe.GetNextLevel();
         progressBar.SetCompletion(recipe.GetCompletion());
     }
 

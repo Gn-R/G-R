@@ -806,7 +806,7 @@ GameObject:
   - component: {fileID: 199194758}
   - component: {fileID: 199194757}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Cash Earned Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1916,7 +1916,7 @@ GameObject:
   - component: {fileID: 618135502}
   - component: {fileID: 618135501}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Next Level Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1962,9 +1962,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Progress:
-
-'
+  m_text: 'Next Level:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -2905,7 +2903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   continueButton: {fileID: 1046723533}
-  progress: {fileID: 618135501}
+  nextLevel: {fileID: 618135501}
   recipeText: {fileID: 1752196368}
   cashEarned: {fileID: 199194757}
   progressBar: {fileID: 699324615}
@@ -3145,7 +3143,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 350, y: -200}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 140, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1046723533
 MonoBehaviour:
@@ -3282,7 +3280,7 @@ GameObject:
   - component: {fileID: 1077971607}
   - component: {fileID: 1077971606}
   m_Layer: 5
-  m_Name: Progress Label
+  m_Name: Next Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -10,8 +10,7 @@ public class Recipe
 
     // Levels
     private static int maxLevel = 3;
-    private int currentLevel = 1;
-    private bool completed = false;
+    private int levelsCompleted = 0;
 
     public Recipe(string name, string[] bases, string[] toppings, string[] dressing, string[] grill)
     {
@@ -32,29 +31,37 @@ public class Recipe
         foreach(string g in grill) ingredients.Add(g);
         return ingredients;
     }
-
-    public int GetCurrentLevel()
+    
+    public int GetLevelsCompleted()
     {
-        return currentLevel;
+        return levelsCompleted;
+    }
+
+    public int GetNextLevel()
+    {
+        if (levelsCompleted < 3)
+        {
+            return levelsCompleted + 1;
+        }
+        else
+        {
+            return 3;
+        }
+        
     }
 
     public void IncreaseLevel()
     {
-        if (currentLevel < 3)
-        {
-            currentLevel++;
-            completed = false;
-        }
+        if (levelsCompleted < 3) levelsCompleted++;
     }
 
     public float GetProgress()
     {
-        int completedLevels = completed ? currentLevel : currentLevel - 1;
-        return (float) completedLevels / maxLevel;
+        return (float) levelsCompleted / maxLevel;
     }
 
     public bool GetCompletion()
     {
-        return completed;
+        return false;
     }
 }

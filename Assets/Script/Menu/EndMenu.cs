@@ -19,8 +19,18 @@ public class EndMenu : MonoBehaviour
         continueButton.onClick.AddListener(ContinueNextLevel);
         SetCashEarned(0); // Get this value from manager
 
-        string dish = DishManager.currDish;
-        continueText.text = "Continue\nLevel " + Recipes.GetRecipe(dish).GetCurrentLevel();
+        Recipe recipe = Recipes.GetRecipe(DishManager.currDish);
+        int currLevel = recipe.GetLevelsCompleted();
+        if (currLevel < 3)
+        {
+            int nextLevel = recipe.GetNextLevel();
+            continueText.text = "Continue\nLevel " + nextLevel;
+        }
+        else
+        {
+            continueText.text = "All Levels\nComplete!";
+        }
+        
     }
 
     void BackToMenu()

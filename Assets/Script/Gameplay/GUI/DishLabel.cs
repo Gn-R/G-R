@@ -11,9 +11,7 @@ public class DishLabel : MonoBehaviour
 
     void Start()
     {
-        string recipe = DishManager.currDish;
-        Debug.Log("curr dish is " + recipe);
-        SetLabel(recipe); // TODO use current recipe
+        SetLabel(DishManager.currDish);
     }
 
     // Set label image based on the index in the array

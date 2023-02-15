@@ -12,20 +12,14 @@ public class Recipes
         return allRecipes[rand].name;
     }
 
-    public static Recipe GetRecipe(string dish)
+    public static Recipe GetRecipe(string dishName)
     {
         // Search for a recipe
         foreach (Recipe r in allRecipes)
         {
-            if (r.name.ToLower().Equals(dish.ToLower())) return r;
+            if (r.name.ToLower().Equals(dishName.ToLower())) return r;
         }
         return blankRecipe; // empty recipe if bad name entered
-    }
-
-    public static float GetRecipeProgress(string dish)
-    {
-        Recipe recipe = GetRecipe(dish);
-        return recipe.GetProgress();
     }
 
     public static float GetTotalProgress()
