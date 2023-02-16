@@ -8,6 +8,8 @@ using TMPro;
 // TODO move this script to MBP object and fix prefab position and size
 public class AddIngredient : MonoBehaviour
 {
+    private static readonly int INGREDIENT_LIMIT = 400;
+
     [SerializeField] GameObject listIngredients;
     [SerializeField] GameObject textPrefab;
 
@@ -289,6 +291,21 @@ public class AddIngredient : MonoBehaviour
             GameObject ing = Instantiate(inge[index], transform.position + offset + randomOffset, Quaternion.Euler(0, 0, 0), transform);
             ing.transform.localScale = Vector3.Scale(ing.transform.localScale, new Vector3(.45f, .45f, .45f));
         }
+
+        //After every addition, check if there's too many items in bowl
+        if (transform.childCount > INGREDIENT_LIMIT)
+        {
+            int delete_count = INGREDIENT_LIMIT / 4;
+            for (int i = 0; i < delete_count; i++)
+            {
+                int dice = UnityEngine.Random.Range(0, transform.childCount);
+                if (transform.GetChild(dice).CompareTag("Ingredients"))
+                {
+                    Destroy(transform.GetChild(dice).gameObject);
+                }
+            }
+            Debug.Log("destroy");
+        }
     }
 
     private void InstantiateText(GameObject textType, string message, Vector3 offset)
@@ -398,7 +415,7 @@ public class AddIngredient : MonoBehaviour
         
         
         Manager.Instance.combo.Add(ingredient);
-        listIngredients.GetComponent<ListIngredients>().UpdateIngredientsAdded();
+        listIngredients.GetComponent<ListIngredients>().UpdateIngredientsAdded(ingredient);
         if (manager.GetComponent<DishManager>().checkIng(ingredient))
         {
             InstantiateText(greenText, ingredient, offset);

@@ -58,7 +58,7 @@ public class TutorialPrompts : MonoBehaviour
 
     public void addedIngredient(string ingredient)
     {
-        if (!currPrompt.name.ToLower().Contains(ingredient.ToLower())) {
+        if (currPrompt == null || !currPrompt.name.ToLower().Contains(ingredient.ToLower())) {
             return;
         }
 
