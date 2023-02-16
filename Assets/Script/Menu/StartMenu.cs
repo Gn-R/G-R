@@ -40,7 +40,6 @@ public class StartMenu : MonoBehaviour
         recipeText.text = recipe.name;
 
         nextLevel.text = "Next Level: " + recipe.GetNextLevel();
-        progressBar.SetCompletion(recipe.GetCompletion());
     }
 
     public void SetCashEarned(int cash)

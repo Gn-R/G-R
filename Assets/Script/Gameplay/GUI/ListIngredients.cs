@@ -12,7 +12,7 @@ public class ListIngredients : MonoBehaviour
     void Start()
     {
         ClearText();
-        ShowRecipeIngredients(DishManager.currDish);
+        UpdateRecipeIngredients();
     }
 
     public void ClearText() {
@@ -32,9 +32,9 @@ public class ListIngredients : MonoBehaviour
         textField.text = listText;
     }
 
-    public void ShowRecipeIngredients(string recipeName)
+    public void UpdateRecipeIngredients()
     {
-        Recipe recipe = Recipes.GetRecipe(recipeName);
+        Recipe recipe = DishManager.GetCurrentRecipe();
         SetTextField(baseText, recipe.bases);
         SetTextField(toppingsText, recipe.toppings);
         SetTextField(dressingText, recipe.dressing);

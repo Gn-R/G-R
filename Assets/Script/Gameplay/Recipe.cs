@@ -32,11 +32,13 @@ public class Recipe
         return ingredients;
     }
     
+    // Number of levels passed
     public int GetLevelsCompleted()
     {
         return levelsCompleted;
     }
 
+    // Which level is in progress
     public int GetNextLevel()
     {
         if (levelsCompleted < 3)
@@ -47,7 +49,6 @@ public class Recipe
         {
             return 3;
         }
-        
     }
 
     public void IncreaseLevel()
@@ -58,10 +59,5 @@ public class Recipe
     public float GetProgress()
     {
         return (float) levelsCompleted / maxLevel;
-    }
-
-    public bool GetCompletion()
-    {
-        return false;
     }
 }

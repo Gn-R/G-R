@@ -11,7 +11,6 @@ public class EndMenu : MonoBehaviour
     [SerializeField] Button menuButton, continueButton;
     [SerializeField] TextMeshProUGUI cashEarned, continueText;
 
-    private static Recipe currRecipe;
 
     void Start()
     {
@@ -19,11 +18,11 @@ public class EndMenu : MonoBehaviour
         continueButton.onClick.AddListener(ContinueNextLevel);
         SetCashEarned(0); // Get this value from manager
 
-        Recipe recipe = Recipes.GetRecipe(DishManager.currDish);
-        int currLevel = recipe.GetLevelsCompleted();
+        Recipe currRecipe = DishManager.GetCurrentRecipe();
+        int currLevel = currRecipe.GetLevelsCompleted();
         if (currLevel < 3)
         {
-            int nextLevel = recipe.GetNextLevel();
+            int nextLevel = currRecipe.GetNextLevel();
             continueText.text = "Continue\nLevel " + nextLevel;
         }
         else

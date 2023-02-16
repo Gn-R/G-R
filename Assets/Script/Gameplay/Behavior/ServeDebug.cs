@@ -22,8 +22,7 @@ public class ServeDebug : MonoBehaviour
     void ToEndScene()
     {
         SceneManager.LoadScene("End Scene");
-        string currDish = DishManager.currDish;
-        Recipes.GetRecipe(currDish).IncreaseLevel();
+        DishManager.GetCurrentRecipe().IncreaseLevel();
     }
 
     void TaskOnClick()

@@ -153,6 +153,13 @@ public class DishManager : MonoBehaviour
         extraFoodSlider.gameObject.SetActive(false);
     }
 
+    // Getter Methods
+
+    public static Recipe GetCurrentRecipe()
+    {
+        return Recipes.GetRecipe(currDish);
+    }
+
 
     //Returns whether or not the dish was correct
     public bool checkDish(List<string> combo)

@@ -12,11 +12,10 @@ public class ShowProgress : MonoBehaviour
     
     void Start()
     {
-        string dishName = DishManager.currDish;
-        float rcpProgress = Recipes.GetRecipe(dishName).GetProgress();
+        float rcpProgress = DishManager.GetCurrentRecipe().GetProgress();
         float totProgress = Recipes.GetTotalProgress();
 
-        progressText.text = dishName + " Progress";
+        progressText.text = DishManager.currDish + " Progress";
         recipeProgressSlider.value = rcpProgress;
         totalProgressSlider.value = totProgress;
     }
