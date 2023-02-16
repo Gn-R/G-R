@@ -22,7 +22,8 @@ public class ServeDebug : MonoBehaviour
     void ToEndScene()
     {
         SceneManager.LoadScene("End Scene");
-        DishManager.GetCurrentRecipe().IncreaseLevel();
+        bool success = true;
+        if (success) DishManager.GetCurrentRecipe().IncreaseLevel(); // TODO set success variable
     }
 
     void TaskOnClick()

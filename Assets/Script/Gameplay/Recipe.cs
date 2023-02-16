@@ -39,7 +39,7 @@ public class Recipe
     }
 
     // Which level is in progress
-    public int GetNextLevel()
+    public int GetCurrentLevel()
     {
         if (levelsCompleted < 3)
         {

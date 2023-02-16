@@ -27,6 +27,6 @@ public class SelectRecipe : MonoBehaviour
     void ChooseRecipe()
     {
         startMenu.SetRecipe(recipe);
-        //TODO: Set Button Look to show selection
+        //TODO Change button sprite to indicate selected recipe
     }
 }

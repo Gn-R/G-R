@@ -21,7 +21,7 @@ public class PauseMenu : MonoBehaviour
     {
         manager = Manager.Instance;
         manager.paused = true;
-        currentLevelText.text = "Current Level: " + DishManager.GetCurrentRecipe().GetNextLevel();
+        currentLevelText.text = "Current Level: " + DishManager.GetCurrentRecipe().GetCurrentLevel();
         menuButton.onClick.AddListener(ToMenu);
         UpdateUI();
     }

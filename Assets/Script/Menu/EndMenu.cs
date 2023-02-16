@@ -19,11 +19,19 @@ public class EndMenu : MonoBehaviour
         SetCashEarned(0); // Get this value from manager
 
         Recipe currRecipe = DishManager.GetCurrentRecipe();
-        int currLevel = currRecipe.GetLevelsCompleted();
-        if (currLevel < 3)
+        int lastLevel = currRecipe.GetLevelsCompleted();
+        bool success = true; // has user passed level
+        if (lastLevel < 3)
         {
-            int nextLevel = currRecipe.GetNextLevel();
-            continueText.text = "Continue\nLevel " + nextLevel;
+            int nextLevel = currRecipe.GetCurrentLevel();
+            if (success)
+            {
+                continueText.text = "Continue\nLevel " + nextLevel;
+            }
+            else
+            {
+                continueText.text = "Retry\nLevel " + nextLevel;
+            }
         }
         else
         {

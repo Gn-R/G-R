@@ -13,13 +13,14 @@ public class StartMenu : MonoBehaviour
     [SerializeField] ProgressBar progressBar;
     [SerializeField] Slider progressSlider;
 
-    private static Recipe currRecipe;
+    private static Recipe currRecipe = null; // static to remember last dish after scene transition
 
     void Start()
     {
         continueButton.onClick.AddListener(ToMainScene);
-        continueButton.enabled = DishManager.currDish.Equals(""); // don't move forward until recipe is set
-        // TODO check if set after scene transition
+        continueButton.enabled = false; // don't allow click until recipe is set
+        UpdateElements();
+
         // TODO get these values from manager
         SetCashEarned(0); 
         SetSliderProgress(Recipes.GetTotalProgress());
@@ -34,12 +35,16 @@ public class StartMenu : MonoBehaviour
 
     public void SetRecipe(Recipe recipe)
     {
-        continueButton.enabled = true;
-        
         currRecipe = recipe;
-        recipeText.text = recipe.name;
+        UpdateElements();
+    }
 
-        nextLevel.text = "Next Level: " + recipe.GetNextLevel();
+    public void UpdateElements()
+    {
+        if (currRecipe == null) return;
+        continueButton.enabled = true;
+        recipeText.text = currRecipe.name;
+        nextLevel.text = "Next Level: " + currRecipe.GetCurrentLevel();
     }
 
     public void SetCashEarned(int cash)
