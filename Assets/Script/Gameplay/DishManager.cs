@@ -8,10 +8,9 @@ using TMPro;
 public class DishManager : MonoBehaviour
 {
     public static string currDish = "";
-    public static int gameMode = 0; // Difficulty (0-2)
-
-    public List<string> currIngredients = new List<string>();
-    public int mixes = 0;
+    public static bool success; // user passed current level
+    public static List<string> currIngredients = new List<string>();
+    public static int mixes = 0;
 
     public TextMeshProUGUI orderText;
     public GameObject orderTimerManager;
@@ -31,64 +30,7 @@ public class DishManager : MonoBehaviour
     {
         currDish = recipe;
         currIngredients = Recipes.GetRecipe(currDish).GetIngredients();
-    }
-
-    //Randomizes a new recipe for another order
-    public void GetNewRecipe()
-    {
-        Debug.Log(gameMode);
-        // TODO null reference exception for OrderTimerDebug
-        // Sets timer for freeplay (more time)
-        if (gameMode % 2 == 0)
-        {
-            orderTimerManager.GetComponent<OrderTimerDebug>().StartOrderTimer(60);
-
-        }
-        //Sets timer for pro (less time)
-        else
-        {
-            orderTimerManager.GetComponent<OrderTimerDebug>().StartOrderTimer(15);
-        }
-
-        //Sets dish only as El Jefe
-        if (gameMode <= 1)
-        {
-            currDish = "El Jefe";
-        }
-        //Sets random dishes
-        else if (gameMode != 4)
-        {
-            currDish = Recipes.GetRandomDish();
-        }
-
-        // TODO Dish will be set by starting scene
         mixes = 0;
-        int count = currIngredients.Count;
-        string extraIngredients = "";
-
-        //Add randomization 
-        if (gameMode > 1 && gameMode != 4)
-        {
-            for (int i = 0; i < count; i++)
-            {
-                int dice = Random.Range(-5, 3);
-                for (int y = 0; y < dice; y++)
-                {
-                    currIngredients.Add(currIngredients[i]);
-                    extraIngredients += currIngredients[i] + " ";
-                }
-            }
-        }
-
-        // BUG: Getting null recipes
-        // orderText.text = "Order: " + currDish;
-        // if (!extraIngredients.Equals(""))
-        // {
-        //     orderText.text += " with extra " + extraIngredients;
-        // }
-
-        // StartCoroutine(ShowText());
-
     }
 
     IEnumerator ShowText()
@@ -98,8 +40,28 @@ public class DishManager : MonoBehaviour
         orderText.gameObject.SetActive(false);
     }
 
+    public void StartOrderTimer(int seconds) {
+        orderTimerManager.GetComponent<OrderTimerDebug>().StartOrderTimer(seconds);
+    }
+
+    public void RandomizeRecipe()
+    {
+        int count = currIngredients.Count;
+        string extraIngredients = "";
+
+        for (int i = 0; i < count; i++)
+        {
+            int dice = Random.Range(-5, 3);
+            for (int y = 0; y < dice; y++)
+            {
+                currIngredients.Add(currIngredients[i]);
+                extraIngredients += currIngredients[i] + " ";
+            }
+        }
+    }
+
     //Returns true if the item requires an extra amount (shows a bar)
-    public bool requiresExtra(string item)
+    public bool RequiresExtra(string item)
     {
         int count = 0;
         foreach (string s in currIngredients)
@@ -112,7 +74,7 @@ public class DishManager : MonoBehaviour
         return count > 1;
     }
 
-    public IEnumerator setExtraBar(string item)
+    public IEnumerator SetExtraBar(string item)
     {
         int currCount = 0;
         foreach (string s in Manager.Instance.combo)
@@ -160,43 +122,41 @@ public class DishManager : MonoBehaviour
         return Recipes.GetRecipe(currDish);
     }
 
-
-    //Returns whether or not the dish was correct
-    public bool checkDish(List<string> combo)
-    {
-        //Order does not matter
-        return ScrambledEquals(currIngredients, combo, true) && mixes == 3;
-    }
-
-    //If not reset, increase by 1. Otherwise, set mixes to 0.
-    public void mixBowl(bool reset)
-    {
-        if (reset)
-        {
-            mixes = 0;
-        }
-        else
-        {
-            mixes++;
-        }
-    }
-
-    public float getTimerPercentage()
+    public float GetTimerPercentage()
     {
         return orderTimerManager.GetComponent<OrderTimerDebug>().getPercentage();
     }
 
-    //Checks if the ingredients in it are valid so far and gives points (if empty, remove points)
-    public bool checkMix(List<string> combo)
+    public static void MixBowl()
+    {
+        mixes++; // increase mixes by 1
+    }
+
+    public static void ResetMixes()
+    {
+        mixes = 0; // reset mixes
+    }
+
+    // Check Methods
+
+    // Checks if ingredient is in dish
+    public bool CheckIngredient(string ing)
+    {
+        return currIngredients.Contains(ing);
+    }
+
+    // Checks if the ingredients in it are valid so far and gives points (if empty, remove points)
+    public bool CheckPartialCombo(List<string> combo)
     {
         return combo.Count > 0 && ScrambledEquals(combo, currIngredients, false);
     }
 
-    //Checks if ingredient is in dish
-    public bool checkIng(string ing)
+    // Check if the full dish was correct
+    public bool CheckFinalCombo(List<string> combo)
     {
-        return currIngredients.Contains(ing);
-    }
+        //Order does not matter
+        return ScrambledEquals(currIngredients, combo, true) && mixes == 3;
+    }    
 
     //Matches lists without order
     //If complete match, must have same set of items. If not, fullList must contain all partialList items

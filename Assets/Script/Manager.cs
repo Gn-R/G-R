@@ -14,8 +14,6 @@ public class Manager
 
     public int totalScore;
 
-    public int GameMode;
-
     public bool paused = true; // pause the game if tutorial is playing
 
     public bool Mixing = false;
@@ -26,9 +24,7 @@ public class Manager
 
     public List<string> combo;
 
-    public bool forward;
-
-    public bool back;
+    public bool left, right;
 
     private static Manager _Instance;
     public static Manager Instance

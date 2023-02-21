@@ -9614,8 +9614,8 @@ GameObject:
   - component: {fileID: 531512840}
   - component: {fileID: 531512839}
   - component: {fileID: 531512838}
-  - component: {fileID: 531512842}
   - component: {fileID: 531512841}
+  - component: {fileID: 531512842}
   - component: {fileID: 531512843}
   m_Layer: 2
   m_Name: SmallBowl
@@ -9717,8 +9717,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4310227b313cf1c4d8f68a8adb79369a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Wood: {fileID: 531512843}
   bowl: {fileID: 919132147753000012}
+  discardButton: {fileID: 1213392226}
+  leftButton: {fileID: 2093158015}
+  rightButton: {fileID: 868720033}
 --- !u!95 &531512842
 Animator:
   serializedVersion: 4
@@ -13973,6 +13975,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c0488c16064a1c4eacff0809eb98f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  discardButton: {fileID: 1213392226}
+  leftButton: {fileID: 2093158015}
+  rightButton: {fileID: 868720033}
   manager: {fileID: 1656265653}
   drainer: {fileID: 1948321901}
 --- !u!1 &834394776
@@ -15093,7 +15098,7 @@ GameObject:
   - component: {fileID: 868720034}
   - component: {fileID: 868720033}
   m_Layer: 5
-  m_Name: Right Button
+  m_Name: Move Right Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15113,7 +15118,7 @@ RectTransform:
   m_Children:
   - {fileID: 5452994607360840092}
   m_Father: {fileID: 1208223171}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -19944,11 +19949,11 @@ RectTransform:
   - {fileID: 273407469}
   - {fileID: 470678790}
   - {fileID: 154781498}
-  - {fileID: 8251715205773027895}
   - {fileID: 1213392225}
   - {fileID: 1592247281}
   - {fileID: 2093158014}
   - {fileID: 868720032}
+  - {fileID: 8251715205773027895}
   - {fileID: 1034669177}
   - {fileID: 1386103466344191232}
   - {fileID: 935012333}
@@ -20310,7 +20315,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1208223171}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -27382,7 +27387,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1208223171}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -27817,6 +27822,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c0488c16064a1c4eacff0809eb98f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  discardButton: {fileID: 1213392226}
+  leftButton: {fileID: 2093158015}
+  rightButton: {fileID: 868720033}
   manager: {fileID: 1656265653}
   drainer: {fileID: 1948321901}
 --- !u!1 &1610012711
@@ -28389,8 +28397,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac949270fd3a12544b40589ded756d12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currIngredients: []
-  mixes: 0
   orderText: {fileID: 0}
   orderTimerManager: {fileID: 1768207499}
   extraFoodSlider: {fileID: 1273671842851122315}
@@ -30412,12 +30418,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1768207500}
-  - component: {fileID: 1768207501}
-  - component: {fileID: 1768207503}
-  - component: {fileID: 1768207506}
   - component: {fileID: 1768207511}
-  - component: {fileID: 1768207509}
   - component: {fileID: 1768207510}
+  - component: {fileID: 1768207506}
+  - component: {fileID: 1768207503}
+  - component: {fileID: 1768207509}
+  - component: {fileID: 1768207501}
   m_Layer: 0
   m_Name: Hud
   m_TagString: Untagged
@@ -30468,8 +30474,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a936897b401ac554286f7b79faab33b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  serveButton: {fileID: 8251715205773027894}
   manager: {fileID: 1656265653}
-  button: {fileID: 8251715205773027894}
   ingredients: {fileID: 0}
   notAtEndMessage: {fileID: 0}
 --- !u!114 &1768207506
@@ -35260,7 +35266,7 @@ GameObject:
   - component: {fileID: 2093158016}
   - component: {fileID: 2093158015}
   m_Layer: 5
-  m_Name: Left Button
+  m_Name: Move Left Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35279,7 +35285,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1208223171}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -37060,8 +37066,8 @@ GameObject:
   - component: {fileID: 3469287837819128167}
   - component: {fileID: 3469287837819128150}
   - component: {fileID: 3469287837819128158}
-  - component: {fileID: 3469287837819128160}
   - component: {fileID: 3469287837819128161}
+  - component: {fileID: 3469287837819128160}
   - component: {fileID: 3469287837819128164}
   - component: {fileID: 3469287837819128163}
   - component: {fileID: 3469287837819128165}
@@ -38962,8 +38968,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4310227b313cf1c4d8f68a8adb79369a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Wood: {fileID: 3469287837819128165}
   bowl: {fileID: 919132147753000012}
+  discardButton: {fileID: 1213392226}
+  leftButton: {fileID: 2093158015}
+  rightButton: {fileID: 868720033}
 --- !u!82 &3469287837819128163
 AudioSource:
   m_ObjectHideFlags: 0
@@ -45162,7 +45170,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1208223171}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}

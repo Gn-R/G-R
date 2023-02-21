@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class Timer : MonoBehaviour
+public class TimerBar : MonoBehaviour
 {
     [SerializeField] float maxTime;
     private float timeLeft;

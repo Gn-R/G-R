@@ -40,7 +40,7 @@ public class LerpRail : MonoBehaviour
     private void Update()
     {
         //If right arrow pressed and there's been sufficient time and can move, travel to next point
-        if (canMove && keyDelay == null && Manager.Instance.forward == true && !Manager.Instance.discarding && (stopPoints.Length <= 0 || currPoint != stopPoints[currStop]))
+        if (canMove && keyDelay == null && Manager.Instance.right == true && !Manager.Instance.discarding && (stopPoints.Length <= 0 || currPoint != stopPoints[currStop]))
         {
             //Must be within index
             if (currPoint < points.Length - 1)
@@ -49,7 +49,7 @@ public class LerpRail : MonoBehaviour
             }
             else
             {
-                Manager.Instance.forward = false;
+                Manager.Instance.right = false;
                 return;
             }
 
@@ -68,10 +68,10 @@ public class LerpRail : MonoBehaviour
             keyDelay = StartCoroutine(KeyDelay());
 
             //Manages arrow input
-            Manager.Instance.forward = false;
+            Manager.Instance.right = false;
         }
         //Same as above but for going left
-        else if (canMove && keyDelay == null && Manager.Instance.back == true && !Manager.Instance.discarding)
+        else if (canMove && keyDelay == null && Manager.Instance.left == true && !Manager.Instance.discarding)
         {
             //Must be within index
             if (currPoint > 0)
@@ -80,7 +80,7 @@ public class LerpRail : MonoBehaviour
             }
             else
             {
-                Manager.Instance.back = false;
+                Manager.Instance.left = false;
                 return;
             }
 
@@ -99,11 +99,11 @@ public class LerpRail : MonoBehaviour
             keyDelay = StartCoroutine(KeyDelay());
 
             //Manages arrow input
-            Manager.Instance.back = false;
+            Manager.Instance.left = false;
         }
 
-        Manager.Instance.forward = false;
-        Manager.Instance.back = false;
+        Manager.Instance.right = false;
+        Manager.Instance.left = false;
     }
 
     public bool isAtEnd()
@@ -122,7 +122,7 @@ public class LerpRail : MonoBehaviour
 
         if (stopPoints.Length > 0 && stopPoints[currStop] == currPoint && currPoint < points.Length)
         {
-            if (manager.GetComponent<DishManager>().mixes < 3)
+            if (DishManager.mixes < 3)
                 rightMixFirstUI.SetActive(true);
             SetButtonBlocked(rightButton, true);
         }
@@ -152,7 +152,7 @@ public class LerpRail : MonoBehaviour
 
         if (stopPoints.Length > 0 && stopPoints[currStop] == currPoint && currPoint < points.Length)
         {
-            if (manager.GetComponent<DishManager>().mixes < 3) 
+            if (DishManager.mixes < 3) 
                 rightMixFirstUI.SetActive(true);
             SetButtonBlocked(rightButton, true);
         }

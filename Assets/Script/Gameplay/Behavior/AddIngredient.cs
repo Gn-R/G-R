@@ -65,6 +65,7 @@ public class AddIngredient : MonoBehaviour
                     // Define all the raycastable ingredient
                     // TODO use dictionary/set to look up ingredient names?
                     // TODO rename ingredient prefabs/wells
+                    // TODO don't allow adding when moving
                     case "Brown":
                         InstantiateIngredient(0, 50);
                         AddToCombo("Brown Rice");
@@ -323,7 +324,7 @@ public class AddIngredient : MonoBehaviour
     private void AddToCombo(string ingredient, Vector3 offset)
     {
         Manager.Instance.combo.Add(ingredient);
-        if (manager.GetComponent<DishManager>().checkIng(ingredient))
+        if (manager.GetComponent<DishManager>().CheckIngredient(ingredient))
         {
             InstantiateText(greenText, ingredient, offset);
         }
@@ -334,27 +335,27 @@ public class AddIngredient : MonoBehaviour
 
         Add.Play();
         
-        if (manager.GetComponent<DishManager>().requiresExtra(ingredient))
+        if (manager.GetComponent<DishManager>().RequiresExtra(ingredient))
         {
-            StartCoroutine(manager.GetComponent<DishManager>().setExtraBar(ingredient));
+            StartCoroutine(manager.GetComponent<DishManager>().SetExtraBar(ingredient));
         }
     }
 
     private void AnimateBottle(GameObject obj)
     {
-        BottleAnime anim = obj.GetComponent<BottleAnime>();
+        BottleAnimator anim = obj.GetComponent<BottleAnimator>();
         anim.OnBottleClick();
     }
 
     // TODO Mix button doesn't work because "railPoint" is null
-    private void MixBowl() // TODO should move to BowlAnime probably
+    private void MixBowl() // TODO should move to BowlAnimator probably
     {
         if (!Manager.Instance.Mixing)
         {
             railPoint = manager.GetComponent<LerpRail>().points[manager.GetComponent<LerpRail>().currPoint].GetChild(1);
 
             InstantiateText(orangeText, "Mixed!", new Vector3(0f, 0f, 0f));
-            manager.GetComponent<DishManager>().mixBowl(false);
+            DishManager.MixBowl();
             manager.GetComponent<LerpRail>().advanceStopPoint();
             // Manager.Instance.Score += 100;
         }

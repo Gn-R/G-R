@@ -35,42 +35,42 @@ public class Follow : MonoBehaviour
     {
         if (coroutineAllowed)
         {
-            if (Manager.Instance.forward == true)
+            if (Manager.Instance.right == true)
             {
                 if (pointval == 0)
                 {
                     StartCoroutine(GoByTheRoute(routeToGo));
                     pointval += 1;
                 }
-                Manager.Instance.forward = false;
+                Manager.Instance.right = false;
             }
-            else if (Manager.Instance.back == true)
+            else if (Manager.Instance.left == true)
             {
                 if (pointval == 1)
                 {
                     StartCoroutine(GoByTheRoute(routeToGo));
                     pointval -= 1;
                 }
-                Manager.Instance.back = false;
+                Manager.Instance.left = false;
             }
             //Rail2
-            //else if (Manager.Instance.forward == true)
+            //else if (Manager.Instance.right == true)
             //{
             //    if (pointval == 1)
             //    {
             //        StartCoroutine(GoByTheRoute(routeToGo));
             //        pointval += 1;
             //    }
-            //    Manager.Instance.forward = false;
+            //    Manager.Instance.right = false;
             //}
-            //else if (Manager.Instance.back == true)
+            //else if (Manager.Instance.left == true)
             //{
             //    if (pointval == 2)
             //    {
             //        StartCoroutine(GoByTheRoute(routeToGo));
             //        pointval -= 1;
             //    }
-            //    Manager.Instance.back = false;
+            //    Manager.Instance.left = false;
             //}
         }
     }

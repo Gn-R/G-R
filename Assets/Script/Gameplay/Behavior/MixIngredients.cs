@@ -50,7 +50,7 @@ public class MixIngredients : MonoBehaviour
 
                     Manager.Instance.Mixing = false;
 
-                    if (manager.GetComponent<DishManager>().checkMix(Manager.Instance.combo))
+                    if (manager.GetComponent<DishManager>().CheckPartialCombo(Manager.Instance.combo))
                     {
                         Manager.Instance.Score += 200;
                     }
@@ -70,8 +70,7 @@ public class MixIngredients : MonoBehaviour
 
                     Discard.Play();
 
-                    // manager.GetComponent<DishManager>().mixBowl(true);
-
+                    // DishManager.ResetMixes();
                 }
 
                 tima = 3f;

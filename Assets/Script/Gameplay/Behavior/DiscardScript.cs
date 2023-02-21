@@ -6,24 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class DiscardScript : MonoBehaviour
 {
-    Button discBtn;
-    Button rightBtn;
-    Button leftBtn;
-    Button resetBtn;
-
-    public GameObject manager;
-    public GameObject drainer;
+    [SerializeField] Button discardButton, leftButton, rightButton;
+    [SerializeField] GameObject manager, drainer;
 
     private Coroutine discardCoroutine;
 
     void Start()
     {
-        discBtn = GameObject.Find("Discard Button").GetComponent<Button>();
-        discBtn.onClick.AddListener(DiscardClick);
-        rightBtn = GameObject.Find("Right Button").GetComponent<Button>();
-        rightBtn.onClick.AddListener(ForwardClick);
-        leftBtn = GameObject.Find("Left Button").GetComponent<Button>();
-        leftBtn.onClick.AddListener(BackClick);
+        discardButton.onClick.AddListener(DiscardClick);
+        leftButton.onClick.AddListener(BackClick);
+        rightButton.onClick.AddListener(ForwardClick);
     }
 
     void DiscardClick()
@@ -42,7 +34,7 @@ public class DiscardScript : MonoBehaviour
     {
         if (!Manager.Instance.Mixing && !Manager.Instance.discarding)
         {
-            Manager.Instance.forward = true;
+            Manager.Instance.right = true;
         }
     }
 
@@ -50,13 +42,12 @@ public class DiscardScript : MonoBehaviour
     {
         if (!Manager.Instance.Mixing && !Manager.Instance.discarding)
         {
-            Manager.Instance.back = true;
+            Manager.Instance.left = true;
         }
     }
 
     private IEnumerator DiscardAnim()
     {
-
         Vector3 rot = manager.GetComponent<LerpRail>().GetCurrentPoint().GetChild(1).rotation.eulerAngles;
         Vector3 finalPos;
         Vector3 originalPos = transform.position;

@@ -4,26 +4,30 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class ServeDebug : MonoBehaviour
+public class ServeBowl : MonoBehaviour
 {
-    public GameObject manager;
-    public Button button;
-    public GameObject ingredients;
+    [SerializeField] Button serveButton;
+    [SerializeField] GameObject manager, ingredients, notAtEndMessage;
 
-    public GameObject notAtEndMessage;
     private Coroutine endMessage;
 
     void Start()
     {
-        // button.onClick.AddListener(TaskOnClick);
-        button.onClick.AddListener(ToEndScene);
+        // serveButton.onClick.AddListener(TaskOnClick);
+        serveButton.onClick.AddListener(OnServeBowl);
     }
 
-    void ToEndScene()
+    void OnServeBowl()
     {
+        bool ingredientsMatch = false; // for testing only
+        EndLevel(ingredientsMatch);
+    }
+
+    void EndLevel(bool pass)
+    {
+        DishManager.success = pass;
+        if (pass) DishManager.GetCurrentRecipe().IncreaseLevel();
         SceneManager.LoadScene("End Scene");
-        bool success = true;
-        if (success) DishManager.GetCurrentRecipe().IncreaseLevel(); // TODO set success variable
     }
 
     void TaskOnClick()
@@ -43,7 +47,7 @@ public class ServeDebug : MonoBehaviour
         //     Debug.Log(str);
         // }
 
-        if (manager.GetComponent<DishManager>().checkDish(Manager.Instance.combo))
+        if (manager.GetComponent<DishManager>().CheckFinalCombo(Manager.Instance.combo))
         {
             Manager.Instance.totalScore += (int) (Manager.Instance.Score * Manager.Instance.ScoreMult);
         }
@@ -52,9 +56,7 @@ public class ServeDebug : MonoBehaviour
             Manager.Instance.totalScore = Manager.Instance.Score;
         }
 
-        SceneManager.LoadScene("Final Scene");
-
-        // manager.GetComponent<DishManager>().GetNewRecipe();
+        SceneManager.LoadScene("End Scene");
 
         foreach (Transform obj in ingredients.transform)
         {

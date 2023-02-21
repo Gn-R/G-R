@@ -4,7 +4,7 @@ using UnityEngine;
 
 // Lifts the bottle and squirts some sauce into the bowl
 // WORK IN PROGRESS
-public class BottleAnime : MonoBehaviour
+public class BottleAnimator : MonoBehaviour
 {
     private Animator animator;
     private bool squirting;

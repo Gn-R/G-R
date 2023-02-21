@@ -20,11 +20,10 @@ public class EndMenu : MonoBehaviour
 
         Recipe currRecipe = DishManager.GetCurrentRecipe();
         int lastLevel = currRecipe.GetLevelsCompleted();
-        bool success = true; // has user passed level
         if (lastLevel < 3)
         {
             int nextLevel = currRecipe.GetCurrentLevel();
-            if (success)
+            if (DishManager.success)
             {
                 continueText.text = "Continue\nLevel " + nextLevel;
             }
