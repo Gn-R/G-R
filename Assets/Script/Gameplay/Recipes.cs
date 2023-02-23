@@ -86,7 +86,7 @@ public class Recipes
     private static readonly Recipe tamari = new Recipe(
         "Tamari",
         new string[] {"Brown Rice", "Kale"},
-        new string[] {"Roasted Broccoli", "Red Onion", "Carrots", "Pickled Jalapenos", "Red Cabbage", "Toasted Almonds"},
+        new string[] {"Roasted Broccoli", "Red Onion", "Carrots", "Pickled Jalapeños", "Red Cabbage", "Toasted Almonds"},
         new string[] {"Miso Ginger"},
         new string[] {"Red Chili Miso Tofu"}
     );

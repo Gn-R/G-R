@@ -13,14 +13,19 @@ public class ServeBowl : MonoBehaviour
 
     void Start()
     {
-        // serveButton.onClick.AddListener(TaskOnClick);
         serveButton.onClick.AddListener(OnServeBowl);
     }
 
     void OnServeBowl()
     {
-        bool ingredientsMatch = false; // for testing only
-        EndLevel(ingredientsMatch);
+        // TODO make sure player is at end of rail
+        bool correctCombo = CheckCombo();
+        EndLevel(correctCombo);
+    }
+
+    bool CheckCombo()
+    {
+        return manager.GetComponent<DishManager>().CheckFinalCombo(Manager.Instance.combo);
     }
 
     void EndLevel(bool pass)
@@ -28,7 +33,7 @@ public class ServeBowl : MonoBehaviour
         DishManager.success = pass;
         if (pass) DishManager.GetCurrentRecipe().IncreaseLevel();
         SceneManager.LoadScene("End Scene");
-    }
+    }    
 
     void TaskOnClick()
     {
