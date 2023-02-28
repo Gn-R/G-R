@@ -6,16 +6,16 @@ using TMPro;
 public class MixIngredients : MonoBehaviour
 {
     //bool print_inge;
-    TextMeshProUGUI dis_inge;
+    //TextMeshProUGUI dis_inge;
     public AudioSource Discard;
     float tima;
 
-    private GameObject manager; // doesn't seem to be used
+    public GameObject manager;
 
     // Start is called before the first frame update
     void Start()
     {
-        dis_inge = transform.GetComponent<TextMeshProUGUI>();
+        //dis_inge = transform.GetComponent<TextMeshProUGUI>();
         Discard.GetComponent<AudioSource>();
         tima = 3f;
     }
@@ -28,42 +28,51 @@ public class MixIngredients : MonoBehaviour
             //bowl_anime.SetBool("shake", true);
             if (tima > 0f)
             {
+                Debug.Log(tima);
                 tima -= Time.deltaTime;
             }
             else 
             {
                 if (Manager.Instance.Mixing == true)
                 {
-                    string temp = "";
-                    foreach (string str in Manager.Instance.combo)
-                    {
-                        temp += str + ", ";
-                    }
+                    //string temp = "";
+                    //foreach (string str in Manager.Instance.combo)
+                    //{
+                    //    temp += str + ", ";
+                    //}
 
                     //Remove the last ", "
-                    if (temp.Length > 0)
-                        temp = temp.Substring(0, temp.Length - 2);
+                    //if (temp.Length > 0)
+                    //    temp = temp.Substring(0, temp.Length - 2);
 
-                    dis_inge.text = temp;
+                    //dis_inge.text = temp;
 
                     //print_inge = true;
 
                     Manager.Instance.Mixing = false;
+
+                    if (manager.GetComponent<DishManager>().checkMix(Manager.Instance.combo))
+                    {
+                        Manager.Instance.Score += 200;
+                    }
+                    else
+                    {
+                        Manager.Instance.Score -= 200;
+                    }
                 }
 
                 if (Manager.Instance.discarding == true)
                 {
-                    Manager.Instance.Score -= 300;
+                    Manager.Instance.Score = 0;
 
                     Manager.Instance.combo.Clear();
 
-                    dis_inge.text = "";
+                    //dis_inge.text = "";
 
                     Discard.Play();
 
                     // manager.GetComponent<DishManager>().mixBowl(true);
 
-                    Manager.Instance.discarding = false;
                 }
 
                 tima = 3f;

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ServeDebug : MonoBehaviour
 {
@@ -9,7 +10,9 @@ public class ServeDebug : MonoBehaviour
     public Button button;
     public GameObject ingredients;
 
-    // Start is called before the first frame update
+    public GameObject notAtEndMessage;
+    private Coroutine endMessage;
+
     void Start()
     {
         button.onClick.AddListener(TaskOnClick);
@@ -17,20 +20,33 @@ public class ServeDebug : MonoBehaviour
 
     void TaskOnClick()
     {
-        foreach (string str in Manager.Instance.combo)
+        if (!manager.GetComponent<LerpRail>().isAtEnd())
         {
-            // Debug.Log(str);
-        }
-        if (manager.GetComponent<DishManager>().checkDish(Manager.Instance.combo))
-        {
-            Manager.Instance.Score += (int) (1000 * manager.GetComponent<DishManager>().getTimerPercentage());
-        }
-        else
-        {
-            Manager.Instance.Score -= 1000;
+            if (endMessage != null)
+            {
+                StopCoroutine(endMessage);
+            }
+            endMessage = StartCoroutine(ShowNotAtEndMessage());
+            return;
         }
 
-        manager.GetComponent<DishManager>().getNewRecipe();
+        // foreach (string str in Manager.Instance.combo)
+        // {
+        //     Debug.Log(str);
+        // }
+
+        if (manager.GetComponent<DishManager>().checkDish(Manager.Instance.combo))
+        {
+            Manager.Instance.totalScore += (int) (Manager.Instance.Score * Manager.Instance.ScoreMult);
+        }
+        else
+        {;
+            Manager.Instance.totalScore = Manager.Instance.Score;
+        }
+
+        SceneManager.LoadScene("Final Scene");
+
+        manager.GetComponent<DishManager>().GetNewRecipe();
 
         foreach (Transform obj in ingredients.transform)
         {
@@ -38,5 +54,12 @@ public class ServeDebug : MonoBehaviour
         }
 
         manager.GetComponent<LerpRail>().returnToStart();
+    }
+
+    private IEnumerator ShowNotAtEndMessage()
+    {
+        notAtEndMessage.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        notAtEndMessage.SetActive(false);
     }
 }

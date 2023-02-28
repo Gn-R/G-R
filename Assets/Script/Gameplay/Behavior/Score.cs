@@ -6,16 +6,22 @@ using TMPro;
 
 public class Score : MonoBehaviour
 {
-    public TextMeshProUGUI Number;
+    public TextMeshProUGUI scoreText;
+    private Manager manager;
 
     void Start()
     {
-        Manager.Instance.Score = 0;
-        Number.text = "Score: " + Manager.Instance.Score;
+        //manager = Manager.Instance;
+        //manager.Score = 0;
+		
+        //Manager.Instance.Score = 0;
+        //scoreText.text = "Score: " + Manager.Instance.Score + "\nTotal Score: " + Manager.Instance.totalScore;
+        scoreText.text = "" + Manager.Instance.Score;
     }
 
     void Update()
     {
-        Number.text = "Score: " + Manager.Instance.Score;
+        //scoreText.text = "Score: " + Manager.Instance.Score + "\nTotal Score: " + Manager.Instance.totalScore;
+        scoreText.text = "" + Manager.Instance.Score;
     }
 }
