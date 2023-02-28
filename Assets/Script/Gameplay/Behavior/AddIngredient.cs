@@ -109,7 +109,7 @@ public class AddIngredient : MonoBehaviour
                     Destroy(transform.GetChild(dice).gameObject);
                 }
             }
-            Debug.Log("destroy");
+            // Debug.Log("destroy");
         }
     }
 
@@ -197,7 +197,7 @@ public class AddIngredient : MonoBehaviour
         //Separate check for dressing to add the correct one
         if (ingredient.Equals("Dressing"))
         {
-            string[] dressings = Recipes.GetRecipe(DishManager.currDish).dressing;
+            string[] dressings = Recipes.GetRecipe(DishManager.GetCurrentDish()).dressing;
             foreach (string dressing in dressings)
             {
                 if (!Manager.Instance.combo.Contains(dressing))
@@ -215,7 +215,7 @@ public class AddIngredient : MonoBehaviour
         
         Manager.Instance.combo.Add(ingredient);
         listIngredients.GetComponent<ListIngredients>().UpdateIngredientsAdded(ingredient);
-        if (manager.GetComponent<DishManager>().CheckIngredient(ingredient))
+        if (DishManager.CheckIngredient(ingredient))
         {
             InstantiateText(greenText, ingredient, offset);
         }
@@ -240,7 +240,7 @@ public class AddIngredient : MonoBehaviour
 
         Add.Play();
         
-        if (manager.GetComponent<DishManager>().RequiresExtra(ingredient))
+        if (DishManager.RequiresExtra(ingredient))
         {
             StartCoroutine(manager.GetComponent<DishManager>().SetExtraBar(ingredient));
         }
@@ -264,12 +264,12 @@ public class AddIngredient : MonoBehaviour
             manager.GetComponent<LerpRail>().advanceStopPoint();
             // Manager.Instance.Score += 100;
         }
-        detachIng();
+        DetachIngredient();
         Manager.Instance.Mixing = true;
         Mix.Play();
     }
 
-    public void attachIngToBowl()
+    public void AttachIngredientToBowl()
     {
         List<Transform> children = new List<Transform>();
         foreach (Transform child in ingredientParent)
@@ -286,7 +286,7 @@ public class AddIngredient : MonoBehaviour
         }
     }
 
-    public void detachIng()
+    public void DetachIngredient()
     {
         List<Transform> children = new List<Transform>();
         foreach (Transform child in transform)

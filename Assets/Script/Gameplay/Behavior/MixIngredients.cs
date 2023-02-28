@@ -50,7 +50,7 @@ public class MixIngredients : MonoBehaviour
 
                     Manager.Instance.Mixing = false;
 
-                    if (manager.GetComponent<DishManager>().CheckPartialCombo(Manager.Instance.combo))
+                    if (DishManager.CheckPartialCombo(Manager.Instance.combo))
                     {
                         Manager.Instance.Score += 200;
                     }

@@ -25,12 +25,12 @@ public class ServeBowl : MonoBehaviour
 
     bool CheckCombo()
     {
-        return manager.GetComponent<DishManager>().CheckFinalCombo(Manager.Instance.combo);
+        return DishManager.CheckFinalCombo(Manager.Instance.combo);
     }
 
     void EndLevel(bool pass)
     {
-        DishManager.success = pass;
+        DishManager.SetLevelSuccess(pass);
         if (pass) DishManager.GetCurrentRecipe().IncreaseLevel();
         SceneManager.LoadScene("End Scene");
     }    
@@ -52,7 +52,7 @@ public class ServeBowl : MonoBehaviour
         //     Debug.Log(str);
         // }
 
-        if (manager.GetComponent<DishManager>().CheckFinalCombo(Manager.Instance.combo))
+        if (DishManager.CheckFinalCombo(Manager.Instance.combo))
         {
             Manager.Instance.totalScore += (int) (Manager.Instance.Score * Manager.Instance.ScoreMult);
         }

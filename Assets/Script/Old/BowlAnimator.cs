@@ -51,7 +51,7 @@ public class BowlAnimator : MonoBehaviour
         if (!Manager.Instance.Mixing)
         {
             Manager.Instance.discarding = true;
-            bowl.GetComponent<AddIngredient>().detachIng();
+            bowl.GetComponent<AddIngredient>().DetachIngredient();
         }
     }
 
@@ -74,7 +74,7 @@ public class BowlAnimator : MonoBehaviour
             if (right) Manager.Instance.right = true;
             else Manager.Instance.left = true;
             
-            bowl.GetComponent<AddIngredient>().attachIngToBowl();
+            bowl.GetComponent<AddIngredient>().AttachIngredientToBowl();
         }
     }
 

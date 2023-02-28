@@ -7,10 +7,10 @@ using TMPro;
 
 public class DishManager : MonoBehaviour
 {
-    public static string currDish = "";
-    public static bool success; // user passed current level
-    public static List<string> currIngredients = new List<string>();
-    public static int mixes = 0;
+    private static string currDish = "";
+    private static bool success; // user passed current level
+    private static List<string> currIngredients = new List<string>();
+    private static int mixes = 0;
 
     public TextMeshProUGUI orderText;
     public GameObject orderTimerManager;
@@ -26,7 +26,7 @@ public class DishManager : MonoBehaviour
         if (currDish.Equals("")) SetRecipe("Roots Bowl");
     }
 
-    public void SetRecipe(string recipe)
+    public static void SetRecipe(string recipe)
     {
         currDish = recipe;
         currIngredients = Recipes.GetRecipe(currDish).GetIngredients();
@@ -61,7 +61,7 @@ public class DishManager : MonoBehaviour
     }
 
     //Returns true if the item requires an extra amount (shows a bar)
-    public bool RequiresExtra(string item)
+    public static bool RequiresExtra(string item)
     {
         int count = 0;
         foreach (string s in currIngredients)
@@ -117,6 +117,11 @@ public class DishManager : MonoBehaviour
 
     // Getter Methods
 
+    public static string GetCurrentDish()
+    {
+        return currDish;
+    }
+
     public static Recipe GetCurrentRecipe()
     {
         return Recipes.GetRecipe(currDish);
@@ -125,6 +130,21 @@ public class DishManager : MonoBehaviour
     public float GetTimerPercentage()
     {
         return orderTimerManager.GetComponent<OrderTimerDebug>().getPercentage();
+    }
+
+    public static int GetMixes()
+    {
+        return mixes;
+    }
+
+    public static bool GetLevelSuccess()
+    {
+        return success;
+    }
+
+    public static void SetLevelSuccess(bool success)
+    {
+        DishManager.success = success;
     }
 
     public static void MixBowl()
@@ -137,22 +157,22 @@ public class DishManager : MonoBehaviour
         mixes = 0; // reset mixes
     }
 
-    // Check Methods
+    // Check Ingredient Methods
 
     // Checks if ingredient is in dish
-    public bool CheckIngredient(string ing)
+    public static bool CheckIngredient(string ing)
     {
         return currIngredients.Contains(ing);
     }
 
     // Checks if the ingredients in it are valid so far and gives points (if empty, remove points)
-    public bool CheckPartialCombo(List<string> combo)
+    public static bool CheckPartialCombo(List<string> combo)
     {
         return combo.Count > 0 && ScrambledEquals(combo, currIngredients, false);
     }
 
     // Check if the full dish was correct
-    public bool CheckFinalCombo(List<string> combo)
+    public static bool CheckFinalCombo(List<string> combo)
     {
         //Order does not matter
         return ScrambledEquals(currIngredients, combo, true) && mixes == 3;
@@ -187,4 +207,5 @@ public class DishManager : MonoBehaviour
         }
         return cnt.Values.All(c => c <= 0);
     }
+
 }

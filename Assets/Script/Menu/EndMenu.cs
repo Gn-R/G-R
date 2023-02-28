@@ -23,7 +23,7 @@ public class EndMenu : MonoBehaviour
         if (lastLevel < 3)
         {
             int nextLevel = currRecipe.GetCurrentLevel();
-            if (DishManager.success)
+            if (DishManager.GetLevelSuccess())
             {
                 continueText.text = "Continue\nLevel " + nextLevel;
             }

@@ -29,7 +29,7 @@ public class StartMenu : MonoBehaviour
     void ToMainScene()
     {
         if (currRecipe == null) return; // ignore if no recipe set
-        DishManager.currDish = currRecipe.name;
+        DishManager.SetRecipe(currRecipe.name);
         SceneManager.LoadScene("Main Scene");
     }
 

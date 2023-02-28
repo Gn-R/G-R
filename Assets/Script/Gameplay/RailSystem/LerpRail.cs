@@ -123,7 +123,7 @@ public class LerpRail : MonoBehaviour
 
         if (stopPoints.Length > 0 && stopPoints[currStop] == currPoint && currPoint < points.Length)
         {
-            if (DishManager.mixes < 3)
+            if (DishManager.GetMixes() < 3)
                 rightMixFirstUI.SetActive(true);
             SetButtonBlocked(rightButton, true);
         }
@@ -155,7 +155,7 @@ public class LerpRail : MonoBehaviour
 
         if (stopPoints.Length > 0 && stopPoints[currStop] == currPoint && currPoint < points.Length)
         {
-            if (DishManager.mixes < 3) 
+            if (DishManager.GetMixes() < 3) 
                 rightMixFirstUI.SetActive(true);
             SetButtonBlocked(rightButton, true);
         }

@@ -11,7 +11,7 @@ public class DishLabel : MonoBehaviour
 
     void Start()
     {
-        SetLabel(DishManager.currDish);
+        SetLabel(DishManager.GetCurrentDish());
     }
 
     // Set label image based on the index in the array
