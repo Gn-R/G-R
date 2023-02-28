@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,8 +8,13 @@ using TMPro;
 // TODO move this script to MBP object and fix prefab position and size
 public class AddIngredient : MonoBehaviour
 {
+    private static readonly int INGREDIENT_LIMIT = 400;
 
-    public GameObject pointpos;
+    [SerializeField] GameObject listIngredients;
+    [SerializeField] GameObject textPrefab;
+
+    public GameObject[] pointpos;
+    public GameObject prompts;
     public Canvas UI;
     public Button mixButton;
     public GameObject redText, greenText, orangeText;
@@ -31,6 +37,8 @@ public class AddIngredient : MonoBehaviour
     public GameObject flowEmitter;
     public GameObject pourEmitter;
     private Coroutine pourCoroutine;
+
+    private Coroutine hintCoroutine;
 
     private void Start()
     {
@@ -84,16 +92,46 @@ public class AddIngredient : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             //Used to offset ingredient to instantiate into bowl
-            Vector3 randomOffset = new Vector3(Random.Range(-0.09f, 0.1f), Random.Range(-0.2f, 0.2f), Random.Range(-0.175f, 0.05f));
+            Vector3 randomOffset = new Vector3(UnityEngine.Random.Range(-0.09f, 0.1f), UnityEngine.Random.Range(-0.2f, 0.2f), UnityEngine.Random.Range(-0.175f, 0.05f));
             GameObject ing = Instantiate(prefab, transform.position + offset + randomOffset, Quaternion.Euler(0, 0, 0), transform);
             ing.transform.localScale = Vector3.Scale(ing.transform.localScale, new Vector3(.45f, .45f, .45f));
+        }
+
+        //After every addition, check if there's too many items in bowl
+        if (transform.childCount > INGREDIENT_LIMIT)
+        {
+            int delete_count = INGREDIENT_LIMIT / 4;
+            for (int i = 0; i < delete_count; i++)
+            {
+                int dice = UnityEngine.Random.Range(0, transform.childCount);
+                if (transform.GetChild(dice).CompareTag("Ingredients"))
+                {
+                    Destroy(transform.GetChild(dice).gameObject);
+                }
+            }
+            Debug.Log("destroy");
         }
     }
 
     private void InstantiateText(GameObject textType, string message, Vector3 offset)
     {
-        GameObject textObject = Instantiate(textType, transform.position + offset, railPoint.transform.rotation, UI.transform);
-        textObject.GetComponent<TextMeshProUGUI>().text = message;
+        GameObject parentPos = Array.Find(pointpos, element => element.name.Equals(message));
+        GameObject textObject;
+        if (parentPos == null)
+        {
+            textObject = Instantiate(textType, transform);
+        } 
+        else
+        {
+            textObject = Instantiate(textType, parentPos.transform);
+        }
+
+        if (GameObject.Find("Main Camera").transform.rotation.eulerAngles.y > 0)
+        {
+            textObject.transform.rotation = Quaternion.Euler(0, -90, 0);
+        }
+        //textObject.transform.position += offset;
+        textObject.GetComponent<TextMeshPro>().text = message;
     }
 
     private void PourLiquid(Color color)
@@ -119,9 +157,65 @@ public class AddIngredient : MonoBehaviour
         pourCoroutine = null;
     }
 
+    public void ShowHint(float sec)
+    {
+        if (hintCoroutine != null)
+        {
+            StopCoroutine(hintCoroutine);
+        }
+        hintCoroutine = StartCoroutine(HintCoroutine(sec));
+    }
+
+    private IEnumerator HintCoroutine(float sec)
+    {
+        List<GameObject> hintTexts = new List<GameObject>();
+        foreach (GameObject clone in pointpos)
+        {
+            GameObject hintText = Instantiate(textPrefab, clone.transform, false);
+            hintText.transform.localPosition = new Vector3(.05f, .182f, -0.04f);
+            if (GameObject.Find("Main Camera").transform.rotation.eulerAngles.y > 0)
+            {
+                hintText.transform.localPosition = new Vector3(.05f, .182f, 0.07f);
+                hintText.transform.rotation = Quaternion.Euler(90, 0, 90);
+            }
+            else
+            {
+                hintText.transform.localPosition = new Vector3(.05f, .182f, -0.08f);
+            }
+            hintText.GetComponent<TextMeshPro>().text = clone.name;
+            hintTexts.Add(hintText);
+        }
+        yield return new WaitForSeconds(sec);
+        foreach (GameObject text in hintTexts)
+        {
+            Destroy(text);
+        }
+    }
+
     private void AddToCombo(string ingredient, Vector3 offset)
     {
+        //Separate check for dressing to add the correct one
+        if (ingredient.Equals("Dressing"))
+        {
+            string[] dressings = Recipes.GetRecipe(manager.GetComponent<DishManager>().currDish).dressing;
+            foreach (string dressing in dressings)
+            {
+                if (!Manager.Instance.combo.Contains(dressing))
+                {
+                    ingredient = dressing;
+                    break;
+                }
+            }
+
+            if (ingredient.Equals("Dressing"))
+            {
+                return;
+            }
+        }
+        
+        
         Manager.Instance.combo.Add(ingredient);
+        listIngredients.GetComponent<ListIngredients>().UpdateIngredientsAdded(ingredient);
         if (manager.GetComponent<DishManager>().CheckIngredient(ingredient))
         {
             InstantiateText(greenText, ingredient, offset);
@@ -130,6 +224,20 @@ public class AddIngredient : MonoBehaviour
         {
             InstantiateText(redText, ingredient, offset);
         }
+
+        //if (points > 0)
+        //{
+        //    GameObject point = Instantiate(pointtype[0], transform.position, railPoint.transform.rotation, UI.transform);
+        //    point.GetComponent<TextMeshProUGUI>().text = "+" + points;
+        //}
+        //else
+        //{
+        //    GameObject point = Instantiate(pointtype[2], transform.position, railPoint.transform.rotation, UI.transform);
+        //    point.GetComponent<TextMeshProUGUI>().text = "" + points;
+        //}
+
+        prompts.GetComponent<TutorialPrompts>().addedIngredient(ingredient);
+        
 
         Add.Play();
         
