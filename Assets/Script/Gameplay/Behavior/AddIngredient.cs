@@ -197,7 +197,7 @@ public class AddIngredient : MonoBehaviour
         //Separate check for dressing to add the correct one
         if (ingredient.Equals("Dressing"))
         {
-            string[] dressings = Recipes.GetRecipe(manager.GetComponent<DishManager>().currDish).dressing;
+            string[] dressings = Recipes.GetRecipe(DishManager.currDish).dressing;
             foreach (string dressing in dressings)
             {
                 if (!Manager.Instance.combo.Contains(dressing))
