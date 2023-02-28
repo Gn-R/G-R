@@ -74,7 +74,7 @@ public class ListIngredients : MonoBehaviour
         for (int i = 0; i < lines.Length; i++) {
             if (lines[i].Contains(ingredient) && !lines[i].Contains(string.Format("<color=green>{0}</color>", ingredient)))
             {
-                Debug.Log(i);
+                // Debug.Log(i);
                 lines[i] = lines[i].Replace(ingredient, string.Format("<color=green>{0}</color>", ingredient));
                 break;
             }

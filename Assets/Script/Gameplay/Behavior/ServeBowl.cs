@@ -19,8 +19,8 @@ public class ServeBowl : MonoBehaviour
     void OnServeBowl()
     {
         // TODO make sure player is at end of rail
-        bool correctCombo = CheckCombo();
-        EndLevel(correctCombo);
+        bool hasCorrectCombo = CheckCombo();
+        EndLevel(hasCorrectCombo);
     }
 
     bool CheckCombo()

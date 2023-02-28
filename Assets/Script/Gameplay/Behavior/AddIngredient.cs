@@ -213,7 +213,6 @@ public class AddIngredient : MonoBehaviour
             }
         }
         
-        
         Manager.Instance.combo.Add(ingredient);
         listIngredients.GetComponent<ListIngredients>().UpdateIngredientsAdded(ingredient);
         if (manager.GetComponent<DishManager>().CheckIngredient(ingredient))
