@@ -175,9 +175,9 @@ MonoBehaviour:
   ingredientName: Bulgur
   ingredientPrefab: {fileID: 1878892668}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &58713
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -310,9 +310,9 @@ MonoBehaviour:
   ingredientName: Black Beans
   ingredientPrefab: {fileID: 1839186706}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!64 &548060
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1478,9 +1478,9 @@ MonoBehaviour:
   ingredientName: Cannellini Beans
   ingredientPrefab: {fileID: 693535333}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!64 &63928130
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1696,9 +1696,9 @@ MonoBehaviour:
   ingredientName: Cucumber
   ingredientPrefab: {fileID: 1989236751}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &71858838
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3232,9 +3232,9 @@ MonoBehaviour:
   ingredientName: Cilantro Lime
   ingredientPrefab: {fileID: 1483643619}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &149483576
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3445,9 +3445,9 @@ MonoBehaviour:
   ingredientName: Spinach
   ingredientPrefab: {fileID: 1535179130}
   prefabCount: 20
-  prefabOffset: {x: -0.6, y: 0, z: -2.5}
+  textOffset: {x: -0.6, y: 0, z: -2.5}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!64 &158509632
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4672,9 +4672,9 @@ MonoBehaviour:
   ingredientName: Chicken
   ingredientPrefab: {fileID: 357604252}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &215558489
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5780,9 +5780,9 @@ MonoBehaviour:
   ingredientName: Red Cabbage
   ingredientPrefab: {fileID: 238006199}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &257337126
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8449,9 +8449,9 @@ MonoBehaviour:
   ingredientName: Avocado
   ingredientPrefab: {fileID: 279763526}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &439309924
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9223,9 +9223,9 @@ MonoBehaviour:
   ingredientName: Feta
   ingredientPrefab: {fileID: 1949109734}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &473144418
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10289,9 +10289,9 @@ MonoBehaviour:
   ingredientName: Cheddar
   ingredientPrefab: {fileID: 1460820428}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &533389914
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10834,7 +10834,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.75, g: 0.5, b: 0, a: 1}
 --- !u!23 &547771732
@@ -11556,9 +11556,9 @@ MonoBehaviour:
   ingredientName: Kale
   ingredientPrefab: {fileID: 756457164}
   prefabCount: 20
-  prefabOffset: {x: 0.75, y: 0, z: -2.5}
+  textOffset: {x: 0.75, y: 0, z: -2.5}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!64 &585375431
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12936,9 +12936,9 @@ MonoBehaviour:
   ingredientName: Goat Cheese
   ingredientPrefab: {fileID: 246751886}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &645429700
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13120,9 +13120,9 @@ MonoBehaviour:
   ingredientName: Hard-Boiled Egg
   ingredientPrefab: {fileID: 615716494}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &659372842
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13537,9 +13537,9 @@ MonoBehaviour:
   ingredientName: Spinach
   ingredientPrefab: {fileID: 1535179130}
   prefabCount: 20
-  prefabOffset: {x: -0.6, y: 0, z: -2.5}
+  textOffset: {x: -0.6, y: 0, z: -2.5}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!64 &691914605
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14300,9 +14300,9 @@ MonoBehaviour:
   ingredientName: Red Onions
   ingredientPrefab: {fileID: 701294364}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &714788705
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14685,9 +14685,9 @@ MonoBehaviour:
   ingredientName: Kale
   ingredientPrefab: {fileID: 756457164}
   prefabCount: 20
-  prefabOffset: {x: 0.75, y: 0, z: -2.5}
+  textOffset: {x: 0.75, y: 0, z: -2.5}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!64 &744931129
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15106,7 +15106,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.5, g: 0.3, b: 0, a: 1}
 --- !u!95 &770236255
@@ -15273,9 +15273,9 @@ MonoBehaviour:
   ingredientName: "Pickled Japale\xF1os"
   ingredientPrefab: {fileID: 560703810}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &773800296
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15574,9 +15574,9 @@ MonoBehaviour:
   ingredientName: Charred Corn
   ingredientPrefab: {fileID: 376279006}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &790732770
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16079,9 +16079,9 @@ MonoBehaviour:
   ingredientName: Lime-Picked Onions
   ingredientPrefab: {fileID: 1888789506}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &818736496
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16821,9 +16821,9 @@ MonoBehaviour:
   ingredientName: Tofu
   ingredientPrefab: {fileID: 1793937129}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &851549380
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17743,9 +17743,9 @@ MonoBehaviour:
   ingredientName: Kale
   ingredientPrefab: {fileID: 756457164}
   prefabCount: 20
-  prefabOffset: {x: 0.75, y: 0, z: -2.5}
+  textOffset: {x: 0.75, y: 0, z: -2.5}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!64 &901745070
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20367,9 +20367,9 @@ MonoBehaviour:
   ingredientName: Pineapple
   ingredientPrefab: {fileID: 1981081434}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &1101968135
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21262,7 +21262,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 1, b: 0, a: 1}
 --- !u!23 &1174327529
@@ -22550,9 +22550,9 @@ MonoBehaviour:
   ingredientName: Carrots
   ingredientPrefab: {fileID: 1737038924}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &1231351211
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22853,9 +22853,9 @@ MonoBehaviour:
   ingredientName: Chickpeas
   ingredientPrefab: {fileID: 2001526601}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &1247269303
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23752,9 +23752,9 @@ MonoBehaviour:
   ingredientName: Spinach
   ingredientPrefab: {fileID: 1535179130}
   prefabCount: 20
-  prefabOffset: {x: -0.6, y: 0, z: -2.5}
+  textOffset: {x: -0.6, y: 0, z: -2.5}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!64 &1323779665
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23886,7 +23886,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!23 &1325277341
@@ -24068,7 +24068,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!23 &1342737765
@@ -24172,7 +24172,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.5, g: 0.3, b: 0, a: 1}
 --- !u!23 &1343449221
@@ -24849,7 +24849,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &1372440330
@@ -25102,7 +25102,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.75, g: 0.5, b: 0, a: 1}
 --- !u!95 &1378653632
@@ -26597,9 +26597,9 @@ MonoBehaviour:
   ingredientName: Spring Mix
   ingredientPrefab: {fileID: 1528697091}
   prefabCount: 20
-  prefabOffset: {x: 0.15, y: 0, z: -2.5}
+  textOffset: {x: 0.15, y: 0, z: -2.5}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!64 &1456161222
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27998,7 +27998,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 0, b: 1, a: 1}
 --- !u!95 &1499097605
@@ -28861,7 +28861,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 1, b: 0, a: 1}
 --- !u!95 &1530939331
@@ -31425,9 +31425,9 @@ MonoBehaviour:
   ingredientName: Spring Mix
   ingredientPrefab: {fileID: 1528697091}
   prefabCount: 20
-  prefabOffset: {x: 0.15, y: 0, z: -2.5}
+  textOffset: {x: 0.15, y: 0, z: -2.5}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!64 &1641432382
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -33161,9 +33161,9 @@ MonoBehaviour:
   ingredientName: Roasted Sweet Potatoes
   ingredientPrefab: {fileID: 1268768995}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &1717715858
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33296,9 +33296,9 @@ MonoBehaviour:
   ingredientName: Tomatoes
   ingredientPrefab: {fileID: 1488467970}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &1725835811
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36105,9 +36105,9 @@ MonoBehaviour:
   ingredientName: Roasted Beets
   ingredientPrefab: {fileID: 1928286218}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!64 &1872192319
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -37475,9 +37475,9 @@ MonoBehaviour:
   ingredientName: Brown Rice
   ingredientPrefab: {fileID: 1788100207}
   prefabCount: 50
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!64 &1922241400
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -37871,9 +37871,9 @@ MonoBehaviour:
   ingredientName: Pita Chips
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &1941884042
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -38884,9 +38884,9 @@ MonoBehaviour:
   ingredientName: Spring Mix
   ingredientPrefab: {fileID: 1528697091}
   prefabCount: 20
-  prefabOffset: {x: 0.15, y: 0, z: -2.5}
+  textOffset: {x: 0.15, y: 0, z: -2.5}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!64 &1979558070
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -39526,9 +39526,9 @@ MonoBehaviour:
   ingredientName: BBQ Tofu
   ingredientPrefab: {fileID: 365802116}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &1996795833
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -40235,7 +40235,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 0, b: 1, a: 1}
 --- !u!23 &2027636282
@@ -40575,7 +40575,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!95 &2054120523
@@ -40908,9 +40908,9 @@ MonoBehaviour:
   ingredientName: Roots Rice
   ingredientPrefab: {fileID: 603956975}
   prefabCount: 50
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!64 &2073071604
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -41126,9 +41126,9 @@ MonoBehaviour:
   ingredientName: Broccoli
   ingredientPrefab: {fileID: 635277301}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &2084934610
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -42296,9 +42296,9 @@ MonoBehaviour:
   ingredientName: Shaved Parmesan
   ingredientPrefab: {fileID: 1209427212}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!54 &2127391480
 Rigidbody:
   m_ObjectHideFlags: 0
