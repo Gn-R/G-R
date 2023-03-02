@@ -246,12 +246,6 @@ public class AddIngredient : MonoBehaviour
         }
     }
 
-    private void AnimateBottle(GameObject obj)
-    {
-        BottleAnimator anim = obj.GetComponent<BottleAnimator>();
-        anim.OnBottleClick();
-    }
-
     // TODO Mix button doesn't work because "railPoint" is null
     private void MixBowl() // TODO should move to BowlAnimator probably
     {

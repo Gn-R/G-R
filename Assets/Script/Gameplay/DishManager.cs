@@ -12,8 +12,6 @@ public class DishManager : MonoBehaviour
     private static List<string> currIngredients = new List<string>();
     private static int mixes = 0;
 
-    public TextMeshProUGUI orderText;
-    public GameObject orderTimerManager;
     public Slider extraFoodSlider;
 
     public Coroutine showItemCoroutine;
@@ -26,22 +24,11 @@ public class DishManager : MonoBehaviour
         if (currDish.Equals("")) SetRecipe("Roots Bowl");
     }
 
-    public static void SetRecipe(string recipe)
+    public static void SetRecipe(string dishName)
     {
-        currDish = recipe;
+        currDish = dishName;
         currIngredients = Recipes.GetRecipe(currDish).GetIngredients();
         mixes = 0;
-    }
-
-    IEnumerator ShowText()
-    {
-        orderText.gameObject.SetActive(true);
-        yield return new WaitForSeconds(10f);
-        orderText.gameObject.SetActive(false);
-    }
-
-    public void StartOrderTimer(int seconds) {
-        orderTimerManager.GetComponent<OrderTimerDebug>().StartOrderTimer(seconds);
     }
 
     public void RandomizeRecipe()
@@ -125,11 +112,6 @@ public class DishManager : MonoBehaviour
     public static Recipe GetCurrentRecipe()
     {
         return Recipes.GetRecipe(currDish);
-    }
-
-    public float GetTimerPercentage()
-    {
-        return orderTimerManager.GetComponent<OrderTimerDebug>().getPercentage();
     }
 
     public static int GetMixes()
