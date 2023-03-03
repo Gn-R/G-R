@@ -23,7 +23,7 @@ public class DishManager : MonoBehaviour
     void Start()
     {
         Manager.Instance.totalScore = 0;
-        if (currDish.Equals("")) SetRecipe("Baja");
+        if (currDish.Equals("")) SetRecipe("G & R Bowl 2");
     }
 
     public static void SetRecipe(string recipe)
@@ -175,7 +175,7 @@ public class DishManager : MonoBehaviour
     public static bool CheckFinalCombo(List<string> combo)
     {
         //Order does not matter
-        return ScrambledEquals(currIngredients, combo, true) && mixes == 3;
+        return ScrambledEquals(currIngredients, combo, true) && mixes >= 1;
     }    
 
     //Matches lists without order

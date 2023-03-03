@@ -255,6 +255,12 @@ public class AddIngredient : MonoBehaviour
     // TODO Mix button doesn't work because "railPoint" is null
     private void MixBowl() // TODO should move to BowlAnimator probably
     {
+        //Only mix at the cutting board
+        if (manager.GetComponent<LerpRail>().currPoint != 6)
+        {
+            return;
+        }
+
         if (!Manager.Instance.Mixing)
         {
             railPoint = manager.GetComponent<LerpRail>().points[manager.GetComponent<LerpRail>().currPoint].GetChild(1);

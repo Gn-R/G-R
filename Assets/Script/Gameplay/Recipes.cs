@@ -45,32 +45,40 @@ public class Recipes
 
     private static readonly Recipe GRBowl1 = new Recipe(
         "G & R Bowl 1",
-        new string[] { "Nothing" }, // Base(s)
-        new string[] { }, // Topping(s)
-        new string[] { }, // Dressing(s)
+        new string[] { "Sweet Potatoes", "Red Cabbage" }, // Base(s)
+        new string[] { "Goat Cheese", "Spring Mix", "Chicken"}, // Topping(s)
+        new string[] { "Caesar Dressing" }, // Dressing(s)
         new string[] { } // From the Grill (protein)
+    );
+
+    private static readonly Recipe GRBowl2 = new Recipe(
+        "G & R Bowl 2",
+        new string[] { "Shredded Carrots", "Charred Corn" }, // Base(s)
+        new string[] { "Pickled Red Onions", "Crispy Fried Onions", "Parmesan", "Spring Mix", "Cucumber" }, // Topping(s)
+        new string[] { "Caesar Dressing" }, // Dressing(s)
+        new string[] { "Chicken" } // From the Grill (protein)
     );
 
     private static readonly Recipe baja = new Recipe(
         "Baja", 8.79,
-        new string[] {"Romaine", "Grape Tomatoes", "Pickled Red Onions"},
-        new string[] {"Charred Corn", "Black Beans", "Tortilla Strips", "Sharp Cheddar Cheese"},
+        new string[] {"Romaine", "Grape Tomatoes",},
+        new string[] { "Pickled Red Onions", "Charred Corn", "Black Beans", "Tortilla Strips", "Sharp Cheddar Cheese"},
         new string[] {"Chipotle Ranch Dressing"},
         new string[] {}
     );
 
     private static readonly Recipe classicCaesar = new Recipe(
         "Classic Caesar", 7.49,
-        new string[] {"Romaine", "Garlic Croutons", "Shaved Parmesan"},
-        new string[] {},
+        new string[] {"Romaine", "Garlic Croutons"},
+        new string[] {"Shaved Parmesan"},
         new string[] {"Creamy Caesar Dressing"},
         new string[] {}
     );
 
     private static readonly Recipe greekGarden = new Recipe(
         "Greek Garden", 8.79,
-        new string[] { "Romaine / Spring", "Cucumbers", "Grape Tomatoes" },
-        new string[] { "Red Onions", "Kalamata Olives", "Banana Peppers", "Crumbled Feta Cheese" },    
+        new string[] { "Romaine / Spring", "Cucumbers"},
+        new string[] { "Grape Tomatoes" , "Red Onions", "Kalamata Olives", "Banana Peppers", "Crumbled Feta Cheese" },    
         new string[] { "House Greek Vinaigrette Dressing" },
         new string[] {}
     );
@@ -158,7 +166,7 @@ public class Recipes
     // Store All Recipes
 
     private static readonly Recipe[] allRecipes = {
-        baja, classicCaesar, greekGarden, thai, crispCobb, tamari, steakhouse, superfood, seaBoy, bbqAndBlue, pestoCaesarGrainBowl,
+        GRBowl1, GRBowl2, baja, classicCaesar, greekGarden, thai, crispCobb, tamari, steakhouse, superfood, seaBoy, bbqAndBlue, pestoCaesarGrainBowl,
         harvestGrainBowl, zenGrainBowl
     };
 
