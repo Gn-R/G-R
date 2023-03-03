@@ -43,6 +43,14 @@ public class Recipes
         new string[] {} // From the Grill (protein)
     );
 
+    private static readonly Recipe GRBowl1 = new Recipe(
+        "G & R Bowl 1",
+        new string[] { "Nothing" }, // Base(s)
+        new string[] { }, // Topping(s)
+        new string[] { }, // Dressing(s)
+        new string[] { } // From the Grill (protein)
+    );
+
     private static readonly Recipe baja = new Recipe(
         "Baja", 8.79,
         new string[] {"Romaine", "Grape Tomatoes", "Pickled Red Onions"},
