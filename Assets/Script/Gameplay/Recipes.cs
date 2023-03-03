@@ -43,36 +43,44 @@ public class Recipes
         new string[] {} // From the Grill (protein)
     );
 
-    private static readonly Recipe cornerCobb = new Recipe(
-        "Corner Cobb",
-        new string[] {"Arcadian Mix", "Roots Rice", "Kale"},
-        new string[] {"Roasted Broccoli", "Red Onions", "Pickled Jalapeños", "Red Cabbage", "Toasted Almonds"},
-        new string[] {"Miso Ginger"},
-        new string[] {"Chicken"}
+    private static readonly Recipe GRBowl1 = new Recipe(
+        "G & R Bowl 1",
+        new string[] { "Sweet Potatoes", "Red Cabbage" }, // Base(s)
+        new string[] { "Goat Cheese", "Spring Mix", "Chicken"}, // Topping(s)
+        new string[] { "Caesar Dressing" }, // Dressing(s)
+        new string[] { } // From the Grill (protein)
     );
 
-    private static readonly Recipe elJefe = new Recipe(
-        "El Jefe",
-        new string[] {"Brown Rice", "Kale"},
-        new string[] {"Black Beans", "Charred Corn", "Red Onions", "Avocado", "Pita Chips", "Feta"},
-        new string[] {"Cilantro Lime"},
-        new string[] {"Chicken"}
+    private static readonly Recipe GRBowl2 = new Recipe(
+        "G & R Bowl 2",
+        new string[] { "Shredded Carrots", "Charred Corn" }, // Base(s)
+        new string[] { "Pickled Red Onions", "Crispy Fried Onions", "Parmesan", "Spring Mix", "Cucumber" }, // Topping(s)
+        new string[] { "Caesar Dressing" }, // Dressing(s)
+        new string[] { "Chicken" } // From the Grill (protein)
     );
 
-    private static readonly Recipe mayweather = new Recipe(
-        "Mayweather",
-        new string[] {"Kale", "Bulgur"},
-        new string[] {"Roasted Sweet Potatoes", "Roasted Beets", "Red Onions", "Goat Cheese", "Avocado"},    
-        new string[] {"Lemon Tahini", "Pesto Vinaigrette"},
-        new string[] {"Chicken"}
+    private static readonly Recipe baja = new Recipe(
+        "Baja", 8.79,
+        new string[] {"Romaine", "Grape Tomatoes",},
+        new string[] { "Pickled Red Onions", "Charred Corn", "Black Beans", "Tortilla Strips", "Sharp Cheddar Cheese"},
+        new string[] {"Chipotle Ranch Dressing"},
+        new string[] {}
     );
 
-    private static readonly Recipe pestoCaesar = new Recipe(
-        "Pesto Caesar",
-        new string[] {"Kale", "Bulgur"},
-        new string[] {"Grape Tomatoes", "Pita Chips", "Lime-Pickled Onions, Shaved Parmesan"},
-        new string[] {"Pesto Vinaigrette", "Caesar"},
-        new string[] {"Chicken"}
+    private static readonly Recipe classicCaesar = new Recipe(
+        "Classic Caesar", 7.49,
+        new string[] {"Romaine", "Garlic Croutons"},
+        new string[] {"Shaved Parmesan"},
+        new string[] {"Creamy Caesar Dressing"},
+        new string[] {}
+    );
+
+    private static readonly Recipe greekGarden = new Recipe(
+        "Greek Garden", 8.79,
+        new string[] { "Romaine / Spring", "Cucumbers"},
+        new string[] { "Grape Tomatoes" , "Red Onions", "Kalamata Olives", "Banana Peppers", "Crumbled Feta Cheese" },    
+        new string[] { "House Greek Vinaigrette Dressing" },
+        new string[] {}
     );
 
     private static readonly Recipe rootsBowl = new Recipe(
@@ -126,8 +134,8 @@ public class Recipes
     // Store All Recipes
 
     private static readonly Recipe[] allRecipes = {
-        cornerCobb, elJefe, mayweather, pestoCaesar, rootsBowl,
-        tamari, theApollo, theBalboa, theLola, theSouthern
+        GRBowl1, GRBowl2, baja, classicCaesar, greekGarden, thai, crispCobb, tamari, steakhouse, superfood, seaBoy, bbqAndBlue, pestoCaesarGrainBowl,
+        harvestGrainBowl, zenGrainBowl
     };
 
 }
