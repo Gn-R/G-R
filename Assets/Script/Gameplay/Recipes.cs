@@ -43,91 +43,123 @@ public class Recipes
         new string[] {} // From the Grill (protein)
     );
 
-    private static readonly Recipe cornerCobb = new Recipe(
-        "Corner Cobb",
-        new string[] {"Arcadian Mix", "Roots Rice", "Kale"},
-        new string[] {"Roasted Broccoli", "Red Onions", "Pickled Jalapeños", "Red Cabbage", "Toasted Almonds"},
-        new string[] {"Miso Ginger"},
-        new string[] {"Chicken"}
+    private static readonly Recipe GRBowl1 = new Recipe(
+        "G & R Bowl 1",
+        new string[] { "Nothing" }, // Base(s)
+        new string[] { }, // Topping(s)
+        new string[] { }, // Dressing(s)
+        new string[] { } // From the Grill (protein)
     );
 
-    private static readonly Recipe elJefe = new Recipe(
-        "El Jefe",
-        new string[] {"Brown Rice", "Kale"},
-        new string[] {"Black Beans", "Charred Corn", "Red Onions", "Avocado", "Pita Chips", "Feta"},
-        new string[] {"Cilantro Lime"},
-        new string[] {"Chicken"}
+    private static readonly Recipe baja = new Recipe(
+        "Baja", 8.79,
+        new string[] {"Romaine", "Grape Tomatoes", "Pickled Red Onions"},
+        new string[] {"Charred Corn", "Black Beans", "Tortilla Strips", "Sharp Cheddar Cheese"},
+        new string[] {"Chipotle Ranch Dressing"},
+        new string[] {}
     );
 
-    private static readonly Recipe mayweather = new Recipe(
-        "Mayweather",
-        new string[] {"Kale", "Bulgur"},
-        new string[] {"Roasted Sweet Potatoes", "Roasted Beets", "Red Onions", "Goat Cheese", "Avocado"},    
-        new string[] {"Lemon Tahini", "Pesto Vinaigrette"},
-        new string[] {"Chicken"}
+    private static readonly Recipe classicCaesar = new Recipe(
+        "Classic Caesar", 7.49,
+        new string[] {"Romaine", "Garlic Croutons", "Shaved Parmesan"},
+        new string[] {},
+        new string[] {"Creamy Caesar Dressing"},
+        new string[] {}
     );
 
-    private static readonly Recipe pestoCaesar = new Recipe(
-        "Pesto Caesar",
-        new string[] {"Kale", "Bulgur"},
-        new string[] {"Grape Tomatoes", "Pita Chips", "Lime-Pickled Onions, Shaved Parmesan"},
-        new string[] {"Pesto Vinaigrette", "Caesar"},
-        new string[] {"Chicken"}
+    private static readonly Recipe greekGarden = new Recipe(
+        "Greek Garden", 8.79,
+        new string[] { "Romaine / Spring", "Cucumbers", "Grape Tomatoes" },
+        new string[] { "Red Onions", "Kalamata Olives", "Banana Peppers", "Crumbled Feta Cheese" },    
+        new string[] { "House Greek Vinaigrette Dressing" },
+        new string[] {}
     );
 
-    private static readonly Recipe rootsBowl = new Recipe(
-        "Roots Bowl",
-        new string[] {"Roots Rice", "Spinach"},
-        new string[] {"Roasted Sweet Potatoes", "Roasted Sweet Potatoes", "Red Onions", "Pita Chips", "Goat Cheese"},
-        new string[] {"Lemon Tahini"},
+    private static readonly Recipe thai = new Recipe(
+        "Thai", 7.99,
+        new string[] { "Romaine/Spring", "Cucumbers", "Shredded Carrots" },
+        new string[] { "Shredded Red Cabbage", "Edamame", "Crunchy Noodles" },
+        new string[] { "Thai Peanut Ginger Dressing" },
+        new string[] {}
+    );
+
+    private static readonly Recipe crispCobb = new Recipe(
+        "Crisp Cobb", 9.79,
+        new string[] { "Romaine", "Grape Tomatoes", "Hard-Boiled Egg" },
+        new string[] { "Crumbled Blue Cheese", "Grilled Chicken", "Crumbled Bacon"},
+        new string[] { "Blue Cheese or Buttermilk Ranch Dressing" },
         new string[] {}
     );
 
     private static readonly Recipe tamari = new Recipe(
-        "Tamari",
-        new string[] {"Brown Rice", "Kale"},
-        new string[] {"Roasted Broccoli", "Red Onion", "Carrots", "Pickled Jalapeños", "Red Cabbage", "Toasted Almonds"},
-        new string[] {"Miso Ginger"},
-        new string[] {"Red Chili Miso Tofu"}
+        "Moroccan", 9.49,
+        new string[] { "Romaine/Spring", "Cucumbers", "Shredded Carrots" },
+        new string[] { "Golden Raisins", "Crumbled Feta Cheese", "Falafel" },
+        new string[] { "House Greek Vinaigrette Dressing"},
+        new string[] {}
     );
 
-    private static readonly Recipe theApollo = new Recipe(
-        "The Apollo",
-        new string[] {"Brown Rice", "Kale"},
-        new string[] {"Black Beans", "Charred Corn", "Red Onions", "Avocado", "Pita Chips", "Feta"},
-        new string[] {"Cilantro Lime"},
-        new string[] {"Chicken"}
+    private static readonly Recipe steakhouse = new Recipe(
+        "Steakhouse", 10.49, 
+        new string[] { "Romaine/Spinach", "Grape Tomatoes", "Crispy Fried Onions" },
+        new string[] { "Crumbled Blue Cheese", "Sirloin Steak" },
+        new string[] { "Honey Dijon Dressing" },
+        new string[] {}
     );
 
-    private static readonly Recipe theBalboa = new Recipe(
-        "The Balboa",
-        new string[] {"Brown Rice"},
-        new string[] {"Roasted Sweet Potatoes", "Charred Corn", "Avocado", "Pita Chips", "Feta", "Lime-Pickled Onions"},
-        new string[] {"Lemon Tahini", "Caesar", "Frank's Red Hot"},
-        new string[] {"Chicken"}
+    private static readonly Recipe superfood = new Recipe(
+        "Superfood", 8.49,
+        new string[] { "Romaine/Spinach/Kale", "Shredded Carrots", "Organic Quinoa" },
+        new string[] { "Roasted Sweet Potatoes", "Roasted Beets", "Chopped Apples", "Sunflower Seeds" },
+        new string[] { "Apple Cider Vinaigrette Dressing" },
+        new string[] {}
     );
 
-    private static readonly Recipe theLola = new Recipe(
-        "The Lola", // is this supposed to be the Mad Bowl?
-        new string[] {"Brown Rice", "Spinach"},
-        new string[] {"Cannellini Beans", "Roasted Broccoli", "Cucumbers", "Grape Tomatoes", "Red Onions", "Shaved Parmesan"},
-        new string[] {"Pesto Vinaigrette", "Basil Balsamic"},
-        new string[] {"Mushrooms"}
+    private static readonly Recipe seaBoy = new Recipe(
+        "Sea Boy", 10.49,
+        new string[] { "Romaine/Spring", "Cucumbers", "Grape Tomatoes", "Charred Corn" },
+        new string[] { "Crispy Fried Onions", "Sautéed Shrimp"},
+        new string[] { "Honey Dijon Dressing" },
+        new string[] {}
     );
 
-    private static readonly Recipe theSouthern = new Recipe(
-        "The Southern",
-        new string[] {"Roots Rice", "Kale"},
-        new string[] {"Chickpeas", "Roasted Broccoli", "Charred Corn", "Lime-Pickled Onions", "Cheddar"},
-        new string[] {"Lemon Tahini"},
-        new string[] {"BBQ Tofu"}
+    private static readonly Recipe bbqAndBlue = new Recipe(
+        "BBQ & Blue", 9.79,
+        new string[] { "Romaine/Spring/Kale", "Strawberries", "Sunflower Seeds" },
+        new string[] { "Crumbled Blue Cheese", "Grilled Chicken", "Crumbled Bacon" },
+        new string[] { "Honey BBQ Vinaigrette Dressing" },
+        new string[] {}
     );
+
+    private static readonly Recipe pestoCaesarGrainBowl = new Recipe(
+        "Pesto Caesar Grain Bowl", 8.99, 
+        new string[] { "Spinach", "Brown Rice", "Organic Quinoa", "Grape Tomatoes" },
+        new string[] { "Shaved Parmesan", "Grilled Chicken" },
+        new string[] { "Pesto Caesar Dressing" },
+        new string[] { }
+    );
+
+    private static readonly Recipe harvestGrainBowl = new Recipe(
+        "Harvest Grain Bowl", 7.99,
+        new string[] { "Spinach", "Brown Rice", "Organic Quinoa" },
+        new string[] { "Roasted Sweet Potatoes", "Roasted Beets", "Chopped Apples", "Sunflower Seeds" },
+        new string[] { "Pesto Caesar Dressing" },
+        new string[] { }
+    );
+
+    private static readonly Recipe zenGrainBowl = new Recipe(
+        "Zen Grain Bowl", 7.99,
+        new string[] { "Spinach", "Organic Quinoa", "Shredded Carrots" },
+        new string[] { "Shredded Red Cabbage", "Edamame", "Crunchy Noodles" },
+        new string[] { "Asian Sesame Dressing" },
+        new string[] { }
+);
 
     // Store All Recipes
 
     private static readonly Recipe[] allRecipes = {
-        cornerCobb, elJefe, mayweather, pestoCaesar, rootsBowl,
-        tamari, theApollo, theBalboa, theLola, theSouthern
+        baja, classicCaesar, greekGarden, thai, crispCobb, tamari, steakhouse, superfood, seaBoy, bbqAndBlue, pestoCaesarGrainBowl,
+        harvestGrainBowl, zenGrainBowl
     };
 
 }

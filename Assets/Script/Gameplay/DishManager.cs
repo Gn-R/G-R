@@ -23,7 +23,7 @@ public class DishManager : MonoBehaviour
     void Start()
     {
         Manager.Instance.totalScore = 0;
-        if (currDish.Equals("")) SetRecipe("Roots Bowl");
+        if (currDish.Equals("")) SetRecipe("Baja");
     }
 
     public static void SetRecipe(string recipe)

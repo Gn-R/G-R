@@ -12,6 +12,13 @@ public class Recipe
     private static int maxLevel = 3;
     private int levelsCompleted = 0;
 
+    private double cost = 0;
+
+    public Recipe(string name, double cost, string[] bases, string[] toppings, string[] dressing, string[] grill) : this(name, bases, toppings, dressing, grill)
+    {
+        this.cost = cost;
+    }
+
     public Recipe(string name, string[] bases, string[] toppings, string[] dressing, string[] grill)
     {
         this.name = name;
