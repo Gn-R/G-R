@@ -12,6 +12,8 @@ public class Recipe
     private static int maxLevel = 3;
     private int levelsCompleted = 0;
 
+    private double cost = 0;
+
     public Recipe(string name, string[] bases, string[] toppings, string[] dressing, string[] grill)
     {
         this.name = name;
@@ -19,6 +21,11 @@ public class Recipe
         this.toppings = toppings;
         this.dressing = dressing;
         this.grill = grill;
+    }
+
+    public Recipe(string name, double cost, string[] bases, string[] toppings, string[] dressing, string[] grill) : this(name, bases, toppings, dressing, grill)
+    {
+        this.cost = cost;
     }
 
     // Combine all ingredients into one list
@@ -49,6 +56,11 @@ public class Recipe
         {
             return 3;
         }
+    }
+
+    public double GetCost()
+    {
+        return cost;
     }
 
     public void IncreaseLevel()
