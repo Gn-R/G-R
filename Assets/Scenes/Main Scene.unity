@@ -6216,7 +6216,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158509629}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -3.65, y: -0.916, z: -3.8999996}
+  m_LocalPosition: {x: -3.65, y: 0.623, z: -3.8999996}
   m_LocalScale: {x: 300, y: 299.99997, z: 299.99997}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18322,7 +18322,7 @@ GameObject:
   - component: {fileID: 519662583}
   - component: {fileID: 519662582}
   m_Layer: 0
-  m_Name: Perma
+  m_Name: Goat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18356,8 +18356,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f927f8a52f839448d9803152f00d2d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Pita Chips
-  ingredientPrefab: {fileID: 1209427212}
+  ingredientName: Goat Cheese
+  ingredientPrefab: {fileID: 246751886}
   prefabCount: 20
   prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
@@ -21464,7 +21464,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 585375428}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -1.65, y: -0.916, z: -3.8999996}
+  m_LocalPosition: {x: -3.65, y: -0.916, z: -3.8999996}
   m_LocalScale: {x: 300, y: 299.99997, z: 299.99997}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -25192,7 +25192,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691914602}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -3.65, y: 0.623, z: -3.8999996}
+  m_LocalPosition: {x: -1.65, y: 0.623, z: -3.8999996}
   m_LocalScale: {x: 300, y: 299.99997, z: 299.99997}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27196,7 +27196,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 744931126}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -1.65, y: 0.623, z: -3.8999996}
+  m_LocalPosition: {x: -1.65, y: -0.916, z: -3.8999996}
   m_LocalScale: {x: 300, y: 299.99997, z: 299.99997}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -28801,7 +28801,7 @@ GameObject:
   - component: {fileID: 808751468}
   - component: {fileID: 808751467}
   m_Layer: 0
-  m_Name: Cheese
+  m_Name: Parmesan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28835,8 +28835,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f927f8a52f839448d9803152f00d2d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Pita Chips
-  ingredientPrefab: {fileID: 246751886}
+  ingredientName: Parmesan
+  ingredientPrefab: {fileID: 1209427212}
   prefabCount: 20
   prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
@@ -31901,7 +31901,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 901745067}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -1.65, y: -0.14499998, z: -3.8999996}
+  m_LocalPosition: {x: -2.65, y: -0.916, z: -3.8999996}
   m_LocalScale: {x: 300, y: 299.99997, z: 299.99997}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -32921,7 +32921,7 @@ GameObject:
   - component: {fileID: 930233845}
   - component: {fileID: 930233844}
   m_Layer: 0
-  m_Name: Cheese
+  m_Name: Chedder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32955,8 +32955,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f927f8a52f839448d9803152f00d2d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Pita Chips
-  ingredientPrefab: {fileID: 246751886}
+  ingredientName: Chedder
+  ingredientPrefab: {fileID: 1460820428}
   prefabCount: 20
   prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
@@ -44036,7 +44036,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323779662}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -3.65, y: -0.14499998, z: -3.8999996}
+  m_LocalPosition: {x: -2.65, y: 0.623, z: -3.8999996}
   m_LocalScale: {x: 300, y: 299.99997, z: 299.99997}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -56517,7 +56517,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1641432379}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -2.65, y: -0.916, z: -3.8999996}
+  m_LocalPosition: {x: -3.65, y: -0.145, z: -3.8999996}
   m_LocalScale: {x: 300, y: 299.99997, z: 299.99997}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -64861,7 +64861,6 @@ GameObject:
   - component: {fileID: 1877947925}
   - component: {fileID: 1877947926}
   - component: {fileID: 1877947929}
-  - component: {fileID: 1877947928}
   - component: {fileID: 1877947930}
   m_Layer: 0
   m_Name: DiscardBox
@@ -64878,7 +64877,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877947923}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.2, y: 0.9, z: -1.7}
+  m_LocalPosition: {x: -0.07, y: 0.9, z: -1.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -64896,7 +64895,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.9, y: 0.5, z: 0.05}
+  m_Size: {x: 10, y: 0.5, z: 0.05}
   m_Center: {x: 1.64, y: 0, z: 0}
 --- !u!54 &1877947926
 Rigidbody:
@@ -64914,19 +64913,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1877947928
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1877947923}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.05, y: 0.5, z: 6.95}
-  m_Center: {x: 3.61, y: 0, z: 3.05}
 --- !u!114 &1877947929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68065,7 +68051,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1979558067}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -2.65, y: 0.623, z: -3.8999996}
+  m_LocalPosition: {x: -1.65, y: -0.145, z: -3.8999996}
   m_LocalScale: {x: 300, y: 299.99997, z: 299.99997}
   m_ConstrainProportionsScale: 0
   m_Children:
