@@ -53,8 +53,8 @@ public class Recipes
 
     private static readonly Recipe GRBowl2 = new Recipe(
         "G & R Bowl 2",
-        new string[] { "Shredded Carrots", "Charred Corn" }, // Base(s)
-        new string[] { "Pickled Red Onions", "Crispy Fried Onions", "Parmesan", "Spring Mix", "Cucumber" }, // Topping(s)
+        new string[] { "Shredded Carrots", "Corn" }, // Base(s)
+        new string[] { "Pickled Onions", "Crispy Fried Onions", "Parmesan", "Spring Mix", "Cucumbers" }, // Topping(s)
         new string[] { "Caesar Dressing" }, // Dressing(s)
         new string[] { "Chicken" } // From the Grill (protein)
     );
