@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class SwapBowlDebug : MonoBehaviour
 {
     private Button btn;
-    public int bowl = 1;
     public Image label;
     public Sprite sprite1;
     public Sprite sprite2;
     // Start is called before the first frame update
     void Start()
     {
+        Manager.Instance.bowltest = 1;
         btn = GetComponent<Button>();
         btn.onClick.AddListener(ChangeBowl);
     }
@@ -25,17 +25,21 @@ public class SwapBowlDebug : MonoBehaviour
 
     void ChangeBowl()
     {
-        DishManager.SetRecipe("G & R Bowl " + bowl);
-        GameObject.Find("Hud").GetComponent<ListIngredients>().UpdateRecipeIngredients();
-        if (bowl == 1)
+        
+        if (Manager.Instance.bowltest == 1)
         {
-            bowl = 2;
             label.sprite = sprite2;
+            DishManager.SetRecipe("G & R Bowl " + Manager.Instance.bowltest);
+            GameObject.Find("Hud").GetComponent<ListIngredients>().UpdateRecipeIngredients();
+            Manager.Instance.bowltest = 2;
+            
         } 
-        else
+        else if (Manager.Instance.bowltest == 2)
         {
             label.sprite = sprite1;
-            bowl = 1;
+            DishManager.SetRecipe("G & R Bowl " + Manager.Instance.bowltest);
+            GameObject.Find("Hud").GetComponent<ListIngredients>().UpdateRecipeIngredients();
+            Manager.Instance.bowltest = 1;
         }
     }
 }

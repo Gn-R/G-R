@@ -19,6 +19,7 @@ public class ServeBowl : MonoBehaviour
     void OnServeBowl()
     {
         // TODO make sure player is at end of rail
+        SceneManager.LoadScene("Main Scene");
         bool hasCorrectCombo = CheckCombo();
         EndLevel(hasCorrectCombo);
     }
@@ -32,11 +33,12 @@ public class ServeBowl : MonoBehaviour
     {
         DishManager.SetLevelSuccess(pass);
         if (pass) DishManager.GetCurrentRecipe().IncreaseLevel();
-        SceneManager.LoadScene("End Scene");
+        //SceneManager.LoadScene("End Scene");
     }    
 
     void TaskOnClick()
     {
+
         if (!manager.GetComponent<LerpRail>().isAtEnd())
         {
             if (endMessage != null)

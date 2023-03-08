@@ -10,8 +10,8 @@ public class BowlAnimator : MonoBehaviour
     [SerializeField] GameObject bowl;
     [SerializeField] Button discardButton, leftButton, rightButton;
     private Animator animator;
-    private AudioSource audioSource;
-    
+    public AudioSource Wood;
+
     void Start()
     {
         discardButton.onClick.AddListener(DiscardClick);
@@ -19,7 +19,7 @@ public class BowlAnimator : MonoBehaviour
         rightButton.onClick.AddListener(RightClick);
 
         animator = GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
+        Wood = GetComponent<AudioSource>();
     }
 
     //private void OnEnable()
@@ -47,7 +47,7 @@ public class BowlAnimator : MonoBehaviour
 
     void DiscardClick()
     {
-        audioSource.Play();
+        Wood.Play();
         if (!Manager.Instance.Mixing)
         {
             Manager.Instance.discarding = true;
@@ -57,13 +57,13 @@ public class BowlAnimator : MonoBehaviour
 
     void RightClick()
     {
-        audioSource.Play();
+        Wood.Play();
         Move(true);
     }
 
     void LeftClick()
     {
-        audioSource.Play();
+        Wood.Play();
         Move(false);
     }
 

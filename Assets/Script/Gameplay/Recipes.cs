@@ -44,19 +44,19 @@ public class Recipes
     );
 
     private static readonly Recipe GRBowl1 = new Recipe(
-        "G & R Bowl 1",
-        new string[] { "Sweet Potatoes", "Red Cabbage" }, // Base(s)
-        new string[] { "Goat Cheese", "Spring Mix", "Chicken" }, // Topping(s)
+        "G & R Bowl 1", 
+        new string[] { "Sweet Potatoes", "Cabbage" }, // Base(s)
+        new string[] { "Goat Cheeses", "Spring Mix", "Chickens" }, // Topping(s)
         new string[] { "Caesar Dressing" }, // Dressing(s)
         new string[] { } // From the Grill (protein)
     );
 
     private static readonly Recipe GRBowl2 = new Recipe(
-        "G & R Bowl 2",
+        "G & R Bowl 2", 
         new string[] { "Shredded Carrots", "Corn" }, // Base(s)
-        new string[] { "Pickled Onions", "Crispy Fried Onions", "Parmesan", "Spring Mix", "Cucumbers" }, // Topping(s)
+        new string[] { "Cucumbers", "Red Onion", "Pickled Onions", "Parmesan", "Spring Mix" }, // Topping
         new string[] { "Caesar Dressing" }, // Dressing(s)
-        new string[] { "Chicken" } // From the Grill (protein)
+        new string[] { "Chickens" } // From the Grill (protein)
     );
 
     private static readonly Recipe baja = new Recipe(

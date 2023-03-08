@@ -6,13 +6,18 @@ public class TutorialPrompts : MonoBehaviour
 {
     private GameObject rail;
     [SerializeField] GameObject[] stopPrompts;
+    [SerializeField] GameObject[] stopPrompts2;
     private GameObject currPrompt;
     private int currStop = 0;
     private List<GameObject> promptList;
+    //private List<GameObject> promptList2;
     private Dictionary<int, List<GameObject>> dict;
+    private bool isset = false;
     // Start is called before the first frame update
     void Start()
     {
+        isset = false;
+
         dict = new Dictionary<int, List<GameObject>>();
         foreach (GameObject prompt in stopPrompts)
         {
@@ -30,7 +35,26 @@ public class TutorialPrompts : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Manager.Instance.bowltest == 1 && isset == false)
+        {
+            
+        }
+        else if (Manager.Instance.bowltest == 2 && isset == false)
+        {
+            dict = new Dictionary<int, List<GameObject>>();
+            foreach (GameObject prompt in stopPrompts2)
+            {
+                int point = prompt.GetComponent<Tutorial>().stopPoint;
+                if (!dict.ContainsKey(point))
+                {
+                    dict.Add(point, new List<GameObject>());
+                }
+                dict[point].Add(prompt);
+            }
+            onPointUpdate(1);
+            isset = true;
+        }
+
     }
 
     public void onPointUpdate(int newStop)

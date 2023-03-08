@@ -26,6 +26,8 @@ public class Manager
 
     public bool left, right;
 
+    public int bowltest;
+
     private static Manager _Instance;
     public static Manager Instance
     {
