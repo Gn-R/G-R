@@ -8,9 +8,9 @@ public class Ingredient : MonoBehaviour
     [SerializeField] string ingredientName;
     [SerializeField] GameObject ingredientPrefab;
     [SerializeField] int prefabCount = 1;
-    [SerializeField] Vector3 prefabOffset = new Vector3(0, 0, 0);
+    [SerializeField] Vector3 textOffset = new Vector3(0, 0, 0);
     [SerializeField] bool isLiquid = false;
-    [SerializeField] Color color = new Color(0, 0, 0);
+    [SerializeField] Color color = new Color(1, 1, 1);
 
     public string GetName()
     {
@@ -29,7 +29,7 @@ public class Ingredient : MonoBehaviour
 
     public Vector3 GetOffset()
     {
-        return prefabOffset;
+        return textOffset;
     }
 
     public bool IsLiquid()
