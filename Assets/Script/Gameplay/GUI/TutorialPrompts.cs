@@ -21,7 +21,12 @@ public class TutorialPrompts : MonoBehaviour
         dict = new Dictionary<int, List<GameObject>>();
         foreach (GameObject prompt in stopPrompts)
         {
+            Debug.Log(DishManager.GetCurrentDish());
             int point = prompt.GetComponent<Tutorial>().stopPoint;
+            if (!System.Array.Exists(prompt.GetComponent<Tutorial>().recipesAttached, e => e.Equals(DishManager.GetCurrentDish()))) {
+                continue;
+            }
+
             if (!dict.ContainsKey(point))
             {
                 dict.Add(point, new List<GameObject>());
@@ -29,41 +34,45 @@ public class TutorialPrompts : MonoBehaviour
             dict[point].Add(prompt);
         }
 
-        onPointUpdate(1);
+        foreach (int point in dict.Keys) {
+            onPointUpdate(point);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Manager.Instance.bowltest == 1 && isset == false)
-        {
+        //if (Manager.Instance.bowltest == 1 && isset == false)
+        //{
             
-        }
-        else if (Manager.Instance.bowltest == 2 && isset == false)
-        {
-            dict = new Dictionary<int, List<GameObject>>();
-            foreach (GameObject prompt in stopPrompts2)
-            {
-                int point = prompt.GetComponent<Tutorial>().stopPoint;
-                if (!dict.ContainsKey(point))
-                {
-                    dict.Add(point, new List<GameObject>());
-                }
-                dict[point].Add(prompt);
-            }
-            onPointUpdate(1);
-            isset = true;
-        }
+        //}
+        //else if (Manager.Instance.bowltest == 2 && isset == false)
+        //{
+        //    dict = new Dictionary<int, List<GameObject>>();
+        //    foreach (GameObject prompt in stopPrompts2)
+        //    {
+        //        foreach (int point in prompt.GetComponent<Tutorial>().stopPoints)
+        //        {
+        //            if (!dict.ContainsKey(point))
+        //            {
+        //                dict.Add(point, new List<GameObject>());
+        //            }
+        //            dict[point].Add(prompt);
+        //        }
+        //    }
+        //    onPointUpdate(1);
+        //    isset = true;
+        //}
 
     }
 
     public void onPointUpdate(int newStop)
     {
         currStop = newStop;
-        if (currPrompt != null)
-        {
-            currPrompt.SetActive(false);
-        }
+        //if (currPrompt != null)
+        //{
+        //    currPrompt.SetActive(false);
+        //}
 
         if (!dict.ContainsKey(newStop))
         {
@@ -77,19 +86,35 @@ public class TutorialPrompts : MonoBehaviour
         }
 
         currPrompt = promptList[0];
+        if (currPrompt == null)
+        {
+            promptList.RemoveAt(0);
+            onPointUpdate(newStop);
+            return;
+        }
         currPrompt.SetActive(true);
     }
 
     public void addedIngredient(string ingredient)
     {
-        if (currPrompt == null || !currPrompt.name.ToLower().Contains(ingredient.ToLower())) {
-            return;
+        foreach (int point in dict.Keys)
+        {
+            foreach (GameObject prompt in dict[point])
+            {
+                if (prompt == null || !prompt.name.ToLower().Contains(ingredient.ToLower()))
+                {
+                    continue;
+                }
+                Debug.Log(ingredient);
+
+                dict[point].RemoveAt(0);
+                //currPrompt.SetActive(false);
+                Destroy(prompt);
+                //currPrompt = null;
+
+                onPointUpdate(point);
+                return;
+            }
         }
-
-        promptList.RemoveAt(0);
-        currPrompt.SetActive(false);
-        currPrompt = null;
-
-        onPointUpdate(currStop);
     }
 }

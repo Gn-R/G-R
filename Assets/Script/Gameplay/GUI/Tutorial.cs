@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Tutorial : MonoBehaviour
 {
-    public int stopPoint = 0;
+    public int stopPoint;
+    public string[] recipesAttached;
 
     // Start is called before the first frame update
     void Start()
