@@ -126,11 +126,11 @@ public class AddIngredient : MonoBehaviour
             textObject = Instantiate(textType, parentPos.transform);
         }
 
-        if (GameObject.Find("Main Camera").transform.rotation.eulerAngles.y > 0)
-        {
-            textObject.transform.rotation = Quaternion.Euler(0, -90, 0);
-        }
-        //textObject.transform.position += offset;
+        // Make text face camera
+        float camAngle = GameObject.Find("Main Camera").transform.rotation.eulerAngles.y;
+        textObject.transform.rotation = Quaternion.Euler(0, camAngle, 0);
+
+        textObject.transform.position += offset;
         textObject.GetComponent<TextMeshPro>().text = message;
     }
 
@@ -224,17 +224,6 @@ public class AddIngredient : MonoBehaviour
             InstantiateText(redText, ingredient, offset);
         }
 
-        //if (points > 0)
-        //{
-        //    GameObject point = Instantiate(pointtype[0], transform.position, railPoint.transform.rotation, UI.transform);
-        //    point.GetComponent<TextMeshProUGUI>().text = "+" + points;
-        //}
-        //else
-        //{
-        //    GameObject point = Instantiate(pointtype[2], transform.position, railPoint.transform.rotation, UI.transform);
-        //    point.GetComponent<TextMeshProUGUI>().text = "" + points;
-        //}
-
         prompts.GetComponent<TutorialPrompts>().addedIngredient(ingredient);
         
 
@@ -244,12 +233,6 @@ public class AddIngredient : MonoBehaviour
         {
             StartCoroutine(manager.GetComponent<DishManager>().SetExtraBar(ingredient));
         }
-    }
-
-    private void AnimateBottle(GameObject obj)
-    {
-        BottleAnimator anim = obj.GetComponent<BottleAnimator>();
-        anim.OnBottleClick();
     }
 
     // TODO Mix button doesn't work because "railPoint" is null
