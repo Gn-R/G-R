@@ -8,6 +8,7 @@ public class ServeBowl : MonoBehaviour
 {
     [SerializeField] Button serveButton;
     [SerializeField] GameObject manager, ingredients, notAtEndMessage;
+    [SerializeField] string mainGameScene, endMenuScene;
 
     private Coroutine endMessage;
 
@@ -19,7 +20,7 @@ public class ServeBowl : MonoBehaviour
     void OnServeBowl()
     {
         // TODO make sure player is at end of rail
-        SceneManager.LoadScene("Main Scene");
+        // SceneManager.LoadScene(mainGameScene);
         bool hasCorrectCombo = CheckCombo();
         EndLevel(hasCorrectCombo);
     }
@@ -33,45 +34,44 @@ public class ServeBowl : MonoBehaviour
     {
         DishManager.SetLevelSuccess(pass);
         if (pass) DishManager.GetCurrentRecipe().IncreaseLevel();
-        //SceneManager.LoadScene("End Scene");
+        SceneManager.LoadScene(endMenuScene);
     }    
 
-    void TaskOnClick()
-    {
+    // void TaskOnClick()
+    // {
+    //     if (!manager.GetComponent<LerpRail>().isAtEnd())
+    //     {
+    //         if (endMessage != null)
+    //         {
+    //             StopCoroutine(endMessage);
+    //         }
+    //         endMessage = StartCoroutine(ShowNotAtEndMessage());
+    //         return;
+    //     }
 
-        if (!manager.GetComponent<LerpRail>().isAtEnd())
-        {
-            if (endMessage != null)
-            {
-                StopCoroutine(endMessage);
-            }
-            endMessage = StartCoroutine(ShowNotAtEndMessage());
-            return;
-        }
+    //     // foreach (string str in Manager.Instance.combo)
+    //     // {
+    //     //     Debug.Log(str);
+    //     // }
 
-        // foreach (string str in Manager.Instance.combo)
-        // {
-        //     Debug.Log(str);
-        // }
+    //     if (DishManager.CheckFinalCombo(Manager.Instance.combo))
+    //     {
+    //         Manager.Instance.totalScore += (int) (Manager.Instance.Score * Manager.Instance.ScoreMult);
+    //     }
+    //     else
+    //     {;
+    //         Manager.Instance.totalScore = Manager.Instance.Score;
+    //     }
 
-        if (DishManager.CheckFinalCombo(Manager.Instance.combo))
-        {
-            Manager.Instance.totalScore += (int) (Manager.Instance.Score * Manager.Instance.ScoreMult);
-        }
-        else
-        {;
-            Manager.Instance.totalScore = Manager.Instance.Score;
-        }
+    //     SceneManager.LoadScene(endMenuScene);
 
-        SceneManager.LoadScene("End Scene");
+    //     foreach (Transform obj in ingredients.transform)
+    //     {
+    //         Destroy(obj.gameObject);
+    //     }
 
-        foreach (Transform obj in ingredients.transform)
-        {
-            Destroy(obj.gameObject);
-        }
-
-        manager.GetComponent<LerpRail>().returnToStart();
-    }
+    //     manager.GetComponent<LerpRail>().returnToStart();
+    // }
 
     private IEnumerator ShowNotAtEndMessage()
     {
@@ -79,4 +79,5 @@ public class ServeBowl : MonoBehaviour
         yield return new WaitForSeconds(3f);
         notAtEndMessage.SetActive(false);
     }
+
 }

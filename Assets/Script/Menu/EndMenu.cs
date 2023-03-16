@@ -10,6 +10,7 @@ public class EndMenu : MonoBehaviour
 {
     [SerializeField] Button menuButton, continueButton;
     [SerializeField] TextMeshProUGUI cashEarned, continueText;
+    [SerializeField] string startMenuScene, mainGameScene;
 
 
     void Start()
@@ -41,12 +42,12 @@ public class EndMenu : MonoBehaviour
 
     void BackToMenu()
     {
-        SceneManager.LoadScene("Start Menu");
+        SceneManager.LoadScene(startMenuScene);
     }
 
     void ContinueNextLevel()
     {
-        SceneManager.LoadScene("Main Scene");
+        SceneManager.LoadScene(mainGameScene);
     }
 
     public void SetCashEarned(int cash)

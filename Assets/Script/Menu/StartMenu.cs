@@ -12,6 +12,7 @@ public class StartMenu : MonoBehaviour
     [SerializeField] TextMeshProUGUI nextLevel, recipeText, cashEarned;
     [SerializeField] ProgressBar progressBar;
     [SerializeField] Slider progressSlider;
+    [SerializeField] string mainGameScene;
 
     private static Recipe currRecipe = null; // static to remember last dish after scene transition
 
@@ -30,7 +31,7 @@ public class StartMenu : MonoBehaviour
     {
         if (currRecipe == null) return; // ignore if no recipe set
         DishManager.SetRecipe(currRecipe.name);
-        SceneManager.LoadScene("Main Scene");
+        SceneManager.LoadScene(mainGameScene);
     }
 
     public void SetRecipe(Recipe recipe)

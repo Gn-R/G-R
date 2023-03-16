@@ -16,6 +16,7 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] GameObject pausePanel, resumeButton, currentLevel;
     [SerializeField] TextMeshProUGUI currentLevelText;
     [SerializeField] Button menuButton;
+    [SerializeField] string startMenuScene;
     
     void Start()
     {
@@ -75,6 +76,6 @@ public class PauseMenu : MonoBehaviour
 
     public void ToMenu()
     {
-        SceneManager.LoadScene("Start Menu");
+        SceneManager.LoadScene(startMenuScene);
     }
 }
