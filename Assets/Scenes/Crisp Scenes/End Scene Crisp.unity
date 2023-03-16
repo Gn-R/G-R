@@ -1199,6 +1199,8 @@ MonoBehaviour:
   continueButton: {fileID: 275177764}
   cashEarned: {fileID: 199194757}
   continueText: {fileID: 1759875317}
+  startMenuScene: Start Menu Crisp
+  mainGameScene: Main Scene Crisp
 --- !u!1 &1004104850
 GameObject:
   m_ObjectHideFlags: 0
