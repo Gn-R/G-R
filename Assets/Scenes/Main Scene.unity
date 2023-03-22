@@ -175,7 +175,7 @@ MonoBehaviour:
   ingredientName: Bulgur
   ingredientPrefab: {fileID: 1878892668}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &58713
@@ -310,7 +310,7 @@ MonoBehaviour:
   ingredientName: Black Beans
   ingredientPrefab: {fileID: 1839186706}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &548060
@@ -444,7 +444,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 1, b: 0, a: 1}
 --- !u!23 &1297823
@@ -632,7 +632,7 @@ MonoBehaviour:
   ingredientName: Pita Chips
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &3371380
@@ -660,7 +660,7 @@ MeshCollider:
   m_GameObject: {fileID: 3371377}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -672,7 +672,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3371377}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -933,7 +933,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.75, g: 0.5, b: 0, a: 1}
 --- !u!23 &8499152
@@ -1686,7 +1686,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!95 &36921881
@@ -2605,7 +2605,7 @@ MonoBehaviour:
   ingredientName: Cannellini Beans
   ingredientPrefab: {fileID: 693535333}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &63928130
@@ -2750,7 +2750,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1005199857}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &67070583
 MeshRenderer:
@@ -3020,7 +3020,7 @@ MonoBehaviour:
   ingredientName: Cucumber
   ingredientPrefab: {fileID: 1989236751}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &71858838
@@ -3411,7 +3411,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76580412}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3663,7 +3663,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79681494}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5062,7 +5062,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.75, g: 0.5, b: 0, a: 1}
 --- !u!23 &110714449
@@ -6037,7 +6037,7 @@ MonoBehaviour:
   ingredientName: Cilantro Lime
   ingredientPrefab: {fileID: 1483643619}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &149483576
@@ -6333,7 +6333,7 @@ MonoBehaviour:
   ingredientName: Spinach
   ingredientPrefab: {fileID: 1535179130}
   prefabCount: 20
-  prefabOffset: {x: -0.6, y: 0, z: -2.5}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &158509632
@@ -8911,7 +8911,7 @@ MonoBehaviour:
   ingredientName: Pickled Onions
   ingredientPrefab: {fileID: 1888789506}
   prefabCount: 30
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &219338542
@@ -9676,7 +9676,7 @@ MonoBehaviour:
   ingredientName: BlackBean
   ingredientPrefab: {fileID: 1839186706}
   prefabCount: 50
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &238006199
@@ -11299,7 +11299,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291610558}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13019,7 +13019,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!23 &344697659
@@ -13127,7 +13127,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.5, g: 0.3, b: 0, a: 1}
 --- !u!95 &345632933
@@ -13505,7 +13505,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 352167555}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14981,7 +14981,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 0, b: 1, a: 1}
 --- !u!95 &386879972
@@ -15148,7 +15148,7 @@ MonoBehaviour:
   ingredientName: Goat Cheese
   ingredientPrefab: {fileID: 246751886}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &393506912
@@ -16843,7 +16843,7 @@ MonoBehaviour:
   ingredientName: Avocados
   ingredientPrefab: {fileID: 279763526}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &439309924
@@ -17166,7 +17166,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450724693}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17600,7 +17600,7 @@ MonoBehaviour:
   ingredientName: Pita Chips
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &471932773
@@ -17981,7 +17981,7 @@ MonoBehaviour:
   ingredientName: Goat Cheese
   ingredientPrefab: {fileID: 246751886}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &476344488
@@ -18009,7 +18009,7 @@ MeshCollider:
   m_GameObject: {fileID: 476344485}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -18021,7 +18021,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476344485}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -19001,7 +19001,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!23 &519368482
@@ -19106,7 +19106,7 @@ MonoBehaviour:
   ingredientName: Goat Cheeses
   ingredientPrefab: {fileID: 246751886}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &519662583
@@ -20003,7 +20003,7 @@ MonoBehaviour:
   ingredientName: Cabbage
   ingredientPrefab: {fileID: 238006199}
   prefabCount: 25
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &533389914
@@ -20755,7 +20755,7 @@ MeshCollider:
   m_GameObject: {fileID: 542735853}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -20767,7 +20767,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 542735853}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -21027,7 +21027,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.75, g: 0.5, b: 0, a: 1}
 --- !u!23 &547771732
@@ -21162,7 +21162,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.5, g: 0.3, b: 0, a: 1}
 --- !u!23 &556673280
@@ -22125,7 +22125,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 1, b: 0, a: 1}
 --- !u!23 &574878647
@@ -22397,7 +22397,7 @@ MonoBehaviour:
   ingredientName: Kale
   ingredientPrefab: {fileID: 756457164}
   prefabCount: 20
-  prefabOffset: {x: 0.75, y: 0, z: -2.5}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &585375431
@@ -23361,7 +23361,7 @@ MonoBehaviour:
   ingredientName: Corn
   ingredientPrefab: {fileID: 376279006}
   prefabCount: 50
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &608177052
@@ -23965,6 +23965,89 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 622271357}
   m_Mesh: {fileID: 855131390749405241, guid: 11ae01b28d2c65947a1ff2e5731146c3, type: 3}
+--- !u!1 &622725537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 622725538}
+  - component: {fileID: 622725540}
+  - component: {fileID: 622725539}
+  m_Layer: 0
+  m_Name: 0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &622725538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622725537}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.342, y: -0.63, z: -8.996}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1005199857}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &622725539
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622725537}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 76b92e33fef47d24e8a76fcf13660a32, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &622725540
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622725537}
+  m_Mesh: {fileID: -5495902117074765545, guid: 1e429f05931f0dc4c9bb9ad9c6f3d4e1, type: 3}
 --- !u!1 &624513962
 GameObject:
   m_ObjectHideFlags: 0
@@ -24298,7 +24381,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!23 &633634679
@@ -24913,7 +24996,7 @@ MonoBehaviour:
   ingredientName: Goat Cheese
   ingredientPrefab: {fileID: 246751886}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &645429700
@@ -25179,7 +25262,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 0, b: 1, a: 1}
 --- !u!23 &658211269
@@ -25258,7 +25341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658930610}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25367,7 +25450,7 @@ MonoBehaviour:
   ingredientName: Hard-Boiled Egg
   ingredientPrefab: {fileID: 615716494}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &659372842
@@ -25501,7 +25584,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!23 &661096522
@@ -25580,7 +25663,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661833447}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26292,7 +26375,7 @@ MonoBehaviour:
   ingredientName: Spinach
   ingredientPrefab: {fileID: 1535179130}
   prefabCount: 20
-  prefabOffset: {x: -0.6, y: 0, z: -2.5}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &691914605
@@ -27167,7 +27250,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.5, g: 0.3, b: 0, a: 1}
 --- !u!23 &710772878
@@ -27355,7 +27438,7 @@ MonoBehaviour:
   ingredientName: Red Onions
   ingredientPrefab: {fileID: 701294364}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &714788705
@@ -27806,7 +27889,7 @@ MonoBehaviour:
   ingredientName: Pineapple
   ingredientPrefab: {fileID: 1981081434}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &734464019
@@ -27834,7 +27917,7 @@ MeshCollider:
   m_GameObject: {fileID: 734464016}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -27846,7 +27929,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734464016}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -27940,7 +28023,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!23 &738334684
@@ -28296,7 +28379,7 @@ MonoBehaviour:
   ingredientName: Kale
   ingredientPrefab: {fileID: 756457164}
   prefabCount: 20
-  prefabOffset: {x: 0.75, y: 0, z: -2.5}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &744931129
@@ -28833,7 +28916,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.5, g: 0.3, b: 0, a: 1}
 --- !u!95 &770236255
@@ -29371,7 +29454,7 @@ MonoBehaviour:
   ingredientName: Charred Corn
   ingredientPrefab: {fileID: 376279006}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &790732770
@@ -29680,7 +29763,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801705780}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29990,7 +30073,7 @@ MonoBehaviour:
   ingredientName: Parmesan
   ingredientPrefab: {fileID: 1209427212}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &808751468
@@ -30291,7 +30374,7 @@ MonoBehaviour:
   ingredientName: Lime-Picked Onions
   ingredientPrefab: {fileID: 1888789506}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &818736496
@@ -31889,7 +31972,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1005199857}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &853825221
 MeshRenderer:
@@ -32195,7 +32278,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.75, g: 0.5, b: 0, a: 1}
 --- !u!95 &856845062
@@ -32645,7 +32728,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &868655879
@@ -33436,7 +33519,7 @@ MonoBehaviour:
   ingredientName: Kale
   ingredientPrefab: {fileID: 756457164}
   prefabCount: 20
-  prefabOffset: {x: 0.75, y: 0, z: -2.5}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &901745070
@@ -33617,7 +33700,7 @@ MeshCollider:
   m_GameObject: {fileID: 906559553}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -33629,7 +33712,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906559553}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -33934,7 +34017,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912693233}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34176,7 +34259,7 @@ MonoBehaviour:
   ingredientName: Cucumbers
   ingredientPrefab: {fileID: 1989236751}
   prefabCount: 50
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &915406681
@@ -34434,7 +34517,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929673692}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34543,7 +34626,7 @@ MonoBehaviour:
   ingredientName: Chedder
   ingredientPrefab: {fileID: 1460820428}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &930233845
@@ -36487,6 +36570,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 622725538}
   - {fileID: 1080135923}
   - {fileID: 1329551217}
   - {fileID: 1198734225}
@@ -37475,7 +37559,7 @@ MonoBehaviour:
   ingredientName: Cabbage
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1041110882
@@ -38279,7 +38363,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1005199857}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1073538350
 MeshRenderer:
@@ -38560,7 +38644,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1005199857}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1080135924
 MeshRenderer:
@@ -39091,7 +39175,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 0, b: 1, a: 1}
 --- !u!95 &1095714872
@@ -39374,7 +39458,7 @@ MonoBehaviour:
   ingredientName: Pineapple
   ingredientPrefab: {fileID: 1981081434}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1101968135
@@ -39568,7 +39652,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109541955}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39680,7 +39764,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 1, b: 0, a: 1}
 --- !u!95 &1117748200
@@ -40128,7 +40212,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!23 &1122913693
@@ -40347,7 +40431,7 @@ MonoBehaviour:
   ingredientName: Pita Chips
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1128881096
@@ -41522,7 +41606,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 1, b: 0, a: 1}
 --- !u!23 &1174327529
@@ -41986,7 +42070,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1005199857}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1198734226
 MeshRenderer:
@@ -43743,7 +43827,7 @@ MonoBehaviour:
   ingredientName: Beat
   ingredientPrefab: {fileID: 1928286218}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1238907972
@@ -44044,7 +44128,7 @@ MonoBehaviour:
   ingredientName: Chickpeas
   ingredientPrefab: {fileID: 2001526601}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1247269303
@@ -46332,7 +46416,7 @@ MonoBehaviour:
   ingredientName: Spinach
   ingredientPrefab: {fileID: 1535179130}
   prefabCount: 20
-  prefabOffset: {x: -0.6, y: 0, z: -2.5}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1323779665
@@ -46466,7 +46550,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!23 &1325277341
@@ -46716,7 +46800,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1005199857}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1329551218
 MeshRenderer:
@@ -46993,7 +47077,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!23 &1342737765
@@ -47097,7 +47181,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.5, g: 0.3, b: 0, a: 1}
 --- !u!23 &1343449221
@@ -48402,7 +48486,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &1372440330
@@ -48655,7 +48739,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.75, g: 0.5, b: 0, a: 1}
 --- !u!95 &1378653632
@@ -50097,7 +50181,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.75, g: 0.5, b: 0, a: 1}
 --- !u!95 &1416622345
@@ -51191,7 +51275,7 @@ MonoBehaviour:
   ingredientName: Spring Mix
   ingredientPrefab: {fileID: 1528697091}
   prefabCount: 20
-  prefabOffset: {x: 0.15, y: 0, z: -2.5}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1456161222
@@ -53091,7 +53175,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 0, b: 1, a: 1}
 --- !u!95 &1499097605
@@ -53605,7 +53689,7 @@ MonoBehaviour:
   ingredientName: Red Onion
   ingredientPrefab: {fileID: 701294364}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1507736504
@@ -54502,7 +54586,7 @@ MonoBehaviour:
   ingredientName: Sweet Potatoes
   ingredientPrefab: {fileID: 1268768995}
   prefabCount: 25
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1530264913
@@ -54640,7 +54724,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 1, b: 0, a: 1}
 --- !u!95 &1530939331
@@ -54887,7 +54971,7 @@ MonoBehaviour:
   ingredientName: Shredded Carrots
   ingredientPrefab: {fileID: 1737038924}
   prefabCount: 50
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &1535179130
@@ -55212,7 +55296,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1544488822}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55295,7 +55379,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548032082}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55436,7 +55520,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.5, g: 0.3, b: 0, a: 1}
 --- !u!23 &1553614895
@@ -56913,7 +56997,7 @@ MonoBehaviour:
   ingredientName: Pita Chips
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1580909769
@@ -56941,7 +57025,7 @@ MeshCollider:
   m_GameObject: {fileID: 1580909766}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -56953,7 +57037,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580909766}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -57131,7 +57215,7 @@ MonoBehaviour:
   ingredientName: Pita Chips
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1588481724
@@ -57853,7 +57937,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 0, b: 1, a: 1}
 --- !u!23 &1597092810
@@ -58540,7 +58624,7 @@ MeshCollider:
   m_GameObject: {fileID: 1623548124}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -58552,7 +58636,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623548124}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -58843,7 +58927,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 1, b: 0, a: 1}
 --- !u!23 &1633570291
@@ -59337,7 +59421,7 @@ MonoBehaviour:
   ingredientName: Spring Mix
   ingredientPrefab: {fileID: 1528697091}
   prefabCount: 20
-  prefabOffset: {x: 0.15, y: 0, z: -2.5}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1641432382
@@ -59471,7 +59555,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.75, g: 0.5, b: 0, a: 1}
 --- !u!23 &1643357737
@@ -59705,8 +59789,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac949270fd3a12544b40589ded756d12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orderText: {fileID: 0}
-  orderTimerManager: {fileID: 1768207499}
   extraFoodSlider: {fileID: 1273671842851122315}
 --- !u!114 &1656265658
 MonoBehaviour:
@@ -60189,7 +60271,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &1674081107
@@ -60439,7 +60521,7 @@ MonoBehaviour:
   ingredientName: Chickens
   ingredientPrefab: {fileID: 357604252}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1676206768
@@ -62313,7 +62395,7 @@ MonoBehaviour:
   ingredientName: Roasted Sweet Potatoes
   ingredientPrefab: {fileID: 1268768995}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1717715858
@@ -62479,7 +62561,7 @@ MonoBehaviour:
   ingredientName: Tomatoes
   ingredientPrefab: {fileID: 1488467970}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1725835811
@@ -63551,7 +63633,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.5, g: 0.3, b: 0, a: 1}
 --- !u!95 &1741679799
@@ -64302,7 +64384,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 0, b: 1, a: 1}
 --- !u!23 &1771323381
@@ -67253,7 +67335,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!95 &1866968392
@@ -67394,7 +67476,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1868414403}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67628,7 +67710,7 @@ MonoBehaviour:
   ingredientName: Roasted Beets
   ingredientPrefab: {fileID: 1928286218}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1872192319
@@ -68490,7 +68572,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896072349}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -69447,7 +69529,7 @@ MonoBehaviour:
   ingredientName: Tomato
   ingredientPrefab: {fileID: 1488467970}
   prefabCount: 50
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1922241400
@@ -70183,7 +70265,7 @@ MonoBehaviour:
   ingredientName: Pita Chips
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1941884042
@@ -71270,7 +71352,7 @@ MonoBehaviour:
   ingredientName: Spring Mix
   ingredientPrefab: {fileID: 1528697091}
   prefabCount: 20
-  prefabOffset: {x: 0.15, y: 0, z: -2.5}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1979558070
@@ -72952,7 +73034,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020729465}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -73092,7 +73174,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 0, b: 1, a: 1}
 --- !u!23 &2027636282
@@ -73396,7 +73478,7 @@ MonoBehaviour:
   ingredientName: Pineapple
   ingredientPrefab: {fileID: 1981081434}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &2039108959
@@ -73933,7 +74015,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!95 &2054120523
@@ -74338,7 +74420,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2061745341}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -74456,7 +74538,7 @@ MeshCollider:
   m_GameObject: {fileID: 2063031064}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -74468,7 +74550,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2063031064}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -74708,7 +74790,7 @@ MonoBehaviour:
   ingredientName: Egg
   ingredientPrefab: {fileID: 615716494}
   prefabCount: 10
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &2073071604
@@ -74846,7 +74928,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 1, b: 0, a: 1}
 --- !u!95 &2077295036
@@ -75111,7 +75193,7 @@ MonoBehaviour:
   ingredientName: Broccoli
   ingredientPrefab: {fileID: 635277301}
   prefabCount: 20
-  prefabOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &2084934610
