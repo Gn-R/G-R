@@ -15,7 +15,7 @@ public class Recipes
         // Search for a recipe
         foreach (Recipe r in allRecipes)
         {
-            if (r.name.ToLower().Equals(dishName.ToLower())) return r;
+            if (r.name.ToLower().Contains(dishName.ToLower())) return r;
         }
         return blankRecipe; // empty recipe if bad name entered
     }

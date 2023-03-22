@@ -43218,8 +43218,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 188, y: -68}
-  m_SizeDelta: {x: 420, y: 240}
+  m_AnchoredPosition: {x: 188, y: -80}
+  m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1568504715
 MonoBehaviour:
@@ -43236,12 +43236,12 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: 225, y: 225, z: 225, w: 225}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f3be47842f350594db4188d8a4d89a0c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca99e8b16192a46f1be57d9ac06a7bb4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -46117,9 +46117,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37acad1882bdbd44d89444412a13e500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  routes:
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &1656265656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46177,8 +46174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b3c1661654242ba8b9cc4f8f981a13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bigBowl: {fileID: 919132147753000012}
-  smallBowl: {fileID: 531512828}
 --- !u!1 &1657452657
 GameObject:
   m_ObjectHideFlags: 0
@@ -49477,16 +49472,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dishLabel: {fileID: 1568504715}
   sprites:
-  - {fileID: 21300000, guid: baef75657869c40ed9d09635e2f322e8, type: 3}
-  - {fileID: 21300000, guid: 10bb601306bfe4ef9817743ea582c844, type: 3}
-  - {fileID: 21300000, guid: d058855a3ebba4ba7b94a3f2a74d85b6, type: 3}
-  - {fileID: 21300000, guid: fecf0d0bc11af49978f20b71f47cb099, type: 3}
-  - {fileID: 21300000, guid: bcf0c2bc5d6494c7faa4888e56ef58cc, type: 3}
-  - {fileID: 21300000, guid: 7aaf58b1350124ce284711708156636e, type: 3}
-  - {fileID: 21300000, guid: d8635d78d53724c1f9a0e592727f32c2, type: 3}
-  - {fileID: 21300000, guid: 1a93aefa272804c0f87e037fcfa3ad1b, type: 3}
-  - {fileID: 21300000, guid: 2a4a22b362c1b47a7a7348406139b667, type: 3}
-  - {fileID: 21300000, guid: d6955c0b53d7a46278b7645ec05c619b, type: 3}
+  - {fileID: 21300000, guid: c3919343a5a1941699de6e35c4d169e0, type: 3}
+  - {fileID: 21300000, guid: 1fdf340db3288409daf871e0f1436f5d, type: 3}
+  - {fileID: 21300000, guid: df9e15f7d4b914fbb8511bf322b664f1, type: 3}
+  - {fileID: 21300000, guid: ca99e8b16192a46f1be57d9ac06a7bb4, type: 3}
+  - {fileID: 21300000, guid: 677c0c657a7e74208b03877e66ca8fb0, type: 3}
+  - {fileID: 21300000, guid: 85f4c8827556c46f5a5eb3e3ccb31176, type: 3}
+  - {fileID: 21300000, guid: 52bda23ce1c9247eb962811539c4c3d8, type: 3}
+  - {fileID: 21300000, guid: 2f76fd6e95c0740a7976eb75ecaa2401, type: 3}
+  - {fileID: 21300000, guid: d64019f795d7441649aa5da39c0b6d81, type: 3}
+  - {fileID: 21300000, guid: 6566272b8e3eb405faed6f14f619bf30, type: 3}
+  - {fileID: 21300000, guid: 61698672cd6064bf19a4a4a7d3aa7f53, type: 3}
+  - {fileID: 21300000, guid: 17f0b08af2ae74991882acfa818e42f9, type: 3}
+  - {fileID: 21300000, guid: a03b135a90f0a4196a78256ed3310d3e, type: 3}
 --- !u!1001 &1768961017
 PrefabInstance:
   m_ObjectHideFlags: 0
