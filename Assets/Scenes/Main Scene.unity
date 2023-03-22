@@ -175,7 +175,7 @@ MonoBehaviour:
   ingredientName: Bulgur
   ingredientPrefab: {fileID: 1878892668}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &58713
@@ -310,7 +310,7 @@ MonoBehaviour:
   ingredientName: Black Beans
   ingredientPrefab: {fileID: 1839186706}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &548060
@@ -444,7 +444,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 1, b: 0, a: 1}
 --- !u!23 &1297823
@@ -632,7 +632,7 @@ MonoBehaviour:
   ingredientName: Pita Chips
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &3371380
@@ -933,7 +933,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.75, g: 0.5, b: 0, a: 1}
 --- !u!23 &8499152
@@ -1686,7 +1686,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!95 &36921881
@@ -2605,7 +2605,7 @@ MonoBehaviour:
   ingredientName: Cannellini Beans
   ingredientPrefab: {fileID: 693535333}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &63928130
@@ -2688,123 +2688,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63928127}
   m_Mesh: {fileID: 450198173567432782, guid: b2043b02bea92bd42ac9fe60859816ec, type: 3}
-<<<<<<< Updated upstream
-=======
---- !u!1 &65204839
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 65204840}
-  m_Layer: 0
-  m_Name: 2clone1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &65204840
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 65204839}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.121, y: -0.08, z: 0.175}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 908470273}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &67070581
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 67070582}
-  - component: {fileID: 67070584}
-  - component: {fileID: 67070583}
-  m_Layer: 0
-  m_Name: 5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &67070582
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 67070581}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.185, y: -0.612, z: -9.759999}
-  m_LocalScale: {x: 52.500004, y: 100, z: 88}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1005199857}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &67070583
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 67070581}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 7fd65674471a7f942ac77a48edb22e11, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &67070584
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 67070581}
-  m_Mesh: {fileID: -5495902117074765545, guid: 1e429f05931f0dc4c9bb9ad9c6f3d4e1, type: 3}
->>>>>>> Stashed changes
 --- !u!1 &67883677
 GameObject:
   m_ObjectHideFlags: 0
@@ -2940,7 +2823,7 @@ MonoBehaviour:
   ingredientName: Cucumber
   ingredientPrefab: {fileID: 1989236751}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &71858838
@@ -3248,11 +3131,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76580412}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 0, z: 0.02}
-=======
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3499,11 +3378,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79681494}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 0, z: 0.02}
-=======
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4871,7 +4746,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.75, g: 0.5, b: 0, a: 1}
 --- !u!23 &110714449
@@ -5815,7 +5690,7 @@ MonoBehaviour:
   ingredientName: Cilantro Lime
   ingredientPrefab: {fileID: 1483643619}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &149483576
@@ -6111,7 +5986,7 @@ MonoBehaviour:
   ingredientName: Spinach
   ingredientPrefab: {fileID: 1535179130}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: -0.6, y: 0, z: -2.5}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &158509632
@@ -8640,17 +8515,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f927f8a52f839448d9803152f00d2d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
   ingredientName: Pita Chips
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
   prefabOffset: {x: 0, y: 0, z: 0}
-=======
-  ingredientName: Pickled Onions
-  ingredientPrefab: {fileID: 1888789506}
-  prefabCount: 30
-  textOffset: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &219338542
@@ -9399,27 +9267,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 231516175}
   m_Mesh: {fileID: 7712975805413101809, guid: 7a97cbedd3042b547bee974be98cb70a, type: 3}
-<<<<<<< Updated upstream
-=======
---- !u!114 &231516181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 231516175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f927f8a52f839448d9803152f00d2d5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientName: BlackBean
-  ingredientPrefab: {fileID: 1839186706}
-  prefabCount: 50
-  textOffset: {x: 0, y: 0, z: 0}
-  isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
->>>>>>> Stashed changes
 --- !u!1 &238006199
 GameObject:
   m_ObjectHideFlags: 0
@@ -11091,11 +10938,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291610558}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 0, z: 0.02}
-=======
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12587,7 +12430,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!23 &344697659
@@ -12695,7 +12538,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.5, g: 0.3, b: 0, a: 1}
 --- !u!95 &345632933
@@ -13073,11 +12916,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 352167555}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 0, z: 0.02}
-=======
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14387,7 +14226,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 0, b: 1, a: 1}
 --- !u!95 &386879972
@@ -14554,7 +14393,7 @@ MonoBehaviour:
   ingredientName: Goat Cheese
   ingredientPrefab: {fileID: 246751886}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &393506912
@@ -16182,7 +16021,7 @@ MonoBehaviour:
   ingredientName: Avocado
   ingredientPrefab: {fileID: 279763526}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &439309924
@@ -16505,11 +16344,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450724693}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 0, z: 0.02}
-=======
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16943,7 +16778,7 @@ MonoBehaviour:
   ingredientName: Pita Chips
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &471932773
@@ -17293,7 +17128,7 @@ MonoBehaviour:
   ingredientName: Goat Cheese
   ingredientPrefab: {fileID: 246751886}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &476344488
@@ -18217,7 +18052,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!23 &519368482
@@ -18322,7 +18157,7 @@ MonoBehaviour:
   ingredientName: Pita Chips
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &519662583
@@ -18920,17 +18755,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f927f8a52f839448d9803152f00d2d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
   ingredientName: Cheddar
   ingredientPrefab: {fileID: 1460820428}
   prefabCount: 20
   prefabOffset: {x: 0, y: 0, z: 0}
-=======
-  ingredientName: Cabbage
-  ingredientPrefab: {fileID: 238006199}
-  prefabCount: 25
-  textOffset: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &533389914
@@ -19975,7 +19803,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.75, g: 0.5, b: 0, a: 1}
 --- !u!23 &547771732
@@ -20110,7 +19938,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.5, g: 0.3, b: 0, a: 1}
 --- !u!23 &556673280
@@ -21041,7 +20869,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 1, b: 0, a: 1}
 --- !u!23 &574878647
@@ -21313,7 +21141,7 @@ MonoBehaviour:
   ingredientName: Kale
   ingredientPrefab: {fileID: 756457164}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0.75, y: 0, z: -2.5}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &585375431
@@ -22124,57 +21952,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608177047}
   m_Mesh: {fileID: 2669899677700769038, guid: 7a97cbedd3042b547bee974be98cb70a, type: 3}
-<<<<<<< Updated upstream
-=======
---- !u!114 &608177051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 608177047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f927f8a52f839448d9803152f00d2d5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientName: Corn
-  ingredientPrefab: {fileID: 376279006}
-  prefabCount: 50
-  textOffset: {x: 0, y: 0, z: 0}
-  isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
---- !u!64 &608177052
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 608177047}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2669899677700769038, guid: 7a97cbedd3042b547bee974be98cb70a, type: 3}
---- !u!54 &608177053
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 608177047}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
->>>>>>> Stashed changes
 --- !u!1 &610080530
 GameObject:
   m_ObjectHideFlags: 0
@@ -23047,7 +22824,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!23 &633634679
@@ -23579,7 +23356,7 @@ MonoBehaviour:
   ingredientName: Goat Cheese
   ingredientPrefab: {fileID: 246751886}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &645429700
@@ -23845,7 +23622,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 0, b: 1, a: 1}
 --- !u!23 &658211269
@@ -23924,11 +23701,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658930610}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 0, z: 0.02}
-=======
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24037,7 +23810,7 @@ MonoBehaviour:
   ingredientName: Hard-Boiled Egg
   ingredientPrefab: {fileID: 615716494}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &659372842
@@ -24171,7 +23944,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!23 &661096522
@@ -24250,11 +24023,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661833447}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 0, z: 0.02}
-=======
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24593,89 +24362,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 678228616}
   m_Mesh: {fileID: -5495902117074765545, guid: 1e429f05931f0dc4c9bb9ad9c6f3d4e1, type: 3}
---- !u!1 &678349797
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 678349798}
-  - component: {fileID: 678349800}
-  - component: {fileID: 678349799}
-  m_Layer: 0
-  m_Name: 0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &678349798
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 678349797}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.6933, y: -0.63, z: -8.996}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1005199857}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &678349799
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 678349797}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 76b92e33fef47d24e8a76fcf13660a32, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &678349800
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 678349797}
-  m_Mesh: {fileID: -5495902117074765545, guid: 1e429f05931f0dc4c9bb9ad9c6f3d4e1, type: 3}
 --- !u!1 &681977147
 GameObject:
   m_ObjectHideFlags: 0
@@ -25012,7 +24698,7 @@ MonoBehaviour:
   ingredientName: Spinach
   ingredientPrefab: {fileID: 1535179130}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: -0.6, y: 0, z: -2.5}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &691914605
@@ -25887,7 +25573,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.5, g: 0.3, b: 0, a: 1}
 --- !u!23 &710772878
@@ -26075,7 +25761,7 @@ MonoBehaviour:
   ingredientName: Red Onions
   ingredientPrefab: {fileID: 701294364}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &714788705
@@ -26526,7 +26212,7 @@ MonoBehaviour:
   ingredientName: Pineapple
   ingredientPrefab: {fileID: 1981081434}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &734464019
@@ -26660,7 +26346,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!23 &738334684
@@ -27016,7 +26702,7 @@ MonoBehaviour:
   ingredientName: Kale
   ingredientPrefab: {fileID: 756457164}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0.75, y: 0, z: -2.5}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &744931129
@@ -27553,7 +27239,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.5, g: 0.3, b: 0, a: 1}
 --- !u!95 &770236255
@@ -28098,7 +27784,7 @@ MonoBehaviour:
   ingredientName: Charred Corn
   ingredientPrefab: {fileID: 376279006}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &790732770
@@ -28407,11 +28093,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801705780}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 0, z: 0.02}
-=======
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28723,7 +28405,7 @@ MonoBehaviour:
   ingredientName: Pita Chips
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &808751468
@@ -29024,7 +28706,7 @@ MonoBehaviour:
   ingredientName: Lime-Picked Onions
   ingredientPrefab: {fileID: 1888789506}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &818736496
@@ -30363,190 +30045,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851492875}
   m_Mesh: {fileID: 5760165095161655526, guid: c28059d4447f6e84c96f5c37c45eaaa2, type: 3}
-<<<<<<< Updated upstream
-=======
---- !u!1 &851706972
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 851706973}
-  - component: {fileID: 851706975}
-  - component: {fileID: 851706974}
-  m_Layer: 0
-  m_Name: Roots Rice Prompt
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &851706973
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 851706972}
-  m_LocalRotation: {x: 0.38268343, y: -0, z: -0, w: 0.92387956}
-  m_LocalPosition: {x: 0.047, y: 0.254, z: 0.033}
-  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 510078755}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
---- !u!114 &851706974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 851706972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66eae8387e87ff64a9bb476c4e48ae1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stopPoint: 1
---- !u!212 &851706975
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 851706972}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0c52139f21550144fb9f334e83fd22e8, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.8}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 69.82, y: 55.876457}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!1 &853825219
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 853825220}
-  - component: {fileID: 853825222}
-  - component: {fileID: 853825221}
-  m_Layer: 0
-  m_Name: 6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &853825220
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 853825219}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.501, y: -0.612, z: -9.759999}
-  m_LocalScale: {x: 52.500004, y: 100, z: 88}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1005199857}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &853825221
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 853825219}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: fff134ff5d1991b4398ed3f81cc04fd2, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &853825222
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 853825219}
-  m_Mesh: {fileID: -5495902117074765545, guid: 1e429f05931f0dc4c9bb9ad9c6f3d4e1, type: 3}
->>>>>>> Stashed changes
 --- !u!1 &854069339
 GameObject:
   m_ObjectHideFlags: 0
@@ -30801,7 +30299,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.75, g: 0.5, b: 0, a: 1}
 --- !u!95 &856845062
@@ -31120,7 +30618,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &868655879
@@ -31911,7 +31409,7 @@ MonoBehaviour:
   ingredientName: Kale
   ingredientPrefab: {fileID: 756457164}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0.75, y: 0, z: -2.5}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &901745070
@@ -32354,11 +31852,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912693233}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 0, z: 0.02}
-=======
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32582,140 +32076,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915406676}
   m_Mesh: {fileID: 5393785656677755622, guid: 7a97cbedd3042b547bee974be98cb70a, type: 3}
-<<<<<<< Updated upstream
-=======
---- !u!114 &915406680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915406676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f927f8a52f839448d9803152f00d2d5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientName: Cucumbers
-  ingredientPrefab: {fileID: 1989236751}
-  prefabCount: 50
-  textOffset: {x: 0, y: 0, z: 0}
-  isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
---- !u!64 &915406681
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915406676}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5393785656677755622, guid: 7a97cbedd3042b547bee974be98cb70a, type: 3}
---- !u!54 &915406682
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915406676}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!1 &924128548
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 924128549}
-  - component: {fileID: 924128551}
-  - component: {fileID: 924128550}
-  m_Layer: 0
-  m_Name: 6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &924128549
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924128548}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.51, y: 0.153, z: -7.7637005}
-  m_LocalScale: {x: 52.5, y: 100, z: 88}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 374447784}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &924128550
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924128548}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: fff134ff5d1991b4398ed3f81cc04fd2, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &924128551
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924128548}
-  m_Mesh: {fileID: -5495902117074765545, guid: 1e429f05931f0dc4c9bb9ad9c6f3d4e1, type: 3}
->>>>>>> Stashed changes
 --- !u!1 &925873126
 GameObject:
   m_ObjectHideFlags: 0
@@ -32858,11 +32218,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929673692}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 0, z: 0.02}
-=======
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32971,7 +32327,7 @@ MonoBehaviour:
   ingredientName: Pita Chips
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &930233845
@@ -34758,162 +34114,6 @@ Transform:
   m_Father: {fileID: 539199290}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
-=======
---- !u!1 &1004101308
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1004101309}
-  - component: {fileID: 1004101311}
-  - component: {fileID: 1004101310}
-  m_Layer: 0
-  m_Name: 4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1004101309
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004101308}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.0555, y: -0.612, z: -9.38}
-  m_LocalScale: {x: 52.500004, y: 100, z: 88}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 598923960}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1004101310
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004101308}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 71717ee85ef145f468bbd7154fd50a43, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1004101311
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004101308}
-  m_Mesh: {fileID: -5495902117074765545, guid: 1e429f05931f0dc4c9bb9ad9c6f3d4e1, type: 3}
---- !u!1 &1005199856
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1005199857}
-  m_Layer: 0
-  m_Name: Base3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1005199857
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1005199856}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 678349798}
-  - {fileID: 1080135923}
-  - {fileID: 1329551217}
-  - {fileID: 1198734225}
-  - {fileID: 1073538349}
-  - {fileID: 67070582}
-  - {fileID: 853825220}
-  m_Father: {fileID: 1080679065}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1005737333
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1005737334}
-  m_Layer: 0
-  m_Name: Sweet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1005737334
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1005737333}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.21, y: -0.08, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1578338005}
-  m_Father: {fileID: 1384131841}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1 &1009104738
 GameObject:
   m_ObjectHideFlags: 0
@@ -35763,7 +34963,7 @@ MonoBehaviour:
   ingredientName: Pita Chips
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1041110882
@@ -36536,207 +35736,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073479894}
   m_Mesh: {fileID: -3329902420748629119, guid: 11ae01b28d2c65947a1ff2e5731146c3, type: 3}
-<<<<<<< Updated upstream
-=======
---- !u!1 &1073538348
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1073538349}
-  - component: {fileID: 1073538351}
-  - component: {fileID: 1073538350}
-  m_Layer: 0
-  m_Name: 4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1073538349
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1073538348}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.3425, y: -0.63, z: -9.38}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1005199857}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1073538350
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1073538348}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: eae426a0857208a498cc4e4e657aea8f, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1073538351
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1073538348}
-  m_Mesh: {fileID: -5495902117074765545, guid: 1e429f05931f0dc4c9bb9ad9c6f3d4e1, type: 3}
---- !u!1 &1074258141
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1074258142}
-  m_Layer: 0
-  m_Name: Red Onion
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1074258142
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1074258141}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.21, y: -0.08, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 602502888}
-  m_Father: {fileID: 1295647791}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1074260666
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1074260667}
-  - component: {fileID: 1074260669}
-  - component: {fileID: 1074260668}
-  m_Layer: 0
-  m_Name: 4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1074260667
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1074260666}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.743, y: 0.153, z: -7.764}
-  m_LocalScale: {x: 52.5, y: 100, z: 88}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 374447784}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1074260668
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1074260666}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 3fd65217e460748418b41ef204d5d2ea, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1074260669
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1074260666}
-  m_Mesh: {fileID: -5495902117074765545, guid: 1e429f05931f0dc4c9bb9ad9c6f3d4e1, type: 3}
->>>>>>> Stashed changes
 --- !u!1 &1076989879
 GameObject:
   m_ObjectHideFlags: 0
@@ -36820,92 +35819,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076989879}
   m_Mesh: {fileID: -8675431444254071231, guid: c28059d4447f6e84c96f5c37c45eaaa2, type: 3}
-<<<<<<< Updated upstream
-=======
---- !u!1 &1080135922
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1080135923}
-  - component: {fileID: 1080135925}
-  - component: {fileID: 1080135924}
-  m_Layer: 0
-  m_Name: '1 '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1080135923
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1080135922}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.343, y: -0.63, z: -8.996}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1005199857}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1080135924
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1080135922}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 76b92e33fef47d24e8a76fcf13660a32, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1080135925
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1080135922}
-  m_Mesh: {fileID: -5495902117074765545, guid: 1e429f05931f0dc4c9bb9ad9c6f3d4e1, type: 3}
->>>>>>> Stashed changes
 --- !u!1 &1080679064
 GameObject:
   m_ObjectHideFlags: 0
@@ -37381,7 +36294,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 0, b: 1, a: 1}
 --- !u!95 &1095714872
@@ -37664,7 +36577,7 @@ MonoBehaviour:
   ingredientName: Pineapple
   ingredientPrefab: {fileID: 1981081434}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1101968135
@@ -37858,11 +36771,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109541955}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 0, z: 0.02}
-=======
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37974,7 +36883,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 1, b: 0, a: 1}
 --- !u!95 &1117748200
@@ -38422,7 +37331,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!23 &1122913693
@@ -38641,7 +37550,7 @@ MonoBehaviour:
   ingredientName: Pita Chips
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1128881096
@@ -39816,7 +38725,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 1, b: 0, a: 1}
 --- !u!23 &1174327529
@@ -40249,92 +39158,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1197178178}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< Updated upstream
-=======
---- !u!1 &1198734224
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1198734225}
-  - component: {fileID: 1198734227}
-  - component: {fileID: 1198734226}
-  m_Layer: 0
-  m_Name: 3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1198734225
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1198734224}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.6933, y: -0.63, z: -9.762}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1005199857}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1198734226
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1198734224}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 0f1f9b76377ed364cbea1dd49f271611, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1198734227
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1198734224}
-  m_Mesh: {fileID: -5495902117074765545, guid: 1e429f05931f0dc4c9bb9ad9c6f3d4e1, type: 3}
->>>>>>> Stashed changes
 --- !u!1 &1201558342
 GameObject:
   m_ObjectHideFlags: 0
@@ -41955,7 +40778,7 @@ MonoBehaviour:
   ingredientName: Lime-Picked Onions
   ingredientPrefab: {fileID: 1888789506}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1238907972
@@ -42256,7 +41079,7 @@ MonoBehaviour:
   ingredientName: Chickpeas
   ingredientPrefab: {fileID: 2001526601}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1247269303
@@ -44067,7 +42890,7 @@ MonoBehaviour:
   ingredientName: Spinach
   ingredientPrefab: {fileID: 1535179130}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: -0.6, y: 0, z: -2.5}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1323779665
@@ -44201,7 +43024,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!23 &1325277341
@@ -44337,92 +43160,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326004561}
   m_Mesh: {fileID: -2694682524305643171, guid: c28059d4447f6e84c96f5c37c45eaaa2, type: 3}
-<<<<<<< Updated upstream
-=======
---- !u!1 &1329551216
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1329551217}
-  - component: {fileID: 1329551219}
-  - component: {fileID: 1329551218}
-  m_Layer: 0
-  m_Name: 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1329551217
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1329551216}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.6933, y: -0.63, z: -9.38}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1005199857}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1329551218
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1329551216}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 83fc0af48c0459944adf49d501d07f79, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1329551219
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1329551216}
-  m_Mesh: {fileID: -5495902117074765545, guid: 1e429f05931f0dc4c9bb9ad9c6f3d4e1, type: 3}
->>>>>>> Stashed changes
 --- !u!1 &1337786603
 GameObject:
   m_ObjectHideFlags: 0
@@ -44647,7 +43384,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!23 &1342737765
@@ -44751,7 +43488,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.5, g: 0.3, b: 0, a: 1}
 --- !u!23 &1343449221
@@ -45875,7 +44612,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &1372440330
@@ -46128,7 +44865,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.75, g: 0.5, b: 0, a: 1}
 --- !u!95 &1378653632
@@ -47418,7 +46155,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.75, g: 0.5, b: 0, a: 1}
 --- !u!95 &1416622345
@@ -48429,7 +47166,7 @@ MonoBehaviour:
   ingredientName: Spring Mix
   ingredientPrefab: {fileID: 1528697091}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0.15, y: 0, z: -2.5}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1456161222
@@ -50329,7 +49066,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 0, b: 1, a: 1}
 --- !u!95 &1499097605
@@ -50843,7 +49580,7 @@ MonoBehaviour:
   ingredientName: Pita Chips
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1507736504
@@ -51704,17 +50441,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f927f8a52f839448d9803152f00d2d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
   ingredientName: Cheddar
   ingredientPrefab: {fileID: 1460820428}
   prefabCount: 20
   prefabOffset: {x: 0, y: 0, z: 0}
-=======
-  ingredientName: Sweet Potatoes
-  ingredientPrefab: {fileID: 1268768995}
-  prefabCount: 25
-  textOffset: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1530264913
@@ -51852,7 +50582,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 1, b: 0, a: 1}
 --- !u!95 &1530939331
@@ -52083,27 +50813,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1534395347}
   m_Mesh: {fileID: -6716846533345241898, guid: 7a97cbedd3042b547bee974be98cb70a, type: 3}
-<<<<<<< Updated upstream
-=======
---- !u!114 &1534395353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1534395347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f927f8a52f839448d9803152f00d2d5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientName: Shredded Carrots
-  ingredientPrefab: {fileID: 1737038924}
-  prefabCount: 50
-  textOffset: {x: 0, y: 0, z: 0}
-  isLiquid: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
->>>>>>> Stashed changes
 --- !u!1 &1535179130
 GameObject:
   m_ObjectHideFlags: 0
@@ -52328,11 +51037,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1544488822}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 0, z: 0.02}
-=======
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52415,11 +51120,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548032082}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 0, z: 0.02}
-=======
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52560,7 +51261,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.5, g: 0.3, b: 0, a: 1}
 --- !u!23 &1553614895
@@ -53795,7 +52496,7 @@ MonoBehaviour:
   ingredientName: Pita Chips
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1580909769
@@ -54013,7 +52714,7 @@ MonoBehaviour:
   ingredientName: Pita Chips
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1588481724
@@ -54652,7 +53353,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 0, b: 1, a: 1}
 --- !u!23 &1597092810
@@ -55565,7 +54266,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 1, b: 0, a: 1}
 --- !u!23 &1633570291
@@ -56059,7 +54760,7 @@ MonoBehaviour:
   ingredientName: Spring Mix
   ingredientPrefab: {fileID: 1528697091}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0.15, y: 0, z: -2.5}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1641432382
@@ -56193,7 +54894,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.75, g: 0.5, b: 0, a: 1}
 --- !u!23 &1643357737
@@ -56427,6 +55128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac949270fd3a12544b40589ded756d12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  orderText: {fileID: 0}
+  orderTimerManager: {fileID: 1768207499}
   extraFoodSlider: {fileID: 1273671842851122315}
 --- !u!114 &1656265658
 MonoBehaviour:
@@ -56779,7 +55482,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &1674081107
@@ -57029,7 +55732,7 @@ MonoBehaviour:
   ingredientName: Pita Chips
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1676206768
@@ -58798,7 +57501,7 @@ MonoBehaviour:
   ingredientName: Roasted Sweet Potatoes
   ingredientPrefab: {fileID: 1268768995}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1717715858
@@ -58964,7 +57667,7 @@ MonoBehaviour:
   ingredientName: Tomatoes
   ingredientPrefab: {fileID: 1488467970}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1725835811
@@ -60036,7 +58739,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.5, g: 0.3, b: 0, a: 1}
 --- !u!95 &1741679799
@@ -60755,7 +59458,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 0, b: 1, a: 1}
 --- !u!23 &1771323381
@@ -63540,7 +62243,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!95 &1866968392
@@ -63681,11 +62384,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1868414403}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 0, z: 0.02}
-=======
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -63919,7 +62618,7 @@ MonoBehaviour:
   ingredientName: Roasted Beets
   ingredientPrefab: {fileID: 1928286218}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1872192319
@@ -64795,11 +63494,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896072349}
   m_LocalRotation: {x: -0.00000005960463, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 0, z: 0.02}
-=======
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -65658,7 +64353,7 @@ MonoBehaviour:
   ingredientName: Brown Rice
   ingredientPrefab: {fileID: 1788100207}
   prefabCount: 50
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1922241400
@@ -66391,7 +65086,7 @@ MonoBehaviour:
   ingredientName: Pita Chips
   ingredientPrefab: {fileID: 219124056}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1941884042
@@ -67414,7 +66109,7 @@ MonoBehaviour:
   ingredientName: Spring Mix
   ingredientPrefab: {fileID: 1528697091}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0.15, y: 0, z: -2.5}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1979558070
@@ -69036,11 +67731,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020729465}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 0, z: 0.02}
-=======
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -69148,7 +67839,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 0, b: 1, a: 1}
 --- !u!23 &2027636282
@@ -69452,7 +68143,7 @@ MonoBehaviour:
   ingredientName: Pineapple
   ingredientPrefab: {fileID: 1981081434}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &2039108959
@@ -69989,7 +68680,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!95 &2054120523
@@ -70296,7 +68987,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2061745341}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -70682,17 +69373,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f927f8a52f839448d9803152f00d2d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
   ingredientName: Roots Rice
   ingredientPrefab: {fileID: 603956975}
   prefabCount: 50
   prefabOffset: {x: 0, y: 0, z: 0}
-=======
-  ingredientName: Egg
-  ingredientPrefab: {fileID: 615716494}
-  prefabCount: 10
-  textOffset: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &2073071604
@@ -70830,7 +69514,7 @@ MonoBehaviour:
   ingredientName: Dressing
   ingredientPrefab: {fileID: 0}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 1, b: 0, a: 1}
 --- !u!95 &2077295036
@@ -70997,7 +69681,7 @@ MonoBehaviour:
   ingredientName: Broccoli
   ingredientPrefab: {fileID: 635277301}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  prefabOffset: {x: 0, y: 0, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &2084934610
