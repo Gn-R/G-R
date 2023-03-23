@@ -53,7 +53,7 @@ public class Recipes
 
     private static readonly Recipe GRBowl2 = new Recipe(
         "G & R Bowl 2", 
-        new string[] { "Shredded Carrots", "Corn" }, // Base(s)
+        new string[] { "Shredded Carrots", "Charred Corn" }, // Base(s)
         new string[] { "Cucumbers", "Red Onion", "Pickled Onions", "Parmesan", "Spring Mix" }, // Topping
         new string[] { "Caesar Dressing" }, // Dressing(s)
         new string[] { "Chicken" } // From the Grill (protein)
@@ -62,7 +62,7 @@ public class Recipes
     private static readonly Recipe baja = new Recipe(
         "Baja", 8.79,
         new string[] { "Romaine", "Grape Tomatoes", },
-        new string[] { "Pickled Red Onions", "Charred Corn", "Black Beans", "Tortilla Strips", "Sharp Cheddar Cheese" },
+        new string[] { "Red Onion", "Charred Corn", "Black Beans", "Tortilla Strips", "Sharp Cheddar Cheese" },
         new string[] { "Chipotle Ranch Dressing" },
         new string[] { }
     );
@@ -78,7 +78,7 @@ public class Recipes
     private static readonly Recipe greekGarden = new Recipe(
         "Greek Garden", 8.79,
         new string[] { "Romaine / Spring", "Cucumbers" },
-        new string[] { "Grape Tomatoes", "Red Onions", "Kalamata Olives", "Banana Peppers", "Crumbled Feta Cheese" },
+        new string[] { "Grape Tomatoes", "Red Onion", "Kalamata Olives", "Banana Peppers", "Crumbled Feta Cheese" },
         new string[] { "House Greek Vinaigrette Dressing" },
         new string[] { }
     );

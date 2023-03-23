@@ -5669,6 +5669,106 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 125445527}
   m_CullTransparentMesh: 1
+--- !u!1 &129425775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 129425776}
+  - component: {fileID: 129425778}
+  - component: {fileID: 129425777}
+  m_Layer: 0
+  m_Name: Chipotle Ranch Dressing tutorial prompt (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &129425776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129425775}
+  m_LocalRotation: {x: 0.38268343, y: -0, z: -0, w: 0.92387956}
+  m_LocalPosition: {x: 0.36, y: 0.3, z: 0.12}
+  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 335700216}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!114 &129425777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129425775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66eae8387e87ff64a9bb476c4e48ae1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stopPoint: 5
+  recipesAttached:
+  - Baja
+--- !u!212 &129425778
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129425775}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 10084fe8ed963a34189cd081c7dd5f02, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 69.82, y: 55.876457}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &132631751
 GameObject:
   m_ObjectHideFlags: 0
@@ -7467,6 +7567,108 @@ Transform:
   m_Father: {fileID: 2117096338}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &198294521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 198294522}
+  - component: {fileID: 198294524}
+  - component: {fileID: 198294523}
+  m_Layer: 0
+  m_Name: Crumbled Feta Cheese Prompt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &198294522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198294521}
+  m_LocalRotation: {x: 0.38268343, y: -0, z: -0, w: 0.92387956}
+  m_LocalPosition: {x: 0.047, y: 0.196, z: 0.136}
+  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2098671990}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!114 &198294523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198294521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66eae8387e87ff64a9bb476c4e48ae1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stopPoint: 4
+  recipesAttached:
+  - G & R Bowl 2
+  - Greek Garden
+  - Tamari
+--- !u!212 &198294524
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198294521}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: d3c685335c44ddd41bf04c2ce7113c37, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 69.82, y: 55.876457}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &198571668
 GameObject:
   m_ObjectHideFlags: 0
@@ -12670,6 +12872,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2080392713}
+  - {fileID: 129425776}
   m_Father: {fileID: 908470273}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12835,7 +13038,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopPoint: 1
-  recipesAttached: []
+  recipesAttached:
+  - G & R Bowl 2
+  - Baja
+  - Greek Garden
+  - Thai
+  - Tamari
+  - Sea Boy
 --- !u!212 &344379731
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14383,105 +14592,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376279006}
   m_Mesh: {fileID: 249572282500221259, guid: c36962bd899e16b4d94662be5131b8d8, type: 3}
---- !u!1 &378821179
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 378821180}
-  - component: {fileID: 378821182}
-  - component: {fileID: 378821181}
-  m_Layer: 0
-  m_Name: Brown Rice Prompt
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &378821180
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 378821179}
-  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0.002, y: 0.256, z: 0.035}
-  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 481249683}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
---- !u!114 &378821181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 378821179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66eae8387e87ff64a9bb476c4e48ae1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stopPoint: 1
-  recipesAttached: []
---- !u!212 &378821182
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 378821179}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f2e32820d54935c41ba0664a62583f81, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.8}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 69.82, y: 55.876457}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &379382152
 GameObject:
   m_ObjectHideFlags: 0
@@ -15517,6 +15627,116 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402079910}
   m_Mesh: {fileID: 3700666496662510869, guid: c28059d4447f6e84c96f5c37c45eaaa2, type: 3}
+--- !u!1 &405138429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 405138430}
+  - component: {fileID: 405138432}
+  - component: {fileID: 405138431}
+  m_Layer: 0
+  m_Name: Romaine tutorial prompt 2 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &405138430
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405138429}
+  m_LocalRotation: {x: -0, y: 0.9961947, z: -0.08715574, w: 0}
+  m_LocalPosition: {x: 0.503, y: 0.042, z: -2.021}
+  m_LocalScale: {x: 0.005, y: 0.005, z: 0.010000002}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 919758650}
+  m_Father: {fileID: 863218704}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 10, y: 180, z: 0}
+--- !u!114 &405138431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405138429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66eae8387e87ff64a9bb476c4e48ae1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stopPoint: 0
+  recipesAttached:
+  - Baja
+  - Classic Caesar
+  - Greek Garden
+  - Thai
+  - Crisp Cobb
+  - Tamari
+  - Steakhouse
+  - Superfood
+  - Sea Boy
+  - BBQ & Blue
+--- !u!212 &405138432
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405138429}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: a5a86ea2b6efdce408467818ec1b8fb0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 69.82, y: 55.876457}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &409380598
 GameObject:
   m_ObjectHideFlags: 0
@@ -18194,7 +18414,7 @@ GameObject:
   m_Component:
   - component: {fileID: 481249683}
   m_Layer: 0
-  m_Name: Brown Rice
+  m_Name: Sharp Cheddar Cheese
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18212,7 +18432,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 378821180}
+  - {fileID: 522253356}
   m_Father: {fileID: 670944336}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19195,6 +19415,106 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519662580}
   m_Mesh: {fileID: -8058968322305962935, guid: c28059d4447f6e84c96f5c37c45eaaa2, type: 3}
+--- !u!1 &522253355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 522253356}
+  - component: {fileID: 522253358}
+  - component: {fileID: 522253357}
+  m_Layer: 0
+  m_Name: Sharp Cheddar Cheese tutorial prompt (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &522253356
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522253355}
+  m_LocalRotation: {x: 0.38268343, y: -0, z: -0, w: 0.92387956}
+  m_LocalPosition: {x: 0.039000034, y: 0.189, z: 0.049}
+  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 481249683}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!114 &522253357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522253355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66eae8387e87ff64a9bb476c4e48ae1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stopPoint: 4
+  recipesAttached:
+  - Baja
+--- !u!212 &522253358
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522253355}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: a13ee2314c60ff94f923b9e85b691d8c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 69.82, y: 55.876457}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &524384181
 GameObject:
   m_ObjectHideFlags: 0
@@ -22933,7 +23253,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopPoint: 2
-  recipesAttached: []
+  recipesAttached:
+  - G & R Bowl 2
+  - Baja
+  - Greek Garden
 --- !u!212 &602502890
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25691,8 +26014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopPoint: 2
-  recipesAttached:
-  - G & R Bowl 1
+  recipesAttached: []
 --- !u!212 &663382291
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30362,7 +30684,7 @@ GameObject:
   - component: {fileID: 818736496}
   - component: {fileID: 818736495}
   m_Layer: 0
-  m_Name: Lime Pickled Onions
+  m_Name: Pickled Onions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30396,7 +30718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f927f8a52f839448d9803152f00d2d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Lime-Picked Onions
+  ingredientName: Picked Onions
   ingredientPrefab: {fileID: 1888789506}
   prefabCount: 20
   prefabOffset: {x: 0, y: 0, z: 0}
@@ -32565,6 +32887,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1300093106}
+  - {fileID: 405138430}
   m_Father: {fileID: 1926463432}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -34321,6 +34644,115 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &919758649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 919758650}
+  - component: {fileID: 919758652}
+  - component: {fileID: 919758651}
+  m_Layer: 0
+  m_Name: Romaine tutorial prompt 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &919758650
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919758649}
+  m_LocalRotation: {x: 0, y: -0.7372775, z: 0.6755901, w: 0}
+  m_LocalPosition: {x: 162.60002, y: -59.82113, z: -151.20323}
+  m_LocalScale: {x: 5, y: 2.5095308, z: 4.962306}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 405138430}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 75, y: 0, z: 0}
+--- !u!114 &919758651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919758649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66eae8387e87ff64a9bb476c4e48ae1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stopPoint: 0
+  recipesAttached:
+  - Baja
+  - Classic Caesar
+  - Greek Garden
+  - Thai
+  - Crisp Cobb
+  - Tamari
+  - Steakhouse
+  - Superfood
+  - Sea Boy
+  - BBQ & Blue
+--- !u!212 &919758652
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919758649}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 622431e64fe72c74bb800b82abce1260, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.9019608}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 69.82, y: 55.876457}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &924128548
 GameObject:
   m_ObjectHideFlags: 0
@@ -36074,6 +36506,7 @@ MonoBehaviour:
   stopPoint: 0
   recipesAttached:
   - G & R Bowl 1
+  - G & R Bowl 2
 --- !u!212 &994063761
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42071,6 +42504,107 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1197178178}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1197185826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1197185827}
+  - component: {fileID: 1197185829}
+  - component: {fileID: 1197185828}
+  m_Layer: 0
+  m_Name: Black Beans tutorial prompt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1197185827
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197185826}
+  m_LocalRotation: {x: 0.38268343, y: -0, z: -0, w: 0.92387956}
+  m_LocalPosition: {x: 0.051, y: 0.204, z: 0.09}
+  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9128230275772868492}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!114 &1197185828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197185826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66eae8387e87ff64a9bb476c4e48ae1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stopPoint: 1
+  recipesAttached:
+  - G & R Bowl 2
+  - Baja
+--- !u!212 &1197185829
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197185826}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 73c4a9b3f118c7644b6d11ad96af0dc3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 69.82, y: 55.876457}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1198734224
 GameObject:
   m_ObjectHideFlags: 0
@@ -45566,6 +46100,7 @@ MonoBehaviour:
   stopPoint: 0
   recipesAttached:
   - G & R Bowl 1
+  - G & R Bowl 2
 --- !u!212 &1300093108
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47980,7 +48515,7 @@ GameObject:
   - component: {fileID: 1358731918}
   - component: {fileID: 1358731917}
   m_Layer: 0
-  m_Name: LIME PICKLED ONION tutorial prompt
+  m_Name: PICKLED ONIONS tutorial prompt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48014,7 +48549,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopPoint: 3
-  recipesAttached: []
+  recipesAttached:
+  - G & R Bowl 2
 --- !u!212 &1358731918
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53425,7 +53961,7 @@ GameObject:
   - component: {fileID: 1500892792}
   - component: {fileID: 1500892791}
   m_Layer: 0
-  m_Name: Brown Rice Prompt
+  m_Name: Grape Tomatoes Prompt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53439,7 +53975,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1500892789}
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0.002, y: 0.256, z: 0.035}
+  m_LocalPosition: {x: 0.0456, y: 0.256, z: 0.035}
   m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -53459,7 +53995,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopPoint: 1
-  recipesAttached: []
+  recipesAttached:
+  - Baja
+  - Greek Garden
+  - Crisp Cobb
+  - Steakhouse
+  - Sea Boy
+  - Pesto Caesar Grain Bowl
 --- !u!212 &1500892792
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53501,7 +54043,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f2e32820d54935c41ba0664a62583f81, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ef4245beae3fd1341aff36444d8dd11a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.8}
   m_FlipX: 0
   m_FlipY: 0
@@ -55176,7 +55718,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopPoint: 1
-  recipesAttached: []
+  recipesAttached:
+  - G & R Bowl 2
 --- !u!212 &1539570298
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -61452,6 +61995,19 @@ MonoBehaviour:
   - {fileID: 868156841}
   - {fileID: 2080392712}
   - {fileID: 1300093105}
+  - {fileID: 344379728}
+  - {fileID: 1539570295}
+  - {fileID: 1706929353}
+  - {fileID: 602502887}
+  - {fileID: 1660521945}
+  - {fileID: 1358731915}
+  - {fileID: 2061333131}
+  - {fileID: 405138429}
+  - {fileID: 1500892789}
+  - {fileID: 1197185826}
+  - {fileID: 198294521}
+  - {fileID: 522253355}
+  - {fileID: 129425775}
   stopPrompts2:
   - {fileID: 344379728}
   - {fileID: 1539570295}
@@ -61937,7 +62493,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopPoint: 2
-  recipesAttached: []
+  recipesAttached:
+  - G & R Bowl 2
+  - Baja
+  - Sea Boy
 --- !u!212 &1706929356
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -74397,7 +74956,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopPoint: 4
-  recipesAttached: []
+  recipesAttached:
+  - G & R Bowl 2
 --- !u!212 &2061333134
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -75111,12 +75671,12 @@ GameObject:
   - component: {fileID: 2080392715}
   - component: {fileID: 2080392714}
   m_Layer: 0
-  m_Name: Dressing tutorial prompt
+  m_Name: Caesar Dressing tutorial prompt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2080392713
 Transform:
   m_ObjectHideFlags: 0
@@ -75147,6 +75707,7 @@ MonoBehaviour:
   stopPoint: 5
   recipesAttached:
   - G & R Bowl 1
+  - G & R Bowl 2
 --- !u!212 &2080392715
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -75648,7 +76209,8 @@ Transform:
   m_LocalPosition: {x: 0.121, y: -0.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 198294522}
   m_Father: {fileID: 670944336}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -82380,7 +82942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6770913856206480193}
   m_Layer: 0
-  m_Name: Lime-Pickled Onions
+  m_Name: Pickled Onions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88062,7 +88624,8 @@ Transform:
   m_LocalPosition: {x: 0.121, y: -0.08, z: 0.175}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1197185827}
   m_Father: {fileID: 9128230276465731174}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -88076,7 +88639,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9128230275772868492}
   m_Layer: 0
-  m_Name: 2clone1
+  m_Name: Black Beans
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88193,7 +88756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9128230277360588185}
   m_Layer: 0
-  m_Name: Brown Rice
+  m_Name: Grape Tomatoes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

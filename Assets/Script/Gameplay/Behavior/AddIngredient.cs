@@ -235,6 +235,7 @@ public class AddIngredient : MonoBehaviour
         //    point.GetComponent<TextMeshProUGUI>().text = "" + points;
         //}
 
+        Debug.Log(ingredient);
         prompts.GetComponent<TutorialPrompts>().addedIngredient(ingredient);
         
 
