@@ -68,36 +68,42 @@ public class AddIngredient : MonoBehaviour
 
                 // Is object an ingredient?
                 Ingredient ingredient = hitInfo.transform.GetComponent<Ingredient>();
-                if (ingredient == null) return;                
-                
-                //  Spawn prefab or pour liquid
-                if (ingredient.IsLiquid())
+                if (ingredient != null)
                 {
-                    PourLiquid(ingredient.GetColor());
+                    CreateAndCheckIngredient(ingredient);
                 }
-                else
-                {
-                    InstantiateIngredient(ingredient.GetPrefab(), ingredient.GetCount());
-                }
-
-                // Add to bowl
-                AddToCombo(ingredient.GetName(), ingredient.GetOffset());
+                if (ingredient == null) return; 
             }
         }
     }
 
+    private void CreateAndCheckIngredient(Ingredient ingredient)
+    {
+        // Spawn prefab or pour liquid
+        if (ingredient.IsLiquid())
+        {
+            PourLiquid(ingredient.GetColor());
+        }
+        else
+        {
+            InstantiateIngredient(ingredient.GetPrefab(), ingredient.GetCount());
+        }
+
+        AddToCombo(ingredient.GetName());
+        SpawnIngredientText(ingredient.GetName(), ingredient.transform.position + ingredient.GetOffset());
+    }
+
     private void InstantiateIngredient(GameObject prefab, int count)
     {
-        //Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation, YourParent.transform)
         for (int i = 0; i < count; i++)
         {
-            //Used to offset ingredient to instantiate into bowl
+            // Randomly offset ingredient spawn location
             Vector3 randomOffset = new Vector3(UnityEngine.Random.Range(-0.09f, 0.1f), UnityEngine.Random.Range(-0.2f, 0.2f), UnityEngine.Random.Range(-0.175f, 0.05f));
             GameObject ing = Instantiate(prefab, transform.position + offset + randomOffset, Quaternion.Euler(0, 0, 0), transform);
             ing.transform.localScale = Vector3.Scale(ing.transform.localScale, new Vector3(.45f, .45f, .45f));
         }
 
-        //After every addition, check if there's too many items in bowl
+        // After every addition, check if there's too many items in bowl
         if (transform.childCount > INGREDIENT_LIMIT)
         {
             int delete_count = INGREDIENT_LIMIT / 4;
@@ -109,29 +115,7 @@ public class AddIngredient : MonoBehaviour
                     Destroy(transform.GetChild(dice).gameObject);
                 }
             }
-            // Debug.Log("destroy");
         }
-    }
-
-    private void InstantiateText(GameObject textType, string message, Vector3 offset)
-    {
-        GameObject parentPos = Array.Find(pointpos, element => element.name.Equals(message));
-        GameObject textObject;
-        if (parentPos == null)
-        {
-            textObject = Instantiate(textType, transform);
-        } 
-        else
-        {
-            textObject = Instantiate(textType, parentPos.transform);
-        }
-
-        // Make text face camera
-        float camAngle = GameObject.Find("Main Camera").transform.rotation.eulerAngles.y;
-        textObject.transform.rotation = Quaternion.Euler(0, camAngle, 0);
-
-        textObject.transform.position += offset;
-        textObject.GetComponent<TextMeshPro>().text = message;
     }
 
     private void PourLiquid(Color color)
@@ -157,88 +141,54 @@ public class AddIngredient : MonoBehaviour
         pourCoroutine = null;
     }
 
-    public void ShowHint(float sec)
-    {
-        if (hintCoroutine != null)
-        {
-            StopCoroutine(hintCoroutine);
-        }
-        hintCoroutine = StartCoroutine(HintCoroutine(sec));
-    }
-
-    private IEnumerator HintCoroutine(float sec)
-    {
-        List<GameObject> hintTexts = new List<GameObject>();
-        foreach (GameObject clone in pointpos)
-        {
-            GameObject hintText = Instantiate(textPrefab, clone.transform, false);
-            hintText.transform.localPosition = new Vector3(.05f, .182f, -0.04f);
-            if (GameObject.Find("Main Camera").transform.rotation.eulerAngles.y > 0)
-            {
-                hintText.transform.localPosition = new Vector3(.05f, .182f, 0.07f);
-                hintText.transform.rotation = Quaternion.Euler(90, 0, 90);
-            }
-            else
-            {
-                hintText.transform.localPosition = new Vector3(.05f, .182f, -0.08f);
-            }
-            hintText.GetComponent<TextMeshPro>().text = clone.name;
-            hintTexts.Add(hintText);
-        }
-        yield return new WaitForSeconds(sec);
-        foreach (GameObject text in hintTexts)
-        {
-            Destroy(text);
-        }
-    }
-
-    private void AddToCombo(string ingredient, Vector3 offset)
+    private void AddToCombo(string ingredient)
     {
         //Separate check for dressing to add the correct one
         if (ingredient.Equals("Dressing"))
         {
-            string[] dressings = Recipes.GetRecipe(DishManager.GetCurrentDish()).dressing;
-            foreach (string dressing in dressings)
-            {
-                if (!Manager.Instance.combo.Contains(dressing))
-                {
-                    ingredient = dressing;
-                    break;
-                }
-            }
-
-            if (ingredient.Equals("Dressing"))
-            {
-                return;
-            }
+            ingredient = GetCorrectDressingName(ingredient);
         }
-        
         Manager.Instance.combo.Add(ingredient);
         listIngredients.GetComponent<ListIngredients>().UpdateIngredientsAdded(ingredient);
-        if (DishManager.CheckIngredient(ingredient))
-        {
-            InstantiateText(greenText, ingredient, offset);
-        }
-        else
-        {
-            InstantiateText(redText, ingredient, offset);
-        }
-
+        
         prompts.GetComponent<TutorialPrompts>().addedIngredient(ingredient);
-        
-
-        Add.Play();
-        
         if (DishManager.RequiresExtra(ingredient))
         {
             StartCoroutine(manager.GetComponent<DishManager>().SetExtraBar(ingredient));
         }
+
+        Add.Play();
     }
 
-    // TODO Mix button doesn't work because "railPoint" is null
+    private string GetCorrectDressingName(string ingredient)
+    {
+        string[] dressings = Recipes.GetRecipe(DishManager.GetCurrentDish()).dressing;
+        foreach (string dressing in dressings)
+        {
+            if (!Manager.Instance.combo.Contains(dressing))
+            {
+                return dressing;
+            }
+        }
+        return ingredient;
+    }
+
+    private void SpawnIngredientText(string ingredient, Vector3 position)
+    {
+        if (DishManager.CheckIngredient(ingredient))
+        {
+            InstantiateText(greenText, ingredient, position);
+        }
+        else
+        {
+            InstantiateText(redText, ingredient, position);
+        }
+    }
+
+    // Mix button doesn't work because "railPoint" is null
     private void MixBowl() // TODO should move to BowlAnimator probably
     {
-        //Only mix at the cutting board
+        // Only mix at the cutting board
         if (manager.GetComponent<LerpRail>().currPoint != 6)
         {
             return;
@@ -248,7 +198,7 @@ public class AddIngredient : MonoBehaviour
         {
             railPoint = manager.GetComponent<LerpRail>().points[manager.GetComponent<LerpRail>().currPoint].GetChild(1);
 
-            InstantiateText(orangeText, "Mixed!", new Vector3(0f, 0f, 0f));
+            InstantiateText(orangeText, "Mixed!", transform.position);
             DishManager.MixBowl();
             manager.GetComponent<LerpRail>().advanceStopPoint();
             // Manager.Instance.Score += 100;
@@ -256,6 +206,15 @@ public class AddIngredient : MonoBehaviour
         DetachIngredient();
         Manager.Instance.Mixing = true;
         Mix.Play();
+    }
+
+    private void InstantiateText(GameObject textPrefab, string message, Vector3 textPosition)
+    {
+        float camFacingAngle = GameObject.Find("Main Camera").transform.rotation.eulerAngles.y;
+        Quaternion textRotation = Quaternion.Euler(0, camFacingAngle, 0);
+        GameObject textObject = Instantiate(textPrefab, textPosition, textRotation);
+
+        textObject.GetComponent<TextMeshPro>().text = message;
     }
 
     public void AttachIngredientToBowl()
@@ -289,6 +248,42 @@ public class AddIngredient : MonoBehaviour
         foreach (Transform child in children)
         {
             child.SetParent(ingredientParent);
+        }
+    }
+
+    // Hint stuff should be in a different class
+    public void ShowHint(float sec)
+    {
+        if (hintCoroutine != null)
+        {
+            StopCoroutine(hintCoroutine);
+        }
+        hintCoroutine = StartCoroutine(HintCoroutine(sec));
+    }
+
+    private IEnumerator HintCoroutine(float sec)
+    {
+        List<GameObject> hintTexts = new List<GameObject>();
+        foreach (GameObject clone in pointpos)
+        {
+            GameObject hintText = Instantiate(textPrefab, clone.transform, false);
+            hintText.transform.localPosition = new Vector3(.05f, .182f, -0.04f);
+            if (GameObject.Find("Main Camera").transform.rotation.eulerAngles.y > 0)
+            {
+                hintText.transform.localPosition = new Vector3(.05f, .182f, 0.07f);
+                hintText.transform.rotation = Quaternion.Euler(90, 0, 90);
+            }
+            else
+            {
+                hintText.transform.localPosition = new Vector3(.05f, .182f, -0.08f);
+            }
+            hintText.GetComponent<TextMeshPro>().text = clone.name;
+            hintTexts.Add(hintText);
+        }
+        yield return new WaitForSeconds(sec);
+        foreach (GameObject text in hintTexts)
+        {
+            Destroy(text);
         }
     }
 

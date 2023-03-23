@@ -3367,7 +3367,7 @@ GameObject:
   - component: {fileID: 1046723534}
   - component: {fileID: 1046723533}
   m_Layer: 5
-  m_Name: Continue Label
+  m_Name: Continue Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

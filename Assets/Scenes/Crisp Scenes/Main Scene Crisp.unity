@@ -1312,8 +1312,6 @@ GameObject:
   - component: {fileID: 36921885}
   - component: {fileID: 36921884}
   - component: {fileID: 36921883}
-  - component: {fileID: 36921882}
-  - component: {fileID: 36921881}
   - component: {fileID: 36921880}
   m_Layer: 0
   m_Name: Red Bottle (2)
@@ -1357,38 +1355,6 @@ MonoBehaviour:
   textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 0, b: 0, a: 1}
---- !u!95 &36921881
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36921878}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae9896d9639f943089c34f26bb195143, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &36921882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36921878}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f7b99428ed9417eb2fd64b0ec1cb57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &36921883
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3306,82 +3272,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88674182}
   m_Mesh: {fileID: -8675431444254071231, guid: 36da6cc4c9f733741b2f6f3e01edc955, type: 3}
---- !u!1 &89675095
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 89675096}
-  - component: {fileID: 89675098}
-  - component: {fileID: 89675097}
-  m_Layer: 5
-  m_Name: Score Bar Fill
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &89675096
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 89675095}
-  m_LocalRotation: {x: -0, y: -0.00000005004937, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 935012333}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 2.5}
-  m_SizeDelta: {x: 220, y: 23}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &89675097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 89675095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 64ffe26b25daa4c6c91b80cf870266de, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &89675098
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 89675095}
-  m_CullTransparentMesh: 1
 --- !u!1 &90651068
 GameObject:
   m_ObjectHideFlags: 0
@@ -4395,7 +4285,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1208223171}
-  m_RootOrder: 14
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -4904,7 +4794,7 @@ MonoBehaviour:
   ingredientName: Spinach
   ingredientPrefab: {fileID: 1535179130}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: -0.6, y: 0, z: -0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &158509632
@@ -6052,141 +5942,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209530969}
   m_Mesh: {fileID: -5053925668127403250, guid: 7a97cbedd3042b547bee974be98cb70a, type: 3}
---- !u!1 &210369944
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 210369945}
-  - component: {fileID: 210369947}
-  - component: {fileID: 210369946}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &210369945
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 210369944}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1034669177}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &210369946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 210369944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Switch
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 40.7
-  m_fontSizeBase: 40.7
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &210369947
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 210369944}
-  m_CullTransparentMesh: 1
 --- !u!1 &219124056
 GameObject:
   m_ObjectHideFlags: 0
@@ -9533,8 +9288,6 @@ GameObject:
   - component: {fileID: 345632937}
   - component: {fileID: 345632936}
   - component: {fileID: 345632935}
-  - component: {fileID: 345632934}
-  - component: {fileID: 345632933}
   - component: {fileID: 345632932}
   m_Layer: 0
   m_Name: Brown Bottle (1)
@@ -9578,38 +9331,6 @@ MonoBehaviour:
   textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.5, g: 0.3, b: 0, a: 1}
---- !u!95 &345632933
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 345632930}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae9896d9639f943089c34f26bb195143, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &345632934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 345632930}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f7b99428ed9417eb2fd64b0ec1cb57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &345632935
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10885,8 +10606,6 @@ GameObject:
   - component: {fileID: 386879976}
   - component: {fileID: 386879975}
   - component: {fileID: 386879974}
-  - component: {fileID: 386879973}
-  - component: {fileID: 386879972}
   - component: {fileID: 386879971}
   m_Layer: 0
   m_Name: Blue Bottle (2)
@@ -10930,38 +10649,6 @@ MonoBehaviour:
   textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 0, b: 1, a: 1}
---- !u!95 &386879972
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386879969}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae9896d9639f943089c34f26bb195143, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &386879973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386879969}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f7b99428ed9417eb2fd64b0ec1cb57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &386879974
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11999,7 +11686,7 @@ RectTransform:
   m_Children:
   - {fileID: 1462240629}
   m_Father: {fileID: 1208223171}
-  m_RootOrder: 17
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -16866,7 +16553,7 @@ MonoBehaviour:
   ingredientName: Kale
   ingredientPrefab: {fileID: 756457164}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: -0.6, y: 0, z: -0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &585375431
@@ -19912,7 +19599,7 @@ MonoBehaviour:
   ingredientName: Spinach
   ingredientPrefab: {fileID: 1535179130}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0.75, y: 0, z: -0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &691914605
@@ -21651,7 +21338,7 @@ MonoBehaviour:
   ingredientName: Kale
   ingredientPrefab: {fileID: 756457164}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0.75, y: 0, z: -0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &744931129
@@ -22113,8 +21800,6 @@ GameObject:
   - component: {fileID: 770236259}
   - component: {fileID: 770236258}
   - component: {fileID: 770236257}
-  - component: {fileID: 770236256}
-  - component: {fileID: 770236255}
   - component: {fileID: 770236254}
   m_Layer: 0
   m_Name: Brown Bottle
@@ -22158,38 +21843,6 @@ MonoBehaviour:
   textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.5, g: 0.3, b: 0, a: 1}
---- !u!95 &770236255
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 770236252}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae9896d9639f943089c34f26bb195143, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &770236256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 770236252}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f7b99428ed9417eb2fd64b0ec1cb57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &770236257
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24594,8 +24247,6 @@ GameObject:
   - component: {fileID: 856845066}
   - component: {fileID: 856845065}
   - component: {fileID: 856845064}
-  - component: {fileID: 856845063}
-  - component: {fileID: 856845062}
   - component: {fileID: 856845061}
   m_Layer: 0
   m_Name: Orange Bottle (2)
@@ -24639,38 +24290,6 @@ MonoBehaviour:
   textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.75, g: 0.5, b: 0, a: 1}
---- !u!95 &856845062
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856845059}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae9896d9639f943089c34f26bb195143, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &856845063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856845059}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f7b99428ed9417eb2fd64b0ec1cb57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &856845064
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25011,8 +24630,6 @@ GameObject:
   - component: {fileID: 868655883}
   - component: {fileID: 868655882}
   - component: {fileID: 868655881}
-  - component: {fileID: 868655880}
-  - component: {fileID: 868655879}
   - component: {fileID: 868655878}
   m_Layer: 0
   m_Name: White Bottle (1)
@@ -25056,38 +24673,6 @@ MonoBehaviour:
   textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 1, b: 1, a: 1}
---- !u!95 &868655879
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 868655876}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae9896d9639f943089c34f26bb195143, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &868655880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 868655876}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f7b99428ed9417eb2fd64b0ec1cb57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &868655881
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25791,7 +25376,7 @@ MonoBehaviour:
   ingredientName: Kale
   ingredientPrefab: {fileID: 756457164}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0.15, y: 0, z: -0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &901745070
@@ -26832,83 +26417,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930233842}
   m_Mesh: {fileID: -8058968322305962935, guid: c28059d4447f6e84c96f5c37c45eaaa2, type: 3}
---- !u!1 &935012332
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 935012333}
-  - component: {fileID: 935012335}
-  - component: {fileID: 935012334}
-  m_Layer: 5
-  m_Name: Score Bar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &935012333
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 935012332}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 89675096}
-  m_Father: {fileID: 1208223171}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150, y: -200}
-  m_SizeDelta: {x: 230, y: 40}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &935012334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 935012332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ab1aeee3a08844f4f831e93577b7b540, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &935012335
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 935012332}
-  m_CullTransparentMesh: 1
 --- !u!1 &936519900
 GameObject:
   m_ObjectHideFlags: 0
@@ -28939,128 +28447,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1034630190}
   m_Mesh: {fileID: -2370781230162225222, guid: 36da6cc4c9f733741b2f6f3e01edc955, type: 3}
---- !u!1 &1034669176
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1034669177}
-  - component: {fileID: 1034669180}
-  - component: {fileID: 1034669179}
-  - component: {fileID: 1034669178}
-  m_Layer: 5
-  m_Name: Switch Bowl
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1034669177
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034669176}
-  m_LocalRotation: {x: -2.3283059e-10, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 210369945}
-  m_Father: {fileID: 1208223171}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 90, y: 180}
-  m_SizeDelta: {x: 160, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1034669178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034669176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1034669179}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1034669179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034669176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1034669180
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034669176}
-  m_CullTransparentMesh: 1
 --- !u!1 &1041110879
 GameObject:
   m_ObjectHideFlags: 0
@@ -30186,7 +29572,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1208223171}
-  m_RootOrder: 16
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -30232,7 +29618,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1091066540}
   m_OnClick:
     m_PersistentCalls:
@@ -30300,8 +29686,6 @@ GameObject:
   - component: {fileID: 1095714876}
   - component: {fileID: 1095714875}
   - component: {fileID: 1095714874}
-  - component: {fileID: 1095714873}
-  - component: {fileID: 1095714872}
   - component: {fileID: 1095714871}
   m_Layer: 0
   m_Name: Blue Bottle (1)
@@ -30345,38 +29729,6 @@ MonoBehaviour:
   textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 0, b: 1, a: 1}
---- !u!95 &1095714872
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095714869}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae9896d9639f943089c34f26bb195143, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1095714873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095714869}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f7b99428ed9417eb2fd64b0ec1cb57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1095714874
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30773,8 +30125,6 @@ GameObject:
   - component: {fileID: 1117748204}
   - component: {fileID: 1117748203}
   - component: {fileID: 1117748202}
-  - component: {fileID: 1117748201}
-  - component: {fileID: 1117748200}
   - component: {fileID: 1117748199}
   m_Layer: 0
   m_Name: Green Bottle (1)
@@ -30818,38 +30168,6 @@ MonoBehaviour:
   textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 1, b: 0, a: 1}
---- !u!95 &1117748200
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1117748197}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae9896d9639f943089c34f26bb195143, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1117748201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1117748197}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f7b99428ed9417eb2fd64b0ec1cb57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1117748202
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32871,9 +32189,6 @@ RectTransform:
   - {fileID: 1592247281}
   - {fileID: 2093158014}
   - {fileID: 868720032}
-  - {fileID: 1034669177}
-  - {fileID: 1386103466344191232}
-  - {fileID: 935012333}
   - {fileID: 125445528}
   - {fileID: 1850344991}
   - {fileID: 1091066538}
@@ -35330,7 +34645,7 @@ MonoBehaviour:
   ingredientName: Spinach
   ingredientPrefab: {fileID: 1535179130}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0.15, y: 0, z: -0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1323779665
@@ -36815,8 +36130,6 @@ GameObject:
   - component: {fileID: 1372440334}
   - component: {fileID: 1372440333}
   - component: {fileID: 1372440332}
-  - component: {fileID: 1372440331}
-  - component: {fileID: 1372440330}
   - component: {fileID: 1372440329}
   m_Layer: 0
   m_Name: White Bottle
@@ -36860,38 +36173,6 @@ MonoBehaviour:
   textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 1, b: 1, a: 1}
---- !u!95 &1372440330
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1372440327}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae9896d9639f943089c34f26bb195143, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1372440331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1372440327}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f7b99428ed9417eb2fd64b0ec1cb57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1372440332
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37068,8 +36349,6 @@ GameObject:
   - component: {fileID: 1378653636}
   - component: {fileID: 1378653635}
   - component: {fileID: 1378653634}
-  - component: {fileID: 1378653633}
-  - component: {fileID: 1378653632}
   - component: {fileID: 1378653631}
   m_Layer: 0
   m_Name: Orange Bottle
@@ -37113,38 +36392,6 @@ MonoBehaviour:
   textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.75, g: 0.5, b: 0, a: 1}
---- !u!95 &1378653632
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1378653629}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae9896d9639f943089c34f26bb195143, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1378653633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1378653629}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f7b99428ed9417eb2fd64b0ec1cb57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1378653634
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -38355,8 +37602,6 @@ GameObject:
   - component: {fileID: 1416622349}
   - component: {fileID: 1416622348}
   - component: {fileID: 1416622347}
-  - component: {fileID: 1416622346}
-  - component: {fileID: 1416622345}
   - component: {fileID: 1416622344}
   m_Layer: 0
   m_Name: Orange Bottle (1)
@@ -38400,38 +37645,6 @@ MonoBehaviour:
   textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.75, g: 0.5, b: 0, a: 1}
---- !u!95 &1416622345
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1416622342}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae9896d9639f943089c34f26bb195143, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1416622346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1416622342}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f7b99428ed9417eb2fd64b0ec1cb57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1416622347
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -39161,7 +38374,7 @@ MonoBehaviour:
   ingredientName: Spring Mix
   ingredientPrefab: {fileID: 1528697091}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0.15, y: 0, z: -0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1456161222
@@ -40686,8 +39899,6 @@ GameObject:
   - component: {fileID: 1499097609}
   - component: {fileID: 1499097608}
   - component: {fileID: 1499097607}
-  - component: {fileID: 1499097606}
-  - component: {fileID: 1499097605}
   - component: {fileID: 1499097604}
   m_Layer: 0
   m_Name: Blue Bottle
@@ -40731,38 +39942,6 @@ MonoBehaviour:
   textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 0, b: 1, a: 1}
---- !u!95 &1499097605
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1499097602}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae9896d9639f943089c34f26bb195143, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1499097606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1499097602}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f7b99428ed9417eb2fd64b0ec1cb57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1499097607
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -41885,8 +41064,6 @@ GameObject:
   - component: {fileID: 1530939335}
   - component: {fileID: 1530939334}
   - component: {fileID: 1530939333}
-  - component: {fileID: 1530939332}
-  - component: {fileID: 1530939331}
   - component: {fileID: 1530939330}
   m_Layer: 0
   m_Name: Green Bottle
@@ -41930,38 +41107,6 @@ MonoBehaviour:
   textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 1, b: 0, a: 1}
---- !u!95 &1530939331
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1530939328}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae9896d9639f943089c34f26bb195143, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1530939332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1530939328}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f7b99428ed9417eb2fd64b0ec1cb57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1530939333
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -44810,7 +43955,7 @@ RectTransform:
   m_Children:
   - {fileID: 198941651}
   m_Father: {fileID: 1208223171}
-  m_RootOrder: 19
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -45796,7 +44941,7 @@ MonoBehaviour:
   ingredientName: Spring Mix
   ingredientPrefab: {fileID: 1528697091}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: -0.6, y: 0, z: -0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1641432382
@@ -46077,8 +45222,6 @@ GameObject:
   - component: {fileID: 1656265654}
   - component: {fileID: 1656265656}
   - component: {fileID: 1656265657}
-  - component: {fileID: 1656265655}
-  - component: {fileID: 1656265658}
   m_Layer: 0
   m_Name: MBP
   m_TagString: Bowl
@@ -46105,18 +45248,6 @@ Transform:
   m_Father: {fileID: 1926463432}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1656265655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1656265653}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37acad1882bdbd44d89444412a13e500, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1656265656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46162,18 +45293,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   extraFoodSlider: {fileID: 1273671842851122315}
---- !u!114 &1656265658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1656265653}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4b3c1661654242ba8b9cc4f8f981a13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1657452657
 GameObject:
   m_ObjectHideFlags: 0
@@ -46483,8 +45602,6 @@ GameObject:
   - component: {fileID: 1674081111}
   - component: {fileID: 1674081110}
   - component: {fileID: 1674081109}
-  - component: {fileID: 1674081108}
-  - component: {fileID: 1674081107}
   - component: {fileID: 1674081106}
   m_Layer: 0
   m_Name: White Bottle (2)
@@ -46528,38 +45645,6 @@ MonoBehaviour:
   textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 1, b: 1, a: 1}
---- !u!95 &1674081107
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674081104}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae9896d9639f943089c34f26bb195143, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1674081108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674081104}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f7b99428ed9417eb2fd64b0ec1cb57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1674081109
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -48881,7 +47966,7 @@ RectTransform:
   m_Children:
   - {fileID: 1469353436}
   m_Father: {fileID: 1208223171}
-  m_RootOrder: 18
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -48939,8 +48024,6 @@ GameObject:
   - component: {fileID: 1741679803}
   - component: {fileID: 1741679802}
   - component: {fileID: 1741679801}
-  - component: {fileID: 1741679800}
-  - component: {fileID: 1741679799}
   - component: {fileID: 1741679798}
   m_Layer: 0
   m_Name: Brown Bottle (2)
@@ -48984,38 +48067,6 @@ MonoBehaviour:
   textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0.5, g: 0.3, b: 0, a: 1}
---- !u!95 &1741679799
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1741679796}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae9896d9639f943089c34f26bb195143, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1741679800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1741679796}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f7b99428ed9417eb2fd64b0ec1cb57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1741679801
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -51351,7 +50402,7 @@ RectTransform:
   - {fileID: 1596156705}
   - {fileID: 845517193}
   m_Father: {fileID: 1208223171}
-  m_RootOrder: 15
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -51492,8 +50543,6 @@ GameObject:
   - component: {fileID: 1866968396}
   - component: {fileID: 1866968395}
   - component: {fileID: 1866968394}
-  - component: {fileID: 1866968393}
-  - component: {fileID: 1866968392}
   - component: {fileID: 1866968391}
   m_Layer: 0
   m_Name: Red Bottle (1)
@@ -51537,38 +50586,6 @@ MonoBehaviour:
   textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 0, b: 0, a: 1}
---- !u!95 &1866968392
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1866968389}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae9896d9639f943089c34f26bb195143, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1866968393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1866968389}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f7b99428ed9417eb2fd64b0ec1cb57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1866968394
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -55001,7 +54018,7 @@ MonoBehaviour:
   ingredientName: Spring Mix
   ingredientPrefab: {fileID: 1528697091}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0.75, y: 0, z: -0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1979558070
@@ -56923,8 +55940,6 @@ GameObject:
   - component: {fileID: 2054120527}
   - component: {fileID: 2054120526}
   - component: {fileID: 2054120525}
-  - component: {fileID: 2054120524}
-  - component: {fileID: 2054120523}
   - component: {fileID: 2054120522}
   m_Layer: 0
   m_Name: Red Bottle
@@ -56968,38 +55983,6 @@ MonoBehaviour:
   textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 1, g: 0, b: 0, a: 1}
---- !u!95 &2054120523
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2054120520}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae9896d9639f943089c34f26bb195143, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2054120524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2054120520}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f7b99428ed9417eb2fd64b0ec1cb57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &2054120525
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -57691,8 +56674,6 @@ GameObject:
   - component: {fileID: 2077295040}
   - component: {fileID: 2077295039}
   - component: {fileID: 2077295038}
-  - component: {fileID: 2077295037}
-  - component: {fileID: 2077295036}
   - component: {fileID: 2077295035}
   m_Layer: 0
   m_Name: Green Bottle (2)
@@ -57736,38 +56717,6 @@ MonoBehaviour:
   textOffset: {x: 0, y: 0, z: 0}
   isLiquid: 1
   color: {r: 0, g: 1, b: 0, a: 1}
---- !u!95 &2077295036
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2077295033}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae9896d9639f943089c34f26bb195143, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2077295037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2077295033}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f7b99428ed9417eb2fd64b0ec1cb57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &2077295038
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -60275,263 +59224,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!224 &1386103466344191232
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1386103466344191235}
-  m_LocalRotation: {x: -2.3283059e-10, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1386103467452224955}
-  m_Father: {fileID: 1208223171}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: 115}
-  m_SizeDelta: {x: 160, y: 51.2}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1386103466344191233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1386103466344191235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1386103466344191294}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!1 &1386103466344191235
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1386103466344191232}
-  - component: {fileID: 1386103466344191295}
-  - component: {fileID: 1386103466344191294}
-  - component: {fileID: 1386103466344191233}
-  m_Layer: 5
-  m_Name: Return Debug
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1386103466344191294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1386103466344191235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1386103466344191295
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1386103466344191235}
-  m_CullTransparentMesh: 1
---- !u!114 &1386103467452224952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1386103467452224954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Return
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 40.7
-  m_fontSizeBase: 40.7
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1386103467452224953
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1386103467452224954}
-  m_CullTransparentMesh: 1
---- !u!1 &1386103467452224954
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1386103467452224955}
-  - component: {fileID: 1386103467452224953}
-  - component: {fileID: 1386103467452224952}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1386103467452224955
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1386103467452224954}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1386103466344191232}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &1711813854899092889
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60641,12 +59333,12 @@ MonoBehaviour:
   pointpos:
   - {fileID: 9128230277360588184}
   - {fileID: 9128230277491552686}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 9128230275673981052}
+  - {fileID: 9128230276276155109}
+  - {fileID: 1005737333}
+  - {fileID: 1074258141}
+  - {fileID: 177204437}
+  - {fileID: 422226799}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
