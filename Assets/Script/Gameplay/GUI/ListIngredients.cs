@@ -7,10 +7,21 @@ using TMPro;
 // Lists the ingredients of the current dish
 public class ListIngredients : MonoBehaviour
 {
+    [SerializeField] GameObject ingredientsLabel, ingredientsPanel, rightPanel;
     [SerializeField] TextMeshProUGUI baseText, toppingsText, dressingText, proteinText;
     
     void Start()
     {
+        Recipe currRecipe = DishManager.GetCurrentRecipe();
+        int lastLevel = currRecipe.GetLevelsCompleted();
+        if (lastLevel > -1)
+        {
+            ingredientsLabel.SetActive(false);
+            ingredientsPanel.SetActive(false);
+            rightPanel.SetActive(false);
+            return;
+        }
+
         ClearText();
         UpdateRecipeIngredients();
     }
