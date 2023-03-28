@@ -411,7 +411,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1297821
 Transform:
   m_ObjectHideFlags: 0
@@ -734,7 +734,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8499150
 Transform:
   m_ObjectHideFlags: 0
@@ -3856,7 +3856,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &110714447
 Transform:
   m_ObjectHideFlags: 0
@@ -4794,7 +4794,7 @@ MonoBehaviour:
   ingredientName: Spinach
   ingredientPrefab: {fileID: 1535179130}
   prefabCount: 20
-  textOffset: {x: -0.6, y: 0, z: -0.25}
+  textOffset: {x: 0.75, y: 1, z: -0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &158509632
@@ -6108,7 +6108,7 @@ MonoBehaviour:
   ingredientName: Pickled Onions
   ingredientPrefab: {fileID: 1888789506}
   prefabCount: 30
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0.25, y: 0.5, z: 0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &219338542
@@ -6787,10 +6787,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f927f8a52f839448d9803152f00d2d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: BlackBean
+  ingredientName: Black Beans
   ingredientPrefab: {fileID: 1839186706}
   prefabCount: 50
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 1, y: 0.5, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &238006199
@@ -9189,7 +9189,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &344697657
 Transform:
   m_ObjectHideFlags: 0
@@ -12194,7 +12194,7 @@ MonoBehaviour:
   ingredientName: Avocados
   ingredientPrefab: {fileID: 279763526}
   prefabCount: 1
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: -0.25, y: 0.5, z: 0.3}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &439309924
@@ -13962,7 +13962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &519368480
 Transform:
   m_ObjectHideFlags: 0
@@ -14100,7 +14100,7 @@ MonoBehaviour:
   ingredientName: Goat Cheeses
   ingredientPrefab: {fileID: 246751886}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0.25, y: 0.5, z: 0.3}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &519662583
@@ -14881,7 +14881,7 @@ MonoBehaviour:
   ingredientName: Cabbage
   ingredientPrefab: {fileID: 238006199}
   prefabCount: 25
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: -0.25, y: 0.5, z: 0.6}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &533389914
@@ -15475,7 +15475,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &547771730
 Transform:
   m_ObjectHideFlags: 0
@@ -15579,7 +15579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &556673278
 Transform:
   m_ObjectHideFlags: 0
@@ -16248,7 +16248,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &574878645
 Transform:
   m_ObjectHideFlags: 0
@@ -16553,7 +16553,7 @@ MonoBehaviour:
   ingredientName: Kale
   ingredientPrefab: {fileID: 756457164}
   prefabCount: 20
-  textOffset: {x: -0.6, y: 0, z: -0.25}
+  textOffset: {x: 0.75, y: 1, z: -0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &585375431
@@ -17486,7 +17486,7 @@ MonoBehaviour:
   ingredientName: Corn
   ingredientPrefab: {fileID: 376279006}
   prefabCount: 50
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 1, y: 0.5, z: -0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &608177052
@@ -18105,7 +18105,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &633634677
 Transform:
   m_ObjectHideFlags: 0
@@ -18820,7 +18820,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &658211267
 Transform:
   m_ObjectHideFlags: 0
@@ -19142,7 +19142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &661096520
 Transform:
   m_ObjectHideFlags: 0
@@ -19599,7 +19599,7 @@ MonoBehaviour:
   ingredientName: Spinach
   ingredientPrefab: {fileID: 1535179130}
   prefabCount: 20
-  textOffset: {x: 0.75, y: 0, z: -0.25}
+  textOffset: {x: 0.25, y: 1, z: -0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &691914605
@@ -20410,7 +20410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &710772876
 Transform:
   m_ObjectHideFlags: 0
@@ -21116,7 +21116,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &738334682
 Transform:
   m_ObjectHideFlags: 0
@@ -21338,7 +21338,7 @@ MonoBehaviour:
   ingredientName: Kale
   ingredientPrefab: {fileID: 756457164}
   prefabCount: 20
-  textOffset: {x: 0.75, y: 0, z: -0.25}
+  textOffset: {x: 0.25, y: 1, z: -0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &744931129
@@ -22683,7 +22683,7 @@ MonoBehaviour:
   ingredientName: Parmesan
   ingredientPrefab: {fileID: 1209427212}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0.25, y: 0.5, z: 0.3}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &808751468
@@ -25376,7 +25376,7 @@ MonoBehaviour:
   ingredientName: Kale
   ingredientPrefab: {fileID: 756457164}
   prefabCount: 20
-  textOffset: {x: 0.15, y: 0, z: -0.25}
+  textOffset: {x: 0.5, y: 1, z: -0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &901745070
@@ -26000,7 +26000,7 @@ MonoBehaviour:
   ingredientName: Cucumbers
   ingredientPrefab: {fileID: 1989236751}
   prefabCount: 50
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0.25, y: 0.5, z: 0}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &915406681
@@ -26334,7 +26334,7 @@ MonoBehaviour:
   ingredientName: Chedder
   ingredientPrefab: {fileID: 1460820428}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0.25, y: 0.5, z: 0.3}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &930233845
@@ -30349,7 +30349,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1122913691
 Transform:
   m_ObjectHideFlags: 0
@@ -31430,7 +31430,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1174327527
 Transform:
   m_ObjectHideFlags: 0
@@ -33130,7 +33130,7 @@ GameObject:
   - component: {fileID: 1238907972}
   - component: {fileID: 1238907971}
   m_Layer: 0
-  m_Name: Beat
+  m_Name: Beets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33164,10 +33164,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f927f8a52f839448d9803152f00d2d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Beat
+  ingredientName: Beets
   ingredientPrefab: {fileID: 1928286218}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: -0.1, y: 0.5, z: 0.5}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1238907972
@@ -34645,7 +34645,7 @@ MonoBehaviour:
   ingredientName: Spinach
   ingredientPrefab: {fileID: 1535179130}
   prefabCount: 20
-  textOffset: {x: 0.15, y: 0, z: -0.25}
+  textOffset: {x: 0.5, y: 1, z: -0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1323779665
@@ -34746,7 +34746,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1325277339
 Transform:
   m_ObjectHideFlags: 0
@@ -35095,7 +35095,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1342737763
 Transform:
   m_ObjectHideFlags: 0
@@ -35199,7 +35199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1343449219
 Transform:
   m_ObjectHideFlags: 0
@@ -38374,7 +38374,7 @@ MonoBehaviour:
   ingredientName: Spring Mix
   ingredientPrefab: {fileID: 1528697091}
   prefabCount: 20
-  textOffset: {x: 0.15, y: 0, z: -0.25}
+  textOffset: {x: 0.5, y: 1, z: -0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1456161222
@@ -40338,7 +40338,7 @@ MonoBehaviour:
   ingredientName: Red Onion
   ingredientPrefab: {fileID: 701294364}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0.25, y: 0.5, z: 0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1507736504
@@ -40931,7 +40931,7 @@ GameObject:
   - component: {fileID: 1530264913}
   - component: {fileID: 1530264912}
   m_Layer: 0
-  m_Name: Cheddar
+  m_Name: Sweet Potatoes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40968,7 +40968,7 @@ MonoBehaviour:
   ingredientName: Sweet Potatoes
   ingredientPrefab: {fileID: 1268768995}
   prefabCount: 25
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: -0.4, y: 0.5, z: 0.5}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1530264913
@@ -41319,7 +41319,7 @@ MonoBehaviour:
   ingredientName: Shredded Carrots
   ingredientPrefab: {fileID: 1737038924}
   prefabCount: 50
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0.25, y: 0.5, z: -0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &1535179130
@@ -41752,7 +41752,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1553614893
 Transform:
   m_ObjectHideFlags: 0
@@ -43689,7 +43689,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1597092808
 Transform:
   m_ObjectHideFlags: 0
@@ -44414,7 +44414,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1633570289
 Transform:
   m_ObjectHideFlags: 0
@@ -44941,7 +44941,7 @@ MonoBehaviour:
   ingredientName: Spring Mix
   ingredientPrefab: {fileID: 1528697091}
   prefabCount: 20
-  textOffset: {x: -0.6, y: 0, z: -0.25}
+  textOffset: {x: 0.75, y: 1, z: -0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1641432382
@@ -45042,7 +45042,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1643357735
 Transform:
   m_ObjectHideFlags: 0
@@ -45860,7 +45860,7 @@ MonoBehaviour:
   ingredientName: Chickens
   ingredientPrefab: {fileID: 357604252}
   prefabCount: 20
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0.25, y: 0.5, z: 0.3}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1676206768
@@ -48723,7 +48723,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1771323379
 Transform:
   m_ObjectHideFlags: 0
@@ -52380,7 +52380,7 @@ MonoBehaviour:
   ingredientName: Tomato
   ingredientPrefab: {fileID: 1488467970}
   prefabCount: 50
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 0.25, y: 0.5, z: -0.75}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1922241400
@@ -54018,7 +54018,7 @@ MonoBehaviour:
   ingredientName: Spring Mix
   ingredientPrefab: {fileID: 1528697091}
   prefabCount: 20
-  textOffset: {x: 0.75, y: 0, z: -0.25}
+  textOffset: {x: 0.25, y: 1, z: -0.25}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &1979558070
@@ -55341,7 +55341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2027636280
 Transform:
   m_ObjectHideFlags: 0
@@ -56578,7 +56578,7 @@ MonoBehaviour:
   ingredientName: Egg
   ingredientPrefab: {fileID: 615716494}
   prefabCount: 10
-  textOffset: {x: 0, y: 0, z: 0}
+  textOffset: {x: 1, y: 0.5, z: -0.75}
   isLiquid: 0
   color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!64 &2073071604

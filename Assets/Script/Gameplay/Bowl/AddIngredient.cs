@@ -97,23 +97,35 @@ public class AddIngredient : MonoBehaviour
     {
         for (int i = 0; i < count; i++)
         {
-            // Randomly offset ingredient spawn location
-            Vector3 randomOffset = new Vector3(UnityEngine.Random.Range(-0.09f, 0.1f), UnityEngine.Random.Range(-0.2f, 0.2f), UnityEngine.Random.Range(-0.175f, 0.05f));
-            GameObject ing = Instantiate(prefab, transform.position + offset + randomOffset, Quaternion.Euler(0, 0, 0), transform);
-            ing.transform.localScale = Vector3.Scale(ing.transform.localScale, new Vector3(.45f, .45f, .45f));
+            SpawnIngredientInstance(prefab);
         }
 
         // After every addition, check if there's too many items in bowl
         if (transform.childCount > INGREDIENT_LIMIT)
         {
-            int delete_count = INGREDIENT_LIMIT / 4;
-            for (int i = 0; i < delete_count; i++)
+            DespawnExcessiveIngredients();
+        }
+    }
+
+    private void SpawnIngredientInstance(GameObject prefab)
+    {
+        Vector3 randomOffset = new Vector3(UnityEngine.Random.Range(-0.09f, 0.1f), UnityEngine.Random.Range(-0.2f, 0.2f), UnityEngine.Random.Range(-0.175f, 0.05f));
+        Vector3 spawnPosition = transform.position + offset + randomOffset;
+        Quaternion randomRotation = Quaternion.Euler(UnityEngine.Random.Range(-15, 15), UnityEngine.Random.Range(-15, 15), UnityEngine.Random.Range(-15, 15));
+
+        GameObject ing = Instantiate(prefab, spawnPosition, randomRotation, this.transform);
+        ing.transform.localScale = Vector3.Scale(ing.transform.localScale, new Vector3(.45f, .45f, .45f));
+    }
+
+    private void DespawnExcessiveIngredients()
+    {
+        int deleteCount = INGREDIENT_LIMIT / 4;
+        for (int i = 0; i < deleteCount; i++)
+        {
+            int dice = UnityEngine.Random.Range(0, transform.childCount); // dice? more like russian roulette
+            if (transform.GetChild(dice).CompareTag("Ingredients"))
             {
-                int dice = UnityEngine.Random.Range(0, transform.childCount);
-                if (transform.GetChild(dice).CompareTag("Ingredients"))
-                {
-                    Destroy(transform.GetChild(dice).gameObject);
-                }
+                Destroy(transform.GetChild(dice).gameObject);
             }
         }
     }
