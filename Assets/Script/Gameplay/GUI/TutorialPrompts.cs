@@ -17,7 +17,7 @@ public class TutorialPrompts : MonoBehaviour
     {
         Recipe currRecipe = DishManager.GetCurrentRecipe();
         int lastLevel = currRecipe.GetLevelsCompleted();
-        if (lastLevel > 0)
+        if (lastLevel >= 1)
         {
             return;
         }

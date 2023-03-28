@@ -14,7 +14,7 @@ public class ListIngredients : MonoBehaviour
     {
         Recipe currRecipe = DishManager.GetCurrentRecipe();
         int lastLevel = currRecipe.GetLevelsCompleted();
-        if (lastLevel > -1)
+        if (lastLevel >= 2)
         {
             ingredientsLabel.SetActive(false);
             ingredientsPanel.SetActive(false);
