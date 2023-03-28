@@ -22,6 +22,8 @@ public class DiscardScript : MonoBehaviour
     {
         if (!Manager.Instance.Mixing && discardCoroutine == null && manager.GetComponent<LerpRail>().travel == null)
         {
+            Manager.Instance.combo.Clear();
+
             if (discardCoroutine != null)
             {
                 StopCoroutine(discardCoroutine);
