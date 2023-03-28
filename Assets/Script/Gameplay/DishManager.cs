@@ -157,7 +157,7 @@ public class DishManager : MonoBehaviour
     public static bool CheckFinalCombo(List<string> combo)
     {
         //Order does not matter
-        return ScrambledEquals(currIngredients, combo, true) && mixes == 3;
+        return ScrambledEquals(currIngredients, combo, true) && mixes >= 3;
     }    
 
     //Matches lists without order
