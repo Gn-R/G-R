@@ -8,6 +8,7 @@ public class ServeBowl : MonoBehaviour
 {
     [SerializeField] Button serveButton;
     [SerializeField] GameObject manager, ingredients, notAtEndMessage;
+    [SerializeField] GameObject tutorialPrompts;
 
     private Coroutine endMessage;
 
@@ -21,6 +22,7 @@ public class ServeBowl : MonoBehaviour
         // TODO make sure player is at end of rail
         bool hasCorrectCombo = CheckCombo();
         EndLevel(hasCorrectCombo);
+        tutorialPrompts.GetComponent<TutorialPrompts>().uiHit("Serve");
     }
 
     bool CheckCombo()

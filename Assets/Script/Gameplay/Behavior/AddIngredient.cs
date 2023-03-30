@@ -10,6 +10,7 @@ public class AddIngredient : MonoBehaviour
 {
     private static readonly int INGREDIENT_LIMIT = 400;
 
+    [SerializeField] GameObject tutorialPrompts;
     [SerializeField] GameObject listIngredients;
     [SerializeField] GameObject textPrefab;
 
@@ -246,6 +247,8 @@ public class AddIngredient : MonoBehaviour
             DishManager.MixBowl();
             manager.GetComponent<LerpRail>().advanceStopPoint();
             // Manager.Instance.Score += 100;
+
+            tutorialPrompts.GetComponent<TutorialPrompts>().uiHit("Mix");
         }
         DetachIngredient();
         Manager.Instance.Mixing = true;

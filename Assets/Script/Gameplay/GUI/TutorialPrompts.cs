@@ -6,12 +6,16 @@ public class TutorialPrompts : MonoBehaviour
 {
     private GameObject rail;
     [SerializeField] GameObject[] stopPrompts;
+    [SerializeField] GameObject[] uiPrompts;
     private GameObject currPrompt;
     private int currStop = 0;
     private List<GameObject> promptList;
     //private List<GameObject> promptList2;
     private Dictionary<int, List<GameObject>> dict;
+    private Dictionary<int, List<GameObject>> dictUI;
     private bool isset = false;
+
+    private GameObject currUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,11 +47,31 @@ public class TutorialPrompts : MonoBehaviour
             dict[point].Add(prompt);
         }
 
-        //Put a prompt in each stop
-        foreach (int point in dict.Keys)
+        dictUI = new Dictionary<int, List<GameObject>>();
+        foreach (GameObject prompt in uiPrompts)
         {
-            onPointUpdate(point);
+            //Debug.Log(DishManager.GetCurrentDish());
+            int point = prompt.GetComponent<Tutorial>().stopPoint;
+            //If the current recipe does not have the ingredient, do not add it to the active dictionary/list
+            //if (!System.Array.Exists(prompt.GetComponent<Tutorial>().recipesAttached, e => e.Equals(DishManager.GetCurrentDish())))
+            //{
+            //    continue;
+            //}
+
+            //Add prompt to dictionary
+            if (!dictUI.ContainsKey(point))
+            {
+                dictUI.Add(point, new List<GameObject>());
+            }
+            dictUI[point].Add(prompt);
         }
+
+        //Put a prompt in each stop
+        for (int i = 0; i < rail.GetComponent<LerpRail>().stopPoints.Length; i++)
+        {
+            onPointUpdate(i);
+        }
+        onUIUpdate(1);
     }
 
     // Update is called once per frame
@@ -65,7 +89,7 @@ public class TutorialPrompts : MonoBehaviour
             return;
         }
 
-        currStop = newStop;
+        //currStop = newStop;
 
         //If stop does not exist, also return
         if (!dict.ContainsKey(newStop))
@@ -122,6 +146,47 @@ public class TutorialPrompts : MonoBehaviour
                 onPointUpdate(point);
                 return;
             }
+        }
+    }
+
+    public void onUIUpdate(int newStop)
+    {
+        if (currUI != null)
+        {
+            currUI.SetActive(false);
+        }
+
+        currStop = newStop;
+
+        if (dictUI.ContainsKey(newStop))
+        {
+
+            //If list empty, return
+            promptList = dictUI[newStop];
+            if (promptList.Count <= 0)
+            {
+                return;
+            }
+
+            currUI = dictUI[newStop][0];
+            if (currUI == null)
+            {
+                dictUI[newStop].RemoveAt(0);
+                onPointUpdate(newStop);
+                return;
+            }
+            currUI.SetActive(true);
+        }
+    }
+
+    public void uiHit(string action)
+    {
+        if (dictUI.ContainsKey(currStop) && currUI.name.ToLower().Contains(action.ToLower()))
+        {
+            Destroy(dictUI[currStop][0]);
+            dictUI[currStop].RemoveAt(0);
+
+            onUIUpdate(currStop);
         }
     }
 }

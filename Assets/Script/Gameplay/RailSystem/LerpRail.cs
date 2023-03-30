@@ -145,7 +145,12 @@ public class LerpRail : MonoBehaviour
     //If the current point ends with ".5" automatically travel to the next point
     private IEnumerator Travel(bool moveRight)
     {
-        prompts.GetComponent<TutorialPrompts>().onPointUpdate(currPoint);
+        if (prompts != null && prompts.activeSelf)
+        {
+            prompts.GetComponent<TutorialPrompts>().onPointUpdate(currPoint);
+            prompts.GetComponent<TutorialPrompts>().onUIUpdate(currPoint);
+        }
+
 
         if (currPoint < 0 || currPoint >= points.Length)
         {
