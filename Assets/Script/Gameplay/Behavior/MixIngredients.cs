@@ -18,6 +18,7 @@ public class MixIngredients : MonoBehaviour
         //dis_inge = transform.GetComponent<TextMeshProUGUI>();
         Discard.GetComponent<AudioSource>();
         tima = 3f;
+        Manager.Instance.Mixing = false;
     }
 
     // Update is called once per frame
