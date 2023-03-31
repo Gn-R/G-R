@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TutorialPrompts : MonoBehaviour
 {
-    private GameObject rail;
+    [SerializeField] GameObject rail;
     [SerializeField] GameObject[] stopPrompts;
     [SerializeField] GameObject[] uiPrompts;
     private GameObject currPrompt;
@@ -67,7 +67,7 @@ public class TutorialPrompts : MonoBehaviour
         }
 
         //Put a prompt in each stop
-        for (int i = 0; i < rail.GetComponent<LerpRail>().stopPoints.Length; i++)
+        for (int i = 0; i < rail.GetComponent<LerpRail>().points.Length; i++)
         {
             onPointUpdate(i);
         }
@@ -153,7 +153,7 @@ public class TutorialPrompts : MonoBehaviour
     {
         Recipe currRecipe = DishManager.GetCurrentRecipe();
         int lastLevel = currRecipe.GetLevelsCompleted();
-        if (lastLevel >= 1)
+        if (lastLevel >= 1 || dictUI == null)
         {
             return;
         }
