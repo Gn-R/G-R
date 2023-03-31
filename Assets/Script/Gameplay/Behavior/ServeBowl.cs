@@ -22,7 +22,10 @@ public class ServeBowl : MonoBehaviour
         // TODO make sure player is at end of rail
         bool hasCorrectCombo = CheckCombo();
         EndLevel(hasCorrectCombo);
-        tutorialPrompts.GetComponent<TutorialPrompts>().uiHit("Serve");
+        if (tutorialPrompts != null && tutorialPrompts.activeSelf)
+        {
+            tutorialPrompts.GetComponent<TutorialPrompts>().uiHit("Serve");
+        }
     }
 
     bool CheckCombo()

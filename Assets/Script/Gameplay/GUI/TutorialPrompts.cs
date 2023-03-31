@@ -122,7 +122,7 @@ public class TutorialPrompts : MonoBehaviour
     {
         Recipe currRecipe = DishManager.GetCurrentRecipe();
         int lastLevel = currRecipe.GetLevelsCompleted();
-        if (lastLevel > 0)
+        if (lastLevel >= 1)
         {
             return;
         }
@@ -151,6 +151,13 @@ public class TutorialPrompts : MonoBehaviour
 
     public void onUIUpdate(int newStop)
     {
+        Recipe currRecipe = DishManager.GetCurrentRecipe();
+        int lastLevel = currRecipe.GetLevelsCompleted();
+        if (lastLevel >= 1)
+        {
+            return;
+        }
+
         if (currUI != null)
         {
             currUI.SetActive(false);
@@ -181,6 +188,13 @@ public class TutorialPrompts : MonoBehaviour
 
     public void uiHit(string action)
     {
+        Recipe currRecipe = DishManager.GetCurrentRecipe();
+        int lastLevel = currRecipe.GetLevelsCompleted();
+        if (lastLevel >= 1)
+        {
+            return;
+        }
+
         if (dictUI.ContainsKey(currStop) && currUI.name.ToLower().Contains(action.ToLower()))
         {
             Destroy(dictUI[currStop][0]);

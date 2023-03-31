@@ -247,8 +247,10 @@ public class AddIngredient : MonoBehaviour
             DishManager.MixBowl();
             manager.GetComponent<LerpRail>().advanceStopPoint();
             // Manager.Instance.Score += 100;
-
-            tutorialPrompts.GetComponent<TutorialPrompts>().uiHit("Mix");
+            if (tutorialPrompts != null && tutorialPrompts.activeSelf)
+            {
+                tutorialPrompts.GetComponent<TutorialPrompts>().uiHit("Mix");
+            }
         }
         DetachIngredient();
         Manager.Instance.Mixing = true;
