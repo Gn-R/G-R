@@ -14023,11 +14023,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af1676f27bbbe1b459f6afb59ed9667c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlPoints:
-  - {fileID: 695826954}
-  - {fileID: 2072051003}
-  - {fileID: 1737852534}
-  - {fileID: 588487384}
 --- !u!1 &370546502
 GameObject:
   m_ObjectHideFlags: 0
@@ -33013,11 +33008,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af1676f27bbbe1b459f6afb59ed9667c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlPoints:
-  - {fileID: 480357099}
-  - {fileID: 2064351914}
-  - {fileID: 569845435}
-  - {fileID: 495345449}
 --- !u!1 &875125719
 GameObject:
   m_ObjectHideFlags: 0
@@ -35745,11 +35735,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af1676f27bbbe1b459f6afb59ed9667c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlPoints:
-  - {fileID: 1616338476}
-  - {fileID: 280338198}
-  - {fileID: 1337786604}
-  - {fileID: 1285736088}
 --- !u!1001 &985604325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58361,11 +58346,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af1676f27bbbe1b459f6afb59ed9667c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlPoints:
-  - {fileID: 1720804729}
-  - {fileID: 1854332934}
-  - {fileID: 1339780978}
-  - {fileID: 508018861}
 --- !u!1 &1611946020
 GameObject:
   m_ObjectHideFlags: 0
@@ -59742,9 +59722,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37acad1882bdbd44d89444412a13e500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  routes:
-  - {fileID: 1689167991}
-  - {fileID: 369330388}
 --- !u!114 &1656265656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59802,8 +59779,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b3c1661654242ba8b9cc4f8f981a13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bigBowl: {fileID: 919132147753000012}
-  smallBowl: {fileID: 531512828}
 --- !u!1 &1657452657
 GameObject:
   m_ObjectHideFlags: 0
@@ -61458,11 +61433,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af1676f27bbbe1b459f6afb59ed9667c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlPoints:
-  - {fileID: 1233100628}
-  - {fileID: 1127269111}
-  - {fileID: 570121715}
-  - {fileID: 1567490633}
 --- !u!1 &1691213992
 GameObject:
   m_ObjectHideFlags: 0
@@ -76123,11 +76093,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af1676f27bbbe1b459f6afb59ed9667c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlPoints:
-  - {fileID: 197820595}
-  - {fileID: 719013715}
-  - {fileID: 1841385029}
-  - {fileID: 555784216}
 --- !u!1 &2119669147
 GameObject:
   m_ObjectHideFlags: 0
