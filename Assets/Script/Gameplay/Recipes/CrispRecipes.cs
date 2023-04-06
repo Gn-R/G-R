@@ -8,7 +8,7 @@ public class CrispRecipes
     private static readonly Recipe GRBowl1 = new Recipe(
         "G & R Bowl 1", 
         new string[] { "Sweet Potatoes", "Cabbage" }, // Base(s)
-        new string[] { "Goat Cheeses", "Spring Mix", "Chickens" }, // Topping(s)
+        new string[] { "Goat Cheese", "Spring Mix", "Chickens" }, // Topping(s)
         new string[] { "Caesar Dressing" }, // Dressing(s)
         new string[] { } // From the Grill (protein)
     );
