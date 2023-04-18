@@ -38,6 +38,8 @@ public class LerpRail : MonoBehaviour
     public GameObject manager;
     public GameObject prompts;
 
+    public Button serveButton;
+
     private void Update()
     {
         //If right arrow pressed and there's been sufficient time and can move, travel to next point
@@ -162,7 +164,7 @@ public class LerpRail : MonoBehaviour
         }
         else if (currPoint >= points.Length - 1)
         {
-            SetButtonBlocked(rightButton, true);
+            //SetButtonBlocked(rightButton, true);
         }
         else
         {
@@ -177,6 +179,16 @@ public class LerpRail : MonoBehaviour
         else
         {
             SetButtonBlocked(leftButton, false);
+        }
+
+        //If the current point is at the last stop
+        if (currPoint >= points.Length - 1)
+        {
+            SetButtonServe(rightButton, true);
+        }
+        else
+        {
+            SetButtonServe(rightButton, false);
         }
 
         Transform point = points[currPoint];
@@ -350,6 +362,19 @@ public class LerpRail : MonoBehaviour
         else
         {
             image.color = new Color(1f, 1f, 1f);
+        }
+    }
+
+    private void SetButtonServe(GameObject button, bool serve)
+    {
+        Image image = button.GetComponent<Image>();
+        if (serve)
+        {
+            serveButton.gameObject.SetActive(true);
+        }
+        else
+        {
+            serveButton.gameObject.SetActive(false);
         }
     }
 }
